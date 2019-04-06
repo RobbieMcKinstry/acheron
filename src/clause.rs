@@ -13,10 +13,14 @@ impl Clause {
         }
     }
 
+    pub fn is_empty(&self) -> bool {
+        self.variables.is_empty()
+    }
+
     pub fn add_variable(&self, var: String) -> Self {
         let variable = Var::from(var);
         let mut next = self.variables.clone();
-        next.push_front(variable);
+        next.push_back(variable);
         Clause { variables: next }
     }
 }
