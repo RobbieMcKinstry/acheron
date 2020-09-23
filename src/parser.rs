@@ -1,7 +1,11 @@
-use crate::Clause;
+use crate::solver::Solver;
+use crate::{Clause, Formula};
+use im::Vector;
 use std::fs;
 
-pub struct Parser {}
+pub struct Parser {
+    pub solver: Solver,
+}
 
 impl Parser {
     pub fn new(path: String) -> Self {
@@ -23,8 +27,10 @@ impl Parser {
         for c in clauses.iter() {
             println!("{}", c);
         }
+        let formula = Formula::from(clauses);
+        let solver = Solver::from(formula);
 
-        Parser {}
+        Self { solver }
     }
 
     fn read_file(path: String) -> String {
@@ -56,17 +62,17 @@ impl Parser {
     fn parse_clause(line: String) -> Clause {
         let mut result = Clause::new();
         for var in line.split_whitespace() {
-            result = result.add_variable(var.to_owned());
+            result = result.add_literal(var.to_owned());
         }
         result
     }
 
-    fn parse_clauses(clause_lines: Vec<String>) -> Vec<Clause> {
-        let mut clauses = Vec::new();
+    fn parse_clauses(clause_lines: Vec<String>) -> Vector<Clause> {
+        let mut clauses = Vector::new();
         for line in clause_lines {
             let next = Self::parse_clause(line);
             if !next.is_empty() {
-                clauses.push(next);
+                clauses.push_back(next);
             }
         }
         clauses

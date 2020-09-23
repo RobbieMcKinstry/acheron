@@ -15,5 +15,8 @@ fn main() {
         )
         .get_matches();
     let filepath = matches.value_of("INPUT").unwrap();
-    Parser::new(filepath.to_owned());
+    let parser = Parser::new(filepath.to_owned());
+    let mut solver = parser.solver;
+    let output = solver.solve();
+    println!("{}", output);
 }
