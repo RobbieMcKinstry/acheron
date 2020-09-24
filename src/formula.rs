@@ -72,6 +72,17 @@ impl Formula {
         }
         None
     }
+
+    /// `flatten` will return an iterator over all literals
+    /// in the present formula. Note that this iterator is not
+    /// deduplicated.
+    pub fn flatten(&self) -> Vector<&Literal> {
+        self.clauses
+            .iter()
+            .map(|clause| clause.iter())
+            .flatten()
+            .collect()
+    }
 }
 
 /// Build a Frame from a formula, where opcode and previous are

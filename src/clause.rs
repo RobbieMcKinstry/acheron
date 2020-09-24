@@ -1,4 +1,5 @@
 use crate::{Literal, Status, Variable};
+use im::vector::Iter;
 use im::Vector;
 use std::fmt;
 
@@ -88,6 +89,10 @@ impl Clause {
             return None;
         }
         Some(self.literals[0].variable())
+    }
+
+    pub fn iter(&self) -> Iter<Literal> {
+        self.literals.iter()
     }
 }
 
