@@ -16,11 +16,26 @@ impl Frame {
     /// `apply` will apply an operation to this
     /// formula, resulting in one or more new frames.
     pub fn apply(&self) -> Vector<Self> {
-        self.resolve_random()
+        // If we have a unit clause, let's propagate it.
+        if let Some(literal) = self.formula.get_unit() {
+            let resolvant = self.resolve_unit(literal);
+            vector![resolvant]
+        } else {
+            self.resolve_random()
+        }
     }
 
     pub fn is_sat(&self) -> Status {
         self.formula.is_sat()
+    }
+
+    fn resolve_unit(&self, literal: Literal) -> Self {
+        let resolved_formula = self.formula.assign(&literal);
+        Self {
+            previous: None,
+            op: Opcode::Unit(literal),
+            formula: resolved_formula,
+        }
     }
 
     /// `resolve_random` will randomly select a literal
