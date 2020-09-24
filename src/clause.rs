@@ -53,6 +53,16 @@ impl Clause {
         }
     }
 
+    /// `is_unit` returns true if this clause is a unit clause.
+    /// A clause is a unit clause if it has exactly one literal.
+    pub fn unit(&self) -> Option<Literal> {
+        if self.literals.len() == 1 {
+            Some(self.literals[0].clone())
+        } else {
+            None
+        }
+    }
+
     /// `is_sat` returns whether this clause
     /// is satisfied, unsatisfied, or of unknown
     /// satisfiability.

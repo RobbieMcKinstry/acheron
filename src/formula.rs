@@ -59,6 +59,19 @@ impl Formula {
         }
         None
     }
+
+    /// If this `Formula` contains a unit clause, then `get_unit`
+    /// will return the unit literal. Otherwise, it will return
+    /// none.
+    pub fn get_unit(&self) -> Option<Literal> {
+        // Search the clauses for a unit.
+        for clause in self.clauses.iter() {
+            if clause.unit().is_some() {
+                return clause.unit();
+            }
+        }
+        None
+    }
 }
 
 /// Build a Frame from a formula, where opcode and previous are
