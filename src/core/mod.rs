@@ -1,5 +1,5 @@
 pub use clause::Clause;
-pub use condition::Condition;
+pub use condition::{Condition, TruthAssignment};
 pub use formula::Formula;
 pub use literal::Literal;
 pub use sign::Sign;

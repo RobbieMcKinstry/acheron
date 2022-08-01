@@ -1,3 +1,5 @@
+use super::Variable;
+
 #[derive(Clone, Copy)]
 pub enum TruthAssignment {
     True,

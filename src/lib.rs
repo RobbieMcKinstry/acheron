@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 
-pub use crate::core::{Clause, Formula, Literal, Sign, Variable};
+pub use crate::core::{Clause, Condition, Formula, Literal, Sign, TruthAssignment, Variable};
 
 pub use frame::Frame;
 pub use opcode::Opcode;

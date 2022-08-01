@@ -1,4 +1,4 @@
-use crate::{Formula, Literal, Opcode, Sign, Status, Summary, Variable};
+use crate::{Condition, Formula, Literal, Opcode, Status, Summary, TruthAssignment, Variable};
 use im::{vector, Vector};
 use std::sync::Arc;
 
@@ -32,12 +32,12 @@ impl Frame {
     }
 
     #[must_use]
-    fn condition_unit(&self, literal: Literal) -> Self {
-        let conditioned_formula = self.formula.assign(literal);
-        let op = Opcode::Unit(literal);
+    fn condition_unit(&self, cond: Condition) -> Self {
+        let conditioned_formula = self.formula.assign(cond);
+        let op = Opcode::Unit(cond);
         Self {
             previous: None,
-            summary: Summary::from(op).add_condition(literal),
+            summary: Summary::from(op).add_change(cond),
             formula: conditioned_formula,
         }
     }
@@ -60,12 +60,12 @@ impl Frame {
     fn split(&self, name: Variable) -> (Self, Self) {
         // First, construct a formula where each clause
         // has been modified by the given assignment.
-        let lit_pos = Literal::new(name, Sign::Positive);
-        let lit_neg = Literal::new(name, Sign::Negative);
-        let formula_pos = self.formula.assign(lit_pos);
-        let formula_neg = self.formula.assign(lit_neg);
-        let op_pos = Opcode::Split(lit_pos);
-        let summary_pos = Summary::from(op_pos).add_condition(lit_pos);
+        let pos = Condition::new(name, TruthAssignment::True);
+        let neg = Condition::new(name, TruthAssignment::False);
+        let formula_pos = self.formula.assign(pos);
+        let formula_neg = self.formula.assign(neg);
+        let op_pos = Opcode::Split(pos);
+        let summary_pos = Summary::from(op_pos).add_change(pos);
         // TODO: No tracking info for now.
         // Must modify self to be an Arc.
         let resolvant_pos = Self {
@@ -73,8 +73,8 @@ impl Frame {
             summary: summary_pos,
             formula: formula_pos,
         };
-        let op_neg = Opcode::Split(lit_neg);
-        let summary_neg = Summary::from(op_neg).add_condition(lit_neg);
+        let op_neg = Opcode::Split(neg);
+        let summary_neg = Summary::from(op_neg).add_change(neg);
         let resolvant_neg = Self {
             previous: None,
             summary: summary_neg,

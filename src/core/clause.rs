@@ -1,4 +1,4 @@
-use crate::{Literal, Status, Variable};
+use crate::{Condition, Literal, Status, Variable};
 use im::Vector;
 use std::fmt;
 
@@ -20,7 +20,7 @@ impl Clause {
     /// `assign` will adjust this clause
     /// according to the truth-assignment provided.
     #[must_use]
-    pub fn assign(&self, lit: Literal) -> Self {
+    pub fn assign(&self, cond: Condition) -> Self {
         let mut clause = Self::new();
         for literal in self.literals.iter() {
             let same_var = literal.matching_variable(lit);
