@@ -10,9 +10,10 @@ impl Solver {
     /// `solve` returns unsat if the formula
     /// this solver was seeded with is unsatisfiable.
     /// Otherwise, it turns a satisfying assignment.
+    /// # Panics
+    ///
     pub fn solve(&mut self) -> bool {
-        while !self.queue.is_empty() {
-            let next = self.queue.pop_front().unwrap();
+        while let Some(next) = self.queue.pop_front() {
             let new_frames = next.apply();
             for frame in new_frames.iter() {
                 match frame.is_sat() {

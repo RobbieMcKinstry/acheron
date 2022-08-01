@@ -12,6 +12,7 @@ pub struct Summary {
 }
 
 impl Summary {
+    #[must_use]
     pub fn add_condition(mut self, lit: Literal) -> Self {
         self.recent_conditions.push(lit);
         self
