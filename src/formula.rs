@@ -50,7 +50,7 @@ impl Formula {
     pub fn select_random_variable(&self) -> Option<Variable> {
         // Scan through the list of clauses and find
         // one that is not yet sat. Then, select a random
-        // literal in it, and resolve that literal.
+        // literal in it, and condition that literal.
         for clause in self.clauses.iter() {
             if clause.is_sat() == Status::Sat {
                 continue;
