@@ -1,4 +1,4 @@
-use super::Literal;
+use super::core::Condition;
 use super::Opcode;
 
 /// A `Summary` records an action that was taken to transform
@@ -7,14 +7,14 @@ use super::Opcode;
 /// as well as any new conditions applied to the formula.
 #[derive(Clone)]
 pub struct Summary {
-    recent_conditions: Vec<Literal>,
+    recent_changes: Vec<Condition>,
     code: Opcode,
 }
 
 impl Summary {
     #[must_use]
-    pub fn add_condition(mut self, lit: Literal) -> Self {
-        self.recent_conditions.push(lit);
+    pub fn add_change(mut self, cond: Condition) -> Self {
+        self.recent_changes.push(cond);
         self
     }
 }
@@ -22,7 +22,7 @@ impl Summary {
 impl From<Opcode> for Summary {
     fn from(code: Opcode) -> Self {
         Summary {
-            recent_conditions: Vec::new(),
+            recent_changes: Vec::new(),
             code,
         }
     }

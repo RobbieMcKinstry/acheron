@@ -1,4 +1,4 @@
-use crate::{Clause, Literal, Status, Variable};
+use crate::{Clause, Condition, Literal, Status, Variable};
 use im::Vector;
 
 #[derive(Clone)]
@@ -10,14 +10,14 @@ impl Formula {
     /// `assign` will construct a new formula with the given
     /// truth-assignment.
     #[must_use]
-    pub fn assign(&self, lit: Literal) -> Self {
+    pub fn assign(&self, cond: Condition) -> Self {
         // Iterate through the clauses, applying this assignment.
         // If a clause is satisfied, then do not include it
         // in the vector.
         let clauses = self
             .clauses
             .iter()
-            .map(|clause| clause.assign(lit))
+            .map(|clause| clause.assign(cond))
             .filter(|clause| clause.is_sat() != Status::Sat)
             .collect();
         Self { clauses }

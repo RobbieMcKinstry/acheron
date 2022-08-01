@@ -1,3 +1,4 @@
+use crate::core::condition::{Condition, ConditionEffect};
 use crate::{Literal, Status, Variable};
 use im::Vector;
 use std::fmt;
@@ -20,21 +21,25 @@ impl Clause {
     /// `assign` will adjust this clause
     /// according to the truth-assignment provided.
     #[must_use]
-    pub fn assign(&self, lit: Literal) -> Self {
+    pub fn assign(&self, cond: Condition) -> Self {
         let mut clause = Self::new();
         for literal in self.literals.iter() {
-            let same_var = literal.matching_variable(lit);
-            let same_sign = literal.matching_sign(lit);
-            match (same_var, same_sign) {
-                // Satisfied!
-                (true, true) => {
+            match literal.apply_condition(cond) {
+                ConditionEffect::Sat => {
+                    // Satisfied!
                     clause.status = Status::Sat;
                     clause.literals.push_back(*literal);
                 }
-                // No match. Copy into next formula.
-                (false, true | false) => clause.literals.push_back(*literal),
-                // Single disjunction is unsat. Do not carry over.
-                (true, false) => continue,
+                ConditionEffect::Unsat => {
+                    // Matches variable but not sign!
+                    // Remove this literal from the clause.
+                    clause.literals.push_back(*literal)
+                }
+                ConditionEffect::NoImpact => {
+                    // Literal's variable does not appear in condition.
+                    // Keep literal in clause.
+                    continue;
+                }
             }
         }
         clause.set_unsat();
@@ -94,7 +99,7 @@ impl Clause {
         if self.is_empty() {
             return None;
         }
-        Some(self.literals[0].variable())
+        Some(self.literals[0].var())
     }
 }
 

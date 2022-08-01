@@ -117,12 +117,3 @@ description = "Sort Cargo.toml"
 category = "Development"
 command = "cargo"
 args = ["sort"]
-
-[tasks.sizes]
-extend = "build-release"
-toolchain = "nightly"
-env = { "RUSTFLAGS" = "-Zprint-type-sizes" }
-
-[tasks.docs]
-toolchain = "nightly"
-args = [ "-Z", "unstable-options", "--show-type-layout"]
