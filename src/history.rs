@@ -2,19 +2,19 @@ use crate::{Condition, Formula, Literal, Opcode, Status, Summary, TruthAssignmen
 use im::{vector, Vector};
 use std::sync::Arc;
 
-/// A (Solver) `Frame` contains a set of partial-solved
-/// CNF formla. Each frame contains a CNF equivalence in satisfiability
+/// A (Solver) `History` contains a set of partial-solved
+/// CNF formla. Each history contains a CNF equivalence in satisfiability
 /// to the input CNF.
 #[derive(Clone)]
-pub struct Frame {
-    previous: Option<Arc<Frame>>,
+pub struct History {
+    previous: Option<Arc<History>>,
     summary: Summary,
     formula: Formula,
 }
 
-impl Frame {
+impl History {
     /// `apply` will apply an operation to this
-    /// formula, resulting in one or more new frames.
+    /// formula, resulting in one or more new histories.
     #[must_use]
     pub fn apply(&self) -> Vector<Self> {
         // If we have a unit clause, let's propagate it.
@@ -85,9 +85,9 @@ impl Frame {
     }
 }
 
-/// Build a Frame from a formula, where opcode and previous are
+/// Build a History from a formula, where opcode and previous are
 /// zeroed out. Opcode is set to Nothing, and previous is set to None.
-impl From<Formula> for Frame {
+impl From<Formula> for History {
     fn from(formula: Formula) -> Self {
         Self {
             previous: None,

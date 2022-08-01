@@ -2,7 +2,7 @@
 
 pub use crate::core::{Clause, Condition, Formula, Literal, Sign, TruthAssignment, Variable};
 
-pub use frame::Frame;
+pub use history::History;
 pub use opcode::Opcode;
 pub use parser::Parser;
 pub use solver::Solver;
@@ -11,7 +11,7 @@ pub use summary::Summary;
 
 mod autoincrementer;
 mod core;
-mod frame;
+mod history;
 mod opcode;
 mod parser;
 mod solver;
