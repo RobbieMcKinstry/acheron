@@ -9,6 +9,7 @@ pub use parser::Parser;
 pub use sign::Sign;
 pub use solver::Solver;
 pub use status::Status;
+pub use summary::Summary;
 pub use variable::Variable;
 
 mod autoincrementer;
@@ -21,4 +22,5 @@ mod parser;
 mod sign;
 mod solver;
 mod status;
+mod summary;
 mod variable;
