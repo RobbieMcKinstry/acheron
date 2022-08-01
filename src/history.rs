@@ -1,4 +1,6 @@
-use crate::{Condition, Formula, Literal, Opcode, Status, Summary, TruthAssignment, Variable};
+use crate::core::{Condition, Formula, Literal, TruthAssignment, Variable};
+use crate::ops::Opcode;
+use crate::{Status, Summary};
 use im::{vector, Vector};
 use std::sync::Arc;
 

@@ -9,9 +9,6 @@ pub trait Operation {
     fn apply(&self, formula: &Formula);
 }
 
-// TODO: Now that I have my first trait,
-// I MUST add a test to prove the trait is object-safe.
-
 // TODO: Switch the solver over to using the WorkQueue instead
 // of the History type directly.
 

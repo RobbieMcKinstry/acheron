@@ -1,4 +1,5 @@
-use crate::{Formula, History, Status};
+use crate::core::Formula;
+use crate::{History, Status};
 use std::collections::VecDeque;
 
 pub struct Solver {

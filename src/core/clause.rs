@@ -1,5 +1,6 @@
 use crate::core::condition::{Condition, ConditionEffect};
-use crate::{Literal, Status, Variable};
+use crate::core::{Literal, Variable};
+use crate::Status;
 use im::Vector;
 use std::fmt;
 

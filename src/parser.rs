@@ -1,5 +1,5 @@
+use crate::core::{Clause, Formula};
 use crate::solver::Solver;
-use crate::{Clause, Formula};
 use im::Vector;
 use std::fs;
 

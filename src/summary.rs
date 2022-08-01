@@ -1,5 +1,5 @@
-use super::core::Condition;
-use super::Opcode;
+use crate::core::Condition;
+use crate::ops::Opcode;
 
 /// A `Summary` records an action that was taken to transform
 /// a `Formula`. It records the decision that was applied to transform

@@ -1,4 +1,5 @@
-use crate::{Clause, Condition, Literal, Status, Variable};
+use crate::core::{Clause, Condition, Literal, Variable};
+use crate::Status;
 use im::Vector;
 
 #[derive(Clone)]

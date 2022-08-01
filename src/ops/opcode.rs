@@ -1,4 +1,4 @@
-use super::{Condition, Literal};
+use crate::core::{Condition, Literal};
 
 /// An `Opcode` represents an operation taken on a formula.
 /// Each operation will yield one or more equivalent formulas.
