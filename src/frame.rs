@@ -1,4 +1,4 @@
-use crate::{Formula, Literal, Opcode, Sign, Status, Variable};
+use crate::{Formula, Literal, Opcode, Sign, Status, Summary, Variable};
 use im::{vector, Vector};
 use std::sync::Arc;
 
@@ -8,7 +8,7 @@ use std::sync::Arc;
 #[derive(Clone)]
 pub struct Frame {
     previous: Option<Arc<Frame>>,
-    op: Opcode,
+    summary: Summary,
     formula: Formula,
 }
 
@@ -31,9 +31,10 @@ impl Frame {
 
     fn resolve_unit(&self, literal: Literal) -> Self {
         let resolved_formula = self.formula.assign(&literal);
+        let op = Opcode::Unit(literal);
         Self {
             previous: None,
-            op: Opcode::Unit(literal),
+            summary: Summary::from(op).add_condition(literal),
             formula: resolved_formula,
         }
     }
@@ -47,6 +48,8 @@ impl Frame {
         vector![f1, f2]
     }
 
+    // TODO: Rename to "split"!
+    // Extract this into a Box<Operation> rather than a method!
     /// `resolve` will assign a truth value the variable
     /// identified by this literal.
     /// This will generate two new formulas, o
@@ -57,16 +60,20 @@ impl Frame {
         let lit_neg = Literal::new(name, Sign::Negative);
         let formula_pos = self.formula.assign(&lit_pos);
         let formula_neg = self.formula.assign(&lit_neg);
+        let op_pos = Opcode::Resolution(lit_pos);
+        let summary_pos = Summary::from(op_pos).add_condition(lit_pos);
         // TODO: No tracking info for now.
         // Must modify self to be an Arc.
         let resolvant_pos = Self {
             previous: None,
-            op: Opcode::Resolution(lit_pos),
+            summary: summary_pos,
             formula: formula_pos,
         };
+        let op_neg = Opcode::Resolution(lit_neg);
+        let summary_neg = Summary::from(op_neg).add_condition(lit_neg);
         let resolvant_neg = Self {
             previous: None,
-            op: Opcode::Resolution(lit_neg),
+            summary: summary_neg,
             formula: formula_neg,
         };
         (resolvant_pos, resolvant_neg)
@@ -79,7 +86,7 @@ impl From<Formula> for Frame {
     fn from(formula: Formula) -> Self {
         Self {
             previous: None,
-            op: Opcode::Nothing,
+            summary: Summary::from(Opcode::Nothing),
             formula,
         }
     }

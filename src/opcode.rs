@@ -10,14 +10,14 @@ pub enum Opcode {
     /// Used by the input formula.
     Nothing,
     Resolution(Literal),
-    // Unit resolution occurs when a clause has only
-    // one literal. That literal must be satisfied
-    // for the formula to be satisfied.
+    /// Unit propagation (unit resolution) occurs when a clause has only
+    /// one literal. That literal must be satisfied
+    /// for the formula to be satisfied.
     Unit(Literal),
-    // A pure literal is one that always occurs with
-    // the same polarity. You can freely satisfied
-    // all clauses that contain a pure literal by
-    // conditioning the pure literal.
+    /// A pure literal is one that always occurs with
+    /// the same polarity in a given formula.
+    /// You can freely satisfied all clauses that contain a pure literal by
+    /// conditioning the pure literal.
     // TODO Keep a table of all variables and their polarities.
     // Once a clause is satisfied, decrement the counts for each
     // variable.
