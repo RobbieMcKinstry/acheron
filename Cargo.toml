@@ -1,14 +1,18 @@
 [package]
 name = "acheron"
 version = "0.1.0"
-authors = ["Robbie McKinstry <robbie@hashicorp.com>"]
+authors = ["Robbie McKinstry <robbie@whiterabbit.llc>"]
 edition = "2018"
 license = "MIT"
-description = "A simple SAT solver"
+description = "A simple DPLL SAT solver"
 
 [badges]
 maintenance = { status = "experimental" }
 
 [dependencies]
 clap = "2.32.0"
-im = "15.0.0"
+im = "15.1.0"
+
+[dev-dependencies]
+pretty_assertions = "1.2.1"
+static_assertions = "1.1.0"

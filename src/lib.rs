@@ -17,3 +17,4 @@ mod parser;
 mod solver;
 mod status;
 mod summary;
+mod work_queue;
