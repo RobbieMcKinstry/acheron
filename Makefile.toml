@@ -1,35 +1,128 @@
-[tasks.default]
-description = "Runs on `cargo make`"
-category = "Development"
-alias = "dev-test-flow"
+[env]
+CARGO_MAKE_COVERAGE_PROVIDER = "tarpaulin"
+CARGO_MAKE_CLIPPY_ARGS = "-- --no-deps"
+# CARGO_MAKE_CLIPPY_ARGS = "-- --no-deps -D warnings -A deprecated"
+CARGO_MAKE_RUN_CODECOV = true
 
 [tasks.dev-test-flow]
-description = "Development testing flow will first format the code, and than run cargo build and test"
-category = "Development"
 dependencies = [
-	"touch-lib",
-    "format-flow",
-	"clippy",
-    "pre-build",
-    "build",
-    "post-build",
-	"pre-docs",
-    "docs",
-    "post-docs",
-    "test-flow"
+  "pre-build",
+  "format-flow",
+  "clippy-flow",
+  "build",
+  "post-build",
+  "pre-docs",
+  "docs",
+  "post-docs",
+  "test-flow",
 ]
+
+[tasks.ci-flow]
+dependencies = [
+  "pre-ci-flow",
+  "print-env-flow",
+  "pre-build",
+  "ci-build",
+  "check-format-flow",
+  "clippy-flow",
+  "build",
+  "post-build",
+  "pre-docs",
+  "docs",
+  "post-docs",
+  "test-flow",
+  "coverage-flow",
+  "post-ci-flow",
+]
+
+[tasks.pre-build]
+dependencies = [
+  "touch-lib",
+  "sort-ci",
+  "format-toml-conditioned-flow",
+]
+
+[tasks.ci-build]
+dependencies = [
+  "outdated-flow",
+  "audit-flow",
+  "verify-project-flow",
+  "unused-dependencies-flow",
+]
+
+[tasks.audit-flow]
+dependencies = ["pre-audit", "audit", "post-audit"]
+
+[tasks.verify-project-flow]
+dependencies = ["pre-verify-project", "verify-project", "post-verify-project"]
+
+[tasks.format]
+toolchain = "nightly"
+
+[tasks.fmt]
+alias = "format"
+
+[tasks.check-format]
+toolchain = "nightly"
 
 [tasks.touch-lib]
 command = "touch"
 args = ["src/lib.rs"]
 
-[tasks.clippy]
-args = ["clippy", "--", "-D", "warnings", "-W", "clippy::pedantic"]
-
-[tasks.format-stable]
-description = "Runs the cargo rustfmt plugin."
+[tasks.wc]
+description = "Calculate the LoC in src."
 category = "Development"
-condition = { channels = [ "stable", "beta" ] }
-install_crate = "rustfmt"
+command = "tokei"
+args = ["./src", "./tests"]
+
+[tasks.exec]
+description = "Run Wintermute against a sample BNF file"
+category = "Development"
 command = "cargo"
-args = ["fmt"]
+args = ["run", "--", "lex", "bnf-samples/1.bnf"]
+
+[tasks.cov]
+description = "Calculate test coverage"
+category = "Development"
+command = "docker"
+args = [
+  "run",
+  "--security-opt",
+  "seccomp=unconfined",
+  "-v",
+  "${PWD}:/volume",
+  "xd009642/tarpaulin",
+  "cargo",
+  "tarpaulin",
+  "--out",
+  "Html",
+  "--force-clean",
+  "--line",
+]
+
+[tasks.cov-ci]
+description = "Calculate test coverage in CI"
+category = "Development"
+command = "cargo"
+args = ["tarpaulin", "--out", "Html", "--force-clean"]
+
+[tasks.sort-ci]
+description = "Assert that Cargo.toml is sorted."
+category = "Development"
+command = "cargo"
+args = ["sort", "--check"]
+
+[tasks.sort]
+description = "Sort Cargo.toml"
+category = "Development"
+command = "cargo"
+args = ["sort"]
+
+[tasks.sizes]
+extend = "build-release"
+toolchain = "nightly"
+env = { "RUSTFLAGS" = "-Zprint-type-sizes" }
+
+[tasks.docs]
+toolchain = "nightly"
+args = [ "-Z", "unstable-options", "--show-type-layout"]
