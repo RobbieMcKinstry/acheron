@@ -1,15 +1,15 @@
-use crate::Literal;
+use super::{Condition, Literal};
 
-/// An `Opcode` represents an operation on a formula.
+/// An `Opcode` represents an operation taken on a formula.
 /// Each operation will yield one or more equivalent formulas.
 /// As more solving techniques are added to this solver,
 /// the number of opcodes will grow.
 #[derive(Clone)]
 pub enum Opcode {
-    /// `Nothing` implies no operation is performed.
+    /// `Nothing` implies no operation has been performed.
     /// Used by the input formula.
     Nothing,
-    Split(Literal),
+    Split(Condition),
     /// Unit propagation (unit resolution) occurs when a clause has only
     /// one literal. That literal must be satisfied
     /// for the formula to be satisfied.

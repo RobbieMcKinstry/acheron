@@ -1,36 +1,51 @@
+use crate::core::condition::{Condition, ConditionEffect, TruthAssignment};
 use crate::{Sign, Variable};
 use std::fmt;
 
 #[derive(Clone, Copy)]
 pub struct Literal {
-    id: Variable,
+    var: Variable,
     sign: Sign,
 }
 
 impl Literal {
     #[must_use]
     pub fn new(variable: Variable, sign: Sign) -> Self {
-        Self { id: variable, sign }
+        Self {
+            var: variable,
+            sign,
+        }
     }
 
     #[must_use]
-    pub fn variable(self) -> Variable {
-        self.id
+    pub fn apply_condition(self, cond: Condition) -> ConditionEffect {
+        if self.var() != cond.var() {
+            return ConditionEffect::NoImpact;
+        }
+        match (self.sign(), cond.assignment()) {
+            (Sign::Positive, TruthAssignment::True) | (Sign::Negative, TruthAssignment::False) => {
+                ConditionEffect::Sat
+            }
+            _ => ConditionEffect::Unsat,
+        }
+    }
+
+    /// satisfying_condition returns the condition
+    /// that would satisfy this literal.
+    pub fn satisfying_condition(self) -> Condition {
+        let var = self.var();
+        let assign = TruthAssignment::from(self.sign);
+        Condition::new(var, assign)
+    }
+
+    #[must_use]
+    pub fn var(self) -> Variable {
+        self.var
     }
 
     #[must_use]
     pub fn sign(self) -> Sign {
         self.sign
-    }
-
-    #[must_use]
-    pub fn matching_variable(self, other: Self) -> bool {
-        self.variable() == other.variable()
-    }
-
-    #[must_use]
-    pub fn matching_sign(self, other: Self) -> bool {
-        self.sign() == other.sign()
     }
 }
 
@@ -44,19 +59,17 @@ impl From<String> for Literal {
         } else {
             (integer as u64, Sign::Positive)
         };
-        let id = Variable::from(int);
+        let var = Variable::from(int);
 
-        Literal { id, sign }
+        Literal { var, sign }
     }
 }
 
 impl fmt::Display for Literal {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        match self.sign {
-            Sign::Positive => write!(f, "+")?,
-            Sign::Negative => write!(f, "-")?,
+        if let Sign::Negative = self.sign {
+            write!(f, "¬")?;
         }
-        write!(f, "{}", self.id)?;
-        Ok(())
+        write!(f, "{}", self.var)
     }
 }

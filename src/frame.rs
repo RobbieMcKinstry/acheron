@@ -32,9 +32,10 @@ impl Frame {
     }
 
     #[must_use]
-    fn condition_unit(&self, cond: Condition) -> Self {
+    fn condition_unit(&self, lit: Literal) -> Self {
+        let cond = lit.satisfying_condition();
         let conditioned_formula = self.formula.assign(cond);
-        let op = Opcode::Unit(cond);
+        let op = Opcode::Unit(lit);
         Self {
             previous: None,
             summary: Summary::from(op).add_change(cond),
