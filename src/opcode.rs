@@ -9,7 +9,7 @@ pub enum Opcode {
     /// `Nothing` implies no operation is performed.
     /// Used by the input formula.
     Nothing,
-    Resolution(Literal),
+    Split(Literal),
     /// Unit propagation (unit resolution) occurs when a clause has only
     /// one literal. That literal must be satisfied
     /// for the formula to be satisfied.
