@@ -11,4 +11,4 @@ maintenance = { status = "experimental" }
 
 [dependencies]
 clap = "2.32.0"
-im = "15.0.0"
+im = "15.1.0"
