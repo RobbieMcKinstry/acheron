@@ -8,30 +8,36 @@ pub struct Literal {
 }
 
 impl Literal {
+    #[must_use]
     pub fn new(variable: Variable, sign: Sign) -> Self {
         Self { id: variable, sign }
     }
 
-    pub fn variable(&self) -> Variable {
+    #[must_use]
+    pub fn variable(self) -> Variable {
         self.id
     }
 
-    pub fn sign(&self) -> Sign {
+    #[must_use]
+    pub fn sign(self) -> Sign {
         self.sign
     }
 
-    pub fn matching_variable(&self, other: &Self) -> bool {
+    #[must_use]
+    pub fn matching_variable(self, other: Self) -> bool {
         self.variable() == other.variable()
     }
 
-    pub fn matching_sign(&self, other: &Self) -> bool {
+    #[must_use]
+    pub fn matching_sign(self, other: Self) -> bool {
         self.sign() == other.sign()
     }
 }
 
 impl From<String> for Literal {
+    #[allow(clippy::cast_sign_loss)]
     fn from(string: String) -> Self {
-        println!("{}", string.clone());
+        println!("{}", string);
         let integer = string.parse::<i64>().expect("string should be an integer");
         let (int, sign) = if integer < 0 {
             (-integer as u64, Sign::Negative)

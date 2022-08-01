@@ -9,6 +9,7 @@ pub struct Clause {
 }
 
 impl Clause {
+    #[must_use]
     pub fn new() -> Self {
         Clause {
             literals: Vector::new(),
@@ -18,7 +19,8 @@ impl Clause {
 
     /// `assign` will adjust this clause
     /// according to the truth-assignment provided.
-    pub fn assign(&self, lit: &Literal) -> Self {
+    #[must_use]
+    pub fn assign(&self, lit: Literal) -> Self {
         let mut clause = Self::new();
         for literal in self.literals.iter() {
             let same_var = literal.matching_variable(lit);
@@ -27,10 +29,10 @@ impl Clause {
                 // Satisfied!
                 (true, true) => {
                     clause.status = Status::Sat;
-                    clause.literals.push_back(literal.clone());
+                    clause.literals.push_back(*literal);
                 }
                 // No match. Copy into next formula.
-                (false, true) | (false, false) => clause.literals.push_back(literal.clone()),
+                (false, true | false) => clause.literals.push_back(*literal),
                 // Single disjunction is unsat. Do not carry over.
                 (true, false) => continue,
             }
@@ -39,10 +41,12 @@ impl Clause {
         clause
     }
 
+    #[must_use]
     pub fn is_empty(&self) -> bool {
         self.literals.is_empty()
     }
 
+    #[must_use]
     pub fn add_literal(&self, lit: String) -> Self {
         let literal = Literal::from(lit);
         let mut next = self.literals.clone();
@@ -55,9 +59,10 @@ impl Clause {
 
     /// `is_unit` returns true if this clause is a unit clause.
     /// A clause is a unit clause if it has exactly one literal.
+    #[must_use]
     pub fn unit(&self) -> Option<Literal> {
         if self.literals.len() == 1 {
-            Some(self.literals[0].clone())
+            Some(self.literals[0])
         } else {
             None
         }
@@ -66,6 +71,7 @@ impl Clause {
     /// `is_sat` returns whether this clause
     /// is satisfied, unsatisfied, or of unknown
     /// satisfiability.
+    #[must_use]
     pub fn is_sat(&self) -> Status {
         self.status
     }
@@ -83,6 +89,7 @@ impl Clause {
         self.status = Status::Unsat;
     }
 
+    #[must_use]
     pub fn select_random_variable(&self) -> Option<Variable> {
         if self.is_empty() {
             return None;
@@ -94,8 +101,14 @@ impl Clause {
 impl fmt::Display for Clause {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         for v in self.literals.iter() {
-            write!(f, "{},", v)?
+            write!(f, "{},", v)?;
         }
         Ok(())
+    }
+}
+
+impl Default for Clause {
+    fn default() -> Self {
+        Self::new()
     }
 }

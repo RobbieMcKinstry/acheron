@@ -15,6 +15,7 @@ pub struct Frame {
 impl Frame {
     /// `apply` will apply an operation to this
     /// formula, resulting in one or more new frames.
+    #[must_use]
     pub fn apply(&self) -> Vector<Self> {
         // If we have a unit clause, let's propagate it.
         if let Some(literal) = self.formula.get_unit() {
@@ -25,12 +26,14 @@ impl Frame {
         }
     }
 
+    #[must_use]
     pub fn is_sat(&self) -> Status {
         self.formula.is_sat()
     }
 
+    #[must_use]
     fn condition_unit(&self, literal: Literal) -> Self {
-        let conditioned_formula = self.formula.assign(&literal);
+        let conditioned_formula = self.formula.assign(literal);
         let op = Opcode::Unit(literal);
         Self {
             previous: None,
@@ -59,8 +62,8 @@ impl Frame {
         // has been modified by the given assignment.
         let lit_pos = Literal::new(name, Sign::Positive);
         let lit_neg = Literal::new(name, Sign::Negative);
-        let formula_pos = self.formula.assign(&lit_pos);
-        let formula_neg = self.formula.assign(&lit_neg);
+        let formula_pos = self.formula.assign(lit_pos);
+        let formula_neg = self.formula.assign(lit_neg);
         let op_pos = Opcode::Split(lit_pos);
         let summary_pos = Summary::from(op_pos).add_condition(lit_pos);
         // TODO: No tracking info for now.
