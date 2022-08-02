@@ -108,6 +108,14 @@ impl Clause {
         }
         Some(self.literals[0].var())
     }
+
+    pub fn iter<'a>(&'a self) -> im::vector::Iter<'a, Literal> {
+        self.literals.iter()
+    }
+
+    pub fn len(&self) -> usize {
+        self.literals.len()
+    }
 }
 
 impl fmt::Display for Clause {

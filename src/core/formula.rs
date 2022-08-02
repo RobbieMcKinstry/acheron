@@ -28,6 +28,7 @@ impl Formula {
         self.clauses.len()
     }
 
+    // TODO: Remove this function.
     #[must_use]
     pub fn is_sat(&self) -> Status {
         // A formula is satisfiable if all of its clauses are
@@ -55,6 +56,7 @@ impl Formula {
         satisfiability
     }
 
+    // TODO: Remove this function.
     #[must_use]
     pub fn select_random_variable(&self) -> Option<Variable> {
         // Scan through the list of clauses and find
@@ -69,6 +71,7 @@ impl Formula {
         None
     }
 
+    // TODO: Remove this function.
     /// If this `Formula` contains a unit clause, then `get_unit`
     /// will return the unit literal. Otherwise, it will return
     /// none.
@@ -81,6 +84,10 @@ impl Formula {
             }
         }
         None
+    }
+
+    pub fn iter<'a>(&'a self) -> im::vector::Iter<'a, Clause> {
+        self.clauses.iter()
     }
 }
 
