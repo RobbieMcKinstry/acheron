@@ -1,7 +1,7 @@
 pub use clause_assignment::ClauseAssignment;
 
 use crate::core::condition::{Condition, ConditionEffect};
-use crate::core::{Literal, Status, Variable};
+use crate::core::{Literal, Variable};
 use im::Vector;
 use std::fmt;
 
@@ -10,7 +10,6 @@ mod clause_assignment;
 #[derive(Clone)]
 pub struct Clause {
     literals: Vector<Literal>,
-    status: Status,
 }
 
 impl Clause {
@@ -18,7 +17,6 @@ impl Clause {
     pub fn new() -> Self {
         Clause {
             literals: Vector::new(),
-            status: Status::Unknown,
         }
     }
 
@@ -62,10 +60,7 @@ impl Clause {
         let literal = Literal::from(lit);
         let mut next = self.literals.clone();
         next.push_back(literal);
-        Clause {
-            literals: next,
-            status: Status::Unknown,
-        }
+        Clause { literals: next }
     }
 
     /// `is_unit` returns true if this clause is a unit clause.
