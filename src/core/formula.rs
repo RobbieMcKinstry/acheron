@@ -1,5 +1,5 @@
-use crate::core::{Clause, Condition, Literal, Variable};
-use crate::Status;
+use crate::core::clause::ClauseAssignment;
+use crate::core::{Clause, Condition, Literal, Status, Variable};
 use im::Vector;
 
 #[derive(Clone)]
@@ -18,42 +18,37 @@ impl Formula {
         let clauses = self
             .clauses
             .iter()
-            .map(|clause| clause.assign(cond))
-            .filter(|clause| clause.is_sat() != Status::Sat)
+            // Remove clauses that have been satisfied.
+            .filter_map(|clause| match clause.assign(cond) {
+                ClauseAssignment::Satisfied => None,
+                ClauseAssignment::Other(c) => Some(c),
+            })
             .collect();
         Self { clauses }
     }
 
-    pub fn len(&self) -> usize {
-        self.clauses.len()
+    /// A `Formula` is satisfied if there are no unsatisfied clauses.
+    pub fn is_sat(&self) -> bool {
+        self.clauses.is_empty()
     }
 
-    // TODO: Remove this function.
-    #[must_use]
-    pub fn is_sat(&self) -> Status {
-        // A formula is satisfiable if all of its clauses are
-        // satisfiable. If any clause is unsatisfiable, then
-        // the entire formula is unsatisfiable.
-        // Otherwise, the formula has unknown satisfiability.
-        let mut satisfiability = Status::Unknown;
-        let mut found_unknown = false;
-        for clause in self.clauses.iter() {
-            match clause.is_sat() {
-                Status::Unsat => {
-                    satisfiability = Status::Unsat;
-                    return satisfiability;
-                }
-                Status::Unknown => found_unknown = true,
+    /// A `Formula` is unsatisfied if it has an empty clause.
+    /// This represents the case where one clause has all of its
+    /// literals assigned, and none of them have been satisfied
+    /// by assignment. Thus, there is no opportunity for the clause
+    /// to be satisfied.
+    pub fn is_unsat(&self) -> bool {
+        self.clauses.iter().any(Clause::is_unsat)
+    }
 
-                Status::Sat => {
-                    continue; /* Do nothing */
-                }
-            }
+    pub fn status(&self) -> Status {
+        if self.is_sat() {
+            Status::Sat
+        } else if self.is_unsat() {
+            Status::Unsat
+        } else {
+            Status::Unknown
         }
-        if !found_unknown {
-            satisfiability = Status::Sat;
-        }
-        satisfiability
     }
 
     // TODO: Remove this function.
@@ -62,13 +57,10 @@ impl Formula {
         // Scan through the list of clauses and find
         // one that is not yet sat. Then, select a random
         // literal in it, and condition that literal.
-        for clause in self.clauses.iter() {
-            if clause.is_sat() == Status::Sat {
-                continue;
-            }
-            return clause.select_random_variable();
-        }
-        None
+        self.clauses
+            .front()
+            .map(|clause| clause.select_random_variable())
+            .flatten()
     }
 
     // TODO: Remove this function.

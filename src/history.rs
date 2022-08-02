@@ -1,6 +1,6 @@
-use crate::core::{Condition, Formula, Literal, TruthAssignment, Variable};
+use crate::core::{Condition, Formula, Literal, Status, TruthAssignment, Variable};
 use crate::ops::Opcode;
-use crate::{Status, Summary};
+use crate::Summary;
 use im::{vector, Vector};
 use std::sync::Arc;
 
@@ -29,8 +29,12 @@ impl History {
     }
 
     #[must_use]
-    pub fn is_sat(&self) -> Status {
+    pub fn is_sat(&self) -> bool {
         self.formula.is_sat()
+    }
+
+    pub fn status(&self) -> Status {
+        self.formula.status()
     }
 
     #[must_use]

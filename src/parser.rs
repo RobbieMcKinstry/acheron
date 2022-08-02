@@ -72,9 +72,7 @@ impl Parser {
         let mut clauses = Vector::new();
         for line in clause_lines {
             let next = Self::parse_clause(&line);
-            if !next.is_empty() {
-                clauses.push_back(next);
-            }
+            clauses.push_back(next);
         }
         clauses
     }
