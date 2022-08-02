@@ -8,15 +8,12 @@ impl<'a> OpMaker<'a> for UnsatOpMaker {
     type OpType = UnsatOperator;
 
     fn construct(ctx: ConstructorContext<'a>) -> Option<Box<Self::OpType>> {
-        todo!();
-        /* Blocked on adding Iteration to Formulas and Clauses
         for clause in ctx.formula.iter() {
             if clause.len() == 0 {
                 return Some(Box::new(UnsatOperator));
             }
         }
         None
-        */
     }
 }
 
