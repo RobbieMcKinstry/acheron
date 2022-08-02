@@ -10,7 +10,7 @@ description = "A simple DPLL SAT solver"
 maintenance = { status = "experimental" }
 
 [dependencies]
-clap = "2.32.0"
+clap = "3.2.16"
 im = "15.1.0"
 
 [dev-dependencies]

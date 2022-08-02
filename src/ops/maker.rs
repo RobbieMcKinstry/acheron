@@ -1,22 +1,20 @@
-use crate::core::{Condition, Formula, Literal};
+use crate::core::{Condition, Literal};
 use crate::ops::constructor_context::ConstructorContext;
 use crate::ops::op_context::OpContext;
 use crate::ops::Operation;
-use crate::work_queue::WorkQueue;
-use crate::History;
 
 /// An OpMaker is anything that can construct an Operation.
-trait OpMaker<'a> {
+pub trait OpMaker<'a> {
     type OpType: Operation;
 
-    fn construct(ctx: ConstructorContext<'a>) -> Option<Self::OpType>;
+    fn construct(ctx: ConstructorContext<'a>) -> Option<Box<Self::OpType>>;
 }
 
 struct UnitPropagationMaker();
 impl<'a> OpMaker<'a> for UnitPropagationMaker {
     type OpType = UnitPropagation;
 
-    fn construct(ctx: ConstructorContext<'a>) -> Option<Self::OpType> {
+    fn construct(ctx: ConstructorContext<'a>) -> Option<Box<Self::OpType>> {
         todo!("Determine if there are any unit literals.");
     }
 }

@@ -52,6 +52,8 @@ impl Clause {
         self.literals.is_empty()
     }
 
+    /// TODO: This function should be private, only callable
+    /// during object-creation with a From<> implementation.
     #[must_use]
     pub fn add_literal(&self, lit: String) -> Self {
         let literal = Literal::from(lit);
@@ -74,6 +76,7 @@ impl Clause {
         }
     }
 
+    // TODO: Remove this function.
     /// `is_sat` returns whether this clause
     /// is satisfied, unsatisfied, or of unknown
     /// satisfiability.
@@ -82,6 +85,7 @@ impl Clause {
         self.status
     }
 
+    // TODO: Remove this function.
     /// `set_sat` transitions this clause to unsat
     /// if there are no literals left which could be
     /// satisfied.
@@ -91,10 +95,12 @@ impl Clause {
         }
     }
 
+    // TODO: Remove this function.
     fn set_sat(&mut self) {
         self.status = Status::Unsat;
     }
 
+    // TODO: Remove this function.
     #[must_use]
     pub fn select_random_variable(&self) -> Option<Variable> {
         if self.is_empty() {
@@ -106,6 +112,8 @@ impl Clause {
 
 impl fmt::Display for Clause {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        // TODO: Use a Join function instead so there's
+        // no trailing comma.
         for v in self.literals.iter() {
             write!(f, "{},", v)?;
         }

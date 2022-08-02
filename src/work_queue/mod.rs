@@ -1,5 +1,3 @@
-pub use crate::ops::Operation;
-
 /// A `WorkQueue` holds search paths that are pending exploration.
 /// When the "splitting" operation is performed on a
 /// variable X, two `Jobs` are created as part of the case

@@ -24,6 +24,10 @@ impl Formula {
         Self { clauses }
     }
 
+    pub fn len(&self) -> usize {
+        self.clauses.len()
+    }
+
     #[must_use]
     pub fn is_sat(&self) -> Status {
         // A formula is satisfiable if all of its clauses are
@@ -80,8 +84,7 @@ impl Formula {
     }
 }
 
-/// Build a Frame from a formula, where opcode and previous are
-/// zeroed out. Opcode is set to Nothing, and previous is set to None.
+/// Build a Formula from a list of clauses
 impl From<Vector<Clause>> for Formula {
     fn from(clauses: Vector<Clause>) -> Self {
         Self { clauses }

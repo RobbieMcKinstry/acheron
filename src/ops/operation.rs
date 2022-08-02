@@ -1,4 +1,3 @@
-use crate::core::Formula;
 use crate::ops::op_context::OpContext;
 
 pub trait Operation {
