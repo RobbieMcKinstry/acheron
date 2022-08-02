@@ -1,0 +1,7 @@
+coverage:
+  round: "nearest"
+  status:
+    patch: false
+    project: false
+
+github_checks: false
