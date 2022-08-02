@@ -1,4 +1,5 @@
-use crate::{Clause, Condition, Literal, Status, Variable};
+use crate::core::{Clause, Condition, Literal, Variable};
+use crate::Status;
 use im::Vector;
 
 #[derive(Clone)]
@@ -21,6 +22,10 @@ impl Formula {
             .filter(|clause| clause.is_sat() != Status::Sat)
             .collect();
         Self { clauses }
+    }
+
+    pub fn len(&self) -> usize {
+        self.clauses.len()
     }
 
     #[must_use]
@@ -79,8 +84,7 @@ impl Formula {
     }
 }
 
-/// Build a Frame from a formula, where opcode and previous are
-/// zeroed out. Opcode is set to Nothing, and previous is set to None.
+/// Build a Formula from a list of clauses
 impl From<Vector<Clause>> for Formula {
     fn from(clauses: Vector<Clause>) -> Self {
         Self { clauses }

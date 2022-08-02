@@ -1,5 +1,5 @@
 use crate::core::condition::{Condition, ConditionEffect, TruthAssignment};
-use crate::{Sign, Variable};
+use crate::core::{Sign, Variable};
 use std::fmt;
 
 #[derive(Clone, Copy)]

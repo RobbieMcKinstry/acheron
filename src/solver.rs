@@ -1,8 +1,9 @@
-use crate::{Formula, Frame, Status};
+use crate::core::Formula;
+use crate::{History, Status};
 use std::collections::VecDeque;
 
 pub struct Solver {
-    queue: VecDeque<Frame>,
+    queue: VecDeque<History>,
 }
 
 impl Solver {
@@ -30,8 +31,8 @@ impl Solver {
 impl From<Formula> for Solver {
     fn from(formula: Formula) -> Self {
         let mut queue = VecDeque::new();
-        let frame = Frame::from(formula);
-        queue.push_back(frame);
+        let history = History::from(formula);
+        queue.push_back(history);
         Self { queue }
     }
 }
