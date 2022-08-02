@@ -9,7 +9,7 @@ impl<'a> OpMaker<'a> for SatOpMaker {
 
     fn construct(ctx: ConstructorContext<'a>) -> Option<Box<Self::OpType>> {
         // Check if the formula is SAT.
-        if ctx.formula.len() == 0 {
+        if ctx.formula.is_sat() {
             Some(Box::new(SatOperator))
         } else {
             None

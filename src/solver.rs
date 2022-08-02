@@ -1,5 +1,5 @@
-use crate::core::Formula;
-use crate::{History, Status};
+use crate::core::{Formula, Status};
+use crate::History;
 use std::collections::VecDeque;
 
 pub struct Solver {
@@ -15,12 +15,12 @@ impl Solver {
     ///
     pub fn solve(&mut self) -> bool {
         while let Some(next) = self.queue.pop_front() {
-            let new_frames = next.apply();
-            for frame in new_frames.iter() {
-                match frame.is_sat() {
+            let new_histories = next.apply();
+            for history in new_histories.iter() {
+                match history.status() {
                     Status::Sat => return true,
                     Status::Unsat => continue,
-                    Status::Unknown => self.queue.push_back(frame.clone()),
+                    Status::Unknown => self.queue.push_back(history.clone()),
                 }
             }
         }

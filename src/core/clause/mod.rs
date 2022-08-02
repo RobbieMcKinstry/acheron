@@ -1,8 +1,11 @@
+pub use clause_assignment::ClauseAssignment;
+
 use crate::core::condition::{Condition, ConditionEffect};
-use crate::core::{Literal, Variable};
-use crate::Status;
+use crate::core::{Literal, Status, Variable};
 use im::Vector;
 use std::fmt;
+
+mod clause_assignment;
 
 #[derive(Clone)]
 pub struct Clause {
@@ -22,33 +25,33 @@ impl Clause {
     /// `assign` will adjust this clause
     /// according to the truth-assignment provided.
     #[must_use]
-    pub fn assign(&self, cond: Condition) -> Self {
+    pub fn assign(&self, cond: Condition) -> ClauseAssignment {
         let mut clause = Self::new();
         for literal in self.literals.iter() {
             match literal.apply_condition(cond) {
                 ConditionEffect::Sat => {
                     // Satisfied!
-                    clause.status = Status::Sat;
-                    clause.literals.push_back(*literal);
-                }
-                ConditionEffect::Unsat => {
-                    // Matches variable but not sign!
-                    // Remove this literal from the clause.
-                    clause.literals.push_back(*literal)
+                    return ClauseAssignment::Satisfied;
                 }
                 ConditionEffect::NoImpact => {
                     // Literal's variable does not appear in condition.
                     // Keep literal in clause.
-                    continue;
+                    clause.literals.push_back(*literal)
+                }
+                ConditionEffect::Unsat => {
+                    // Matches variable but not sign!
+                    // Remove this literal from the clause.
                 }
             }
         }
-        clause.set_unsat();
-        clause
+        ClauseAssignment::Other(clause)
     }
 
-    #[must_use]
-    pub fn is_empty(&self) -> bool {
+    pub fn is_unsat(&self) -> bool {
+        self.is_empty()
+    }
+
+    fn is_empty(&self) -> bool {
         self.literals.is_empty()
     }
 
@@ -74,30 +77,6 @@ impl Clause {
         } else {
             None
         }
-    }
-
-    // TODO: Remove this function.
-    /// `is_sat` returns whether this clause
-    /// is satisfied, unsatisfied, or of unknown
-    /// satisfiability.
-    #[must_use]
-    pub fn is_sat(&self) -> Status {
-        self.status
-    }
-
-    // TODO: Remove this function.
-    /// `set_sat` transitions this clause to unsat
-    /// if there are no literals left which could be
-    /// satisfied.
-    fn set_unsat(&mut self) {
-        if self.is_empty() {
-            self.status = Status::Unsat;
-        }
-    }
-
-    // TODO: Remove this function.
-    fn set_sat(&mut self) {
-        self.status = Status::Unsat;
     }
 
     // TODO: Remove this function.
