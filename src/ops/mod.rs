@@ -12,6 +12,7 @@ pub mod prelude {
     pub use super::{SatMaker, UnitDetector, UnsatMaker};
 }
 
+mod cond_app;
 mod constructor_context;
 mod maker;
 mod op_context;

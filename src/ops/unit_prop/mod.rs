@@ -1,5 +1,6 @@
 use crate::core::Literal;
 use crate::ops::{ConstructorContext, OpContext, OpMaker, Operation};
+use crate::work_queue::JobOutput;
 
 pub struct UnitDetector;
 impl OpMaker for UnitDetector {
@@ -24,7 +25,7 @@ impl UnitPropagator {
 }
 
 impl Operation for UnitPropagator {
-    fn apply<'a>(&self, _ctx: OpContext<'a>) {
+    fn apply<'a>(&self, _ctx: OpContext<'a>) -> JobOutput {
         todo!("Apply the conditions for the unit literals.");
     }
 }

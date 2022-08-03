@@ -1,6 +1,5 @@
 use crate::core::Formula;
-use crate::work_queue::WorkQueue;
-use crate::History;
+use crate::work_queue::{History, WorkQueue};
 
 /// `OpContext` is the input into an `Operator`.
 /// An `Operator` is allowed to inspect the `Formula`,

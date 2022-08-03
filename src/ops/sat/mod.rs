@@ -1,4 +1,5 @@
 use crate::ops::{ConstructorContext, OpContext, OpMaker, Operation};
+use crate::work_queue::JobOutput;
 
 /// Builds an operator that handles
 /// satisfied formulas.
@@ -18,7 +19,7 @@ impl OpMaker for SatOpMaker {
 pub struct SatOperator;
 
 impl Operation for SatOperator {
-    fn apply<'a>(&self, _ctx: OpContext<'a>) {
+    fn apply<'a>(&self, _ctx: OpContext<'a>) -> JobOutput {
         todo!("Return SAT");
     }
 }

@@ -1,6 +1,6 @@
+use super::History;
 use crate::core::Formula;
 use crate::ops::Operation;
-use crate::History;
 
 /// A Job contains the present formula, a history of prior
 /// operations applied to the formula, and the pending operation

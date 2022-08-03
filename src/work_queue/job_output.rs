@@ -1,9 +1,10 @@
 use super::TerminationState;
 use crate::core::Formula;
-use crate::history::History;
+use crate::work_queue::History;
 
 pub struct JobOutput {
-    /// The formula is
+    /// The formula is the newly transformed formula afer the
+    /// job has been run.
     formula: Formula,
     state: TerminationState,
     history: History,

@@ -1,3 +1,4 @@
+pub use history::History;
 pub use job::Job;
 pub use job_output::JobOutput;
 pub use termination::TerminationState;
@@ -17,6 +18,7 @@ pub struct WorkQueue {
 // for WorkQueue... hasNext() and Next() are important operations
 // for it.
 
+mod history;
 mod job;
 mod job_output;
 mod termination;

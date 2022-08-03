@@ -1,4 +1,5 @@
 use crate::ops::{ConstructorContext, OpContext, OpMaker, Operation};
+use crate::work_queue::JobOutput;
 
 /// Builds an operator that handles
 /// unsatisfied formulas.
@@ -17,7 +18,7 @@ impl OpMaker for UnsatOpMaker {
 pub struct UnsatOperator;
 
 impl Operation for UnsatOperator {
-    fn apply<'a>(&self, _ctx: OpContext<'a>) {
+    fn apply<'a>(&self, _ctx: OpContext<'a>) -> JobOutput {
         todo!("Return UNSAT");
     }
 }
