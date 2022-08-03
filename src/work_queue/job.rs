@@ -12,3 +12,13 @@ pub struct Job {
     history: History,
     pending: Box<dyn Operation>,
 }
+
+impl Job {
+    pub fn new(f: Formula, history: History, pending: Box<dyn Operation>) -> Self {
+        Self {
+            state: f,
+            history,
+            pending,
+        }
+    }
+}

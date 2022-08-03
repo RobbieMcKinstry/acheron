@@ -1,4 +1,5 @@
 use crate::core::Formula;
+use crate::engine::DecisionEngine;
 use crate::work_queue::{History, WorkQueue};
 
 /// `OpContext` is the input into an `Operator`.
@@ -8,4 +9,5 @@ pub struct OpContext<'a> {
     pub formula: &'a Formula,
     pub history: &'a History,
     pub queue: &'a mut WorkQueue,
+    pub decider: &'a DecisionEngine,
 }

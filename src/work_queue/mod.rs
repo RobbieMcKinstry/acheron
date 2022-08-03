@@ -1,6 +1,7 @@
 pub use history::History;
 pub use job::Job;
 pub use job_output::JobOutput;
+pub use summary::Summary;
 pub use termination::TerminationState;
 
 /// A `WorkQueue` holds search paths that are pending exploration.
@@ -21,4 +22,5 @@ pub struct WorkQueue {
 mod history;
 mod job;
 mod job_output;
+mod summary;
 mod termination;

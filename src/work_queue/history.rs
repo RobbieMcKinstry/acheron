@@ -1,6 +1,6 @@
-use crate::core::{Condition, Formula, Literal, Status, TruthAssignment, Variable};
+use crate::core::{Condition, Formula, Status, TruthAssignment, Variable};
 use crate::ops::Opcode;
-use crate::Summary;
+use crate::work_queue::Summary;
 use im::{vector, Vector};
 use std::sync::Arc;
 
@@ -31,6 +31,14 @@ impl History {
         */
     }
 
+    pub fn child(&self, f: Formula, summary: Summary) -> Self {
+        Self {
+            previous: Some(Arc::new(self.clone())),
+            formula: f,
+            summary,
+        }
+    }
+
     #[must_use]
     pub fn is_sat(&self) -> bool {
         self.formula.is_sat()
@@ -38,18 +46,6 @@ impl History {
 
     pub fn status(&self) -> Status {
         self.formula.status()
-    }
-
-    #[must_use]
-    fn condition_unit(&self, lit: Literal) -> Self {
-        let cond = lit.satisfying_condition();
-        let conditioned_formula = self.formula.assign(cond);
-        let op = Opcode::Unit(lit);
-        Self {
-            previous: None,
-            summary: Summary::from(op).add_change(cond),
-            formula: conditioned_formula,
-        }
     }
 
     /// `split_random` will randomly select a literal
@@ -75,7 +71,8 @@ impl History {
         let formula_pos = self.formula.assign(pos);
         let formula_neg = self.formula.assign(neg);
         let op_pos = Opcode::Split(pos);
-        let summary_pos = Summary::from(op_pos).add_change(pos);
+        let mut summary_pos = Summary::from(op_pos);
+        summary_pos.add_change(pos);
         // TODO: No tracking info for now.
         // Must modify self to be an Arc.
         let resolvant_pos = Self {
@@ -84,7 +81,8 @@ impl History {
             formula: formula_pos,
         };
         let op_neg = Opcode::Split(neg);
-        let summary_neg = Summary::from(op_neg).add_change(neg);
+        let mut summary_neg = Summary::from(op_neg);
+        summary_neg.add_change(neg);
         let resolvant_neg = Self {
             previous: None,
             summary: summary_neg,

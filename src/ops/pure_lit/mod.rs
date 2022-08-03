@@ -6,7 +6,7 @@ use crate::ops::{ConstructorContext, OpMaker, Operation};
 pub struct PureLiteralDetector;
 
 impl OpMaker for PureLiteralDetector {
-    fn construct<'a>(&self, _ctx: ConstructorContext<'a>) -> Option<Box<dyn Operation>> {
+    fn construct<'a>(&self, _ctx: &ConstructorContext<'a>) -> Option<Box<dyn Operation>> {
         todo!("Impl Pure Literal Detection is a Map for each Variable => Polarity");
     }
 }

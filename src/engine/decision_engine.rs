@@ -1,4 +1,7 @@
+use crate::core::Formula;
 use crate::ops::prelude::*;
+use crate::ops::ConstructorContext;
+use crate::work_queue::{History, WorkQueue};
 
 // 1. Check if SAT.
 // 2. Check if UNSAT.
@@ -18,6 +21,18 @@ pub struct DecisionEngine {
 impl DecisionEngine {
     pub fn new() -> Self {
         Default::default()
+    }
+
+    pub fn select(&self, f: &Formula, hist: &History, que: &WorkQueue) -> Box<dyn Operation> {
+        let ctx = ConstructorContext {
+            formula: f,
+            history: hist,
+            queue: que,
+        };
+        self.decision_table
+            .iter()
+            .find_map(|elem| elem.construct(&ctx))
+            .expect("One of the items in the list must return something")
     }
 }
 

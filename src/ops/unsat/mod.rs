@@ -6,7 +6,7 @@ use crate::work_queue::{JobOutput, TerminationState};
 pub struct UnsatOpMaker;
 
 impl OpMaker for UnsatOpMaker {
-    fn construct<'a>(&self, ctx: ConstructorContext<'a>) -> Option<Box<dyn Operation>> {
+    fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Box<dyn Operation>> {
         if ctx.formula.is_unsat() {
             Some(Box::new(UnsatOperator))
         } else {

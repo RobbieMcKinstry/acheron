@@ -14,5 +14,5 @@ use crate::core::Condition;
 pub enum TerminationState {
     Sat(Vec<Condition>),
     Unsat(Vec<Condition>),
-    Unknown(Vec<Job>),
+    Unfinished(Vec<Job>),
 }

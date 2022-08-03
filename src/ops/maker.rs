@@ -3,7 +3,7 @@ use crate::ops::Operation;
 
 /// An OpMaker is anything that can construct an Operation.
 pub trait OpMaker {
-    fn construct<'a>(&self, ctx: ConstructorContext<'a>) -> Option<Box<dyn Operation>>;
+    fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Box<dyn Operation>>;
 }
 
 #[cfg(test)]
