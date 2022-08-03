@@ -1,11 +1,11 @@
 use crate::core::Literal;
 use crate::ops::{ConstructorContext, OpContext, OpMaker, Opcode, Operation};
-use crate::work_queue::{Job, JobOutput, Summary, TerminationState};
+use crate::work_queue::{JobOutput, Summary, TerminationState};
 
 pub struct UnitDetector;
 impl OpMaker for UnitDetector {
     fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Box<dyn Operation>> {
-        let units = ctx.formula.unit_literals();
+        let units = ctx.formula().unit_literals();
         if units.is_empty() {
             None
         } else {

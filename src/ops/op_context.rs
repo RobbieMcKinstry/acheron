@@ -1,5 +1,4 @@
 use crate::core::Formula;
-use crate::engine::DecisionEngine;
 use crate::work_queue::{History, WorkQueue};
 
 /// `OpContext` is the input into an `Operator`.

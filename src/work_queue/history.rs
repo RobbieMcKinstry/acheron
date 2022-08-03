@@ -15,20 +15,8 @@ pub struct History {
 }
 
 impl History {
-    /// `apply` will apply an operation to this
-    /// formula, resulting in one or more new histories.
-    #[must_use]
-    pub fn apply(&self) -> Vector<Self> {
-        todo!("Not implemented at present. What does it mean to apply a history?");
-        /*
-        // If we have a unit clause, let's propagate it.
-        if let Some(literal) = self.formula.get_unit() {
-            let resolvant = self.condition_unit(literal);
-            vector![resolvant]
-        } else {
-            self.split_random()
-        }
-        */
+    pub fn formula(&self) -> &Formula {
+        &self.formula
     }
 
     pub fn child(&self, f: Formula, summary: Summary) -> Self {

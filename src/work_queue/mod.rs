@@ -12,7 +12,29 @@ pub use termination::TerminationState;
 ///   2. Δ X = false
 /// We use a `WorkQueue` instead of recursion to not blow the stack.
 pub struct WorkQueue {
-    // TODO: Include a VecDeque<Job> here to serve as a Stack.
+    pending_jobs: Vec<Job>,
+}
+
+impl WorkQueue {
+    pub fn new() -> Self {
+        Default::default()
+    }
+
+    pub fn push(&mut self, j: Job) {
+        self.pending_jobs.push(j);
+    }
+
+    pub fn pop(&mut self) -> Option<Job> {
+        self.pending_jobs.pop()
+    }
+}
+
+impl Default for WorkQueue {
+    fn default() -> Self {
+        Self {
+            pending_jobs: Vec::new(),
+        }
+    }
 }
 
 // TODO: Going to need to add a "iterator" implementation
