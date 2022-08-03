@@ -31,18 +31,14 @@ impl Operation for UnitPropagator {
         let opcode = Opcode::Unit(self.units.clone());
         let mut summary = Summary::from(opcode);
         // • Apply the conditions to the unit literals.
-        let mut formula = ctx.formula.clone();
+        let mut formula = ctx.formula().clone();
         for lit in self.units.iter() {
             let condition = lit.satisfying_condition();
             formula = formula.assign(condition);
             summary.add_change(condition);
         }
-        // TODO: Fix triple-accounting:
-        // Formula is owned by the history, the next job, and
-        // the JobOutput.
-        let history = ctx.history.child(formula.clone(), summary);
+        let history = ctx.history().child(formula, summary);
         let state = TerminationState::Unfinished;
-
-        JobOutput::new(formula, state, history)
+        JobOutput::new(history, state)
     }
 }

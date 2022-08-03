@@ -12,7 +12,13 @@ pub struct Job {
 }
 
 impl Job {
-    pub fn new(history: History, pending: Box<dyn Operation>) -> Self {
+    pub fn new(hist: &History, pending: Box<dyn Operation>) -> Self {
+        let history = hist.clone();
         Self { history, pending }
+    }
+
+    /// take ownership of the values in the job.
+    pub fn take(self) -> (History, Box<dyn Operation>) {
+        (self.history, self.pending)
     }
 }

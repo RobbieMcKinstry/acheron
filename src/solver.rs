@@ -1,6 +1,7 @@
 use crate::core::Formula;
 use crate::engine::DecisionEngine;
-use crate::work_queue::{History, Job, WorkQueue};
+use crate::ops::OpContext;
+use crate::work_queue::{History, Job, TerminationState, WorkQueue};
 
 pub struct Solver {
     queue: WorkQueue,
@@ -12,9 +13,9 @@ impl Solver {
         // Given a starting history, we build a DecisionEngine,
         // queue up the first job, and get ready to run.
         let engine = DecisionEngine::new();
-        let mut queue = WorkQueue::new();
+        let queue = WorkQueue::new();
         let mut solver = Self { engine, queue };
-        let next_job = solver.select_next_job(start);
+        let next_job = solver.select_next_job(&start);
         solver.enqueue_job(next_job);
         solver
     }
@@ -23,8 +24,8 @@ impl Solver {
         self.queue.push(job);
     }
 
-    fn select_next_job(&self, hist: History) -> Job {
-        let op = self.engine.select(&hist);
+    fn select_next_job(&self, hist: &History) -> Job {
+        let op = self.engine.select(hist);
         Job::new(hist, op)
     }
 
@@ -35,11 +36,28 @@ impl Solver {
     /// # Panics
     ///
     pub fn solve(&mut self) -> bool {
-        // TODO: Do I need to prime the queue with the first job,
-        // or is that done during resource creation?
+        // Continue to take items from the stack
+        // until the stack is exhausted, or until
+        // we've reached a termination case.
         while let Some(job) = self.queue.pop() {
+            // Capture the history from the job.
             // Apply the pending operator.
-            // let operator = self.decider.select(f, hist)
+            let (history, pending) = job.take();
+            let ctx = OpContext::new(&history);
+            let output = pending.apply(ctx);
+            match output.state() {
+                TerminationState::Sat(_) => {
+                    // Satisfied! We can exit with the result!
+                    return true;
+                }
+                TerminationState::Unfinished => {
+                    // The operation succeeded, but there's
+                    // more work to be done.
+                    let j = self.select_next_job(output.history());
+                    self.enqueue_job(j);
+                }
+                TerminationState::Unsat(_) => continue,
+            }
 
             /*
             let new_histories = next.apply();
