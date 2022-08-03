@@ -17,7 +17,7 @@ impl OpMaker for UnsatOpMaker {
 pub struct UnsatOperator;
 
 impl Operation for UnsatOperator {
-    fn apply<'a>(&self, ctx: OpContext<'a>) {
+    fn apply<'a>(&self, _ctx: OpContext<'a>) {
         todo!("Return UNSAT");
     }
 }

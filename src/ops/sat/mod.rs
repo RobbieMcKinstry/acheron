@@ -18,7 +18,7 @@ impl OpMaker for SatOpMaker {
 pub struct SatOperator;
 
 impl Operation for SatOperator {
-    fn apply<'a>(&self, ctx: OpContext<'a>) {
+    fn apply<'a>(&self, _ctx: OpContext<'a>) {
         todo!("Return SAT");
     }
 }
