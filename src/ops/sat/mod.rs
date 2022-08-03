@@ -2,12 +2,10 @@ use crate::ops::{ConstructorContext, OpContext, OpMaker, Operation};
 
 /// Builds an operator that handles
 /// satisfied formulas.
-pub struct SatOpMaker();
+pub struct SatOpMaker;
 
-impl<'a> OpMaker<'a> for SatOpMaker {
-    type OpType = SatOperator;
-
-    fn construct(ctx: ConstructorContext<'a>) -> Option<Box<Self::OpType>> {
+impl OpMaker for SatOpMaker {
+    fn construct<'a>(&self, ctx: ConstructorContext<'a>) -> Option<Box<dyn Operation>> {
         // Check if the formula is SAT.
         if ctx.formula.is_sat() {
             Some(Box::new(SatOperator))

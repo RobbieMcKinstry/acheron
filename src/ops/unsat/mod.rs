@@ -2,12 +2,10 @@ use crate::ops::{ConstructorContext, OpContext, OpMaker, Operation};
 
 /// Builds an operator that handles
 /// unsatisfied formulas.
-pub struct UnsatOpMaker();
+pub struct UnsatOpMaker;
 
-impl<'a> OpMaker<'a> for UnsatOpMaker {
-    type OpType = UnsatOperator;
-
-    fn construct(ctx: ConstructorContext<'a>) -> Option<Box<Self::OpType>> {
+impl OpMaker for UnsatOpMaker {
+    fn construct<'a>(&self, ctx: ConstructorContext<'a>) -> Option<Box<dyn Operation>> {
         for clause in ctx.formula.iter() {
             if clause.len() == 0 {
                 return Some(Box::new(UnsatOperator));

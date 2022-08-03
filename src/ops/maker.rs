@@ -1,33 +1,11 @@
-use crate::core::{Condition, Literal};
+use crate::core::Condition;
 use crate::ops::constructor_context::ConstructorContext;
 use crate::ops::op_context::OpContext;
 use crate::ops::Operation;
 
 /// An OpMaker is anything that can construct an Operation.
-pub trait OpMaker<'a> {
-    type OpType: Operation;
-
-    fn construct(ctx: ConstructorContext<'a>) -> Option<Box<Self::OpType>>;
-}
-
-struct UnitPropagationMaker();
-impl<'a> OpMaker<'a> for UnitPropagationMaker {
-    type OpType = UnitPropagation;
-
-    fn construct(ctx: ConstructorContext<'a>) -> Option<Box<Self::OpType>> {
-        todo!("Determine if there are any unit literals.");
-    }
-}
-
-struct UnitPropagation {
-    // TODO: Store any Unit Literals we observed during construction.
-    units: Vec<Literal>,
-}
-
-impl Operation for UnitPropagation {
-    fn apply<'a>(&self, ctx: OpContext<'a>) {
-        todo!("Apply the conditions for the unit literals.");
-    }
+pub trait OpMaker {
+    fn construct<'a>(&self, ctx: ConstructorContext<'a>) -> Option<Box<dyn Operation>>;
 }
 
 // TODO: Switch the solver over to using the WorkQueue instead
@@ -52,5 +30,16 @@ impl Operation for ConditionApplication {
         // unit propagation and pure literal elimination
         // after calling `apply`.
         todo!("Not implemented");
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::OpMaker;
+    use static_assertions::assert_obj_safe;
+
+    #[test]
+    fn operation_is_obj_safe() {
+        assert_obj_safe!(OpMaker);
     }
 }
