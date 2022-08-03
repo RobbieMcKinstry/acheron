@@ -6,12 +6,11 @@ pub struct UnsatOpMaker;
 
 impl OpMaker for UnsatOpMaker {
     fn construct<'a>(&self, ctx: ConstructorContext<'a>) -> Option<Box<dyn Operation>> {
-        for clause in ctx.formula.iter() {
-            if clause.len() == 0 {
-                return Some(Box::new(UnsatOperator));
-            }
+        if ctx.formula.is_unsat() {
+            Some(Box::new(UnsatOperator))
+        } else {
+            None
         }
-        None
     }
 }
 

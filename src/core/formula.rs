@@ -51,6 +51,13 @@ impl Formula {
         }
     }
 
+    /// `unit_literals` returns the list of unit literals
+    /// found within this formula. If there are no literals
+    /// in the forumua, an empty vector is returned.
+    pub fn unit_literals(&self) -> Vec<Literal> {
+        self.clauses.iter().filter_map(Clause::unit).collect()
+    }
+
     // TODO: Remove this function.
     #[must_use]
     pub fn select_random_variable(&self) -> Option<Variable> {
@@ -61,21 +68,6 @@ impl Formula {
             .front()
             .map(|clause| clause.select_random_variable())
             .flatten()
-    }
-
-    // TODO: Remove this function.
-    /// If this `Formula` contains a unit clause, then `get_unit`
-    /// will return the unit literal. Otherwise, it will return
-    /// none.
-    #[must_use]
-    pub fn get_unit(&self) -> Option<Literal> {
-        // Search the clauses for a unit.
-        for clause in self.clauses.iter() {
-            if clause.unit().is_some() {
-                return clause.unit();
-            }
-        }
-        None
     }
 
     pub fn iter<'a>(&'a self) -> im::vector::Iter<'a, Clause> {

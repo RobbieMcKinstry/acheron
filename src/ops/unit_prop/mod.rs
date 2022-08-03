@@ -1,15 +1,25 @@
-struct UnitPropagationMaker;
-impl OpMaker for UnitPropagationMaker {
-    type OpType = UnitPropagation;
+use crate::ops::{ConstructorContext, OpContext, OpMaker, Operation};
 
-    fn construct<'a>(ctx: ConstructorContext<'a>) -> Option<Box<Self::OpType>> {
-        todo!("Determine if there are any unit literals.");
+struct UnitMaker;
+impl OpMaker for UnitMaker {
+    fn construct<'a>(&self, ctx: ConstructorContext<'a>) -> Option<Box<dyn Operation>> {
+        let units = ctx.formula.unit_literals();
+        if units.is_empty() {
+            None
+        } else {
+            Some(Box::new(UnitPropgation::new(units)))
+        }
     }
 }
 
 struct UnitPropagation {
-    // TODO: Store any Unit Literals we observed during construction.
     units: Vec<Literal>,
+}
+
+impl UnitPropagation {
+    pub fn new(units: Vec<Literal>) -> Self {
+        Self { units }
+    }
 }
 
 impl Operation for UnitPropagation {
