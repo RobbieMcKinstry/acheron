@@ -1,3 +1,9 @@
+pub use history::History;
+pub use job::Job;
+pub use job_output::JobOutput;
+pub use summary::Summary;
+pub use termination::TerminationState;
+
 /// A `WorkQueue` holds search paths that are pending exploration.
 /// When the "splitting" operation is performed on a
 /// variable X, two `Jobs` are created as part of the case
@@ -13,4 +19,8 @@ pub struct WorkQueue {
 // for WorkQueue... hasNext() and Next() are important operations
 // for it.
 
+mod history;
 mod job;
+mod job_output;
+mod summary;
+mod termination;

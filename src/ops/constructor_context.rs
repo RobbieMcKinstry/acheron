@@ -1,6 +1,5 @@
 use crate::core::Formula;
-use crate::work_queue::WorkQueue;
-use crate::History;
+use crate::work_queue::{History, WorkQueue};
 
 /// `ConstructorContext` is the input into the OpMaker's constructor
 /// call. This is what an `Operation` can see to determine if

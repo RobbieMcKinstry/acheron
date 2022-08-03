@@ -66,6 +66,14 @@ impl Clause {
     /// `is_unit` returns true if this clause is a unit clause.
     /// A clause is a unit clause if it has exactly one literal.
     #[must_use]
+    pub fn is_unit(&self) -> bool {
+        self.unit().is_some()
+    }
+
+    /// `unit` returns the unit literal in this clause if this
+    /// clause contains the a unit literal. Otherwise it returns
+    // None.
+    #[must_use]
     pub fn unit(&self) -> Option<Literal> {
         if self.literals.len() == 1 {
             Some(self.literals[0])
@@ -85,10 +93,6 @@ impl Clause {
 
     pub fn iter<'a>(&'a self) -> im::vector::Iter<'a, Literal> {
         self.literals.iter()
-    }
-
-    pub fn len(&self) -> usize {
-        self.literals.len()
     }
 }
 

@@ -12,10 +12,8 @@ pub struct Summary {
 }
 
 impl Summary {
-    #[must_use]
-    pub fn add_change(mut self, cond: Condition) -> Self {
+    pub fn add_change(&mut self, cond: Condition) {
         self.recent_changes.push(cond);
-        self
     }
 }
 

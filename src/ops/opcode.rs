@@ -13,7 +13,8 @@ pub enum Opcode {
     /// Unit propagation (unit resolution) occurs when a clause has only
     /// one literal. That literal must be satisfied
     /// for the formula to be satisfied.
-    Unit(Literal),
+    /// This vector must have at least one element.
+    Unit(Vec<Literal>),
     /// A pure literal is one that always occurs with
     /// the same polarity in a given formula.
     /// You can freely satisfied all clauses that contain a pure literal by
