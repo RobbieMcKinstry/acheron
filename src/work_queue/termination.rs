@@ -1,4 +1,3 @@
-use super::Job;
 use crate::core::Condition;
 
 /// After an operator is applied
@@ -14,5 +13,5 @@ use crate::core::Condition;
 pub enum TerminationState {
     Sat(Vec<Condition>),
     Unsat(Vec<Condition>),
-    Unfinished(Vec<Job>),
+    Unfinished,
 }

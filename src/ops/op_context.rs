@@ -9,5 +9,4 @@ pub struct OpContext<'a> {
     pub formula: &'a Formula,
     pub history: &'a History,
     pub queue: &'a mut WorkQueue,
-    pub decider: &'a DecisionEngine,
 }

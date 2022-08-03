@@ -41,13 +41,7 @@ impl Operation for UnitPropagator {
         // Formula is owned by the history, the next job, and
         // the JobOutput.
         let history = ctx.history.child(formula.clone(), summary);
-        // • Collect the next job or jobs to be executed.
-        let op = ctx.decider.select(&formula, &history, ctx.queue);
-        // TODO: Fix double-accounting:
-        // The job is carrying the history here. Not sure if that's
-        // required or not.
-        let job = Job::new(formula.clone(), history.clone(), op);
-        let state = TerminationState::Unfinished(vec![job]);
+        let state = TerminationState::Unfinished;
 
         JobOutput::new(formula, state, history)
     }
