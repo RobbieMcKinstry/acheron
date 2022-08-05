@@ -1,8 +1,8 @@
 use crate::core::Condition;
-use crate::ops::{OpContext, Operation};
+use crate::ops::{OpContext, Operator};
 use crate::work_queue::JobOutput;
 
-pub fn new_condition_application(cond: Condition) -> Box<dyn Operation> {
+pub fn new_condition_application(cond: Condition) -> Box<dyn Operator> {
     Box::new(ConditionApplication::new(cond))
 }
 
@@ -27,7 +27,7 @@ impl ConditionApplication {
     }
 }
 
-impl Operation for ConditionApplication {
+impl Operator for ConditionApplication {
     fn apply<'a>(&self, _ctx: OpContext<'a>) -> JobOutput {
         todo!("Not implemented");
     }

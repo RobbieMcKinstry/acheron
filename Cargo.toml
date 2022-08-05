@@ -2,7 +2,7 @@
 name = "acheron"
 version = "0.1.0"
 authors = ["Robbie McKinstry <robbie@whiterabbit.llc>"]
-edition = "2018"
+edition = "2021"
 license = "MIT"
 description = "A simple DPLL SAT solver"
 

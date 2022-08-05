@@ -1,10 +1,10 @@
 use crate::core::Literal;
-use crate::ops::{ConstructorContext, OpContext, OpMaker, Opcode, Operation};
+use crate::ops::{ConstructorContext, OpContext, OpMaker, Opcode, Operator};
 use crate::work_queue::{JobOutput, Summary, TerminationState};
 
 pub struct UnitDetector;
 impl OpMaker for UnitDetector {
-    fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Box<dyn Operation>> {
+    fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Box<dyn Operator>> {
         let units = ctx.formula().unit_literals();
         if units.is_empty() {
             None
@@ -24,7 +24,7 @@ impl UnitPropagator {
     }
 }
 
-impl Operation for UnitPropagator {
+impl Operator for UnitPropagator {
     fn apply<'a>(&self, ctx: OpContext<'a>) -> JobOutput {
         // • Create a new History with the updates applied
         //   as an Opcode.
