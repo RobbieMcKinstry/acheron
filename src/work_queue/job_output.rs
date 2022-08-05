@@ -3,19 +3,27 @@ use crate::core::Formula;
 use crate::work_queue::History;
 
 pub struct JobOutput {
-    /// The formula is the newly transformed formula afer the
-    /// job has been run.
-    formula: Formula,
     state: TerminationState,
     history: History,
 }
 
 impl JobOutput {
-    pub fn new(f: Formula, s: TerminationState, hist: History) -> Self {
+    pub fn new(hist: History, s: TerminationState) -> Self {
         Self {
-            formula: f,
-            state: s,
             history: hist,
+            state: s,
         }
+    }
+
+    pub fn history(&self) -> &History {
+        &self.history
+    }
+
+    pub fn formula(&self) -> &Formula {
+        self.history.formula()
+    }
+
+    pub fn state(&self) -> &TerminationState {
+        &self.state
     }
 }

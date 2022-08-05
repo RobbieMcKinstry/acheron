@@ -1,5 +1,5 @@
 use crate::core::Formula;
-use crate::work_queue::{History, WorkQueue};
+use crate::work_queue::History;
 
 /// `ConstructorContext` is the input into the OpMaker's constructor
 /// call. This is what an `Operation` can see to determine if
@@ -8,7 +8,11 @@ use crate::work_queue::{History, WorkQueue};
 /// allowed to mutate the `WorkQueue` yet, not until the `Operation`
 /// is being applied.
 pub struct ConstructorContext<'a> {
-    pub formula: &'a Formula,
     pub history: &'a History,
-    pub queue: &'a WorkQueue,
+}
+
+impl<'a> ConstructorContext<'a> {
+    pub fn formula(&self) -> &Formula {
+        self.history.formula()
+    }
 }
