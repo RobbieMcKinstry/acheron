@@ -1,7 +1,7 @@
 use crate::ops::op_context::OpContext;
 use crate::work_queue::JobOutput;
 
-pub trait Operation {
+pub trait Operator {
     fn apply<'a>(&self, ctx: OpContext<'a>) -> JobOutput;
 }
 
@@ -14,11 +14,11 @@ pub trait Operation {
 
 #[cfg(test)]
 mod tests {
-    use super::Operation;
+    use super::Operator;
     use static_assertions::assert_obj_safe;
 
     #[test]
     fn operation_is_obj_safe() {
-        assert_obj_safe!(Operation);
+        assert_obj_safe!(Operator);
     }
 }

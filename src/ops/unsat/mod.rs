@@ -1,4 +1,4 @@
-use crate::ops::{ConstructorContext, OpContext, OpMaker, Operation};
+use crate::ops::{ConstructorContext, OpContext, OpMaker, Operator};
 use crate::work_queue::{JobOutput, TerminationState};
 
 /// Builds an operator that handles
@@ -6,7 +6,7 @@ use crate::work_queue::{JobOutput, TerminationState};
 pub struct UnsatOpMaker;
 
 impl OpMaker for UnsatOpMaker {
-    fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Box<dyn Operation>> {
+    fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Box<dyn Operator>> {
         if ctx.formula().is_unsat() {
             Some(Box::new(UnsatOperator))
         } else {
@@ -17,7 +17,7 @@ impl OpMaker for UnsatOpMaker {
 
 pub struct UnsatOperator;
 
-impl Operation for UnsatOperator {
+impl Operator for UnsatOperator {
     fn apply<'a>(&self, ctx: OpContext<'a>) -> JobOutput {
         // Since we know this formula is UNSAT, we can
         // reuse the formula in the context's history.

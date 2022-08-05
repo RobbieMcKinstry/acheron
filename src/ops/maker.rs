@@ -1,9 +1,9 @@
 use crate::ops::constructor_context::ConstructorContext;
-use crate::ops::Operation;
+use crate::ops::Operator;
 
 /// An OpMaker is anything that can construct an Operation.
 pub trait OpMaker {
-    fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Box<dyn Operation>>;
+    fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Box<dyn Operator>>;
 }
 
 #[cfg(test)]

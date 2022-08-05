@@ -22,12 +22,14 @@ impl DecisionEngine {
         Default::default()
     }
 
-    pub fn select(&self, hist: &History) -> Box<dyn Operation> {
+    pub fn select(&self, hist: &History) -> Vec<Box<dyn Operator>> {
         let ctx = ConstructorContext { history: hist };
-        self.decision_table
+        let op = self
+            .decision_table
             .iter()
             .find_map(|elem| elem.construct(&ctx))
-            .expect("One of the items in the list must return something")
+            .expect("One of the items in the list must return something");
+        vec![op]
     }
 }
 

@@ -1,4 +1,4 @@
-use crate::ops::{ConstructorContext, OpContext, OpMaker, Operation};
+use crate::ops::{ConstructorContext, OpContext, OpMaker, Operator};
 use crate::work_queue::{JobOutput, TerminationState};
 
 /// Builds an operator that handles
@@ -6,7 +6,7 @@ use crate::work_queue::{JobOutput, TerminationState};
 pub struct SatOpMaker;
 
 impl OpMaker for SatOpMaker {
-    fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Box<dyn Operation>> {
+    fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Box<dyn Operator>> {
         // Check if the formula is SAT.
         if ctx.formula().is_sat() {
             Some(Box::new(SatOperator))
@@ -18,7 +18,7 @@ impl OpMaker for SatOpMaker {
 
 pub struct SatOperator;
 
-impl Operation for SatOperator {
+impl Operator for SatOperator {
     fn apply<'a>(&self, ctx: OpContext<'a>) -> JobOutput {
         // Since we know this formula is SAT, we can
         // reuse the formula provided to us in the context.

@@ -15,18 +15,27 @@ impl Solver {
         let engine = DecisionEngine::new();
         let queue = WorkQueue::new();
         let mut solver = Self { engine, queue };
-        let next_job = solver.select_next_job(&start);
-        solver.enqueue_job(next_job);
+        let next_jobs = solver.select_next_job(&start);
+        solver.enqueue(next_jobs);
         solver
+    }
+
+    fn enqueue(&mut self, jobs: Vec<Job>) {
+        for job in jobs {
+            self.enqueue_job(job);
+        }
     }
 
     fn enqueue_job(&mut self, job: Job) {
         self.queue.push(job);
     }
 
-    fn select_next_job(&self, hist: &History) -> Job {
-        let op = self.engine.select(hist);
-        Job::new(hist, op)
+    fn select_next_job(&self, hist: &History) -> Vec<Job> {
+        self.engine
+            .select(hist)
+            .into_iter()
+            .map(|op| Job::new(hist, op))
+            .collect()
     }
 
     // TODO: Return a trace, not just a boolean.
@@ -53,8 +62,8 @@ impl Solver {
                 TerminationState::Unfinished => {
                     // The operation succeeded, but there's
                     // more work to be done.
-                    let j = self.select_next_job(output.history());
-                    self.enqueue_job(j);
+                    let jobs = self.select_next_job(output.history());
+                    self.enqueue(jobs);
                 }
                 TerminationState::Unsat(_) => continue,
             }
