@@ -2,6 +2,7 @@ use crate::core::{Clause, Formula};
 use crate::solver::Solver;
 use im::Vector;
 use std::fs;
+use std::path::Path;
 
 pub struct Parser {
     pub solver: Solver,
@@ -9,7 +10,7 @@ pub struct Parser {
 
 impl Parser {
     #[must_use]
-    pub fn new(path: &str) -> Self {
+    pub fn new<T: AsRef<Path>>(path: T) -> Self {
         // Read the file in from the path provided.
         // Then, convert it line by line into a list
         // of Clauses.
@@ -34,10 +35,10 @@ impl Parser {
         Self { solver }
     }
 
-    fn read_file(path: &str) -> String {
+    fn read_file<T: AsRef<Path>>(path: T) -> String {
         let file_contents = fs::read_to_string(path);
-        if file_contents.is_err() {
-            println!("Could not read file {}", path);
+        if let std::io::Result::Err(err) = file_contents {
+            println!("Could not read file: {:?}", err);
             std::process::exit(1);
         }
 
