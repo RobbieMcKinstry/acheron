@@ -2,7 +2,7 @@ use crate::ops::op_context::OpContext;
 use crate::work_queue::JobOutput;
 
 pub trait Operator {
-    fn apply<'a>(&self, ctx: OpContext<'a>) -> JobOutput;
+    fn apply(&self, ctx: OpContext<'_>) -> JobOutput;
 }
 
 // Apply the condition to the formula.

@@ -18,6 +18,6 @@ impl<'a> OpContext<'a> {
     }
 
     pub fn history(&self) -> &History {
-        &self.history
+        self.history
     }
 }

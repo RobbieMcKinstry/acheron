@@ -66,11 +66,10 @@ impl Formula {
         // literal in it, and condition that literal.
         self.clauses
             .front()
-            .map(|clause| clause.select_random_variable())
-            .flatten()
+            .and_then(|clause| clause.select_random_variable())
     }
 
-    pub fn iter<'a>(&'a self) -> im::vector::Iter<'a, Clause> {
+    pub fn iter(&self) -> im::vector::Iter<'_, Clause> {
         self.clauses.iter()
     }
 }

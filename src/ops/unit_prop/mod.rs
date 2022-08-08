@@ -25,7 +25,7 @@ impl UnitPropagator {
 }
 
 impl Operator for UnitPropagator {
-    fn apply<'a>(&self, ctx: OpContext<'a>) -> JobOutput {
+    fn apply(&self, ctx: OpContext<'_>) -> JobOutput {
         // • Create a new History with the updates applied
         //   as an Opcode.
         let opcode = Opcode::Unit(self.units.clone());

@@ -91,7 +91,7 @@ impl Clause {
         Some(self.literals[0].var())
     }
 
-    pub fn iter<'a>(&'a self) -> im::vector::Iter<'a, Literal> {
+    pub fn iter(&self) -> im::vector::Iter<'_, Literal> {
         self.literals.iter()
     }
 }

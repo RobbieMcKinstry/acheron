@@ -19,7 +19,7 @@ impl OpMaker for SatOpMaker {
 pub struct SatOperator;
 
 impl Operator for SatOperator {
-    fn apply<'a>(&self, ctx: OpContext<'a>) -> JobOutput {
+    fn apply(&self, ctx: OpContext<'_>) -> JobOutput {
         // Since we know this formula is SAT, we can
         // reuse the formula provided to us in the context.
         // TODO: Right now, we don't record the satisfying

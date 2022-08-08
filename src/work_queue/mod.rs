@@ -11,6 +11,7 @@ pub use termination::TerminationState;
 ///   1. Δ X = true
 ///   2. Δ X = false
 /// We use a `WorkQueue` instead of recursion to not blow the stack.
+#[derive(Default)]
 pub struct WorkQueue {
     pending_jobs: Vec<Job>,
 }
@@ -26,14 +27,6 @@ impl WorkQueue {
 
     pub fn pop(&mut self) -> Option<Job> {
         self.pending_jobs.pop()
-    }
-}
-
-impl Default for WorkQueue {
-    fn default() -> Self {
-        Self {
-            pending_jobs: Vec::new(),
-        }
     }
 }
 

@@ -28,7 +28,7 @@ impl ConditionApplication {
 }
 
 impl Operator for ConditionApplication {
-    fn apply<'a>(&self, _ctx: OpContext<'a>) -> JobOutput {
+    fn apply(&self, _ctx: OpContext<'_>) -> JobOutput {
         todo!("Not implemented");
     }
 }

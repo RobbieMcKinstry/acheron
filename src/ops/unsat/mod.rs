@@ -18,7 +18,7 @@ impl OpMaker for UnsatOpMaker {
 pub struct UnsatOperator;
 
 impl Operator for UnsatOperator {
-    fn apply<'a>(&self, ctx: OpContext<'a>) -> JobOutput {
+    fn apply(&self, ctx: OpContext<'_>) -> JobOutput {
         // Since we know this formula is UNSAT, we can
         // reuse the formula in the context's history.
         // TODO: Right now, we don't record the conflict set.
