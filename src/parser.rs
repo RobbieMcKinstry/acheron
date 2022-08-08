@@ -5,7 +5,7 @@ use std::fs;
 use std::path::Path;
 
 pub struct Parser {
-    pub solver: Solver,
+    solver: Solver,
 }
 
 impl Parser {
@@ -33,6 +33,10 @@ impl Parser {
         let solver = Solver::from(formula);
 
         Self { solver }
+    }
+
+    pub fn solver(self) -> Solver {
+        self.solver
     }
 
     fn read_file<T: AsRef<Path>>(path: T) -> String {

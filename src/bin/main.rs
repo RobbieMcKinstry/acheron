@@ -16,7 +16,7 @@ fn main() {
         .get_matches();
     let filepath = matches.value_of("INPUT").unwrap();
     let parser = Parser::new(filepath);
-    let mut solver = parser.solver;
+    let mut solver = parser.solver();
     let output = solver.solve();
     println!("{}", output);
 }
