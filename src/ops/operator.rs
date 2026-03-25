@@ -1,7 +1,7 @@
 use crate::ops::op_context::OpContext;
 use crate::work_queue::JobOutput;
 
-pub trait Operator {
+pub trait Operator: Send {
     fn apply<'a>(&self, ctx: OpContext<'a>) -> JobOutput;
 }
 

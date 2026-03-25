@@ -1,6 +1,6 @@
 [package]
 name = "acheron"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Robbie McKinstry <robbie@whiterabbit.llc>"]
 edition = "2021"
 license = "MIT"
@@ -12,6 +12,7 @@ maintenance = { status = "experimental" }
 [dependencies]
 clap = "3.2.16"
 im = "15.1.0"
+rayon = "1.10"
 
 [dev-dependencies]
 pretty_assertions = "1.2.1"

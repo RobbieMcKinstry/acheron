@@ -5,7 +5,7 @@ use crate::ops::Operator;
 /// Returning `None` means this operation doesn't apply to the
 /// current formula. Returning `Some` yields one or more operators
 /// to enqueue (e.g. splitting produces two: one per branch).
-pub trait OpMaker {
+pub trait OpMaker: Send + Sync {
     fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Vec<Box<dyn Operator>>>;
 }
 

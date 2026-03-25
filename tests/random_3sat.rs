@@ -3,7 +3,7 @@ use acheron::Parser;
 
 fn assert_satisfiable(path: &str) {
     let parser = Parser::new(path);
-    let mut solver = parser.solver;
+    let solver = parser.solver;
     assert!(solver.solve(), "{} should be satisfiable", path);
 }
 

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Acheron is a DPLL SAT solver written in Rust. It takes DIMACS CNF files as input and determines satisfiability using unit propagation (pure literal elimination is stubbed but not yet implemented).
+Acheron is a DPLL SAT solver written in Rust. It takes DIMACS CNF files as input and determines satisfiability using unit propagation and pure literal elimination.
 
 ## Build & Development Commands
 
