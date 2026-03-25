@@ -19,6 +19,7 @@ This project uses `cargo-make` for task orchestration. Install it with `cargo in
 - **Coverage** (Docker-based): `cargo make cov`
 - **Sort Cargo.toml deps**: `cargo make sort`
 - **CI pipeline**: `cargo make ci-flow` (runs in a nightly Docker container)
+- **Throughput benchmark**: `cargo run --release --bin throughput` — solves as many CNF problems as possible in 60 seconds, starting with the smallest (uf20) and progressing to larger instances. Outputs the count of solved problems.
 
 ## Architecture
 

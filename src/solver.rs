@@ -1,3 +1,5 @@
+use std::sync::atomic::{AtomicBool, Ordering};
+
 use crate::core::Formula;
 use crate::engine::DecisionEngine;
 use crate::ops::OpContext;
@@ -45,42 +47,33 @@ impl Solver {
     /// # Panics
     ///
     pub fn solve(&mut self) -> bool {
-        // Continue to take items from the stack
-        // until the stack is exhausted, or until
-        // we've reached a termination case.
+        self.run_loop(&AtomicBool::new(false)).unwrap_or(false)
+    }
+
+    /// Like `solve`, but can be interrupted by setting `stop` to `true`.
+    /// Returns `None` if interrupted, `Some(true)` if SAT, `Some(false)` if UNSAT.
+    pub fn solve_interruptible(&mut self, stop: &AtomicBool) -> Option<bool> {
+        self.run_loop(stop)
+    }
+
+    fn run_loop(&mut self, stop: &AtomicBool) -> Option<bool> {
         while let Some(job) = self.queue.pop() {
-            // Capture the history from the job.
-            // Apply the pending operator.
+            if stop.load(Ordering::Relaxed) {
+                return None;
+            }
             let (history, pending) = job.take();
             let ctx = OpContext::new(&history);
             let output = pending.apply(ctx);
             match output.state() {
-                TerminationState::Sat(_) => {
-                    // Satisfied! We can exit with the result!
-                    return true;
-                }
+                TerminationState::Sat(_) => return Some(true),
                 TerminationState::Unfinished => {
-                    // The operation succeeded, but there's
-                    // more work to be done.
                     let jobs = self.select_next_job(output.history());
                     self.enqueue(jobs);
                 }
                 TerminationState::Unsat(_) => continue,
             }
-
-            /*
-            let new_histories = next.apply();
-            for history in new_histories.iter() {
-                match history.status() {
-                    Status::Sat => return true,
-                    Status::Unsat => continue,
-                    Status::Unknown => self.queue.push_back(history.clone()),
-                }
-            }
-            */
         }
-
-        false
+        Some(false)
     }
 }
 
