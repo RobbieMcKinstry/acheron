@@ -44,7 +44,7 @@ fn main() {
 
     // Phase 2: Parse all files upfront, building a queue of solvers.
     eprintln!("Loading {} files...", paths.len());
-    let mut solvers: Vec<_> = paths
+    let solvers: Vec<_> = paths
         .iter()
         .map(|path| {
             let path_str = path.to_str().expect("non-UTF-8 path");
@@ -66,7 +66,7 @@ fn main() {
     let start = Instant::now();
     let mut solved = 0;
 
-    for (path, solver) in &mut solvers {
+    for (path, solver) in &solvers {
         if stop.load(Ordering::Relaxed) {
             break;
         }
