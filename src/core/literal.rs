@@ -52,7 +52,6 @@ impl Literal {
 impl From<String> for Literal {
     #[allow(clippy::cast_sign_loss)]
     fn from(string: String) -> Self {
-        println!("{}", string);
         let integer = string.parse::<i64>().expect("string should be an integer");
         let (int, sign) = if integer < 0 {
             (-integer as u64, Sign::Negative)

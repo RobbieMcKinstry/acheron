@@ -50,7 +50,7 @@ for tag in "${TAGS[@]}"; do
   cargo build --release --bin throughput 2>&1
 
   echo "Running throughput benchmark (60 s)..."
-  JSON="$(cargo run --release --bin throughput 2>/dev/null)"
+  JSON="$(cargo run --release --bin throughput 2>/dev/null | grep '^{"solved"')"
 
   if [ "$FIRST" = true ]; then
     FIRST=false

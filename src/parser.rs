@@ -25,9 +25,6 @@ impl Parser {
         // variable name and polarity.
         let clauses = Self::parse_clauses(clause_lines);
 
-        for c in clauses.iter() {
-            println!("{}", c);
-        }
         let formula = Formula::from(clauses);
         let solver = Solver::from(formula);
 
@@ -37,7 +34,7 @@ impl Parser {
     fn read_file(path: &str) -> String {
         let file_contents = fs::read_to_string(path);
         if file_contents.is_err() {
-            println!("Could not read file {}", path);
+            eprintln!("Could not read file {}", path);
             std::process::exit(1);
         }
 
