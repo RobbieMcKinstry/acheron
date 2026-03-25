@@ -1,0 +1,6 @@
+c Satisfiable formula requiring splitting (no unit clauses).
+c (1 ∨ 2) ∧ (-1 ∨ 2)
+c Satisfying assignment: 2 = true
+p cnf 2 2
+1 2 0
+-1 2 0
