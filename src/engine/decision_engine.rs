@@ -37,6 +37,7 @@ impl Default for DecisionEngine {
             Box::new(SatMaker) as Box<dyn OpMaker>,
             Box::new(UnsatMaker),
             Box::new(UnitDetector),
+            Box::new(PureLiteralDetector),
             Box::new(SplitMaker),
         ];
         Self { decision_table }

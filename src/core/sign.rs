@@ -1,6 +1,6 @@
 use crate::core::TruthAssignment;
 
-#[derive(Clone, Copy, PartialEq, Eq)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq, Hash)]
 pub enum Sign {
     Positive,
     Negative,

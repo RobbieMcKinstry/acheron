@@ -3,6 +3,7 @@ pub use maker::OpMaker;
 pub use op_context::OpContext;
 pub use opcode::Opcode;
 pub use operator::Operator;
+pub use pure_lit::PureLiteralDetector;
 pub use sat::SatOpMaker as SatMaker;
 pub use split::SplitMaker;
 pub use unit_prop::UnitDetector;
@@ -10,7 +11,7 @@ pub use unsat::UnsatOpMaker as UnsatMaker;
 
 pub mod prelude {
     pub use super::{OpMaker, Operator};
-    pub use super::{SatMaker, SplitMaker, UnitDetector, UnsatMaker};
+    pub use super::{PureLiteralDetector, SatMaker, SplitMaker, UnitDetector, UnsatMaker};
 }
 
 mod cond_app;

@@ -24,5 +24,5 @@ pub enum Opcode {
     // variable.
     // If a variable ever reaches zero, then it is pure.
     // Note: This is effectively a Scope table from Compilers.
-    Pure(Literal),
+    Pure(Vec<Literal>),
 }
