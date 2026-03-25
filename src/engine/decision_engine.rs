@@ -24,12 +24,10 @@ impl DecisionEngine {
 
     pub fn select(&self, hist: &History) -> Vec<Box<dyn Operator>> {
         let ctx = ConstructorContext { history: hist };
-        let op = self
-            .decision_table
+        self.decision_table
             .iter()
             .find_map(|elem| elem.construct(&ctx))
-            .expect("One of the items in the list must return something");
-        vec![op]
+            .expect("One of the items in the list must return something")
     }
 }
 
@@ -39,6 +37,7 @@ impl Default for DecisionEngine {
             Box::new(SatMaker) as Box<dyn OpMaker>,
             Box::new(UnsatMaker),
             Box::new(UnitDetector),
+            Box::new(SplitMaker),
         ];
         Self { decision_table }
     }

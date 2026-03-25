@@ -4,12 +4,12 @@ use crate::work_queue::{JobOutput, Summary, TerminationState};
 
 pub struct UnitDetector;
 impl OpMaker for UnitDetector {
-    fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Box<dyn Operator>> {
+    fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Vec<Box<dyn Operator>>> {
         let units = ctx.formula().unit_literals();
         if units.is_empty() {
             None
         } else {
-            Some(Box::new(UnitPropagator::new(units)))
+            Some(vec![Box::new(UnitPropagator::new(units))])
         }
     }
 }

@@ -6,10 +6,10 @@ use crate::work_queue::{JobOutput, TerminationState};
 pub struct SatOpMaker;
 
 impl OpMaker for SatOpMaker {
-    fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Box<dyn Operator>> {
+    fn construct<'a>(&self, ctx: &ConstructorContext<'a>) -> Option<Vec<Box<dyn Operator>>> {
         // Check if the formula is SAT.
         if ctx.formula().is_sat() {
-            Some(Box::new(SatOperator))
+            Some(vec![Box::new(SatOperator)])
         } else {
             None
         }
