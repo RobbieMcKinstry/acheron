@@ -19,7 +19,8 @@ This project uses `cargo-make` for task orchestration. Install it with `cargo in
 - **Coverage** (Docker-based): `cargo make cov`
 - **Sort Cargo.toml deps**: `cargo make sort`
 - **CI pipeline**: `cargo make ci-flow` (runs in a nightly Docker container)
-- **Throughput benchmark**: `cargo run --release --bin throughput` — solves as many CNF problems as possible in 60 seconds, starting with the smallest (uf20) and progressing to larger instances. Outputs the count of solved problems.
+- **Throughput benchmark**: `cargo run --release --bin throughput` — solves as many CNF problems as possible in 60 seconds, starting with the smallest (uf20) and progressing to larger instances. Outputs JSON (`{"solved":N,"elapsed_secs":X.XX}`) to stdout; human-readable progress goes to stderr.
+- **Compare throughput across versions**: `cargo make benchmark-compare` — runs the throughput benchmark for each git tag listed in the `TAGS` array in `benchmarks/run-benchmarks.sh`, then generates an SVG bar chart at `benchmarks/throughput.svg` using D3 (requires `cd benchmarks && npm install` first).
 
 ## Architecture
 

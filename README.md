@@ -23,3 +23,18 @@ cargo run --release --bin throughput
 
 This loads CNF files from `examples/satisfiable/uniform-random-3sat/`, sorted by problem size (uf20 through uf250), and solves them sequentially under a 60-second timer.
 
+## Comparing Throughput Across Versions
+
+To track solver performance across tagged releases:
+
+1. Edit the `TAGS` array at the top of `benchmarks/run-benchmarks.sh` with the git tags you want to compare.
+2. Install the visualization dependencies:
+   ```sh
+   cd benchmarks && npm install
+   ```
+3. Run the comparison (requires a clean working tree):
+   ```sh
+   cargo make benchmark-compare
+   ```
+
+This checks out each tag, builds and runs the throughput benchmark, then generates an SVG bar chart at `benchmarks/throughput.svg`.

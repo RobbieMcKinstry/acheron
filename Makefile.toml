@@ -117,3 +117,9 @@ description = "Sort Cargo.toml"
 category = "Development"
 command = "cargo"
 args = ["sort"]
+
+[tasks.benchmark-compare]
+description = "Compare throughput across tagged versions"
+category = "Development"
+command = "bash"
+args = ["benchmarks/run-benchmarks.sh"]

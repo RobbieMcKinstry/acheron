@@ -81,6 +81,8 @@ fn main() {
     }
 
     let elapsed = start.elapsed();
-    println!("Solved {} problems in {:.2}s", solved, elapsed.as_secs_f64());
+    let secs = elapsed.as_secs_f64();
+    eprintln!("Solved {} problems in {:.2}s", solved, secs);
+    println!("{{\"solved\":{},\"elapsed_secs\":{:.2}}}", solved, secs);
     process::exit(0);
 }

@@ -26,1703 +26,6803 @@ macro_rules! sat_test_active {
     };
 }
 
-sat_test_active!(uf20_01, "examples/satisfiable/uniform-random-3sat/uf20-01.cnf");
-sat_test_active!(uf20_02, "examples/satisfiable/uniform-random-3sat/uf20-02.cnf");
-sat_test_active!(uf20_03, "examples/satisfiable/uniform-random-3sat/uf20-03.cnf");
-sat_test_active!(uf20_04, "examples/satisfiable/uniform-random-3sat/uf20-04.cnf");
-sat_test_active!(uf20_05, "examples/satisfiable/uniform-random-3sat/uf20-05.cnf");
-sat_test!(uf20_06, "examples/satisfiable/uniform-random-3sat/uf20-06.cnf");
-sat_test!(uf20_07, "examples/satisfiable/uniform-random-3sat/uf20-07.cnf");
-sat_test!(uf20_08, "examples/satisfiable/uniform-random-3sat/uf20-08.cnf");
-sat_test!(uf20_09, "examples/satisfiable/uniform-random-3sat/uf20-09.cnf");
-sat_test!(uf20_010, "examples/satisfiable/uniform-random-3sat/uf20-010.cnf");
-sat_test!(uf20_011, "examples/satisfiable/uniform-random-3sat/uf20-011.cnf");
-sat_test!(uf20_012, "examples/satisfiable/uniform-random-3sat/uf20-012.cnf");
-sat_test!(uf20_013, "examples/satisfiable/uniform-random-3sat/uf20-013.cnf");
-sat_test!(uf20_014, "examples/satisfiable/uniform-random-3sat/uf20-014.cnf");
-sat_test!(uf20_015, "examples/satisfiable/uniform-random-3sat/uf20-015.cnf");
-sat_test!(uf20_016, "examples/satisfiable/uniform-random-3sat/uf20-016.cnf");
-sat_test!(uf20_017, "examples/satisfiable/uniform-random-3sat/uf20-017.cnf");
-sat_test!(uf20_018, "examples/satisfiable/uniform-random-3sat/uf20-018.cnf");
-sat_test!(uf20_019, "examples/satisfiable/uniform-random-3sat/uf20-019.cnf");
-sat_test!(uf20_020, "examples/satisfiable/uniform-random-3sat/uf20-020.cnf");
-sat_test!(uf20_021, "examples/satisfiable/uniform-random-3sat/uf20-021.cnf");
-sat_test!(uf20_022, "examples/satisfiable/uniform-random-3sat/uf20-022.cnf");
-sat_test!(uf20_023, "examples/satisfiable/uniform-random-3sat/uf20-023.cnf");
-sat_test!(uf20_024, "examples/satisfiable/uniform-random-3sat/uf20-024.cnf");
-sat_test!(uf20_025, "examples/satisfiable/uniform-random-3sat/uf20-025.cnf");
-sat_test!(uf20_026, "examples/satisfiable/uniform-random-3sat/uf20-026.cnf");
-sat_test!(uf20_027, "examples/satisfiable/uniform-random-3sat/uf20-027.cnf");
-sat_test!(uf20_028, "examples/satisfiable/uniform-random-3sat/uf20-028.cnf");
-sat_test!(uf20_029, "examples/satisfiable/uniform-random-3sat/uf20-029.cnf");
-sat_test!(uf20_030, "examples/satisfiable/uniform-random-3sat/uf20-030.cnf");
-sat_test!(uf20_031, "examples/satisfiable/uniform-random-3sat/uf20-031.cnf");
-sat_test!(uf20_032, "examples/satisfiable/uniform-random-3sat/uf20-032.cnf");
-sat_test!(uf20_033, "examples/satisfiable/uniform-random-3sat/uf20-033.cnf");
-sat_test!(uf20_034, "examples/satisfiable/uniform-random-3sat/uf20-034.cnf");
-sat_test!(uf20_035, "examples/satisfiable/uniform-random-3sat/uf20-035.cnf");
-sat_test!(uf20_036, "examples/satisfiable/uniform-random-3sat/uf20-036.cnf");
-sat_test!(uf20_037, "examples/satisfiable/uniform-random-3sat/uf20-037.cnf");
-sat_test!(uf20_038, "examples/satisfiable/uniform-random-3sat/uf20-038.cnf");
-sat_test!(uf20_039, "examples/satisfiable/uniform-random-3sat/uf20-039.cnf");
-sat_test!(uf20_040, "examples/satisfiable/uniform-random-3sat/uf20-040.cnf");
-sat_test!(uf20_041, "examples/satisfiable/uniform-random-3sat/uf20-041.cnf");
-sat_test!(uf20_042, "examples/satisfiable/uniform-random-3sat/uf20-042.cnf");
-sat_test!(uf20_043, "examples/satisfiable/uniform-random-3sat/uf20-043.cnf");
-sat_test!(uf20_044, "examples/satisfiable/uniform-random-3sat/uf20-044.cnf");
-sat_test!(uf20_045, "examples/satisfiable/uniform-random-3sat/uf20-045.cnf");
-sat_test!(uf20_046, "examples/satisfiable/uniform-random-3sat/uf20-046.cnf");
-sat_test!(uf20_047, "examples/satisfiable/uniform-random-3sat/uf20-047.cnf");
-sat_test!(uf20_048, "examples/satisfiable/uniform-random-3sat/uf20-048.cnf");
-sat_test!(uf20_049, "examples/satisfiable/uniform-random-3sat/uf20-049.cnf");
-sat_test!(uf20_050, "examples/satisfiable/uniform-random-3sat/uf20-050.cnf");
-sat_test!(uf20_051, "examples/satisfiable/uniform-random-3sat/uf20-051.cnf");
-sat_test!(uf20_052, "examples/satisfiable/uniform-random-3sat/uf20-052.cnf");
-sat_test!(uf20_053, "examples/satisfiable/uniform-random-3sat/uf20-053.cnf");
-sat_test!(uf20_054, "examples/satisfiable/uniform-random-3sat/uf20-054.cnf");
-sat_test!(uf20_055, "examples/satisfiable/uniform-random-3sat/uf20-055.cnf");
-sat_test!(uf20_056, "examples/satisfiable/uniform-random-3sat/uf20-056.cnf");
-sat_test!(uf20_057, "examples/satisfiable/uniform-random-3sat/uf20-057.cnf");
-sat_test!(uf20_058, "examples/satisfiable/uniform-random-3sat/uf20-058.cnf");
-sat_test!(uf20_059, "examples/satisfiable/uniform-random-3sat/uf20-059.cnf");
-sat_test!(uf20_060, "examples/satisfiable/uniform-random-3sat/uf20-060.cnf");
-sat_test!(uf20_061, "examples/satisfiable/uniform-random-3sat/uf20-061.cnf");
-sat_test!(uf20_062, "examples/satisfiable/uniform-random-3sat/uf20-062.cnf");
-sat_test!(uf20_063, "examples/satisfiable/uniform-random-3sat/uf20-063.cnf");
-sat_test!(uf20_064, "examples/satisfiable/uniform-random-3sat/uf20-064.cnf");
-sat_test!(uf20_065, "examples/satisfiable/uniform-random-3sat/uf20-065.cnf");
-sat_test!(uf20_066, "examples/satisfiable/uniform-random-3sat/uf20-066.cnf");
-sat_test!(uf20_067, "examples/satisfiable/uniform-random-3sat/uf20-067.cnf");
-sat_test!(uf20_068, "examples/satisfiable/uniform-random-3sat/uf20-068.cnf");
-sat_test!(uf20_069, "examples/satisfiable/uniform-random-3sat/uf20-069.cnf");
-sat_test!(uf20_070, "examples/satisfiable/uniform-random-3sat/uf20-070.cnf");
-sat_test!(uf20_071, "examples/satisfiable/uniform-random-3sat/uf20-071.cnf");
-sat_test!(uf20_072, "examples/satisfiable/uniform-random-3sat/uf20-072.cnf");
-sat_test!(uf20_073, "examples/satisfiable/uniform-random-3sat/uf20-073.cnf");
-sat_test!(uf20_074, "examples/satisfiable/uniform-random-3sat/uf20-074.cnf");
-sat_test!(uf20_075, "examples/satisfiable/uniform-random-3sat/uf20-075.cnf");
-sat_test!(uf20_076, "examples/satisfiable/uniform-random-3sat/uf20-076.cnf");
-sat_test!(uf20_077, "examples/satisfiable/uniform-random-3sat/uf20-077.cnf");
-sat_test!(uf20_078, "examples/satisfiable/uniform-random-3sat/uf20-078.cnf");
-sat_test!(uf20_079, "examples/satisfiable/uniform-random-3sat/uf20-079.cnf");
-sat_test!(uf20_080, "examples/satisfiable/uniform-random-3sat/uf20-080.cnf");
-sat_test!(uf20_081, "examples/satisfiable/uniform-random-3sat/uf20-081.cnf");
-sat_test!(uf20_082, "examples/satisfiable/uniform-random-3sat/uf20-082.cnf");
-sat_test!(uf20_083, "examples/satisfiable/uniform-random-3sat/uf20-083.cnf");
-sat_test!(uf20_084, "examples/satisfiable/uniform-random-3sat/uf20-084.cnf");
-sat_test!(uf20_085, "examples/satisfiable/uniform-random-3sat/uf20-085.cnf");
-sat_test!(uf20_086, "examples/satisfiable/uniform-random-3sat/uf20-086.cnf");
-sat_test!(uf20_087, "examples/satisfiable/uniform-random-3sat/uf20-087.cnf");
-sat_test!(uf20_088, "examples/satisfiable/uniform-random-3sat/uf20-088.cnf");
-sat_test!(uf20_089, "examples/satisfiable/uniform-random-3sat/uf20-089.cnf");
-sat_test!(uf20_090, "examples/satisfiable/uniform-random-3sat/uf20-090.cnf");
-sat_test!(uf20_091, "examples/satisfiable/uniform-random-3sat/uf20-091.cnf");
-sat_test!(uf20_092, "examples/satisfiable/uniform-random-3sat/uf20-092.cnf");
-sat_test!(uf20_093, "examples/satisfiable/uniform-random-3sat/uf20-093.cnf");
-sat_test!(uf20_094, "examples/satisfiable/uniform-random-3sat/uf20-094.cnf");
-sat_test!(uf20_095, "examples/satisfiable/uniform-random-3sat/uf20-095.cnf");
-sat_test!(uf20_096, "examples/satisfiable/uniform-random-3sat/uf20-096.cnf");
-sat_test!(uf20_097, "examples/satisfiable/uniform-random-3sat/uf20-097.cnf");
-sat_test!(uf20_098, "examples/satisfiable/uniform-random-3sat/uf20-098.cnf");
-sat_test!(uf20_099, "examples/satisfiable/uniform-random-3sat/uf20-099.cnf");
-sat_test!(uf20_0100, "examples/satisfiable/uniform-random-3sat/uf20-0100.cnf");
-sat_test!(uf20_0101, "examples/satisfiable/uniform-random-3sat/uf20-0101.cnf");
-sat_test!(uf20_0102, "examples/satisfiable/uniform-random-3sat/uf20-0102.cnf");
-sat_test!(uf20_0103, "examples/satisfiable/uniform-random-3sat/uf20-0103.cnf");
-sat_test!(uf20_0104, "examples/satisfiable/uniform-random-3sat/uf20-0104.cnf");
-sat_test!(uf20_0105, "examples/satisfiable/uniform-random-3sat/uf20-0105.cnf");
-sat_test!(uf20_0106, "examples/satisfiable/uniform-random-3sat/uf20-0106.cnf");
-sat_test!(uf20_0107, "examples/satisfiable/uniform-random-3sat/uf20-0107.cnf");
-sat_test!(uf20_0108, "examples/satisfiable/uniform-random-3sat/uf20-0108.cnf");
-sat_test!(uf20_0109, "examples/satisfiable/uniform-random-3sat/uf20-0109.cnf");
-sat_test!(uf20_0110, "examples/satisfiable/uniform-random-3sat/uf20-0110.cnf");
-sat_test!(uf20_0111, "examples/satisfiable/uniform-random-3sat/uf20-0111.cnf");
-sat_test!(uf20_0112, "examples/satisfiable/uniform-random-3sat/uf20-0112.cnf");
-sat_test!(uf20_0113, "examples/satisfiable/uniform-random-3sat/uf20-0113.cnf");
-sat_test!(uf20_0114, "examples/satisfiable/uniform-random-3sat/uf20-0114.cnf");
-sat_test!(uf20_0115, "examples/satisfiable/uniform-random-3sat/uf20-0115.cnf");
-sat_test!(uf20_0116, "examples/satisfiable/uniform-random-3sat/uf20-0116.cnf");
-sat_test!(uf20_0117, "examples/satisfiable/uniform-random-3sat/uf20-0117.cnf");
-sat_test!(uf20_0118, "examples/satisfiable/uniform-random-3sat/uf20-0118.cnf");
-sat_test!(uf20_0119, "examples/satisfiable/uniform-random-3sat/uf20-0119.cnf");
-sat_test!(uf20_0120, "examples/satisfiable/uniform-random-3sat/uf20-0120.cnf");
-sat_test!(uf20_0121, "examples/satisfiable/uniform-random-3sat/uf20-0121.cnf");
-sat_test!(uf20_0122, "examples/satisfiable/uniform-random-3sat/uf20-0122.cnf");
-sat_test!(uf20_0123, "examples/satisfiable/uniform-random-3sat/uf20-0123.cnf");
-sat_test!(uf20_0124, "examples/satisfiable/uniform-random-3sat/uf20-0124.cnf");
-sat_test!(uf20_0125, "examples/satisfiable/uniform-random-3sat/uf20-0125.cnf");
-sat_test!(uf20_0126, "examples/satisfiable/uniform-random-3sat/uf20-0126.cnf");
-sat_test!(uf20_0127, "examples/satisfiable/uniform-random-3sat/uf20-0127.cnf");
-sat_test!(uf20_0128, "examples/satisfiable/uniform-random-3sat/uf20-0128.cnf");
-sat_test!(uf20_0129, "examples/satisfiable/uniform-random-3sat/uf20-0129.cnf");
-sat_test!(uf20_0130, "examples/satisfiable/uniform-random-3sat/uf20-0130.cnf");
-sat_test!(uf20_0131, "examples/satisfiable/uniform-random-3sat/uf20-0131.cnf");
-sat_test!(uf20_0132, "examples/satisfiable/uniform-random-3sat/uf20-0132.cnf");
-sat_test!(uf20_0133, "examples/satisfiable/uniform-random-3sat/uf20-0133.cnf");
-sat_test!(uf20_0134, "examples/satisfiable/uniform-random-3sat/uf20-0134.cnf");
-sat_test!(uf20_0135, "examples/satisfiable/uniform-random-3sat/uf20-0135.cnf");
-sat_test!(uf20_0136, "examples/satisfiable/uniform-random-3sat/uf20-0136.cnf");
-sat_test!(uf20_0137, "examples/satisfiable/uniform-random-3sat/uf20-0137.cnf");
-sat_test!(uf20_0138, "examples/satisfiable/uniform-random-3sat/uf20-0138.cnf");
-sat_test!(uf20_0139, "examples/satisfiable/uniform-random-3sat/uf20-0139.cnf");
-sat_test!(uf20_0140, "examples/satisfiable/uniform-random-3sat/uf20-0140.cnf");
-sat_test!(uf20_0141, "examples/satisfiable/uniform-random-3sat/uf20-0141.cnf");
-sat_test!(uf20_0142, "examples/satisfiable/uniform-random-3sat/uf20-0142.cnf");
-sat_test!(uf20_0143, "examples/satisfiable/uniform-random-3sat/uf20-0143.cnf");
-sat_test!(uf20_0144, "examples/satisfiable/uniform-random-3sat/uf20-0144.cnf");
-sat_test!(uf20_0145, "examples/satisfiable/uniform-random-3sat/uf20-0145.cnf");
-sat_test!(uf20_0146, "examples/satisfiable/uniform-random-3sat/uf20-0146.cnf");
-sat_test!(uf20_0147, "examples/satisfiable/uniform-random-3sat/uf20-0147.cnf");
-sat_test!(uf20_0148, "examples/satisfiable/uniform-random-3sat/uf20-0148.cnf");
-sat_test!(uf20_0149, "examples/satisfiable/uniform-random-3sat/uf20-0149.cnf");
-sat_test!(uf20_0150, "examples/satisfiable/uniform-random-3sat/uf20-0150.cnf");
-sat_test!(uf20_0151, "examples/satisfiable/uniform-random-3sat/uf20-0151.cnf");
-sat_test!(uf20_0152, "examples/satisfiable/uniform-random-3sat/uf20-0152.cnf");
-sat_test!(uf20_0153, "examples/satisfiable/uniform-random-3sat/uf20-0153.cnf");
-sat_test!(uf20_0154, "examples/satisfiable/uniform-random-3sat/uf20-0154.cnf");
-sat_test!(uf20_0155, "examples/satisfiable/uniform-random-3sat/uf20-0155.cnf");
-sat_test!(uf20_0156, "examples/satisfiable/uniform-random-3sat/uf20-0156.cnf");
-sat_test!(uf20_0157, "examples/satisfiable/uniform-random-3sat/uf20-0157.cnf");
-sat_test!(uf20_0158, "examples/satisfiable/uniform-random-3sat/uf20-0158.cnf");
-sat_test!(uf20_0159, "examples/satisfiable/uniform-random-3sat/uf20-0159.cnf");
-sat_test!(uf20_0160, "examples/satisfiable/uniform-random-3sat/uf20-0160.cnf");
-sat_test!(uf20_0161, "examples/satisfiable/uniform-random-3sat/uf20-0161.cnf");
-sat_test!(uf20_0162, "examples/satisfiable/uniform-random-3sat/uf20-0162.cnf");
-sat_test!(uf20_0163, "examples/satisfiable/uniform-random-3sat/uf20-0163.cnf");
-sat_test!(uf20_0164, "examples/satisfiable/uniform-random-3sat/uf20-0164.cnf");
-sat_test!(uf20_0165, "examples/satisfiable/uniform-random-3sat/uf20-0165.cnf");
-sat_test!(uf20_0166, "examples/satisfiable/uniform-random-3sat/uf20-0166.cnf");
-sat_test!(uf20_0167, "examples/satisfiable/uniform-random-3sat/uf20-0167.cnf");
-sat_test!(uf20_0168, "examples/satisfiable/uniform-random-3sat/uf20-0168.cnf");
-sat_test!(uf20_0169, "examples/satisfiable/uniform-random-3sat/uf20-0169.cnf");
-sat_test!(uf20_0170, "examples/satisfiable/uniform-random-3sat/uf20-0170.cnf");
-sat_test!(uf20_0171, "examples/satisfiable/uniform-random-3sat/uf20-0171.cnf");
-sat_test!(uf20_0172, "examples/satisfiable/uniform-random-3sat/uf20-0172.cnf");
-sat_test!(uf20_0173, "examples/satisfiable/uniform-random-3sat/uf20-0173.cnf");
-sat_test!(uf20_0174, "examples/satisfiable/uniform-random-3sat/uf20-0174.cnf");
-sat_test!(uf20_0175, "examples/satisfiable/uniform-random-3sat/uf20-0175.cnf");
-sat_test!(uf20_0176, "examples/satisfiable/uniform-random-3sat/uf20-0176.cnf");
-sat_test!(uf20_0177, "examples/satisfiable/uniform-random-3sat/uf20-0177.cnf");
-sat_test!(uf20_0178, "examples/satisfiable/uniform-random-3sat/uf20-0178.cnf");
-sat_test!(uf20_0179, "examples/satisfiable/uniform-random-3sat/uf20-0179.cnf");
-sat_test!(uf20_0180, "examples/satisfiable/uniform-random-3sat/uf20-0180.cnf");
-sat_test!(uf20_0181, "examples/satisfiable/uniform-random-3sat/uf20-0181.cnf");
-sat_test!(uf20_0182, "examples/satisfiable/uniform-random-3sat/uf20-0182.cnf");
-sat_test!(uf20_0183, "examples/satisfiable/uniform-random-3sat/uf20-0183.cnf");
-sat_test!(uf20_0184, "examples/satisfiable/uniform-random-3sat/uf20-0184.cnf");
-sat_test!(uf20_0185, "examples/satisfiable/uniform-random-3sat/uf20-0185.cnf");
-sat_test!(uf20_0186, "examples/satisfiable/uniform-random-3sat/uf20-0186.cnf");
-sat_test!(uf20_0187, "examples/satisfiable/uniform-random-3sat/uf20-0187.cnf");
-sat_test!(uf20_0188, "examples/satisfiable/uniform-random-3sat/uf20-0188.cnf");
-sat_test!(uf20_0189, "examples/satisfiable/uniform-random-3sat/uf20-0189.cnf");
-sat_test!(uf20_0190, "examples/satisfiable/uniform-random-3sat/uf20-0190.cnf");
-sat_test!(uf20_0191, "examples/satisfiable/uniform-random-3sat/uf20-0191.cnf");
-sat_test!(uf20_0192, "examples/satisfiable/uniform-random-3sat/uf20-0192.cnf");
-sat_test!(uf20_0193, "examples/satisfiable/uniform-random-3sat/uf20-0193.cnf");
-sat_test!(uf20_0194, "examples/satisfiable/uniform-random-3sat/uf20-0194.cnf");
-sat_test!(uf20_0195, "examples/satisfiable/uniform-random-3sat/uf20-0195.cnf");
-sat_test!(uf20_0196, "examples/satisfiable/uniform-random-3sat/uf20-0196.cnf");
-sat_test!(uf20_0197, "examples/satisfiable/uniform-random-3sat/uf20-0197.cnf");
-sat_test!(uf20_0198, "examples/satisfiable/uniform-random-3sat/uf20-0198.cnf");
-sat_test!(uf20_0199, "examples/satisfiable/uniform-random-3sat/uf20-0199.cnf");
-sat_test!(uf20_0200, "examples/satisfiable/uniform-random-3sat/uf20-0200.cnf");
-sat_test!(uf20_0201, "examples/satisfiable/uniform-random-3sat/uf20-0201.cnf");
-sat_test!(uf20_0202, "examples/satisfiable/uniform-random-3sat/uf20-0202.cnf");
-sat_test!(uf20_0203, "examples/satisfiable/uniform-random-3sat/uf20-0203.cnf");
-sat_test!(uf20_0204, "examples/satisfiable/uniform-random-3sat/uf20-0204.cnf");
-sat_test!(uf20_0205, "examples/satisfiable/uniform-random-3sat/uf20-0205.cnf");
-sat_test!(uf20_0206, "examples/satisfiable/uniform-random-3sat/uf20-0206.cnf");
-sat_test!(uf20_0207, "examples/satisfiable/uniform-random-3sat/uf20-0207.cnf");
-sat_test!(uf20_0208, "examples/satisfiable/uniform-random-3sat/uf20-0208.cnf");
-sat_test!(uf20_0209, "examples/satisfiable/uniform-random-3sat/uf20-0209.cnf");
-sat_test!(uf20_0210, "examples/satisfiable/uniform-random-3sat/uf20-0210.cnf");
-sat_test!(uf20_0211, "examples/satisfiable/uniform-random-3sat/uf20-0211.cnf");
-sat_test!(uf20_0212, "examples/satisfiable/uniform-random-3sat/uf20-0212.cnf");
-sat_test!(uf20_0213, "examples/satisfiable/uniform-random-3sat/uf20-0213.cnf");
-sat_test!(uf20_0214, "examples/satisfiable/uniform-random-3sat/uf20-0214.cnf");
-sat_test!(uf20_0215, "examples/satisfiable/uniform-random-3sat/uf20-0215.cnf");
-sat_test!(uf20_0216, "examples/satisfiable/uniform-random-3sat/uf20-0216.cnf");
-sat_test!(uf20_0217, "examples/satisfiable/uniform-random-3sat/uf20-0217.cnf");
-sat_test!(uf20_0218, "examples/satisfiable/uniform-random-3sat/uf20-0218.cnf");
-sat_test!(uf20_0219, "examples/satisfiable/uniform-random-3sat/uf20-0219.cnf");
-sat_test!(uf20_0220, "examples/satisfiable/uniform-random-3sat/uf20-0220.cnf");
-sat_test!(uf20_0221, "examples/satisfiable/uniform-random-3sat/uf20-0221.cnf");
-sat_test!(uf20_0222, "examples/satisfiable/uniform-random-3sat/uf20-0222.cnf");
-sat_test!(uf20_0223, "examples/satisfiable/uniform-random-3sat/uf20-0223.cnf");
-sat_test!(uf20_0224, "examples/satisfiable/uniform-random-3sat/uf20-0224.cnf");
-sat_test!(uf20_0225, "examples/satisfiable/uniform-random-3sat/uf20-0225.cnf");
-sat_test!(uf20_0226, "examples/satisfiable/uniform-random-3sat/uf20-0226.cnf");
-sat_test!(uf20_0227, "examples/satisfiable/uniform-random-3sat/uf20-0227.cnf");
-sat_test!(uf20_0228, "examples/satisfiable/uniform-random-3sat/uf20-0228.cnf");
-sat_test!(uf20_0229, "examples/satisfiable/uniform-random-3sat/uf20-0229.cnf");
-sat_test!(uf20_0230, "examples/satisfiable/uniform-random-3sat/uf20-0230.cnf");
-sat_test!(uf20_0231, "examples/satisfiable/uniform-random-3sat/uf20-0231.cnf");
-sat_test!(uf20_0232, "examples/satisfiable/uniform-random-3sat/uf20-0232.cnf");
-sat_test!(uf20_0233, "examples/satisfiable/uniform-random-3sat/uf20-0233.cnf");
-sat_test!(uf20_0234, "examples/satisfiable/uniform-random-3sat/uf20-0234.cnf");
-sat_test!(uf20_0235, "examples/satisfiable/uniform-random-3sat/uf20-0235.cnf");
-sat_test!(uf20_0236, "examples/satisfiable/uniform-random-3sat/uf20-0236.cnf");
-sat_test!(uf20_0237, "examples/satisfiable/uniform-random-3sat/uf20-0237.cnf");
-sat_test!(uf20_0238, "examples/satisfiable/uniform-random-3sat/uf20-0238.cnf");
-sat_test!(uf20_0239, "examples/satisfiable/uniform-random-3sat/uf20-0239.cnf");
-sat_test!(uf20_0240, "examples/satisfiable/uniform-random-3sat/uf20-0240.cnf");
-sat_test!(uf20_0241, "examples/satisfiable/uniform-random-3sat/uf20-0241.cnf");
-sat_test!(uf20_0242, "examples/satisfiable/uniform-random-3sat/uf20-0242.cnf");
-sat_test!(uf20_0243, "examples/satisfiable/uniform-random-3sat/uf20-0243.cnf");
-sat_test!(uf20_0244, "examples/satisfiable/uniform-random-3sat/uf20-0244.cnf");
-sat_test!(uf20_0245, "examples/satisfiable/uniform-random-3sat/uf20-0245.cnf");
-sat_test!(uf20_0246, "examples/satisfiable/uniform-random-3sat/uf20-0246.cnf");
-sat_test!(uf20_0247, "examples/satisfiable/uniform-random-3sat/uf20-0247.cnf");
-sat_test!(uf20_0248, "examples/satisfiable/uniform-random-3sat/uf20-0248.cnf");
-sat_test!(uf20_0249, "examples/satisfiable/uniform-random-3sat/uf20-0249.cnf");
-sat_test!(uf20_0250, "examples/satisfiable/uniform-random-3sat/uf20-0250.cnf");
-sat_test!(uf20_0251, "examples/satisfiable/uniform-random-3sat/uf20-0251.cnf");
-sat_test!(uf20_0252, "examples/satisfiable/uniform-random-3sat/uf20-0252.cnf");
-sat_test!(uf20_0253, "examples/satisfiable/uniform-random-3sat/uf20-0253.cnf");
-sat_test!(uf20_0254, "examples/satisfiable/uniform-random-3sat/uf20-0254.cnf");
-sat_test!(uf20_0255, "examples/satisfiable/uniform-random-3sat/uf20-0255.cnf");
-sat_test!(uf20_0256, "examples/satisfiable/uniform-random-3sat/uf20-0256.cnf");
-sat_test!(uf20_0257, "examples/satisfiable/uniform-random-3sat/uf20-0257.cnf");
-sat_test!(uf20_0258, "examples/satisfiable/uniform-random-3sat/uf20-0258.cnf");
-sat_test!(uf20_0259, "examples/satisfiable/uniform-random-3sat/uf20-0259.cnf");
-sat_test!(uf20_0260, "examples/satisfiable/uniform-random-3sat/uf20-0260.cnf");
-sat_test!(uf20_0261, "examples/satisfiable/uniform-random-3sat/uf20-0261.cnf");
-sat_test!(uf20_0262, "examples/satisfiable/uniform-random-3sat/uf20-0262.cnf");
-sat_test!(uf20_0263, "examples/satisfiable/uniform-random-3sat/uf20-0263.cnf");
-sat_test!(uf20_0264, "examples/satisfiable/uniform-random-3sat/uf20-0264.cnf");
-sat_test!(uf20_0265, "examples/satisfiable/uniform-random-3sat/uf20-0265.cnf");
-sat_test!(uf20_0266, "examples/satisfiable/uniform-random-3sat/uf20-0266.cnf");
-sat_test!(uf20_0267, "examples/satisfiable/uniform-random-3sat/uf20-0267.cnf");
-sat_test!(uf20_0268, "examples/satisfiable/uniform-random-3sat/uf20-0268.cnf");
-sat_test!(uf20_0269, "examples/satisfiable/uniform-random-3sat/uf20-0269.cnf");
-sat_test!(uf20_0270, "examples/satisfiable/uniform-random-3sat/uf20-0270.cnf");
-sat_test!(uf20_0271, "examples/satisfiable/uniform-random-3sat/uf20-0271.cnf");
-sat_test!(uf20_0272, "examples/satisfiable/uniform-random-3sat/uf20-0272.cnf");
-sat_test!(uf20_0273, "examples/satisfiable/uniform-random-3sat/uf20-0273.cnf");
-sat_test!(uf20_0274, "examples/satisfiable/uniform-random-3sat/uf20-0274.cnf");
-sat_test!(uf20_0275, "examples/satisfiable/uniform-random-3sat/uf20-0275.cnf");
-sat_test!(uf20_0276, "examples/satisfiable/uniform-random-3sat/uf20-0276.cnf");
-sat_test!(uf20_0277, "examples/satisfiable/uniform-random-3sat/uf20-0277.cnf");
-sat_test!(uf20_0278, "examples/satisfiable/uniform-random-3sat/uf20-0278.cnf");
-sat_test!(uf20_0279, "examples/satisfiable/uniform-random-3sat/uf20-0279.cnf");
-sat_test!(uf20_0280, "examples/satisfiable/uniform-random-3sat/uf20-0280.cnf");
-sat_test!(uf20_0281, "examples/satisfiable/uniform-random-3sat/uf20-0281.cnf");
-sat_test!(uf20_0282, "examples/satisfiable/uniform-random-3sat/uf20-0282.cnf");
-sat_test!(uf20_0283, "examples/satisfiable/uniform-random-3sat/uf20-0283.cnf");
-sat_test!(uf20_0284, "examples/satisfiable/uniform-random-3sat/uf20-0284.cnf");
-sat_test!(uf20_0285, "examples/satisfiable/uniform-random-3sat/uf20-0285.cnf");
-sat_test!(uf20_0286, "examples/satisfiable/uniform-random-3sat/uf20-0286.cnf");
-sat_test!(uf20_0287, "examples/satisfiable/uniform-random-3sat/uf20-0287.cnf");
-sat_test!(uf20_0288, "examples/satisfiable/uniform-random-3sat/uf20-0288.cnf");
-sat_test!(uf20_0289, "examples/satisfiable/uniform-random-3sat/uf20-0289.cnf");
-sat_test!(uf20_0290, "examples/satisfiable/uniform-random-3sat/uf20-0290.cnf");
-sat_test!(uf20_0291, "examples/satisfiable/uniform-random-3sat/uf20-0291.cnf");
-sat_test!(uf20_0292, "examples/satisfiable/uniform-random-3sat/uf20-0292.cnf");
-sat_test!(uf20_0293, "examples/satisfiable/uniform-random-3sat/uf20-0293.cnf");
-sat_test!(uf20_0294, "examples/satisfiable/uniform-random-3sat/uf20-0294.cnf");
-sat_test!(uf20_0295, "examples/satisfiable/uniform-random-3sat/uf20-0295.cnf");
-sat_test!(uf20_0296, "examples/satisfiable/uniform-random-3sat/uf20-0296.cnf");
-sat_test!(uf20_0297, "examples/satisfiable/uniform-random-3sat/uf20-0297.cnf");
-sat_test!(uf20_0298, "examples/satisfiable/uniform-random-3sat/uf20-0298.cnf");
-sat_test!(uf20_0299, "examples/satisfiable/uniform-random-3sat/uf20-0299.cnf");
-sat_test!(uf20_0300, "examples/satisfiable/uniform-random-3sat/uf20-0300.cnf");
-sat_test!(uf20_0301, "examples/satisfiable/uniform-random-3sat/uf20-0301.cnf");
-sat_test!(uf20_0302, "examples/satisfiable/uniform-random-3sat/uf20-0302.cnf");
-sat_test!(uf20_0303, "examples/satisfiable/uniform-random-3sat/uf20-0303.cnf");
-sat_test!(uf20_0304, "examples/satisfiable/uniform-random-3sat/uf20-0304.cnf");
-sat_test!(uf20_0305, "examples/satisfiable/uniform-random-3sat/uf20-0305.cnf");
-sat_test!(uf20_0306, "examples/satisfiable/uniform-random-3sat/uf20-0306.cnf");
-sat_test!(uf20_0307, "examples/satisfiable/uniform-random-3sat/uf20-0307.cnf");
-sat_test!(uf20_0308, "examples/satisfiable/uniform-random-3sat/uf20-0308.cnf");
-sat_test!(uf20_0309, "examples/satisfiable/uniform-random-3sat/uf20-0309.cnf");
-sat_test!(uf20_0310, "examples/satisfiable/uniform-random-3sat/uf20-0310.cnf");
-sat_test!(uf20_0311, "examples/satisfiable/uniform-random-3sat/uf20-0311.cnf");
-sat_test!(uf20_0312, "examples/satisfiable/uniform-random-3sat/uf20-0312.cnf");
-sat_test!(uf20_0313, "examples/satisfiable/uniform-random-3sat/uf20-0313.cnf");
-sat_test!(uf20_0314, "examples/satisfiable/uniform-random-3sat/uf20-0314.cnf");
-sat_test!(uf20_0315, "examples/satisfiable/uniform-random-3sat/uf20-0315.cnf");
-sat_test!(uf20_0316, "examples/satisfiable/uniform-random-3sat/uf20-0316.cnf");
-sat_test!(uf20_0317, "examples/satisfiable/uniform-random-3sat/uf20-0317.cnf");
-sat_test!(uf20_0318, "examples/satisfiable/uniform-random-3sat/uf20-0318.cnf");
-sat_test!(uf20_0319, "examples/satisfiable/uniform-random-3sat/uf20-0319.cnf");
-sat_test!(uf20_0320, "examples/satisfiable/uniform-random-3sat/uf20-0320.cnf");
-sat_test!(uf20_0321, "examples/satisfiable/uniform-random-3sat/uf20-0321.cnf");
-sat_test!(uf20_0322, "examples/satisfiable/uniform-random-3sat/uf20-0322.cnf");
-sat_test!(uf20_0323, "examples/satisfiable/uniform-random-3sat/uf20-0323.cnf");
-sat_test!(uf20_0324, "examples/satisfiable/uniform-random-3sat/uf20-0324.cnf");
-sat_test!(uf20_0325, "examples/satisfiable/uniform-random-3sat/uf20-0325.cnf");
-sat_test!(uf20_0326, "examples/satisfiable/uniform-random-3sat/uf20-0326.cnf");
-sat_test!(uf20_0327, "examples/satisfiable/uniform-random-3sat/uf20-0327.cnf");
-sat_test!(uf20_0328, "examples/satisfiable/uniform-random-3sat/uf20-0328.cnf");
-sat_test!(uf20_0329, "examples/satisfiable/uniform-random-3sat/uf20-0329.cnf");
-sat_test!(uf20_0330, "examples/satisfiable/uniform-random-3sat/uf20-0330.cnf");
-sat_test!(uf20_0331, "examples/satisfiable/uniform-random-3sat/uf20-0331.cnf");
-sat_test!(uf20_0332, "examples/satisfiable/uniform-random-3sat/uf20-0332.cnf");
-sat_test!(uf20_0333, "examples/satisfiable/uniform-random-3sat/uf20-0333.cnf");
-sat_test!(uf20_0334, "examples/satisfiable/uniform-random-3sat/uf20-0334.cnf");
-sat_test!(uf20_0335, "examples/satisfiable/uniform-random-3sat/uf20-0335.cnf");
-sat_test!(uf20_0336, "examples/satisfiable/uniform-random-3sat/uf20-0336.cnf");
-sat_test!(uf20_0337, "examples/satisfiable/uniform-random-3sat/uf20-0337.cnf");
-sat_test!(uf20_0338, "examples/satisfiable/uniform-random-3sat/uf20-0338.cnf");
-sat_test!(uf20_0339, "examples/satisfiable/uniform-random-3sat/uf20-0339.cnf");
-sat_test!(uf20_0340, "examples/satisfiable/uniform-random-3sat/uf20-0340.cnf");
-sat_test!(uf20_0341, "examples/satisfiable/uniform-random-3sat/uf20-0341.cnf");
-sat_test!(uf20_0342, "examples/satisfiable/uniform-random-3sat/uf20-0342.cnf");
-sat_test!(uf20_0343, "examples/satisfiable/uniform-random-3sat/uf20-0343.cnf");
-sat_test!(uf20_0344, "examples/satisfiable/uniform-random-3sat/uf20-0344.cnf");
-sat_test!(uf20_0345, "examples/satisfiable/uniform-random-3sat/uf20-0345.cnf");
-sat_test!(uf20_0346, "examples/satisfiable/uniform-random-3sat/uf20-0346.cnf");
-sat_test!(uf20_0347, "examples/satisfiable/uniform-random-3sat/uf20-0347.cnf");
-sat_test!(uf20_0348, "examples/satisfiable/uniform-random-3sat/uf20-0348.cnf");
-sat_test!(uf20_0349, "examples/satisfiable/uniform-random-3sat/uf20-0349.cnf");
-sat_test!(uf20_0350, "examples/satisfiable/uniform-random-3sat/uf20-0350.cnf");
-sat_test!(uf20_0351, "examples/satisfiable/uniform-random-3sat/uf20-0351.cnf");
-sat_test!(uf20_0352, "examples/satisfiable/uniform-random-3sat/uf20-0352.cnf");
-sat_test!(uf20_0353, "examples/satisfiable/uniform-random-3sat/uf20-0353.cnf");
-sat_test!(uf20_0354, "examples/satisfiable/uniform-random-3sat/uf20-0354.cnf");
-sat_test!(uf20_0355, "examples/satisfiable/uniform-random-3sat/uf20-0355.cnf");
-sat_test!(uf20_0356, "examples/satisfiable/uniform-random-3sat/uf20-0356.cnf");
-sat_test!(uf20_0357, "examples/satisfiable/uniform-random-3sat/uf20-0357.cnf");
-sat_test!(uf20_0358, "examples/satisfiable/uniform-random-3sat/uf20-0358.cnf");
-sat_test!(uf20_0359, "examples/satisfiable/uniform-random-3sat/uf20-0359.cnf");
-sat_test!(uf20_0360, "examples/satisfiable/uniform-random-3sat/uf20-0360.cnf");
-sat_test!(uf20_0361, "examples/satisfiable/uniform-random-3sat/uf20-0361.cnf");
-sat_test!(uf20_0362, "examples/satisfiable/uniform-random-3sat/uf20-0362.cnf");
-sat_test!(uf20_0363, "examples/satisfiable/uniform-random-3sat/uf20-0363.cnf");
-sat_test!(uf20_0364, "examples/satisfiable/uniform-random-3sat/uf20-0364.cnf");
-sat_test!(uf20_0365, "examples/satisfiable/uniform-random-3sat/uf20-0365.cnf");
-sat_test!(uf20_0366, "examples/satisfiable/uniform-random-3sat/uf20-0366.cnf");
-sat_test!(uf20_0367, "examples/satisfiable/uniform-random-3sat/uf20-0367.cnf");
-sat_test!(uf20_0368, "examples/satisfiable/uniform-random-3sat/uf20-0368.cnf");
-sat_test!(uf20_0369, "examples/satisfiable/uniform-random-3sat/uf20-0369.cnf");
-sat_test!(uf20_0370, "examples/satisfiable/uniform-random-3sat/uf20-0370.cnf");
-sat_test!(uf20_0371, "examples/satisfiable/uniform-random-3sat/uf20-0371.cnf");
-sat_test!(uf20_0372, "examples/satisfiable/uniform-random-3sat/uf20-0372.cnf");
-sat_test!(uf20_0373, "examples/satisfiable/uniform-random-3sat/uf20-0373.cnf");
-sat_test!(uf20_0374, "examples/satisfiable/uniform-random-3sat/uf20-0374.cnf");
-sat_test!(uf20_0375, "examples/satisfiable/uniform-random-3sat/uf20-0375.cnf");
-sat_test!(uf20_0376, "examples/satisfiable/uniform-random-3sat/uf20-0376.cnf");
-sat_test!(uf20_0377, "examples/satisfiable/uniform-random-3sat/uf20-0377.cnf");
-sat_test!(uf20_0378, "examples/satisfiable/uniform-random-3sat/uf20-0378.cnf");
-sat_test!(uf20_0379, "examples/satisfiable/uniform-random-3sat/uf20-0379.cnf");
-sat_test!(uf20_0380, "examples/satisfiable/uniform-random-3sat/uf20-0380.cnf");
-sat_test!(uf20_0381, "examples/satisfiable/uniform-random-3sat/uf20-0381.cnf");
-sat_test!(uf20_0382, "examples/satisfiable/uniform-random-3sat/uf20-0382.cnf");
-sat_test!(uf20_0383, "examples/satisfiable/uniform-random-3sat/uf20-0383.cnf");
-sat_test!(uf20_0384, "examples/satisfiable/uniform-random-3sat/uf20-0384.cnf");
-sat_test!(uf20_0385, "examples/satisfiable/uniform-random-3sat/uf20-0385.cnf");
-sat_test!(uf20_0386, "examples/satisfiable/uniform-random-3sat/uf20-0386.cnf");
-sat_test!(uf20_0387, "examples/satisfiable/uniform-random-3sat/uf20-0387.cnf");
-sat_test!(uf20_0388, "examples/satisfiable/uniform-random-3sat/uf20-0388.cnf");
-sat_test!(uf20_0389, "examples/satisfiable/uniform-random-3sat/uf20-0389.cnf");
-sat_test!(uf20_0390, "examples/satisfiable/uniform-random-3sat/uf20-0390.cnf");
-sat_test!(uf20_0391, "examples/satisfiable/uniform-random-3sat/uf20-0391.cnf");
-sat_test!(uf20_0392, "examples/satisfiable/uniform-random-3sat/uf20-0392.cnf");
-sat_test!(uf20_0393, "examples/satisfiable/uniform-random-3sat/uf20-0393.cnf");
-sat_test!(uf20_0394, "examples/satisfiable/uniform-random-3sat/uf20-0394.cnf");
-sat_test!(uf20_0395, "examples/satisfiable/uniform-random-3sat/uf20-0395.cnf");
-sat_test!(uf20_0396, "examples/satisfiable/uniform-random-3sat/uf20-0396.cnf");
-sat_test!(uf20_0397, "examples/satisfiable/uniform-random-3sat/uf20-0397.cnf");
-sat_test!(uf20_0398, "examples/satisfiable/uniform-random-3sat/uf20-0398.cnf");
-sat_test!(uf20_0399, "examples/satisfiable/uniform-random-3sat/uf20-0399.cnf");
-sat_test!(uf20_0400, "examples/satisfiable/uniform-random-3sat/uf20-0400.cnf");
-sat_test!(uf20_0401, "examples/satisfiable/uniform-random-3sat/uf20-0401.cnf");
-sat_test!(uf20_0402, "examples/satisfiable/uniform-random-3sat/uf20-0402.cnf");
-sat_test!(uf20_0403, "examples/satisfiable/uniform-random-3sat/uf20-0403.cnf");
-sat_test!(uf20_0404, "examples/satisfiable/uniform-random-3sat/uf20-0404.cnf");
-sat_test!(uf20_0405, "examples/satisfiable/uniform-random-3sat/uf20-0405.cnf");
-sat_test!(uf20_0406, "examples/satisfiable/uniform-random-3sat/uf20-0406.cnf");
-sat_test!(uf20_0407, "examples/satisfiable/uniform-random-3sat/uf20-0407.cnf");
-sat_test!(uf20_0408, "examples/satisfiable/uniform-random-3sat/uf20-0408.cnf");
-sat_test!(uf20_0409, "examples/satisfiable/uniform-random-3sat/uf20-0409.cnf");
-sat_test!(uf20_0410, "examples/satisfiable/uniform-random-3sat/uf20-0410.cnf");
-sat_test!(uf20_0411, "examples/satisfiable/uniform-random-3sat/uf20-0411.cnf");
-sat_test!(uf20_0412, "examples/satisfiable/uniform-random-3sat/uf20-0412.cnf");
-sat_test!(uf20_0413, "examples/satisfiable/uniform-random-3sat/uf20-0413.cnf");
-sat_test!(uf20_0414, "examples/satisfiable/uniform-random-3sat/uf20-0414.cnf");
-sat_test!(uf20_0415, "examples/satisfiable/uniform-random-3sat/uf20-0415.cnf");
-sat_test!(uf20_0416, "examples/satisfiable/uniform-random-3sat/uf20-0416.cnf");
-sat_test!(uf20_0417, "examples/satisfiable/uniform-random-3sat/uf20-0417.cnf");
-sat_test!(uf20_0418, "examples/satisfiable/uniform-random-3sat/uf20-0418.cnf");
-sat_test!(uf20_0419, "examples/satisfiable/uniform-random-3sat/uf20-0419.cnf");
-sat_test!(uf20_0420, "examples/satisfiable/uniform-random-3sat/uf20-0420.cnf");
-sat_test!(uf20_0421, "examples/satisfiable/uniform-random-3sat/uf20-0421.cnf");
-sat_test!(uf20_0422, "examples/satisfiable/uniform-random-3sat/uf20-0422.cnf");
-sat_test!(uf20_0423, "examples/satisfiable/uniform-random-3sat/uf20-0423.cnf");
-sat_test!(uf20_0424, "examples/satisfiable/uniform-random-3sat/uf20-0424.cnf");
-sat_test!(uf20_0425, "examples/satisfiable/uniform-random-3sat/uf20-0425.cnf");
-sat_test!(uf20_0426, "examples/satisfiable/uniform-random-3sat/uf20-0426.cnf");
-sat_test!(uf20_0427, "examples/satisfiable/uniform-random-3sat/uf20-0427.cnf");
-sat_test!(uf20_0428, "examples/satisfiable/uniform-random-3sat/uf20-0428.cnf");
-sat_test!(uf20_0429, "examples/satisfiable/uniform-random-3sat/uf20-0429.cnf");
-sat_test!(uf20_0430, "examples/satisfiable/uniform-random-3sat/uf20-0430.cnf");
-sat_test!(uf20_0431, "examples/satisfiable/uniform-random-3sat/uf20-0431.cnf");
-sat_test!(uf20_0432, "examples/satisfiable/uniform-random-3sat/uf20-0432.cnf");
-sat_test!(uf20_0433, "examples/satisfiable/uniform-random-3sat/uf20-0433.cnf");
-sat_test!(uf20_0434, "examples/satisfiable/uniform-random-3sat/uf20-0434.cnf");
-sat_test!(uf20_0435, "examples/satisfiable/uniform-random-3sat/uf20-0435.cnf");
-sat_test!(uf20_0436, "examples/satisfiable/uniform-random-3sat/uf20-0436.cnf");
-sat_test!(uf20_0437, "examples/satisfiable/uniform-random-3sat/uf20-0437.cnf");
-sat_test!(uf20_0438, "examples/satisfiable/uniform-random-3sat/uf20-0438.cnf");
-sat_test!(uf20_0439, "examples/satisfiable/uniform-random-3sat/uf20-0439.cnf");
-sat_test!(uf20_0440, "examples/satisfiable/uniform-random-3sat/uf20-0440.cnf");
-sat_test!(uf20_0441, "examples/satisfiable/uniform-random-3sat/uf20-0441.cnf");
-sat_test!(uf20_0442, "examples/satisfiable/uniform-random-3sat/uf20-0442.cnf");
-sat_test!(uf20_0443, "examples/satisfiable/uniform-random-3sat/uf20-0443.cnf");
-sat_test!(uf20_0444, "examples/satisfiable/uniform-random-3sat/uf20-0444.cnf");
-sat_test!(uf20_0445, "examples/satisfiable/uniform-random-3sat/uf20-0445.cnf");
-sat_test!(uf20_0446, "examples/satisfiable/uniform-random-3sat/uf20-0446.cnf");
-sat_test!(uf20_0447, "examples/satisfiable/uniform-random-3sat/uf20-0447.cnf");
-sat_test!(uf20_0448, "examples/satisfiable/uniform-random-3sat/uf20-0448.cnf");
-sat_test!(uf20_0449, "examples/satisfiable/uniform-random-3sat/uf20-0449.cnf");
-sat_test!(uf20_0450, "examples/satisfiable/uniform-random-3sat/uf20-0450.cnf");
-sat_test!(uf20_0451, "examples/satisfiable/uniform-random-3sat/uf20-0451.cnf");
-sat_test!(uf20_0452, "examples/satisfiable/uniform-random-3sat/uf20-0452.cnf");
-sat_test!(uf20_0453, "examples/satisfiable/uniform-random-3sat/uf20-0453.cnf");
-sat_test!(uf20_0454, "examples/satisfiable/uniform-random-3sat/uf20-0454.cnf");
-sat_test!(uf20_0455, "examples/satisfiable/uniform-random-3sat/uf20-0455.cnf");
-sat_test!(uf20_0456, "examples/satisfiable/uniform-random-3sat/uf20-0456.cnf");
-sat_test!(uf20_0457, "examples/satisfiable/uniform-random-3sat/uf20-0457.cnf");
-sat_test!(uf20_0458, "examples/satisfiable/uniform-random-3sat/uf20-0458.cnf");
-sat_test!(uf20_0459, "examples/satisfiable/uniform-random-3sat/uf20-0459.cnf");
-sat_test!(uf20_0460, "examples/satisfiable/uniform-random-3sat/uf20-0460.cnf");
-sat_test!(uf20_0461, "examples/satisfiable/uniform-random-3sat/uf20-0461.cnf");
-sat_test!(uf20_0462, "examples/satisfiable/uniform-random-3sat/uf20-0462.cnf");
-sat_test!(uf20_0463, "examples/satisfiable/uniform-random-3sat/uf20-0463.cnf");
-sat_test!(uf20_0464, "examples/satisfiable/uniform-random-3sat/uf20-0464.cnf");
-sat_test!(uf20_0465, "examples/satisfiable/uniform-random-3sat/uf20-0465.cnf");
-sat_test!(uf20_0466, "examples/satisfiable/uniform-random-3sat/uf20-0466.cnf");
-sat_test!(uf20_0467, "examples/satisfiable/uniform-random-3sat/uf20-0467.cnf");
-sat_test!(uf20_0468, "examples/satisfiable/uniform-random-3sat/uf20-0468.cnf");
-sat_test!(uf20_0469, "examples/satisfiable/uniform-random-3sat/uf20-0469.cnf");
-sat_test!(uf20_0470, "examples/satisfiable/uniform-random-3sat/uf20-0470.cnf");
-sat_test!(uf20_0471, "examples/satisfiable/uniform-random-3sat/uf20-0471.cnf");
-sat_test!(uf20_0472, "examples/satisfiable/uniform-random-3sat/uf20-0472.cnf");
-sat_test!(uf20_0473, "examples/satisfiable/uniform-random-3sat/uf20-0473.cnf");
-sat_test!(uf20_0474, "examples/satisfiable/uniform-random-3sat/uf20-0474.cnf");
-sat_test!(uf20_0475, "examples/satisfiable/uniform-random-3sat/uf20-0475.cnf");
-sat_test!(uf20_0476, "examples/satisfiable/uniform-random-3sat/uf20-0476.cnf");
-sat_test!(uf20_0477, "examples/satisfiable/uniform-random-3sat/uf20-0477.cnf");
-sat_test!(uf20_0478, "examples/satisfiable/uniform-random-3sat/uf20-0478.cnf");
-sat_test!(uf20_0479, "examples/satisfiable/uniform-random-3sat/uf20-0479.cnf");
-sat_test!(uf20_0480, "examples/satisfiable/uniform-random-3sat/uf20-0480.cnf");
-sat_test!(uf20_0481, "examples/satisfiable/uniform-random-3sat/uf20-0481.cnf");
-sat_test!(uf20_0482, "examples/satisfiable/uniform-random-3sat/uf20-0482.cnf");
-sat_test!(uf20_0483, "examples/satisfiable/uniform-random-3sat/uf20-0483.cnf");
-sat_test!(uf20_0484, "examples/satisfiable/uniform-random-3sat/uf20-0484.cnf");
-sat_test!(uf20_0485, "examples/satisfiable/uniform-random-3sat/uf20-0485.cnf");
-sat_test!(uf20_0486, "examples/satisfiable/uniform-random-3sat/uf20-0486.cnf");
-sat_test!(uf20_0487, "examples/satisfiable/uniform-random-3sat/uf20-0487.cnf");
-sat_test!(uf20_0488, "examples/satisfiable/uniform-random-3sat/uf20-0488.cnf");
-sat_test!(uf20_0489, "examples/satisfiable/uniform-random-3sat/uf20-0489.cnf");
-sat_test!(uf20_0490, "examples/satisfiable/uniform-random-3sat/uf20-0490.cnf");
-sat_test!(uf20_0491, "examples/satisfiable/uniform-random-3sat/uf20-0491.cnf");
-sat_test!(uf20_0492, "examples/satisfiable/uniform-random-3sat/uf20-0492.cnf");
-sat_test!(uf20_0493, "examples/satisfiable/uniform-random-3sat/uf20-0493.cnf");
-sat_test!(uf20_0494, "examples/satisfiable/uniform-random-3sat/uf20-0494.cnf");
-sat_test!(uf20_0495, "examples/satisfiable/uniform-random-3sat/uf20-0495.cnf");
-sat_test!(uf20_0496, "examples/satisfiable/uniform-random-3sat/uf20-0496.cnf");
-sat_test!(uf20_0497, "examples/satisfiable/uniform-random-3sat/uf20-0497.cnf");
-sat_test!(uf20_0498, "examples/satisfiable/uniform-random-3sat/uf20-0498.cnf");
-sat_test!(uf20_0499, "examples/satisfiable/uniform-random-3sat/uf20-0499.cnf");
-sat_test!(uf20_0500, "examples/satisfiable/uniform-random-3sat/uf20-0500.cnf");
-sat_test!(uf20_0501, "examples/satisfiable/uniform-random-3sat/uf20-0501.cnf");
-sat_test!(uf20_0502, "examples/satisfiable/uniform-random-3sat/uf20-0502.cnf");
-sat_test!(uf20_0503, "examples/satisfiable/uniform-random-3sat/uf20-0503.cnf");
-sat_test!(uf20_0504, "examples/satisfiable/uniform-random-3sat/uf20-0504.cnf");
-sat_test!(uf20_0505, "examples/satisfiable/uniform-random-3sat/uf20-0505.cnf");
-sat_test!(uf20_0506, "examples/satisfiable/uniform-random-3sat/uf20-0506.cnf");
-sat_test!(uf20_0507, "examples/satisfiable/uniform-random-3sat/uf20-0507.cnf");
-sat_test!(uf20_0508, "examples/satisfiable/uniform-random-3sat/uf20-0508.cnf");
-sat_test!(uf20_0509, "examples/satisfiable/uniform-random-3sat/uf20-0509.cnf");
-sat_test!(uf20_0510, "examples/satisfiable/uniform-random-3sat/uf20-0510.cnf");
-sat_test!(uf20_0511, "examples/satisfiable/uniform-random-3sat/uf20-0511.cnf");
-sat_test!(uf20_0512, "examples/satisfiable/uniform-random-3sat/uf20-0512.cnf");
-sat_test!(uf20_0513, "examples/satisfiable/uniform-random-3sat/uf20-0513.cnf");
-sat_test!(uf20_0514, "examples/satisfiable/uniform-random-3sat/uf20-0514.cnf");
-sat_test!(uf20_0515, "examples/satisfiable/uniform-random-3sat/uf20-0515.cnf");
-sat_test!(uf20_0516, "examples/satisfiable/uniform-random-3sat/uf20-0516.cnf");
-sat_test!(uf20_0517, "examples/satisfiable/uniform-random-3sat/uf20-0517.cnf");
-sat_test!(uf20_0518, "examples/satisfiable/uniform-random-3sat/uf20-0518.cnf");
-sat_test!(uf20_0519, "examples/satisfiable/uniform-random-3sat/uf20-0519.cnf");
-sat_test!(uf20_0520, "examples/satisfiable/uniform-random-3sat/uf20-0520.cnf");
-sat_test!(uf20_0521, "examples/satisfiable/uniform-random-3sat/uf20-0521.cnf");
-sat_test!(uf20_0522, "examples/satisfiable/uniform-random-3sat/uf20-0522.cnf");
-sat_test!(uf20_0523, "examples/satisfiable/uniform-random-3sat/uf20-0523.cnf");
-sat_test!(uf20_0524, "examples/satisfiable/uniform-random-3sat/uf20-0524.cnf");
-sat_test!(uf20_0525, "examples/satisfiable/uniform-random-3sat/uf20-0525.cnf");
-sat_test!(uf20_0526, "examples/satisfiable/uniform-random-3sat/uf20-0526.cnf");
-sat_test!(uf20_0527, "examples/satisfiable/uniform-random-3sat/uf20-0527.cnf");
-sat_test!(uf20_0528, "examples/satisfiable/uniform-random-3sat/uf20-0528.cnf");
-sat_test!(uf20_0529, "examples/satisfiable/uniform-random-3sat/uf20-0529.cnf");
-sat_test!(uf20_0530, "examples/satisfiable/uniform-random-3sat/uf20-0530.cnf");
-sat_test!(uf20_0531, "examples/satisfiable/uniform-random-3sat/uf20-0531.cnf");
-sat_test!(uf20_0532, "examples/satisfiable/uniform-random-3sat/uf20-0532.cnf");
-sat_test!(uf20_0533, "examples/satisfiable/uniform-random-3sat/uf20-0533.cnf");
-sat_test!(uf20_0534, "examples/satisfiable/uniform-random-3sat/uf20-0534.cnf");
-sat_test!(uf20_0535, "examples/satisfiable/uniform-random-3sat/uf20-0535.cnf");
-sat_test!(uf20_0536, "examples/satisfiable/uniform-random-3sat/uf20-0536.cnf");
-sat_test!(uf20_0537, "examples/satisfiable/uniform-random-3sat/uf20-0537.cnf");
-sat_test!(uf20_0538, "examples/satisfiable/uniform-random-3sat/uf20-0538.cnf");
-sat_test!(uf20_0539, "examples/satisfiable/uniform-random-3sat/uf20-0539.cnf");
-sat_test!(uf20_0540, "examples/satisfiable/uniform-random-3sat/uf20-0540.cnf");
-sat_test!(uf20_0541, "examples/satisfiable/uniform-random-3sat/uf20-0541.cnf");
-sat_test!(uf20_0542, "examples/satisfiable/uniform-random-3sat/uf20-0542.cnf");
-sat_test!(uf20_0543, "examples/satisfiable/uniform-random-3sat/uf20-0543.cnf");
-sat_test!(uf20_0544, "examples/satisfiable/uniform-random-3sat/uf20-0544.cnf");
-sat_test!(uf20_0545, "examples/satisfiable/uniform-random-3sat/uf20-0545.cnf");
-sat_test!(uf20_0546, "examples/satisfiable/uniform-random-3sat/uf20-0546.cnf");
-sat_test!(uf20_0547, "examples/satisfiable/uniform-random-3sat/uf20-0547.cnf");
-sat_test!(uf20_0548, "examples/satisfiable/uniform-random-3sat/uf20-0548.cnf");
-sat_test!(uf20_0549, "examples/satisfiable/uniform-random-3sat/uf20-0549.cnf");
-sat_test!(uf20_0550, "examples/satisfiable/uniform-random-3sat/uf20-0550.cnf");
-sat_test!(uf20_0551, "examples/satisfiable/uniform-random-3sat/uf20-0551.cnf");
-sat_test!(uf20_0552, "examples/satisfiable/uniform-random-3sat/uf20-0552.cnf");
-sat_test!(uf20_0553, "examples/satisfiable/uniform-random-3sat/uf20-0553.cnf");
-sat_test!(uf20_0554, "examples/satisfiable/uniform-random-3sat/uf20-0554.cnf");
-sat_test!(uf20_0555, "examples/satisfiable/uniform-random-3sat/uf20-0555.cnf");
-sat_test!(uf20_0556, "examples/satisfiable/uniform-random-3sat/uf20-0556.cnf");
-sat_test!(uf20_0557, "examples/satisfiable/uniform-random-3sat/uf20-0557.cnf");
-sat_test!(uf20_0558, "examples/satisfiable/uniform-random-3sat/uf20-0558.cnf");
-sat_test!(uf20_0559, "examples/satisfiable/uniform-random-3sat/uf20-0559.cnf");
-sat_test!(uf20_0560, "examples/satisfiable/uniform-random-3sat/uf20-0560.cnf");
-sat_test!(uf20_0561, "examples/satisfiable/uniform-random-3sat/uf20-0561.cnf");
-sat_test!(uf20_0562, "examples/satisfiable/uniform-random-3sat/uf20-0562.cnf");
-sat_test!(uf20_0563, "examples/satisfiable/uniform-random-3sat/uf20-0563.cnf");
-sat_test!(uf20_0564, "examples/satisfiable/uniform-random-3sat/uf20-0564.cnf");
-sat_test!(uf20_0565, "examples/satisfiable/uniform-random-3sat/uf20-0565.cnf");
-sat_test!(uf20_0566, "examples/satisfiable/uniform-random-3sat/uf20-0566.cnf");
-sat_test!(uf20_0567, "examples/satisfiable/uniform-random-3sat/uf20-0567.cnf");
-sat_test!(uf20_0568, "examples/satisfiable/uniform-random-3sat/uf20-0568.cnf");
-sat_test!(uf20_0569, "examples/satisfiable/uniform-random-3sat/uf20-0569.cnf");
-sat_test!(uf20_0570, "examples/satisfiable/uniform-random-3sat/uf20-0570.cnf");
-sat_test!(uf20_0571, "examples/satisfiable/uniform-random-3sat/uf20-0571.cnf");
-sat_test!(uf20_0572, "examples/satisfiable/uniform-random-3sat/uf20-0572.cnf");
-sat_test!(uf20_0573, "examples/satisfiable/uniform-random-3sat/uf20-0573.cnf");
-sat_test!(uf20_0574, "examples/satisfiable/uniform-random-3sat/uf20-0574.cnf");
-sat_test!(uf20_0575, "examples/satisfiable/uniform-random-3sat/uf20-0575.cnf");
-sat_test!(uf20_0576, "examples/satisfiable/uniform-random-3sat/uf20-0576.cnf");
-sat_test!(uf20_0577, "examples/satisfiable/uniform-random-3sat/uf20-0577.cnf");
-sat_test!(uf20_0578, "examples/satisfiable/uniform-random-3sat/uf20-0578.cnf");
-sat_test!(uf20_0579, "examples/satisfiable/uniform-random-3sat/uf20-0579.cnf");
-sat_test!(uf20_0580, "examples/satisfiable/uniform-random-3sat/uf20-0580.cnf");
-sat_test!(uf20_0581, "examples/satisfiable/uniform-random-3sat/uf20-0581.cnf");
-sat_test!(uf20_0582, "examples/satisfiable/uniform-random-3sat/uf20-0582.cnf");
-sat_test!(uf20_0583, "examples/satisfiable/uniform-random-3sat/uf20-0583.cnf");
-sat_test!(uf20_0584, "examples/satisfiable/uniform-random-3sat/uf20-0584.cnf");
-sat_test!(uf20_0585, "examples/satisfiable/uniform-random-3sat/uf20-0585.cnf");
-sat_test!(uf20_0586, "examples/satisfiable/uniform-random-3sat/uf20-0586.cnf");
-sat_test!(uf20_0587, "examples/satisfiable/uniform-random-3sat/uf20-0587.cnf");
-sat_test!(uf20_0588, "examples/satisfiable/uniform-random-3sat/uf20-0588.cnf");
-sat_test!(uf20_0589, "examples/satisfiable/uniform-random-3sat/uf20-0589.cnf");
-sat_test!(uf20_0590, "examples/satisfiable/uniform-random-3sat/uf20-0590.cnf");
-sat_test!(uf20_0591, "examples/satisfiable/uniform-random-3sat/uf20-0591.cnf");
-sat_test!(uf20_0592, "examples/satisfiable/uniform-random-3sat/uf20-0592.cnf");
-sat_test!(uf20_0593, "examples/satisfiable/uniform-random-3sat/uf20-0593.cnf");
-sat_test!(uf20_0594, "examples/satisfiable/uniform-random-3sat/uf20-0594.cnf");
-sat_test!(uf20_0595, "examples/satisfiable/uniform-random-3sat/uf20-0595.cnf");
-sat_test!(uf20_0596, "examples/satisfiable/uniform-random-3sat/uf20-0596.cnf");
-sat_test!(uf20_0597, "examples/satisfiable/uniform-random-3sat/uf20-0597.cnf");
-sat_test!(uf20_0598, "examples/satisfiable/uniform-random-3sat/uf20-0598.cnf");
-sat_test!(uf20_0599, "examples/satisfiable/uniform-random-3sat/uf20-0599.cnf");
-sat_test!(uf20_0600, "examples/satisfiable/uniform-random-3sat/uf20-0600.cnf");
-sat_test!(uf20_0601, "examples/satisfiable/uniform-random-3sat/uf20-0601.cnf");
-sat_test!(uf20_0602, "examples/satisfiable/uniform-random-3sat/uf20-0602.cnf");
-sat_test!(uf20_0603, "examples/satisfiable/uniform-random-3sat/uf20-0603.cnf");
-sat_test!(uf20_0604, "examples/satisfiable/uniform-random-3sat/uf20-0604.cnf");
-sat_test!(uf20_0605, "examples/satisfiable/uniform-random-3sat/uf20-0605.cnf");
-sat_test!(uf20_0606, "examples/satisfiable/uniform-random-3sat/uf20-0606.cnf");
-sat_test!(uf20_0607, "examples/satisfiable/uniform-random-3sat/uf20-0607.cnf");
-sat_test!(uf20_0608, "examples/satisfiable/uniform-random-3sat/uf20-0608.cnf");
-sat_test!(uf20_0609, "examples/satisfiable/uniform-random-3sat/uf20-0609.cnf");
-sat_test!(uf20_0610, "examples/satisfiable/uniform-random-3sat/uf20-0610.cnf");
-sat_test!(uf20_0611, "examples/satisfiable/uniform-random-3sat/uf20-0611.cnf");
-sat_test!(uf20_0612, "examples/satisfiable/uniform-random-3sat/uf20-0612.cnf");
-sat_test!(uf20_0613, "examples/satisfiable/uniform-random-3sat/uf20-0613.cnf");
-sat_test!(uf20_0614, "examples/satisfiable/uniform-random-3sat/uf20-0614.cnf");
-sat_test!(uf20_0615, "examples/satisfiable/uniform-random-3sat/uf20-0615.cnf");
-sat_test!(uf20_0616, "examples/satisfiable/uniform-random-3sat/uf20-0616.cnf");
-sat_test!(uf20_0617, "examples/satisfiable/uniform-random-3sat/uf20-0617.cnf");
-sat_test!(uf20_0618, "examples/satisfiable/uniform-random-3sat/uf20-0618.cnf");
-sat_test!(uf20_0619, "examples/satisfiable/uniform-random-3sat/uf20-0619.cnf");
-sat_test!(uf20_0620, "examples/satisfiable/uniform-random-3sat/uf20-0620.cnf");
-sat_test!(uf20_0621, "examples/satisfiable/uniform-random-3sat/uf20-0621.cnf");
-sat_test!(uf20_0622, "examples/satisfiable/uniform-random-3sat/uf20-0622.cnf");
-sat_test!(uf20_0623, "examples/satisfiable/uniform-random-3sat/uf20-0623.cnf");
-sat_test!(uf20_0624, "examples/satisfiable/uniform-random-3sat/uf20-0624.cnf");
-sat_test!(uf20_0625, "examples/satisfiable/uniform-random-3sat/uf20-0625.cnf");
-sat_test!(uf20_0626, "examples/satisfiable/uniform-random-3sat/uf20-0626.cnf");
-sat_test!(uf20_0627, "examples/satisfiable/uniform-random-3sat/uf20-0627.cnf");
-sat_test!(uf20_0628, "examples/satisfiable/uniform-random-3sat/uf20-0628.cnf");
-sat_test!(uf20_0629, "examples/satisfiable/uniform-random-3sat/uf20-0629.cnf");
-sat_test!(uf20_0630, "examples/satisfiable/uniform-random-3sat/uf20-0630.cnf");
-sat_test!(uf20_0631, "examples/satisfiable/uniform-random-3sat/uf20-0631.cnf");
-sat_test!(uf20_0632, "examples/satisfiable/uniform-random-3sat/uf20-0632.cnf");
-sat_test!(uf20_0633, "examples/satisfiable/uniform-random-3sat/uf20-0633.cnf");
-sat_test!(uf20_0634, "examples/satisfiable/uniform-random-3sat/uf20-0634.cnf");
-sat_test!(uf20_0635, "examples/satisfiable/uniform-random-3sat/uf20-0635.cnf");
-sat_test!(uf20_0636, "examples/satisfiable/uniform-random-3sat/uf20-0636.cnf");
-sat_test!(uf20_0637, "examples/satisfiable/uniform-random-3sat/uf20-0637.cnf");
-sat_test!(uf20_0638, "examples/satisfiable/uniform-random-3sat/uf20-0638.cnf");
-sat_test!(uf20_0639, "examples/satisfiable/uniform-random-3sat/uf20-0639.cnf");
-sat_test!(uf20_0640, "examples/satisfiable/uniform-random-3sat/uf20-0640.cnf");
-sat_test!(uf20_0641, "examples/satisfiable/uniform-random-3sat/uf20-0641.cnf");
-sat_test!(uf20_0642, "examples/satisfiable/uniform-random-3sat/uf20-0642.cnf");
-sat_test!(uf20_0643, "examples/satisfiable/uniform-random-3sat/uf20-0643.cnf");
-sat_test!(uf20_0644, "examples/satisfiable/uniform-random-3sat/uf20-0644.cnf");
-sat_test!(uf20_0645, "examples/satisfiable/uniform-random-3sat/uf20-0645.cnf");
-sat_test!(uf20_0646, "examples/satisfiable/uniform-random-3sat/uf20-0646.cnf");
-sat_test!(uf20_0647, "examples/satisfiable/uniform-random-3sat/uf20-0647.cnf");
-sat_test!(uf20_0648, "examples/satisfiable/uniform-random-3sat/uf20-0648.cnf");
-sat_test!(uf20_0649, "examples/satisfiable/uniform-random-3sat/uf20-0649.cnf");
-sat_test!(uf20_0650, "examples/satisfiable/uniform-random-3sat/uf20-0650.cnf");
-sat_test!(uf20_0651, "examples/satisfiable/uniform-random-3sat/uf20-0651.cnf");
-sat_test!(uf20_0652, "examples/satisfiable/uniform-random-3sat/uf20-0652.cnf");
-sat_test!(uf20_0653, "examples/satisfiable/uniform-random-3sat/uf20-0653.cnf");
-sat_test!(uf20_0654, "examples/satisfiable/uniform-random-3sat/uf20-0654.cnf");
-sat_test!(uf20_0655, "examples/satisfiable/uniform-random-3sat/uf20-0655.cnf");
-sat_test!(uf20_0656, "examples/satisfiable/uniform-random-3sat/uf20-0656.cnf");
-sat_test!(uf20_0657, "examples/satisfiable/uniform-random-3sat/uf20-0657.cnf");
-sat_test!(uf20_0658, "examples/satisfiable/uniform-random-3sat/uf20-0658.cnf");
-sat_test!(uf20_0659, "examples/satisfiable/uniform-random-3sat/uf20-0659.cnf");
-sat_test!(uf20_0660, "examples/satisfiable/uniform-random-3sat/uf20-0660.cnf");
-sat_test!(uf20_0661, "examples/satisfiable/uniform-random-3sat/uf20-0661.cnf");
-sat_test!(uf20_0662, "examples/satisfiable/uniform-random-3sat/uf20-0662.cnf");
-sat_test!(uf20_0663, "examples/satisfiable/uniform-random-3sat/uf20-0663.cnf");
-sat_test!(uf20_0664, "examples/satisfiable/uniform-random-3sat/uf20-0664.cnf");
-sat_test!(uf20_0665, "examples/satisfiable/uniform-random-3sat/uf20-0665.cnf");
-sat_test!(uf20_0666, "examples/satisfiable/uniform-random-3sat/uf20-0666.cnf");
-sat_test!(uf20_0667, "examples/satisfiable/uniform-random-3sat/uf20-0667.cnf");
-sat_test!(uf20_0668, "examples/satisfiable/uniform-random-3sat/uf20-0668.cnf");
-sat_test!(uf20_0669, "examples/satisfiable/uniform-random-3sat/uf20-0669.cnf");
-sat_test!(uf20_0670, "examples/satisfiable/uniform-random-3sat/uf20-0670.cnf");
-sat_test!(uf20_0671, "examples/satisfiable/uniform-random-3sat/uf20-0671.cnf");
-sat_test!(uf20_0672, "examples/satisfiable/uniform-random-3sat/uf20-0672.cnf");
-sat_test!(uf20_0673, "examples/satisfiable/uniform-random-3sat/uf20-0673.cnf");
-sat_test!(uf20_0674, "examples/satisfiable/uniform-random-3sat/uf20-0674.cnf");
-sat_test!(uf20_0675, "examples/satisfiable/uniform-random-3sat/uf20-0675.cnf");
-sat_test!(uf20_0676, "examples/satisfiable/uniform-random-3sat/uf20-0676.cnf");
-sat_test!(uf20_0677, "examples/satisfiable/uniform-random-3sat/uf20-0677.cnf");
-sat_test!(uf20_0678, "examples/satisfiable/uniform-random-3sat/uf20-0678.cnf");
-sat_test!(uf20_0679, "examples/satisfiable/uniform-random-3sat/uf20-0679.cnf");
-sat_test!(uf20_0680, "examples/satisfiable/uniform-random-3sat/uf20-0680.cnf");
-sat_test!(uf20_0681, "examples/satisfiable/uniform-random-3sat/uf20-0681.cnf");
-sat_test!(uf20_0682, "examples/satisfiable/uniform-random-3sat/uf20-0682.cnf");
-sat_test!(uf20_0683, "examples/satisfiable/uniform-random-3sat/uf20-0683.cnf");
-sat_test!(uf20_0684, "examples/satisfiable/uniform-random-3sat/uf20-0684.cnf");
-sat_test!(uf20_0685, "examples/satisfiable/uniform-random-3sat/uf20-0685.cnf");
-sat_test!(uf20_0686, "examples/satisfiable/uniform-random-3sat/uf20-0686.cnf");
-sat_test!(uf20_0687, "examples/satisfiable/uniform-random-3sat/uf20-0687.cnf");
-sat_test!(uf20_0688, "examples/satisfiable/uniform-random-3sat/uf20-0688.cnf");
-sat_test!(uf20_0689, "examples/satisfiable/uniform-random-3sat/uf20-0689.cnf");
-sat_test!(uf20_0690, "examples/satisfiable/uniform-random-3sat/uf20-0690.cnf");
-sat_test!(uf20_0691, "examples/satisfiable/uniform-random-3sat/uf20-0691.cnf");
-sat_test!(uf20_0692, "examples/satisfiable/uniform-random-3sat/uf20-0692.cnf");
-sat_test!(uf20_0693, "examples/satisfiable/uniform-random-3sat/uf20-0693.cnf");
-sat_test!(uf20_0694, "examples/satisfiable/uniform-random-3sat/uf20-0694.cnf");
-sat_test!(uf20_0695, "examples/satisfiable/uniform-random-3sat/uf20-0695.cnf");
-sat_test!(uf20_0696, "examples/satisfiable/uniform-random-3sat/uf20-0696.cnf");
-sat_test!(uf20_0697, "examples/satisfiable/uniform-random-3sat/uf20-0697.cnf");
-sat_test!(uf20_0698, "examples/satisfiable/uniform-random-3sat/uf20-0698.cnf");
-sat_test!(uf20_0699, "examples/satisfiable/uniform-random-3sat/uf20-0699.cnf");
-sat_test!(uf20_0700, "examples/satisfiable/uniform-random-3sat/uf20-0700.cnf");
-sat_test!(uf20_0701, "examples/satisfiable/uniform-random-3sat/uf20-0701.cnf");
-sat_test!(uf20_0702, "examples/satisfiable/uniform-random-3sat/uf20-0702.cnf");
-sat_test!(uf20_0703, "examples/satisfiable/uniform-random-3sat/uf20-0703.cnf");
-sat_test!(uf20_0704, "examples/satisfiable/uniform-random-3sat/uf20-0704.cnf");
-sat_test!(uf20_0705, "examples/satisfiable/uniform-random-3sat/uf20-0705.cnf");
-sat_test!(uf20_0706, "examples/satisfiable/uniform-random-3sat/uf20-0706.cnf");
-sat_test!(uf20_0707, "examples/satisfiable/uniform-random-3sat/uf20-0707.cnf");
-sat_test!(uf20_0708, "examples/satisfiable/uniform-random-3sat/uf20-0708.cnf");
-sat_test!(uf20_0709, "examples/satisfiable/uniform-random-3sat/uf20-0709.cnf");
-sat_test!(uf20_0710, "examples/satisfiable/uniform-random-3sat/uf20-0710.cnf");
-sat_test!(uf20_0711, "examples/satisfiable/uniform-random-3sat/uf20-0711.cnf");
-sat_test!(uf20_0712, "examples/satisfiable/uniform-random-3sat/uf20-0712.cnf");
-sat_test!(uf20_0713, "examples/satisfiable/uniform-random-3sat/uf20-0713.cnf");
-sat_test!(uf20_0714, "examples/satisfiable/uniform-random-3sat/uf20-0714.cnf");
-sat_test!(uf20_0715, "examples/satisfiable/uniform-random-3sat/uf20-0715.cnf");
-sat_test!(uf20_0716, "examples/satisfiable/uniform-random-3sat/uf20-0716.cnf");
-sat_test!(uf20_0717, "examples/satisfiable/uniform-random-3sat/uf20-0717.cnf");
-sat_test!(uf20_0718, "examples/satisfiable/uniform-random-3sat/uf20-0718.cnf");
-sat_test!(uf20_0719, "examples/satisfiable/uniform-random-3sat/uf20-0719.cnf");
-sat_test!(uf20_0720, "examples/satisfiable/uniform-random-3sat/uf20-0720.cnf");
-sat_test!(uf20_0721, "examples/satisfiable/uniform-random-3sat/uf20-0721.cnf");
-sat_test!(uf20_0722, "examples/satisfiable/uniform-random-3sat/uf20-0722.cnf");
-sat_test!(uf20_0723, "examples/satisfiable/uniform-random-3sat/uf20-0723.cnf");
-sat_test!(uf20_0724, "examples/satisfiable/uniform-random-3sat/uf20-0724.cnf");
-sat_test!(uf20_0725, "examples/satisfiable/uniform-random-3sat/uf20-0725.cnf");
-sat_test!(uf20_0726, "examples/satisfiable/uniform-random-3sat/uf20-0726.cnf");
-sat_test!(uf20_0727, "examples/satisfiable/uniform-random-3sat/uf20-0727.cnf");
-sat_test!(uf20_0728, "examples/satisfiable/uniform-random-3sat/uf20-0728.cnf");
-sat_test!(uf20_0729, "examples/satisfiable/uniform-random-3sat/uf20-0729.cnf");
-sat_test!(uf20_0730, "examples/satisfiable/uniform-random-3sat/uf20-0730.cnf");
-sat_test!(uf20_0731, "examples/satisfiable/uniform-random-3sat/uf20-0731.cnf");
-sat_test!(uf20_0732, "examples/satisfiable/uniform-random-3sat/uf20-0732.cnf");
-sat_test!(uf20_0733, "examples/satisfiable/uniform-random-3sat/uf20-0733.cnf");
-sat_test!(uf20_0734, "examples/satisfiable/uniform-random-3sat/uf20-0734.cnf");
-sat_test!(uf20_0735, "examples/satisfiable/uniform-random-3sat/uf20-0735.cnf");
-sat_test!(uf20_0736, "examples/satisfiable/uniform-random-3sat/uf20-0736.cnf");
-sat_test!(uf20_0737, "examples/satisfiable/uniform-random-3sat/uf20-0737.cnf");
-sat_test!(uf20_0738, "examples/satisfiable/uniform-random-3sat/uf20-0738.cnf");
-sat_test!(uf20_0739, "examples/satisfiable/uniform-random-3sat/uf20-0739.cnf");
-sat_test!(uf20_0740, "examples/satisfiable/uniform-random-3sat/uf20-0740.cnf");
-sat_test!(uf20_0741, "examples/satisfiable/uniform-random-3sat/uf20-0741.cnf");
-sat_test!(uf20_0742, "examples/satisfiable/uniform-random-3sat/uf20-0742.cnf");
-sat_test!(uf20_0743, "examples/satisfiable/uniform-random-3sat/uf20-0743.cnf");
-sat_test!(uf20_0744, "examples/satisfiable/uniform-random-3sat/uf20-0744.cnf");
-sat_test!(uf20_0745, "examples/satisfiable/uniform-random-3sat/uf20-0745.cnf");
-sat_test!(uf20_0746, "examples/satisfiable/uniform-random-3sat/uf20-0746.cnf");
-sat_test!(uf20_0747, "examples/satisfiable/uniform-random-3sat/uf20-0747.cnf");
-sat_test!(uf20_0748, "examples/satisfiable/uniform-random-3sat/uf20-0748.cnf");
-sat_test!(uf20_0749, "examples/satisfiable/uniform-random-3sat/uf20-0749.cnf");
-sat_test!(uf20_0750, "examples/satisfiable/uniform-random-3sat/uf20-0750.cnf");
-sat_test!(uf20_0751, "examples/satisfiable/uniform-random-3sat/uf20-0751.cnf");
-sat_test!(uf20_0752, "examples/satisfiable/uniform-random-3sat/uf20-0752.cnf");
-sat_test!(uf20_0753, "examples/satisfiable/uniform-random-3sat/uf20-0753.cnf");
-sat_test!(uf20_0754, "examples/satisfiable/uniform-random-3sat/uf20-0754.cnf");
-sat_test!(uf20_0755, "examples/satisfiable/uniform-random-3sat/uf20-0755.cnf");
-sat_test!(uf20_0756, "examples/satisfiable/uniform-random-3sat/uf20-0756.cnf");
-sat_test!(uf20_0757, "examples/satisfiable/uniform-random-3sat/uf20-0757.cnf");
-sat_test!(uf20_0758, "examples/satisfiable/uniform-random-3sat/uf20-0758.cnf");
-sat_test!(uf20_0759, "examples/satisfiable/uniform-random-3sat/uf20-0759.cnf");
-sat_test!(uf20_0760, "examples/satisfiable/uniform-random-3sat/uf20-0760.cnf");
-sat_test!(uf20_0761, "examples/satisfiable/uniform-random-3sat/uf20-0761.cnf");
-sat_test!(uf20_0762, "examples/satisfiable/uniform-random-3sat/uf20-0762.cnf");
-sat_test!(uf20_0763, "examples/satisfiable/uniform-random-3sat/uf20-0763.cnf");
-sat_test!(uf20_0764, "examples/satisfiable/uniform-random-3sat/uf20-0764.cnf");
-sat_test!(uf20_0765, "examples/satisfiable/uniform-random-3sat/uf20-0765.cnf");
-sat_test!(uf20_0766, "examples/satisfiable/uniform-random-3sat/uf20-0766.cnf");
-sat_test!(uf20_0767, "examples/satisfiable/uniform-random-3sat/uf20-0767.cnf");
-sat_test!(uf20_0768, "examples/satisfiable/uniform-random-3sat/uf20-0768.cnf");
-sat_test!(uf20_0769, "examples/satisfiable/uniform-random-3sat/uf20-0769.cnf");
-sat_test!(uf20_0770, "examples/satisfiable/uniform-random-3sat/uf20-0770.cnf");
-sat_test!(uf20_0771, "examples/satisfiable/uniform-random-3sat/uf20-0771.cnf");
-sat_test!(uf20_0772, "examples/satisfiable/uniform-random-3sat/uf20-0772.cnf");
-sat_test!(uf20_0773, "examples/satisfiable/uniform-random-3sat/uf20-0773.cnf");
-sat_test!(uf20_0774, "examples/satisfiable/uniform-random-3sat/uf20-0774.cnf");
-sat_test!(uf20_0775, "examples/satisfiable/uniform-random-3sat/uf20-0775.cnf");
-sat_test!(uf20_0776, "examples/satisfiable/uniform-random-3sat/uf20-0776.cnf");
-sat_test!(uf20_0777, "examples/satisfiable/uniform-random-3sat/uf20-0777.cnf");
-sat_test!(uf20_0778, "examples/satisfiable/uniform-random-3sat/uf20-0778.cnf");
-sat_test!(uf20_0779, "examples/satisfiable/uniform-random-3sat/uf20-0779.cnf");
-sat_test!(uf20_0780, "examples/satisfiable/uniform-random-3sat/uf20-0780.cnf");
-sat_test!(uf20_0781, "examples/satisfiable/uniform-random-3sat/uf20-0781.cnf");
-sat_test!(uf20_0782, "examples/satisfiable/uniform-random-3sat/uf20-0782.cnf");
-sat_test!(uf20_0783, "examples/satisfiable/uniform-random-3sat/uf20-0783.cnf");
-sat_test!(uf20_0784, "examples/satisfiable/uniform-random-3sat/uf20-0784.cnf");
-sat_test!(uf20_0785, "examples/satisfiable/uniform-random-3sat/uf20-0785.cnf");
-sat_test!(uf20_0786, "examples/satisfiable/uniform-random-3sat/uf20-0786.cnf");
-sat_test!(uf20_0787, "examples/satisfiable/uniform-random-3sat/uf20-0787.cnf");
-sat_test!(uf20_0788, "examples/satisfiable/uniform-random-3sat/uf20-0788.cnf");
-sat_test!(uf20_0789, "examples/satisfiable/uniform-random-3sat/uf20-0789.cnf");
-sat_test!(uf20_0790, "examples/satisfiable/uniform-random-3sat/uf20-0790.cnf");
-sat_test!(uf20_0791, "examples/satisfiable/uniform-random-3sat/uf20-0791.cnf");
-sat_test!(uf20_0792, "examples/satisfiable/uniform-random-3sat/uf20-0792.cnf");
-sat_test!(uf20_0793, "examples/satisfiable/uniform-random-3sat/uf20-0793.cnf");
-sat_test!(uf20_0794, "examples/satisfiable/uniform-random-3sat/uf20-0794.cnf");
-sat_test!(uf20_0795, "examples/satisfiable/uniform-random-3sat/uf20-0795.cnf");
-sat_test!(uf20_0796, "examples/satisfiable/uniform-random-3sat/uf20-0796.cnf");
-sat_test!(uf20_0797, "examples/satisfiable/uniform-random-3sat/uf20-0797.cnf");
-sat_test!(uf20_0798, "examples/satisfiable/uniform-random-3sat/uf20-0798.cnf");
-sat_test!(uf20_0799, "examples/satisfiable/uniform-random-3sat/uf20-0799.cnf");
-sat_test!(uf20_0800, "examples/satisfiable/uniform-random-3sat/uf20-0800.cnf");
-sat_test!(uf20_0801, "examples/satisfiable/uniform-random-3sat/uf20-0801.cnf");
-sat_test!(uf20_0802, "examples/satisfiable/uniform-random-3sat/uf20-0802.cnf");
-sat_test!(uf20_0803, "examples/satisfiable/uniform-random-3sat/uf20-0803.cnf");
-sat_test!(uf20_0804, "examples/satisfiable/uniform-random-3sat/uf20-0804.cnf");
-sat_test!(uf20_0805, "examples/satisfiable/uniform-random-3sat/uf20-0805.cnf");
-sat_test!(uf20_0806, "examples/satisfiable/uniform-random-3sat/uf20-0806.cnf");
-sat_test!(uf20_0807, "examples/satisfiable/uniform-random-3sat/uf20-0807.cnf");
-sat_test!(uf20_0808, "examples/satisfiable/uniform-random-3sat/uf20-0808.cnf");
-sat_test!(uf20_0809, "examples/satisfiable/uniform-random-3sat/uf20-0809.cnf");
-sat_test!(uf20_0810, "examples/satisfiable/uniform-random-3sat/uf20-0810.cnf");
-sat_test!(uf20_0811, "examples/satisfiable/uniform-random-3sat/uf20-0811.cnf");
-sat_test!(uf20_0812, "examples/satisfiable/uniform-random-3sat/uf20-0812.cnf");
-sat_test!(uf20_0813, "examples/satisfiable/uniform-random-3sat/uf20-0813.cnf");
-sat_test!(uf20_0814, "examples/satisfiable/uniform-random-3sat/uf20-0814.cnf");
-sat_test!(uf20_0815, "examples/satisfiable/uniform-random-3sat/uf20-0815.cnf");
-sat_test!(uf20_0816, "examples/satisfiable/uniform-random-3sat/uf20-0816.cnf");
-sat_test!(uf20_0817, "examples/satisfiable/uniform-random-3sat/uf20-0817.cnf");
-sat_test!(uf20_0818, "examples/satisfiable/uniform-random-3sat/uf20-0818.cnf");
-sat_test!(uf20_0819, "examples/satisfiable/uniform-random-3sat/uf20-0819.cnf");
-sat_test!(uf20_0820, "examples/satisfiable/uniform-random-3sat/uf20-0820.cnf");
-sat_test!(uf20_0821, "examples/satisfiable/uniform-random-3sat/uf20-0821.cnf");
-sat_test!(uf20_0822, "examples/satisfiable/uniform-random-3sat/uf20-0822.cnf");
-sat_test!(uf20_0823, "examples/satisfiable/uniform-random-3sat/uf20-0823.cnf");
-sat_test!(uf20_0824, "examples/satisfiable/uniform-random-3sat/uf20-0824.cnf");
-sat_test!(uf20_0825, "examples/satisfiable/uniform-random-3sat/uf20-0825.cnf");
-sat_test!(uf20_0826, "examples/satisfiable/uniform-random-3sat/uf20-0826.cnf");
-sat_test!(uf20_0827, "examples/satisfiable/uniform-random-3sat/uf20-0827.cnf");
-sat_test!(uf20_0828, "examples/satisfiable/uniform-random-3sat/uf20-0828.cnf");
-sat_test!(uf20_0829, "examples/satisfiable/uniform-random-3sat/uf20-0829.cnf");
-sat_test!(uf20_0830, "examples/satisfiable/uniform-random-3sat/uf20-0830.cnf");
-sat_test!(uf20_0831, "examples/satisfiable/uniform-random-3sat/uf20-0831.cnf");
-sat_test!(uf20_0832, "examples/satisfiable/uniform-random-3sat/uf20-0832.cnf");
-sat_test!(uf20_0833, "examples/satisfiable/uniform-random-3sat/uf20-0833.cnf");
-sat_test!(uf20_0834, "examples/satisfiable/uniform-random-3sat/uf20-0834.cnf");
-sat_test!(uf20_0835, "examples/satisfiable/uniform-random-3sat/uf20-0835.cnf");
-sat_test!(uf20_0836, "examples/satisfiable/uniform-random-3sat/uf20-0836.cnf");
-sat_test!(uf20_0837, "examples/satisfiable/uniform-random-3sat/uf20-0837.cnf");
-sat_test!(uf20_0838, "examples/satisfiable/uniform-random-3sat/uf20-0838.cnf");
-sat_test!(uf20_0839, "examples/satisfiable/uniform-random-3sat/uf20-0839.cnf");
-sat_test!(uf20_0840, "examples/satisfiable/uniform-random-3sat/uf20-0840.cnf");
-sat_test!(uf20_0841, "examples/satisfiable/uniform-random-3sat/uf20-0841.cnf");
-sat_test!(uf20_0842, "examples/satisfiable/uniform-random-3sat/uf20-0842.cnf");
-sat_test!(uf20_0843, "examples/satisfiable/uniform-random-3sat/uf20-0843.cnf");
-sat_test!(uf20_0844, "examples/satisfiable/uniform-random-3sat/uf20-0844.cnf");
-sat_test!(uf20_0845, "examples/satisfiable/uniform-random-3sat/uf20-0845.cnf");
-sat_test!(uf20_0846, "examples/satisfiable/uniform-random-3sat/uf20-0846.cnf");
-sat_test!(uf20_0847, "examples/satisfiable/uniform-random-3sat/uf20-0847.cnf");
-sat_test!(uf20_0848, "examples/satisfiable/uniform-random-3sat/uf20-0848.cnf");
-sat_test!(uf20_0849, "examples/satisfiable/uniform-random-3sat/uf20-0849.cnf");
-sat_test!(uf20_0850, "examples/satisfiable/uniform-random-3sat/uf20-0850.cnf");
-sat_test!(uf20_0851, "examples/satisfiable/uniform-random-3sat/uf20-0851.cnf");
-sat_test!(uf20_0852, "examples/satisfiable/uniform-random-3sat/uf20-0852.cnf");
-sat_test!(uf20_0853, "examples/satisfiable/uniform-random-3sat/uf20-0853.cnf");
-sat_test!(uf20_0854, "examples/satisfiable/uniform-random-3sat/uf20-0854.cnf");
-sat_test!(uf20_0855, "examples/satisfiable/uniform-random-3sat/uf20-0855.cnf");
-sat_test!(uf20_0856, "examples/satisfiable/uniform-random-3sat/uf20-0856.cnf");
-sat_test!(uf20_0857, "examples/satisfiable/uniform-random-3sat/uf20-0857.cnf");
-sat_test!(uf20_0858, "examples/satisfiable/uniform-random-3sat/uf20-0858.cnf");
-sat_test!(uf20_0859, "examples/satisfiable/uniform-random-3sat/uf20-0859.cnf");
-sat_test!(uf20_0860, "examples/satisfiable/uniform-random-3sat/uf20-0860.cnf");
-sat_test!(uf20_0861, "examples/satisfiable/uniform-random-3sat/uf20-0861.cnf");
-sat_test!(uf20_0862, "examples/satisfiable/uniform-random-3sat/uf20-0862.cnf");
-sat_test!(uf20_0863, "examples/satisfiable/uniform-random-3sat/uf20-0863.cnf");
-sat_test!(uf20_0864, "examples/satisfiable/uniform-random-3sat/uf20-0864.cnf");
-sat_test!(uf20_0865, "examples/satisfiable/uniform-random-3sat/uf20-0865.cnf");
-sat_test!(uf20_0866, "examples/satisfiable/uniform-random-3sat/uf20-0866.cnf");
-sat_test!(uf20_0867, "examples/satisfiable/uniform-random-3sat/uf20-0867.cnf");
-sat_test!(uf20_0868, "examples/satisfiable/uniform-random-3sat/uf20-0868.cnf");
-sat_test!(uf20_0869, "examples/satisfiable/uniform-random-3sat/uf20-0869.cnf");
-sat_test!(uf20_0870, "examples/satisfiable/uniform-random-3sat/uf20-0870.cnf");
-sat_test!(uf20_0871, "examples/satisfiable/uniform-random-3sat/uf20-0871.cnf");
-sat_test!(uf20_0872, "examples/satisfiable/uniform-random-3sat/uf20-0872.cnf");
-sat_test!(uf20_0873, "examples/satisfiable/uniform-random-3sat/uf20-0873.cnf");
-sat_test!(uf20_0874, "examples/satisfiable/uniform-random-3sat/uf20-0874.cnf");
-sat_test!(uf20_0875, "examples/satisfiable/uniform-random-3sat/uf20-0875.cnf");
-sat_test!(uf20_0876, "examples/satisfiable/uniform-random-3sat/uf20-0876.cnf");
-sat_test!(uf20_0877, "examples/satisfiable/uniform-random-3sat/uf20-0877.cnf");
-sat_test!(uf20_0878, "examples/satisfiable/uniform-random-3sat/uf20-0878.cnf");
-sat_test!(uf20_0879, "examples/satisfiable/uniform-random-3sat/uf20-0879.cnf");
-sat_test!(uf20_0880, "examples/satisfiable/uniform-random-3sat/uf20-0880.cnf");
-sat_test!(uf20_0881, "examples/satisfiable/uniform-random-3sat/uf20-0881.cnf");
-sat_test!(uf20_0882, "examples/satisfiable/uniform-random-3sat/uf20-0882.cnf");
-sat_test!(uf20_0883, "examples/satisfiable/uniform-random-3sat/uf20-0883.cnf");
-sat_test!(uf20_0884, "examples/satisfiable/uniform-random-3sat/uf20-0884.cnf");
-sat_test!(uf20_0885, "examples/satisfiable/uniform-random-3sat/uf20-0885.cnf");
-sat_test!(uf20_0886, "examples/satisfiable/uniform-random-3sat/uf20-0886.cnf");
-sat_test!(uf20_0887, "examples/satisfiable/uniform-random-3sat/uf20-0887.cnf");
-sat_test!(uf20_0888, "examples/satisfiable/uniform-random-3sat/uf20-0888.cnf");
-sat_test!(uf20_0889, "examples/satisfiable/uniform-random-3sat/uf20-0889.cnf");
-sat_test!(uf20_0890, "examples/satisfiable/uniform-random-3sat/uf20-0890.cnf");
-sat_test!(uf20_0891, "examples/satisfiable/uniform-random-3sat/uf20-0891.cnf");
-sat_test!(uf20_0892, "examples/satisfiable/uniform-random-3sat/uf20-0892.cnf");
-sat_test!(uf20_0893, "examples/satisfiable/uniform-random-3sat/uf20-0893.cnf");
-sat_test!(uf20_0894, "examples/satisfiable/uniform-random-3sat/uf20-0894.cnf");
-sat_test!(uf20_0895, "examples/satisfiable/uniform-random-3sat/uf20-0895.cnf");
-sat_test!(uf20_0896, "examples/satisfiable/uniform-random-3sat/uf20-0896.cnf");
-sat_test!(uf20_0897, "examples/satisfiable/uniform-random-3sat/uf20-0897.cnf");
-sat_test!(uf20_0898, "examples/satisfiable/uniform-random-3sat/uf20-0898.cnf");
-sat_test!(uf20_0899, "examples/satisfiable/uniform-random-3sat/uf20-0899.cnf");
-sat_test!(uf20_0900, "examples/satisfiable/uniform-random-3sat/uf20-0900.cnf");
-sat_test!(uf20_0901, "examples/satisfiable/uniform-random-3sat/uf20-0901.cnf");
-sat_test!(uf20_0902, "examples/satisfiable/uniform-random-3sat/uf20-0902.cnf");
-sat_test!(uf20_0903, "examples/satisfiable/uniform-random-3sat/uf20-0903.cnf");
-sat_test!(uf20_0904, "examples/satisfiable/uniform-random-3sat/uf20-0904.cnf");
-sat_test!(uf20_0905, "examples/satisfiable/uniform-random-3sat/uf20-0905.cnf");
-sat_test!(uf20_0906, "examples/satisfiable/uniform-random-3sat/uf20-0906.cnf");
-sat_test!(uf20_0907, "examples/satisfiable/uniform-random-3sat/uf20-0907.cnf");
-sat_test!(uf20_0908, "examples/satisfiable/uniform-random-3sat/uf20-0908.cnf");
-sat_test!(uf20_0909, "examples/satisfiable/uniform-random-3sat/uf20-0909.cnf");
-sat_test!(uf20_0910, "examples/satisfiable/uniform-random-3sat/uf20-0910.cnf");
-sat_test!(uf20_0911, "examples/satisfiable/uniform-random-3sat/uf20-0911.cnf");
-sat_test!(uf20_0912, "examples/satisfiable/uniform-random-3sat/uf20-0912.cnf");
-sat_test!(uf20_0913, "examples/satisfiable/uniform-random-3sat/uf20-0913.cnf");
-sat_test!(uf20_0914, "examples/satisfiable/uniform-random-3sat/uf20-0914.cnf");
-sat_test!(uf20_0915, "examples/satisfiable/uniform-random-3sat/uf20-0915.cnf");
-sat_test!(uf20_0916, "examples/satisfiable/uniform-random-3sat/uf20-0916.cnf");
-sat_test!(uf20_0917, "examples/satisfiable/uniform-random-3sat/uf20-0917.cnf");
-sat_test!(uf20_0918, "examples/satisfiable/uniform-random-3sat/uf20-0918.cnf");
-sat_test!(uf20_0919, "examples/satisfiable/uniform-random-3sat/uf20-0919.cnf");
-sat_test!(uf20_0920, "examples/satisfiable/uniform-random-3sat/uf20-0920.cnf");
-sat_test!(uf20_0921, "examples/satisfiable/uniform-random-3sat/uf20-0921.cnf");
-sat_test!(uf20_0922, "examples/satisfiable/uniform-random-3sat/uf20-0922.cnf");
-sat_test!(uf20_0923, "examples/satisfiable/uniform-random-3sat/uf20-0923.cnf");
-sat_test!(uf20_0924, "examples/satisfiable/uniform-random-3sat/uf20-0924.cnf");
-sat_test!(uf20_0925, "examples/satisfiable/uniform-random-3sat/uf20-0925.cnf");
-sat_test!(uf20_0926, "examples/satisfiable/uniform-random-3sat/uf20-0926.cnf");
-sat_test!(uf20_0927, "examples/satisfiable/uniform-random-3sat/uf20-0927.cnf");
-sat_test!(uf20_0928, "examples/satisfiable/uniform-random-3sat/uf20-0928.cnf");
-sat_test!(uf20_0929, "examples/satisfiable/uniform-random-3sat/uf20-0929.cnf");
-sat_test!(uf20_0930, "examples/satisfiable/uniform-random-3sat/uf20-0930.cnf");
-sat_test!(uf20_0931, "examples/satisfiable/uniform-random-3sat/uf20-0931.cnf");
-sat_test!(uf20_0932, "examples/satisfiable/uniform-random-3sat/uf20-0932.cnf");
-sat_test!(uf20_0933, "examples/satisfiable/uniform-random-3sat/uf20-0933.cnf");
-sat_test!(uf20_0934, "examples/satisfiable/uniform-random-3sat/uf20-0934.cnf");
-sat_test!(uf20_0935, "examples/satisfiable/uniform-random-3sat/uf20-0935.cnf");
-sat_test!(uf20_0936, "examples/satisfiable/uniform-random-3sat/uf20-0936.cnf");
-sat_test!(uf20_0937, "examples/satisfiable/uniform-random-3sat/uf20-0937.cnf");
-sat_test!(uf20_0938, "examples/satisfiable/uniform-random-3sat/uf20-0938.cnf");
-sat_test!(uf20_0939, "examples/satisfiable/uniform-random-3sat/uf20-0939.cnf");
-sat_test!(uf20_0940, "examples/satisfiable/uniform-random-3sat/uf20-0940.cnf");
-sat_test!(uf20_0941, "examples/satisfiable/uniform-random-3sat/uf20-0941.cnf");
-sat_test!(uf20_0942, "examples/satisfiable/uniform-random-3sat/uf20-0942.cnf");
-sat_test!(uf20_0943, "examples/satisfiable/uniform-random-3sat/uf20-0943.cnf");
-sat_test!(uf20_0944, "examples/satisfiable/uniform-random-3sat/uf20-0944.cnf");
-sat_test!(uf20_0945, "examples/satisfiable/uniform-random-3sat/uf20-0945.cnf");
-sat_test!(uf20_0946, "examples/satisfiable/uniform-random-3sat/uf20-0946.cnf");
-sat_test!(uf20_0947, "examples/satisfiable/uniform-random-3sat/uf20-0947.cnf");
-sat_test!(uf20_0948, "examples/satisfiable/uniform-random-3sat/uf20-0948.cnf");
-sat_test!(uf20_0949, "examples/satisfiable/uniform-random-3sat/uf20-0949.cnf");
-sat_test!(uf20_0950, "examples/satisfiable/uniform-random-3sat/uf20-0950.cnf");
-sat_test!(uf20_0951, "examples/satisfiable/uniform-random-3sat/uf20-0951.cnf");
-sat_test!(uf20_0952, "examples/satisfiable/uniform-random-3sat/uf20-0952.cnf");
-sat_test!(uf20_0953, "examples/satisfiable/uniform-random-3sat/uf20-0953.cnf");
-sat_test!(uf20_0954, "examples/satisfiable/uniform-random-3sat/uf20-0954.cnf");
-sat_test!(uf20_0955, "examples/satisfiable/uniform-random-3sat/uf20-0955.cnf");
-sat_test!(uf20_0956, "examples/satisfiable/uniform-random-3sat/uf20-0956.cnf");
-sat_test!(uf20_0957, "examples/satisfiable/uniform-random-3sat/uf20-0957.cnf");
-sat_test!(uf20_0958, "examples/satisfiable/uniform-random-3sat/uf20-0958.cnf");
-sat_test!(uf20_0959, "examples/satisfiable/uniform-random-3sat/uf20-0959.cnf");
-sat_test!(uf20_0960, "examples/satisfiable/uniform-random-3sat/uf20-0960.cnf");
-sat_test!(uf20_0961, "examples/satisfiable/uniform-random-3sat/uf20-0961.cnf");
-sat_test!(uf20_0962, "examples/satisfiable/uniform-random-3sat/uf20-0962.cnf");
-sat_test!(uf20_0963, "examples/satisfiable/uniform-random-3sat/uf20-0963.cnf");
-sat_test!(uf20_0964, "examples/satisfiable/uniform-random-3sat/uf20-0964.cnf");
-sat_test!(uf20_0965, "examples/satisfiable/uniform-random-3sat/uf20-0965.cnf");
-sat_test!(uf20_0966, "examples/satisfiable/uniform-random-3sat/uf20-0966.cnf");
-sat_test!(uf20_0967, "examples/satisfiable/uniform-random-3sat/uf20-0967.cnf");
-sat_test!(uf20_0968, "examples/satisfiable/uniform-random-3sat/uf20-0968.cnf");
-sat_test!(uf20_0969, "examples/satisfiable/uniform-random-3sat/uf20-0969.cnf");
-sat_test!(uf20_0970, "examples/satisfiable/uniform-random-3sat/uf20-0970.cnf");
-sat_test!(uf20_0971, "examples/satisfiable/uniform-random-3sat/uf20-0971.cnf");
-sat_test!(uf20_0972, "examples/satisfiable/uniform-random-3sat/uf20-0972.cnf");
-sat_test!(uf20_0973, "examples/satisfiable/uniform-random-3sat/uf20-0973.cnf");
-sat_test!(uf20_0974, "examples/satisfiable/uniform-random-3sat/uf20-0974.cnf");
-sat_test!(uf20_0975, "examples/satisfiable/uniform-random-3sat/uf20-0975.cnf");
-sat_test!(uf20_0976, "examples/satisfiable/uniform-random-3sat/uf20-0976.cnf");
-sat_test!(uf20_0977, "examples/satisfiable/uniform-random-3sat/uf20-0977.cnf");
-sat_test!(uf20_0978, "examples/satisfiable/uniform-random-3sat/uf20-0978.cnf");
-sat_test!(uf20_0979, "examples/satisfiable/uniform-random-3sat/uf20-0979.cnf");
-sat_test!(uf20_0980, "examples/satisfiable/uniform-random-3sat/uf20-0980.cnf");
-sat_test!(uf20_0981, "examples/satisfiable/uniform-random-3sat/uf20-0981.cnf");
-sat_test!(uf20_0982, "examples/satisfiable/uniform-random-3sat/uf20-0982.cnf");
-sat_test!(uf20_0983, "examples/satisfiable/uniform-random-3sat/uf20-0983.cnf");
-sat_test!(uf20_0984, "examples/satisfiable/uniform-random-3sat/uf20-0984.cnf");
-sat_test!(uf20_0985, "examples/satisfiable/uniform-random-3sat/uf20-0985.cnf");
-sat_test!(uf20_0986, "examples/satisfiable/uniform-random-3sat/uf20-0986.cnf");
-sat_test!(uf20_0987, "examples/satisfiable/uniform-random-3sat/uf20-0987.cnf");
-sat_test!(uf20_0988, "examples/satisfiable/uniform-random-3sat/uf20-0988.cnf");
-sat_test!(uf20_0989, "examples/satisfiable/uniform-random-3sat/uf20-0989.cnf");
-sat_test!(uf20_0990, "examples/satisfiable/uniform-random-3sat/uf20-0990.cnf");
-sat_test!(uf20_0991, "examples/satisfiable/uniform-random-3sat/uf20-0991.cnf");
-sat_test!(uf20_0992, "examples/satisfiable/uniform-random-3sat/uf20-0992.cnf");
-sat_test!(uf20_0993, "examples/satisfiable/uniform-random-3sat/uf20-0993.cnf");
-sat_test!(uf20_0994, "examples/satisfiable/uniform-random-3sat/uf20-0994.cnf");
-sat_test!(uf20_0995, "examples/satisfiable/uniform-random-3sat/uf20-0995.cnf");
-sat_test!(uf20_0996, "examples/satisfiable/uniform-random-3sat/uf20-0996.cnf");
-sat_test!(uf20_0997, "examples/satisfiable/uniform-random-3sat/uf20-0997.cnf");
-sat_test!(uf20_0998, "examples/satisfiable/uniform-random-3sat/uf20-0998.cnf");
-sat_test!(uf20_0999, "examples/satisfiable/uniform-random-3sat/uf20-0999.cnf");
-sat_test!(uf20_01000, "examples/satisfiable/uniform-random-3sat/uf20-01000.cnf");
-sat_test!(uf75_01, "examples/satisfiable/uniform-random-3sat/uf75-01.cnf");
-sat_test!(uf75_02, "examples/satisfiable/uniform-random-3sat/uf75-02.cnf");
-sat_test!(uf75_03, "examples/satisfiable/uniform-random-3sat/uf75-03.cnf");
-sat_test!(uf75_04, "examples/satisfiable/uniform-random-3sat/uf75-04.cnf");
-sat_test!(uf75_05, "examples/satisfiable/uniform-random-3sat/uf75-05.cnf");
-sat_test!(uf75_06, "examples/satisfiable/uniform-random-3sat/uf75-06.cnf");
-sat_test!(uf75_07, "examples/satisfiable/uniform-random-3sat/uf75-07.cnf");
-sat_test!(uf75_08, "examples/satisfiable/uniform-random-3sat/uf75-08.cnf");
-sat_test!(uf75_09, "examples/satisfiable/uniform-random-3sat/uf75-09.cnf");
-sat_test!(uf75_010, "examples/satisfiable/uniform-random-3sat/uf75-010.cnf");
-sat_test!(uf75_011, "examples/satisfiable/uniform-random-3sat/uf75-011.cnf");
-sat_test!(uf75_012, "examples/satisfiable/uniform-random-3sat/uf75-012.cnf");
-sat_test!(uf75_013, "examples/satisfiable/uniform-random-3sat/uf75-013.cnf");
-sat_test!(uf75_014, "examples/satisfiable/uniform-random-3sat/uf75-014.cnf");
-sat_test!(uf75_015, "examples/satisfiable/uniform-random-3sat/uf75-015.cnf");
-sat_test!(uf75_016, "examples/satisfiable/uniform-random-3sat/uf75-016.cnf");
-sat_test!(uf75_017, "examples/satisfiable/uniform-random-3sat/uf75-017.cnf");
-sat_test!(uf75_018, "examples/satisfiable/uniform-random-3sat/uf75-018.cnf");
-sat_test!(uf75_019, "examples/satisfiable/uniform-random-3sat/uf75-019.cnf");
-sat_test!(uf75_020, "examples/satisfiable/uniform-random-3sat/uf75-020.cnf");
-sat_test!(uf75_021, "examples/satisfiable/uniform-random-3sat/uf75-021.cnf");
-sat_test!(uf75_022, "examples/satisfiable/uniform-random-3sat/uf75-022.cnf");
-sat_test!(uf75_023, "examples/satisfiable/uniform-random-3sat/uf75-023.cnf");
-sat_test!(uf75_024, "examples/satisfiable/uniform-random-3sat/uf75-024.cnf");
-sat_test!(uf75_025, "examples/satisfiable/uniform-random-3sat/uf75-025.cnf");
-sat_test!(uf75_026, "examples/satisfiable/uniform-random-3sat/uf75-026.cnf");
-sat_test!(uf75_027, "examples/satisfiable/uniform-random-3sat/uf75-027.cnf");
-sat_test!(uf75_028, "examples/satisfiable/uniform-random-3sat/uf75-028.cnf");
-sat_test!(uf75_029, "examples/satisfiable/uniform-random-3sat/uf75-029.cnf");
-sat_test!(uf75_030, "examples/satisfiable/uniform-random-3sat/uf75-030.cnf");
-sat_test!(uf75_031, "examples/satisfiable/uniform-random-3sat/uf75-031.cnf");
-sat_test!(uf75_032, "examples/satisfiable/uniform-random-3sat/uf75-032.cnf");
-sat_test!(uf75_033, "examples/satisfiable/uniform-random-3sat/uf75-033.cnf");
-sat_test!(uf75_034, "examples/satisfiable/uniform-random-3sat/uf75-034.cnf");
-sat_test!(uf75_035, "examples/satisfiable/uniform-random-3sat/uf75-035.cnf");
-sat_test!(uf75_036, "examples/satisfiable/uniform-random-3sat/uf75-036.cnf");
-sat_test!(uf75_037, "examples/satisfiable/uniform-random-3sat/uf75-037.cnf");
-sat_test!(uf75_038, "examples/satisfiable/uniform-random-3sat/uf75-038.cnf");
-sat_test!(uf75_039, "examples/satisfiable/uniform-random-3sat/uf75-039.cnf");
-sat_test!(uf75_040, "examples/satisfiable/uniform-random-3sat/uf75-040.cnf");
-sat_test!(uf75_041, "examples/satisfiable/uniform-random-3sat/uf75-041.cnf");
-sat_test!(uf75_042, "examples/satisfiable/uniform-random-3sat/uf75-042.cnf");
-sat_test!(uf75_043, "examples/satisfiable/uniform-random-3sat/uf75-043.cnf");
-sat_test!(uf75_044, "examples/satisfiable/uniform-random-3sat/uf75-044.cnf");
-sat_test!(uf75_045, "examples/satisfiable/uniform-random-3sat/uf75-045.cnf");
-sat_test!(uf75_046, "examples/satisfiable/uniform-random-3sat/uf75-046.cnf");
-sat_test!(uf75_047, "examples/satisfiable/uniform-random-3sat/uf75-047.cnf");
-sat_test!(uf75_048, "examples/satisfiable/uniform-random-3sat/uf75-048.cnf");
-sat_test!(uf75_049, "examples/satisfiable/uniform-random-3sat/uf75-049.cnf");
-sat_test!(uf75_050, "examples/satisfiable/uniform-random-3sat/uf75-050.cnf");
-sat_test!(uf75_051, "examples/satisfiable/uniform-random-3sat/uf75-051.cnf");
-sat_test!(uf75_052, "examples/satisfiable/uniform-random-3sat/uf75-052.cnf");
-sat_test!(uf75_053, "examples/satisfiable/uniform-random-3sat/uf75-053.cnf");
-sat_test!(uf75_054, "examples/satisfiable/uniform-random-3sat/uf75-054.cnf");
-sat_test!(uf75_055, "examples/satisfiable/uniform-random-3sat/uf75-055.cnf");
-sat_test!(uf75_056, "examples/satisfiable/uniform-random-3sat/uf75-056.cnf");
-sat_test!(uf75_057, "examples/satisfiable/uniform-random-3sat/uf75-057.cnf");
-sat_test!(uf75_058, "examples/satisfiable/uniform-random-3sat/uf75-058.cnf");
-sat_test!(uf75_059, "examples/satisfiable/uniform-random-3sat/uf75-059.cnf");
-sat_test!(uf75_060, "examples/satisfiable/uniform-random-3sat/uf75-060.cnf");
-sat_test!(uf75_061, "examples/satisfiable/uniform-random-3sat/uf75-061.cnf");
-sat_test!(uf75_062, "examples/satisfiable/uniform-random-3sat/uf75-062.cnf");
-sat_test!(uf75_063, "examples/satisfiable/uniform-random-3sat/uf75-063.cnf");
-sat_test!(uf75_064, "examples/satisfiable/uniform-random-3sat/uf75-064.cnf");
-sat_test!(uf75_065, "examples/satisfiable/uniform-random-3sat/uf75-065.cnf");
-sat_test!(uf75_066, "examples/satisfiable/uniform-random-3sat/uf75-066.cnf");
-sat_test!(uf75_067, "examples/satisfiable/uniform-random-3sat/uf75-067.cnf");
-sat_test!(uf75_068, "examples/satisfiable/uniform-random-3sat/uf75-068.cnf");
-sat_test!(uf75_069, "examples/satisfiable/uniform-random-3sat/uf75-069.cnf");
-sat_test!(uf75_070, "examples/satisfiable/uniform-random-3sat/uf75-070.cnf");
-sat_test!(uf75_071, "examples/satisfiable/uniform-random-3sat/uf75-071.cnf");
-sat_test!(uf75_072, "examples/satisfiable/uniform-random-3sat/uf75-072.cnf");
-sat_test!(uf75_073, "examples/satisfiable/uniform-random-3sat/uf75-073.cnf");
-sat_test!(uf75_074, "examples/satisfiable/uniform-random-3sat/uf75-074.cnf");
-sat_test!(uf75_075, "examples/satisfiable/uniform-random-3sat/uf75-075.cnf");
-sat_test!(uf75_076, "examples/satisfiable/uniform-random-3sat/uf75-076.cnf");
-sat_test!(uf75_077, "examples/satisfiable/uniform-random-3sat/uf75-077.cnf");
-sat_test!(uf75_078, "examples/satisfiable/uniform-random-3sat/uf75-078.cnf");
-sat_test!(uf75_079, "examples/satisfiable/uniform-random-3sat/uf75-079.cnf");
-sat_test!(uf75_080, "examples/satisfiable/uniform-random-3sat/uf75-080.cnf");
-sat_test!(uf75_081, "examples/satisfiable/uniform-random-3sat/uf75-081.cnf");
-sat_test!(uf75_082, "examples/satisfiable/uniform-random-3sat/uf75-082.cnf");
-sat_test!(uf75_083, "examples/satisfiable/uniform-random-3sat/uf75-083.cnf");
-sat_test!(uf75_084, "examples/satisfiable/uniform-random-3sat/uf75-084.cnf");
-sat_test!(uf75_085, "examples/satisfiable/uniform-random-3sat/uf75-085.cnf");
-sat_test!(uf75_086, "examples/satisfiable/uniform-random-3sat/uf75-086.cnf");
-sat_test!(uf75_087, "examples/satisfiable/uniform-random-3sat/uf75-087.cnf");
-sat_test!(uf75_088, "examples/satisfiable/uniform-random-3sat/uf75-088.cnf");
-sat_test!(uf75_089, "examples/satisfiable/uniform-random-3sat/uf75-089.cnf");
-sat_test!(uf75_090, "examples/satisfiable/uniform-random-3sat/uf75-090.cnf");
-sat_test!(uf75_091, "examples/satisfiable/uniform-random-3sat/uf75-091.cnf");
-sat_test!(uf75_092, "examples/satisfiable/uniform-random-3sat/uf75-092.cnf");
-sat_test!(uf75_093, "examples/satisfiable/uniform-random-3sat/uf75-093.cnf");
-sat_test!(uf75_094, "examples/satisfiable/uniform-random-3sat/uf75-094.cnf");
-sat_test!(uf75_095, "examples/satisfiable/uniform-random-3sat/uf75-095.cnf");
-sat_test!(uf75_096, "examples/satisfiable/uniform-random-3sat/uf75-096.cnf");
-sat_test!(uf75_097, "examples/satisfiable/uniform-random-3sat/uf75-097.cnf");
-sat_test!(uf75_098, "examples/satisfiable/uniform-random-3sat/uf75-098.cnf");
-sat_test!(uf75_099, "examples/satisfiable/uniform-random-3sat/uf75-099.cnf");
-sat_test!(uf75_0100, "examples/satisfiable/uniform-random-3sat/uf75-0100.cnf");
-sat_test!(uf125_01, "examples/satisfiable/uniform-random-3sat/uf125-01.cnf");
-sat_test!(uf125_02, "examples/satisfiable/uniform-random-3sat/uf125-02.cnf");
-sat_test!(uf125_03, "examples/satisfiable/uniform-random-3sat/uf125-03.cnf");
-sat_test!(uf125_04, "examples/satisfiable/uniform-random-3sat/uf125-04.cnf");
-sat_test!(uf125_05, "examples/satisfiable/uniform-random-3sat/uf125-05.cnf");
-sat_test!(uf125_06, "examples/satisfiable/uniform-random-3sat/uf125-06.cnf");
-sat_test!(uf125_07, "examples/satisfiable/uniform-random-3sat/uf125-07.cnf");
-sat_test!(uf125_08, "examples/satisfiable/uniform-random-3sat/uf125-08.cnf");
-sat_test!(uf125_09, "examples/satisfiable/uniform-random-3sat/uf125-09.cnf");
-sat_test!(uf125_010, "examples/satisfiable/uniform-random-3sat/uf125-010.cnf");
-sat_test!(uf125_011, "examples/satisfiable/uniform-random-3sat/uf125-011.cnf");
-sat_test!(uf125_012, "examples/satisfiable/uniform-random-3sat/uf125-012.cnf");
-sat_test!(uf125_013, "examples/satisfiable/uniform-random-3sat/uf125-013.cnf");
-sat_test!(uf125_014, "examples/satisfiable/uniform-random-3sat/uf125-014.cnf");
-sat_test!(uf125_015, "examples/satisfiable/uniform-random-3sat/uf125-015.cnf");
-sat_test!(uf125_016, "examples/satisfiable/uniform-random-3sat/uf125-016.cnf");
-sat_test!(uf125_017, "examples/satisfiable/uniform-random-3sat/uf125-017.cnf");
-sat_test!(uf125_018, "examples/satisfiable/uniform-random-3sat/uf125-018.cnf");
-sat_test!(uf125_019, "examples/satisfiable/uniform-random-3sat/uf125-019.cnf");
-sat_test!(uf125_020, "examples/satisfiable/uniform-random-3sat/uf125-020.cnf");
-sat_test!(uf125_021, "examples/satisfiable/uniform-random-3sat/uf125-021.cnf");
-sat_test!(uf125_022, "examples/satisfiable/uniform-random-3sat/uf125-022.cnf");
-sat_test!(uf125_023, "examples/satisfiable/uniform-random-3sat/uf125-023.cnf");
-sat_test!(uf125_024, "examples/satisfiable/uniform-random-3sat/uf125-024.cnf");
-sat_test!(uf125_025, "examples/satisfiable/uniform-random-3sat/uf125-025.cnf");
-sat_test!(uf125_026, "examples/satisfiable/uniform-random-3sat/uf125-026.cnf");
-sat_test!(uf125_027, "examples/satisfiable/uniform-random-3sat/uf125-027.cnf");
-sat_test!(uf125_028, "examples/satisfiable/uniform-random-3sat/uf125-028.cnf");
-sat_test!(uf125_029, "examples/satisfiable/uniform-random-3sat/uf125-029.cnf");
-sat_test!(uf125_030, "examples/satisfiable/uniform-random-3sat/uf125-030.cnf");
-sat_test!(uf125_031, "examples/satisfiable/uniform-random-3sat/uf125-031.cnf");
-sat_test!(uf125_032, "examples/satisfiable/uniform-random-3sat/uf125-032.cnf");
-sat_test!(uf125_033, "examples/satisfiable/uniform-random-3sat/uf125-033.cnf");
-sat_test!(uf125_034, "examples/satisfiable/uniform-random-3sat/uf125-034.cnf");
-sat_test!(uf125_035, "examples/satisfiable/uniform-random-3sat/uf125-035.cnf");
-sat_test!(uf125_036, "examples/satisfiable/uniform-random-3sat/uf125-036.cnf");
-sat_test!(uf125_037, "examples/satisfiable/uniform-random-3sat/uf125-037.cnf");
-sat_test!(uf125_038, "examples/satisfiable/uniform-random-3sat/uf125-038.cnf");
-sat_test!(uf125_039, "examples/satisfiable/uniform-random-3sat/uf125-039.cnf");
-sat_test!(uf125_040, "examples/satisfiable/uniform-random-3sat/uf125-040.cnf");
-sat_test!(uf125_041, "examples/satisfiable/uniform-random-3sat/uf125-041.cnf");
-sat_test!(uf125_042, "examples/satisfiable/uniform-random-3sat/uf125-042.cnf");
-sat_test!(uf125_043, "examples/satisfiable/uniform-random-3sat/uf125-043.cnf");
-sat_test!(uf125_044, "examples/satisfiable/uniform-random-3sat/uf125-044.cnf");
-sat_test!(uf125_045, "examples/satisfiable/uniform-random-3sat/uf125-045.cnf");
-sat_test!(uf125_046, "examples/satisfiable/uniform-random-3sat/uf125-046.cnf");
-sat_test!(uf125_047, "examples/satisfiable/uniform-random-3sat/uf125-047.cnf");
-sat_test!(uf125_048, "examples/satisfiable/uniform-random-3sat/uf125-048.cnf");
-sat_test!(uf125_049, "examples/satisfiable/uniform-random-3sat/uf125-049.cnf");
-sat_test!(uf125_050, "examples/satisfiable/uniform-random-3sat/uf125-050.cnf");
-sat_test!(uf125_051, "examples/satisfiable/uniform-random-3sat/uf125-051.cnf");
-sat_test!(uf125_052, "examples/satisfiable/uniform-random-3sat/uf125-052.cnf");
-sat_test!(uf125_053, "examples/satisfiable/uniform-random-3sat/uf125-053.cnf");
-sat_test!(uf125_054, "examples/satisfiable/uniform-random-3sat/uf125-054.cnf");
-sat_test!(uf125_055, "examples/satisfiable/uniform-random-3sat/uf125-055.cnf");
-sat_test!(uf125_056, "examples/satisfiable/uniform-random-3sat/uf125-056.cnf");
-sat_test!(uf125_057, "examples/satisfiable/uniform-random-3sat/uf125-057.cnf");
-sat_test!(uf125_058, "examples/satisfiable/uniform-random-3sat/uf125-058.cnf");
-sat_test!(uf125_059, "examples/satisfiable/uniform-random-3sat/uf125-059.cnf");
-sat_test!(uf125_060, "examples/satisfiable/uniform-random-3sat/uf125-060.cnf");
-sat_test!(uf125_061, "examples/satisfiable/uniform-random-3sat/uf125-061.cnf");
-sat_test!(uf125_062, "examples/satisfiable/uniform-random-3sat/uf125-062.cnf");
-sat_test!(uf125_063, "examples/satisfiable/uniform-random-3sat/uf125-063.cnf");
-sat_test!(uf125_064, "examples/satisfiable/uniform-random-3sat/uf125-064.cnf");
-sat_test!(uf125_065, "examples/satisfiable/uniform-random-3sat/uf125-065.cnf");
-sat_test!(uf125_066, "examples/satisfiable/uniform-random-3sat/uf125-066.cnf");
-sat_test!(uf125_067, "examples/satisfiable/uniform-random-3sat/uf125-067.cnf");
-sat_test!(uf125_068, "examples/satisfiable/uniform-random-3sat/uf125-068.cnf");
-sat_test!(uf125_069, "examples/satisfiable/uniform-random-3sat/uf125-069.cnf");
-sat_test!(uf125_070, "examples/satisfiable/uniform-random-3sat/uf125-070.cnf");
-sat_test!(uf125_071, "examples/satisfiable/uniform-random-3sat/uf125-071.cnf");
-sat_test!(uf125_072, "examples/satisfiable/uniform-random-3sat/uf125-072.cnf");
-sat_test!(uf125_073, "examples/satisfiable/uniform-random-3sat/uf125-073.cnf");
-sat_test!(uf125_074, "examples/satisfiable/uniform-random-3sat/uf125-074.cnf");
-sat_test!(uf125_075, "examples/satisfiable/uniform-random-3sat/uf125-075.cnf");
-sat_test!(uf125_076, "examples/satisfiable/uniform-random-3sat/uf125-076.cnf");
-sat_test!(uf125_077, "examples/satisfiable/uniform-random-3sat/uf125-077.cnf");
-sat_test!(uf125_078, "examples/satisfiable/uniform-random-3sat/uf125-078.cnf");
-sat_test!(uf125_079, "examples/satisfiable/uniform-random-3sat/uf125-079.cnf");
-sat_test!(uf125_080, "examples/satisfiable/uniform-random-3sat/uf125-080.cnf");
-sat_test!(uf125_081, "examples/satisfiable/uniform-random-3sat/uf125-081.cnf");
-sat_test!(uf125_082, "examples/satisfiable/uniform-random-3sat/uf125-082.cnf");
-sat_test!(uf125_083, "examples/satisfiable/uniform-random-3sat/uf125-083.cnf");
-sat_test!(uf125_084, "examples/satisfiable/uniform-random-3sat/uf125-084.cnf");
-sat_test!(uf125_085, "examples/satisfiable/uniform-random-3sat/uf125-085.cnf");
-sat_test!(uf125_086, "examples/satisfiable/uniform-random-3sat/uf125-086.cnf");
-sat_test!(uf125_087, "examples/satisfiable/uniform-random-3sat/uf125-087.cnf");
-sat_test!(uf125_088, "examples/satisfiable/uniform-random-3sat/uf125-088.cnf");
-sat_test!(uf125_089, "examples/satisfiable/uniform-random-3sat/uf125-089.cnf");
-sat_test!(uf125_090, "examples/satisfiable/uniform-random-3sat/uf125-090.cnf");
-sat_test!(uf125_091, "examples/satisfiable/uniform-random-3sat/uf125-091.cnf");
-sat_test!(uf125_092, "examples/satisfiable/uniform-random-3sat/uf125-092.cnf");
-sat_test!(uf125_093, "examples/satisfiable/uniform-random-3sat/uf125-093.cnf");
-sat_test!(uf125_094, "examples/satisfiable/uniform-random-3sat/uf125-094.cnf");
-sat_test!(uf125_095, "examples/satisfiable/uniform-random-3sat/uf125-095.cnf");
-sat_test!(uf125_096, "examples/satisfiable/uniform-random-3sat/uf125-096.cnf");
-sat_test!(uf125_097, "examples/satisfiable/uniform-random-3sat/uf125-097.cnf");
-sat_test!(uf125_098, "examples/satisfiable/uniform-random-3sat/uf125-098.cnf");
-sat_test!(uf125_099, "examples/satisfiable/uniform-random-3sat/uf125-099.cnf");
-sat_test!(uf125_0100, "examples/satisfiable/uniform-random-3sat/uf125-0100.cnf");
-sat_test!(uf150_01, "examples/satisfiable/uniform-random-3sat/uf150-01.cnf");
-sat_test!(uf150_02, "examples/satisfiable/uniform-random-3sat/uf150-02.cnf");
-sat_test!(uf150_03, "examples/satisfiable/uniform-random-3sat/uf150-03.cnf");
-sat_test!(uf150_04, "examples/satisfiable/uniform-random-3sat/uf150-04.cnf");
-sat_test!(uf150_05, "examples/satisfiable/uniform-random-3sat/uf150-05.cnf");
-sat_test!(uf150_06, "examples/satisfiable/uniform-random-3sat/uf150-06.cnf");
-sat_test!(uf150_07, "examples/satisfiable/uniform-random-3sat/uf150-07.cnf");
-sat_test!(uf150_08, "examples/satisfiable/uniform-random-3sat/uf150-08.cnf");
-sat_test!(uf150_09, "examples/satisfiable/uniform-random-3sat/uf150-09.cnf");
-sat_test!(uf150_010, "examples/satisfiable/uniform-random-3sat/uf150-010.cnf");
-sat_test!(uf150_011, "examples/satisfiable/uniform-random-3sat/uf150-011.cnf");
-sat_test!(uf150_012, "examples/satisfiable/uniform-random-3sat/uf150-012.cnf");
-sat_test!(uf150_013, "examples/satisfiable/uniform-random-3sat/uf150-013.cnf");
-sat_test!(uf150_014, "examples/satisfiable/uniform-random-3sat/uf150-014.cnf");
-sat_test!(uf150_015, "examples/satisfiable/uniform-random-3sat/uf150-015.cnf");
-sat_test!(uf150_016, "examples/satisfiable/uniform-random-3sat/uf150-016.cnf");
-sat_test!(uf150_017, "examples/satisfiable/uniform-random-3sat/uf150-017.cnf");
-sat_test!(uf150_018, "examples/satisfiable/uniform-random-3sat/uf150-018.cnf");
-sat_test!(uf150_019, "examples/satisfiable/uniform-random-3sat/uf150-019.cnf");
-sat_test!(uf150_020, "examples/satisfiable/uniform-random-3sat/uf150-020.cnf");
-sat_test!(uf150_021, "examples/satisfiable/uniform-random-3sat/uf150-021.cnf");
-sat_test!(uf150_022, "examples/satisfiable/uniform-random-3sat/uf150-022.cnf");
-sat_test!(uf150_023, "examples/satisfiable/uniform-random-3sat/uf150-023.cnf");
-sat_test!(uf150_024, "examples/satisfiable/uniform-random-3sat/uf150-024.cnf");
-sat_test!(uf150_025, "examples/satisfiable/uniform-random-3sat/uf150-025.cnf");
-sat_test!(uf150_026, "examples/satisfiable/uniform-random-3sat/uf150-026.cnf");
-sat_test!(uf150_027, "examples/satisfiable/uniform-random-3sat/uf150-027.cnf");
-sat_test!(uf150_028, "examples/satisfiable/uniform-random-3sat/uf150-028.cnf");
-sat_test!(uf150_029, "examples/satisfiable/uniform-random-3sat/uf150-029.cnf");
-sat_test!(uf150_030, "examples/satisfiable/uniform-random-3sat/uf150-030.cnf");
-sat_test!(uf150_031, "examples/satisfiable/uniform-random-3sat/uf150-031.cnf");
-sat_test!(uf150_032, "examples/satisfiable/uniform-random-3sat/uf150-032.cnf");
-sat_test!(uf150_033, "examples/satisfiable/uniform-random-3sat/uf150-033.cnf");
-sat_test!(uf150_034, "examples/satisfiable/uniform-random-3sat/uf150-034.cnf");
-sat_test!(uf150_035, "examples/satisfiable/uniform-random-3sat/uf150-035.cnf");
-sat_test!(uf150_036, "examples/satisfiable/uniform-random-3sat/uf150-036.cnf");
-sat_test!(uf150_037, "examples/satisfiable/uniform-random-3sat/uf150-037.cnf");
-sat_test!(uf150_038, "examples/satisfiable/uniform-random-3sat/uf150-038.cnf");
-sat_test!(uf150_039, "examples/satisfiable/uniform-random-3sat/uf150-039.cnf");
-sat_test!(uf150_040, "examples/satisfiable/uniform-random-3sat/uf150-040.cnf");
-sat_test!(uf150_041, "examples/satisfiable/uniform-random-3sat/uf150-041.cnf");
-sat_test!(uf150_042, "examples/satisfiable/uniform-random-3sat/uf150-042.cnf");
-sat_test!(uf150_043, "examples/satisfiable/uniform-random-3sat/uf150-043.cnf");
-sat_test!(uf150_044, "examples/satisfiable/uniform-random-3sat/uf150-044.cnf");
-sat_test!(uf150_045, "examples/satisfiable/uniform-random-3sat/uf150-045.cnf");
-sat_test!(uf150_046, "examples/satisfiable/uniform-random-3sat/uf150-046.cnf");
-sat_test!(uf150_047, "examples/satisfiable/uniform-random-3sat/uf150-047.cnf");
-sat_test!(uf150_048, "examples/satisfiable/uniform-random-3sat/uf150-048.cnf");
-sat_test!(uf150_049, "examples/satisfiable/uniform-random-3sat/uf150-049.cnf");
-sat_test!(uf150_050, "examples/satisfiable/uniform-random-3sat/uf150-050.cnf");
-sat_test!(uf150_051, "examples/satisfiable/uniform-random-3sat/uf150-051.cnf");
-sat_test!(uf150_052, "examples/satisfiable/uniform-random-3sat/uf150-052.cnf");
-sat_test!(uf150_053, "examples/satisfiable/uniform-random-3sat/uf150-053.cnf");
-sat_test!(uf150_054, "examples/satisfiable/uniform-random-3sat/uf150-054.cnf");
-sat_test!(uf150_055, "examples/satisfiable/uniform-random-3sat/uf150-055.cnf");
-sat_test!(uf150_056, "examples/satisfiable/uniform-random-3sat/uf150-056.cnf");
-sat_test!(uf150_057, "examples/satisfiable/uniform-random-3sat/uf150-057.cnf");
-sat_test!(uf150_058, "examples/satisfiable/uniform-random-3sat/uf150-058.cnf");
-sat_test!(uf150_059, "examples/satisfiable/uniform-random-3sat/uf150-059.cnf");
-sat_test!(uf150_060, "examples/satisfiable/uniform-random-3sat/uf150-060.cnf");
-sat_test!(uf150_061, "examples/satisfiable/uniform-random-3sat/uf150-061.cnf");
-sat_test!(uf150_062, "examples/satisfiable/uniform-random-3sat/uf150-062.cnf");
-sat_test!(uf150_063, "examples/satisfiable/uniform-random-3sat/uf150-063.cnf");
-sat_test!(uf150_064, "examples/satisfiable/uniform-random-3sat/uf150-064.cnf");
-sat_test!(uf150_065, "examples/satisfiable/uniform-random-3sat/uf150-065.cnf");
-sat_test!(uf150_066, "examples/satisfiable/uniform-random-3sat/uf150-066.cnf");
-sat_test!(uf150_067, "examples/satisfiable/uniform-random-3sat/uf150-067.cnf");
-sat_test!(uf150_068, "examples/satisfiable/uniform-random-3sat/uf150-068.cnf");
-sat_test!(uf150_069, "examples/satisfiable/uniform-random-3sat/uf150-069.cnf");
-sat_test!(uf150_070, "examples/satisfiable/uniform-random-3sat/uf150-070.cnf");
-sat_test!(uf150_071, "examples/satisfiable/uniform-random-3sat/uf150-071.cnf");
-sat_test!(uf150_072, "examples/satisfiable/uniform-random-3sat/uf150-072.cnf");
-sat_test!(uf150_073, "examples/satisfiable/uniform-random-3sat/uf150-073.cnf");
-sat_test!(uf150_074, "examples/satisfiable/uniform-random-3sat/uf150-074.cnf");
-sat_test!(uf150_075, "examples/satisfiable/uniform-random-3sat/uf150-075.cnf");
-sat_test!(uf150_076, "examples/satisfiable/uniform-random-3sat/uf150-076.cnf");
-sat_test!(uf150_077, "examples/satisfiable/uniform-random-3sat/uf150-077.cnf");
-sat_test!(uf150_078, "examples/satisfiable/uniform-random-3sat/uf150-078.cnf");
-sat_test!(uf150_079, "examples/satisfiable/uniform-random-3sat/uf150-079.cnf");
-sat_test!(uf150_080, "examples/satisfiable/uniform-random-3sat/uf150-080.cnf");
-sat_test!(uf150_081, "examples/satisfiable/uniform-random-3sat/uf150-081.cnf");
-sat_test!(uf150_082, "examples/satisfiable/uniform-random-3sat/uf150-082.cnf");
-sat_test!(uf150_083, "examples/satisfiable/uniform-random-3sat/uf150-083.cnf");
-sat_test!(uf150_084, "examples/satisfiable/uniform-random-3sat/uf150-084.cnf");
-sat_test!(uf150_085, "examples/satisfiable/uniform-random-3sat/uf150-085.cnf");
-sat_test!(uf150_086, "examples/satisfiable/uniform-random-3sat/uf150-086.cnf");
-sat_test!(uf150_087, "examples/satisfiable/uniform-random-3sat/uf150-087.cnf");
-sat_test!(uf150_088, "examples/satisfiable/uniform-random-3sat/uf150-088.cnf");
-sat_test!(uf150_089, "examples/satisfiable/uniform-random-3sat/uf150-089.cnf");
-sat_test!(uf150_090, "examples/satisfiable/uniform-random-3sat/uf150-090.cnf");
-sat_test!(uf150_091, "examples/satisfiable/uniform-random-3sat/uf150-091.cnf");
-sat_test!(uf150_092, "examples/satisfiable/uniform-random-3sat/uf150-092.cnf");
-sat_test!(uf150_093, "examples/satisfiable/uniform-random-3sat/uf150-093.cnf");
-sat_test!(uf150_094, "examples/satisfiable/uniform-random-3sat/uf150-094.cnf");
-sat_test!(uf150_095, "examples/satisfiable/uniform-random-3sat/uf150-095.cnf");
-sat_test!(uf150_096, "examples/satisfiable/uniform-random-3sat/uf150-096.cnf");
-sat_test!(uf150_097, "examples/satisfiable/uniform-random-3sat/uf150-097.cnf");
-sat_test!(uf150_098, "examples/satisfiable/uniform-random-3sat/uf150-098.cnf");
-sat_test!(uf150_099, "examples/satisfiable/uniform-random-3sat/uf150-099.cnf");
-sat_test!(uf150_0100, "examples/satisfiable/uniform-random-3sat/uf150-0100.cnf");
-sat_test!(uf175_01, "examples/satisfiable/uniform-random-3sat/uf175-01.cnf");
-sat_test!(uf175_02, "examples/satisfiable/uniform-random-3sat/uf175-02.cnf");
-sat_test!(uf175_03, "examples/satisfiable/uniform-random-3sat/uf175-03.cnf");
-sat_test!(uf175_04, "examples/satisfiable/uniform-random-3sat/uf175-04.cnf");
-sat_test!(uf175_05, "examples/satisfiable/uniform-random-3sat/uf175-05.cnf");
-sat_test!(uf175_06, "examples/satisfiable/uniform-random-3sat/uf175-06.cnf");
-sat_test!(uf175_07, "examples/satisfiable/uniform-random-3sat/uf175-07.cnf");
-sat_test!(uf175_08, "examples/satisfiable/uniform-random-3sat/uf175-08.cnf");
-sat_test!(uf175_09, "examples/satisfiable/uniform-random-3sat/uf175-09.cnf");
-sat_test!(uf175_010, "examples/satisfiable/uniform-random-3sat/uf175-010.cnf");
-sat_test!(uf175_011, "examples/satisfiable/uniform-random-3sat/uf175-011.cnf");
-sat_test!(uf175_012, "examples/satisfiable/uniform-random-3sat/uf175-012.cnf");
-sat_test!(uf175_013, "examples/satisfiable/uniform-random-3sat/uf175-013.cnf");
-sat_test!(uf175_014, "examples/satisfiable/uniform-random-3sat/uf175-014.cnf");
-sat_test!(uf175_015, "examples/satisfiable/uniform-random-3sat/uf175-015.cnf");
-sat_test!(uf175_016, "examples/satisfiable/uniform-random-3sat/uf175-016.cnf");
-sat_test!(uf175_017, "examples/satisfiable/uniform-random-3sat/uf175-017.cnf");
-sat_test!(uf175_018, "examples/satisfiable/uniform-random-3sat/uf175-018.cnf");
-sat_test!(uf175_019, "examples/satisfiable/uniform-random-3sat/uf175-019.cnf");
-sat_test!(uf175_020, "examples/satisfiable/uniform-random-3sat/uf175-020.cnf");
-sat_test!(uf175_021, "examples/satisfiable/uniform-random-3sat/uf175-021.cnf");
-sat_test!(uf175_022, "examples/satisfiable/uniform-random-3sat/uf175-022.cnf");
-sat_test!(uf175_023, "examples/satisfiable/uniform-random-3sat/uf175-023.cnf");
-sat_test!(uf175_024, "examples/satisfiable/uniform-random-3sat/uf175-024.cnf");
-sat_test!(uf175_025, "examples/satisfiable/uniform-random-3sat/uf175-025.cnf");
-sat_test!(uf175_026, "examples/satisfiable/uniform-random-3sat/uf175-026.cnf");
-sat_test!(uf175_027, "examples/satisfiable/uniform-random-3sat/uf175-027.cnf");
-sat_test!(uf175_028, "examples/satisfiable/uniform-random-3sat/uf175-028.cnf");
-sat_test!(uf175_029, "examples/satisfiable/uniform-random-3sat/uf175-029.cnf");
-sat_test!(uf175_030, "examples/satisfiable/uniform-random-3sat/uf175-030.cnf");
-sat_test!(uf175_031, "examples/satisfiable/uniform-random-3sat/uf175-031.cnf");
-sat_test!(uf175_032, "examples/satisfiable/uniform-random-3sat/uf175-032.cnf");
-sat_test!(uf175_033, "examples/satisfiable/uniform-random-3sat/uf175-033.cnf");
-sat_test!(uf175_034, "examples/satisfiable/uniform-random-3sat/uf175-034.cnf");
-sat_test!(uf175_035, "examples/satisfiable/uniform-random-3sat/uf175-035.cnf");
-sat_test!(uf175_036, "examples/satisfiable/uniform-random-3sat/uf175-036.cnf");
-sat_test!(uf175_037, "examples/satisfiable/uniform-random-3sat/uf175-037.cnf");
-sat_test!(uf175_038, "examples/satisfiable/uniform-random-3sat/uf175-038.cnf");
-sat_test!(uf175_039, "examples/satisfiable/uniform-random-3sat/uf175-039.cnf");
-sat_test!(uf175_040, "examples/satisfiable/uniform-random-3sat/uf175-040.cnf");
-sat_test!(uf175_041, "examples/satisfiable/uniform-random-3sat/uf175-041.cnf");
-sat_test!(uf175_042, "examples/satisfiable/uniform-random-3sat/uf175-042.cnf");
-sat_test!(uf175_043, "examples/satisfiable/uniform-random-3sat/uf175-043.cnf");
-sat_test!(uf175_044, "examples/satisfiable/uniform-random-3sat/uf175-044.cnf");
-sat_test!(uf175_045, "examples/satisfiable/uniform-random-3sat/uf175-045.cnf");
-sat_test!(uf175_046, "examples/satisfiable/uniform-random-3sat/uf175-046.cnf");
-sat_test!(uf175_047, "examples/satisfiable/uniform-random-3sat/uf175-047.cnf");
-sat_test!(uf175_048, "examples/satisfiable/uniform-random-3sat/uf175-048.cnf");
-sat_test!(uf175_049, "examples/satisfiable/uniform-random-3sat/uf175-049.cnf");
-sat_test!(uf175_050, "examples/satisfiable/uniform-random-3sat/uf175-050.cnf");
-sat_test!(uf175_051, "examples/satisfiable/uniform-random-3sat/uf175-051.cnf");
-sat_test!(uf175_052, "examples/satisfiable/uniform-random-3sat/uf175-052.cnf");
-sat_test!(uf175_053, "examples/satisfiable/uniform-random-3sat/uf175-053.cnf");
-sat_test!(uf175_054, "examples/satisfiable/uniform-random-3sat/uf175-054.cnf");
-sat_test!(uf175_055, "examples/satisfiable/uniform-random-3sat/uf175-055.cnf");
-sat_test!(uf175_056, "examples/satisfiable/uniform-random-3sat/uf175-056.cnf");
-sat_test!(uf175_057, "examples/satisfiable/uniform-random-3sat/uf175-057.cnf");
-sat_test!(uf175_058, "examples/satisfiable/uniform-random-3sat/uf175-058.cnf");
-sat_test!(uf175_059, "examples/satisfiable/uniform-random-3sat/uf175-059.cnf");
-sat_test!(uf175_060, "examples/satisfiable/uniform-random-3sat/uf175-060.cnf");
-sat_test!(uf175_061, "examples/satisfiable/uniform-random-3sat/uf175-061.cnf");
-sat_test!(uf175_062, "examples/satisfiable/uniform-random-3sat/uf175-062.cnf");
-sat_test!(uf175_063, "examples/satisfiable/uniform-random-3sat/uf175-063.cnf");
-sat_test!(uf175_064, "examples/satisfiable/uniform-random-3sat/uf175-064.cnf");
-sat_test!(uf175_065, "examples/satisfiable/uniform-random-3sat/uf175-065.cnf");
-sat_test!(uf175_066, "examples/satisfiable/uniform-random-3sat/uf175-066.cnf");
-sat_test!(uf175_067, "examples/satisfiable/uniform-random-3sat/uf175-067.cnf");
-sat_test!(uf175_068, "examples/satisfiable/uniform-random-3sat/uf175-068.cnf");
-sat_test!(uf175_069, "examples/satisfiable/uniform-random-3sat/uf175-069.cnf");
-sat_test!(uf175_070, "examples/satisfiable/uniform-random-3sat/uf175-070.cnf");
-sat_test!(uf175_071, "examples/satisfiable/uniform-random-3sat/uf175-071.cnf");
-sat_test!(uf175_072, "examples/satisfiable/uniform-random-3sat/uf175-072.cnf");
-sat_test!(uf175_073, "examples/satisfiable/uniform-random-3sat/uf175-073.cnf");
-sat_test!(uf175_074, "examples/satisfiable/uniform-random-3sat/uf175-074.cnf");
-sat_test!(uf175_075, "examples/satisfiable/uniform-random-3sat/uf175-075.cnf");
-sat_test!(uf175_076, "examples/satisfiable/uniform-random-3sat/uf175-076.cnf");
-sat_test!(uf175_077, "examples/satisfiable/uniform-random-3sat/uf175-077.cnf");
-sat_test!(uf175_078, "examples/satisfiable/uniform-random-3sat/uf175-078.cnf");
-sat_test!(uf175_079, "examples/satisfiable/uniform-random-3sat/uf175-079.cnf");
-sat_test!(uf175_080, "examples/satisfiable/uniform-random-3sat/uf175-080.cnf");
-sat_test!(uf175_081, "examples/satisfiable/uniform-random-3sat/uf175-081.cnf");
-sat_test!(uf175_082, "examples/satisfiable/uniform-random-3sat/uf175-082.cnf");
-sat_test!(uf175_083, "examples/satisfiable/uniform-random-3sat/uf175-083.cnf");
-sat_test!(uf175_084, "examples/satisfiable/uniform-random-3sat/uf175-084.cnf");
-sat_test!(uf175_085, "examples/satisfiable/uniform-random-3sat/uf175-085.cnf");
-sat_test!(uf175_086, "examples/satisfiable/uniform-random-3sat/uf175-086.cnf");
-sat_test!(uf175_087, "examples/satisfiable/uniform-random-3sat/uf175-087.cnf");
-sat_test!(uf175_088, "examples/satisfiable/uniform-random-3sat/uf175-088.cnf");
-sat_test!(uf175_089, "examples/satisfiable/uniform-random-3sat/uf175-089.cnf");
-sat_test!(uf175_090, "examples/satisfiable/uniform-random-3sat/uf175-090.cnf");
-sat_test!(uf175_091, "examples/satisfiable/uniform-random-3sat/uf175-091.cnf");
-sat_test!(uf175_092, "examples/satisfiable/uniform-random-3sat/uf175-092.cnf");
-sat_test!(uf175_093, "examples/satisfiable/uniform-random-3sat/uf175-093.cnf");
-sat_test!(uf175_094, "examples/satisfiable/uniform-random-3sat/uf175-094.cnf");
-sat_test!(uf175_095, "examples/satisfiable/uniform-random-3sat/uf175-095.cnf");
-sat_test!(uf175_096, "examples/satisfiable/uniform-random-3sat/uf175-096.cnf");
-sat_test!(uf175_097, "examples/satisfiable/uniform-random-3sat/uf175-097.cnf");
-sat_test!(uf175_098, "examples/satisfiable/uniform-random-3sat/uf175-098.cnf");
-sat_test!(uf175_099, "examples/satisfiable/uniform-random-3sat/uf175-099.cnf");
-sat_test!(uf175_0100, "examples/satisfiable/uniform-random-3sat/uf175-0100.cnf");
-sat_test!(uf200_01, "examples/satisfiable/uniform-random-3sat/uf200-01.cnf");
-sat_test!(uf200_02, "examples/satisfiable/uniform-random-3sat/uf200-02.cnf");
-sat_test!(uf200_03, "examples/satisfiable/uniform-random-3sat/uf200-03.cnf");
-sat_test!(uf200_04, "examples/satisfiable/uniform-random-3sat/uf200-04.cnf");
-sat_test!(uf200_05, "examples/satisfiable/uniform-random-3sat/uf200-05.cnf");
-sat_test!(uf200_06, "examples/satisfiable/uniform-random-3sat/uf200-06.cnf");
-sat_test!(uf200_07, "examples/satisfiable/uniform-random-3sat/uf200-07.cnf");
-sat_test!(uf200_08, "examples/satisfiable/uniform-random-3sat/uf200-08.cnf");
-sat_test!(uf200_09, "examples/satisfiable/uniform-random-3sat/uf200-09.cnf");
-sat_test!(uf200_010, "examples/satisfiable/uniform-random-3sat/uf200-010.cnf");
-sat_test!(uf200_011, "examples/satisfiable/uniform-random-3sat/uf200-011.cnf");
-sat_test!(uf200_012, "examples/satisfiable/uniform-random-3sat/uf200-012.cnf");
-sat_test!(uf200_013, "examples/satisfiable/uniform-random-3sat/uf200-013.cnf");
-sat_test!(uf200_014, "examples/satisfiable/uniform-random-3sat/uf200-014.cnf");
-sat_test!(uf200_015, "examples/satisfiable/uniform-random-3sat/uf200-015.cnf");
-sat_test!(uf200_016, "examples/satisfiable/uniform-random-3sat/uf200-016.cnf");
-sat_test!(uf200_017, "examples/satisfiable/uniform-random-3sat/uf200-017.cnf");
-sat_test!(uf200_018, "examples/satisfiable/uniform-random-3sat/uf200-018.cnf");
-sat_test!(uf200_019, "examples/satisfiable/uniform-random-3sat/uf200-019.cnf");
-sat_test!(uf200_020, "examples/satisfiable/uniform-random-3sat/uf200-020.cnf");
-sat_test!(uf200_021, "examples/satisfiable/uniform-random-3sat/uf200-021.cnf");
-sat_test!(uf200_022, "examples/satisfiable/uniform-random-3sat/uf200-022.cnf");
-sat_test!(uf200_023, "examples/satisfiable/uniform-random-3sat/uf200-023.cnf");
-sat_test!(uf200_024, "examples/satisfiable/uniform-random-3sat/uf200-024.cnf");
-sat_test!(uf200_025, "examples/satisfiable/uniform-random-3sat/uf200-025.cnf");
-sat_test!(uf200_026, "examples/satisfiable/uniform-random-3sat/uf200-026.cnf");
-sat_test!(uf200_027, "examples/satisfiable/uniform-random-3sat/uf200-027.cnf");
-sat_test!(uf200_028, "examples/satisfiable/uniform-random-3sat/uf200-028.cnf");
-sat_test!(uf200_029, "examples/satisfiable/uniform-random-3sat/uf200-029.cnf");
-sat_test!(uf200_030, "examples/satisfiable/uniform-random-3sat/uf200-030.cnf");
-sat_test!(uf200_031, "examples/satisfiable/uniform-random-3sat/uf200-031.cnf");
-sat_test!(uf200_032, "examples/satisfiable/uniform-random-3sat/uf200-032.cnf");
-sat_test!(uf200_033, "examples/satisfiable/uniform-random-3sat/uf200-033.cnf");
-sat_test!(uf200_034, "examples/satisfiable/uniform-random-3sat/uf200-034.cnf");
-sat_test!(uf200_035, "examples/satisfiable/uniform-random-3sat/uf200-035.cnf");
-sat_test!(uf200_036, "examples/satisfiable/uniform-random-3sat/uf200-036.cnf");
-sat_test!(uf200_037, "examples/satisfiable/uniform-random-3sat/uf200-037.cnf");
-sat_test!(uf200_038, "examples/satisfiable/uniform-random-3sat/uf200-038.cnf");
-sat_test!(uf200_039, "examples/satisfiable/uniform-random-3sat/uf200-039.cnf");
-sat_test!(uf200_040, "examples/satisfiable/uniform-random-3sat/uf200-040.cnf");
-sat_test!(uf200_041, "examples/satisfiable/uniform-random-3sat/uf200-041.cnf");
-sat_test!(uf200_042, "examples/satisfiable/uniform-random-3sat/uf200-042.cnf");
-sat_test!(uf200_043, "examples/satisfiable/uniform-random-3sat/uf200-043.cnf");
-sat_test!(uf200_044, "examples/satisfiable/uniform-random-3sat/uf200-044.cnf");
-sat_test!(uf200_045, "examples/satisfiable/uniform-random-3sat/uf200-045.cnf");
-sat_test!(uf200_046, "examples/satisfiable/uniform-random-3sat/uf200-046.cnf");
-sat_test!(uf200_047, "examples/satisfiable/uniform-random-3sat/uf200-047.cnf");
-sat_test!(uf200_048, "examples/satisfiable/uniform-random-3sat/uf200-048.cnf");
-sat_test!(uf200_049, "examples/satisfiable/uniform-random-3sat/uf200-049.cnf");
-sat_test!(uf200_050, "examples/satisfiable/uniform-random-3sat/uf200-050.cnf");
-sat_test!(uf200_051, "examples/satisfiable/uniform-random-3sat/uf200-051.cnf");
-sat_test!(uf200_052, "examples/satisfiable/uniform-random-3sat/uf200-052.cnf");
-sat_test!(uf200_053, "examples/satisfiable/uniform-random-3sat/uf200-053.cnf");
-sat_test!(uf200_054, "examples/satisfiable/uniform-random-3sat/uf200-054.cnf");
-sat_test!(uf200_055, "examples/satisfiable/uniform-random-3sat/uf200-055.cnf");
-sat_test!(uf200_056, "examples/satisfiable/uniform-random-3sat/uf200-056.cnf");
-sat_test!(uf200_057, "examples/satisfiable/uniform-random-3sat/uf200-057.cnf");
-sat_test!(uf200_058, "examples/satisfiable/uniform-random-3sat/uf200-058.cnf");
-sat_test!(uf200_059, "examples/satisfiable/uniform-random-3sat/uf200-059.cnf");
-sat_test!(uf200_060, "examples/satisfiable/uniform-random-3sat/uf200-060.cnf");
-sat_test!(uf200_061, "examples/satisfiable/uniform-random-3sat/uf200-061.cnf");
-sat_test!(uf200_062, "examples/satisfiable/uniform-random-3sat/uf200-062.cnf");
-sat_test!(uf200_063, "examples/satisfiable/uniform-random-3sat/uf200-063.cnf");
-sat_test!(uf200_064, "examples/satisfiable/uniform-random-3sat/uf200-064.cnf");
-sat_test!(uf200_065, "examples/satisfiable/uniform-random-3sat/uf200-065.cnf");
-sat_test!(uf200_066, "examples/satisfiable/uniform-random-3sat/uf200-066.cnf");
-sat_test!(uf200_067, "examples/satisfiable/uniform-random-3sat/uf200-067.cnf");
-sat_test!(uf200_068, "examples/satisfiable/uniform-random-3sat/uf200-068.cnf");
-sat_test!(uf200_069, "examples/satisfiable/uniform-random-3sat/uf200-069.cnf");
-sat_test!(uf200_070, "examples/satisfiable/uniform-random-3sat/uf200-070.cnf");
-sat_test!(uf200_071, "examples/satisfiable/uniform-random-3sat/uf200-071.cnf");
-sat_test!(uf200_072, "examples/satisfiable/uniform-random-3sat/uf200-072.cnf");
-sat_test!(uf200_073, "examples/satisfiable/uniform-random-3sat/uf200-073.cnf");
-sat_test!(uf200_074, "examples/satisfiable/uniform-random-3sat/uf200-074.cnf");
-sat_test!(uf200_075, "examples/satisfiable/uniform-random-3sat/uf200-075.cnf");
-sat_test!(uf200_076, "examples/satisfiable/uniform-random-3sat/uf200-076.cnf");
-sat_test!(uf200_077, "examples/satisfiable/uniform-random-3sat/uf200-077.cnf");
-sat_test!(uf200_078, "examples/satisfiable/uniform-random-3sat/uf200-078.cnf");
-sat_test!(uf200_079, "examples/satisfiable/uniform-random-3sat/uf200-079.cnf");
-sat_test!(uf200_080, "examples/satisfiable/uniform-random-3sat/uf200-080.cnf");
-sat_test!(uf200_081, "examples/satisfiable/uniform-random-3sat/uf200-081.cnf");
-sat_test!(uf200_082, "examples/satisfiable/uniform-random-3sat/uf200-082.cnf");
-sat_test!(uf200_083, "examples/satisfiable/uniform-random-3sat/uf200-083.cnf");
-sat_test!(uf200_084, "examples/satisfiable/uniform-random-3sat/uf200-084.cnf");
-sat_test!(uf200_085, "examples/satisfiable/uniform-random-3sat/uf200-085.cnf");
-sat_test!(uf200_086, "examples/satisfiable/uniform-random-3sat/uf200-086.cnf");
-sat_test!(uf200_087, "examples/satisfiable/uniform-random-3sat/uf200-087.cnf");
-sat_test!(uf200_088, "examples/satisfiable/uniform-random-3sat/uf200-088.cnf");
-sat_test!(uf200_089, "examples/satisfiable/uniform-random-3sat/uf200-089.cnf");
-sat_test!(uf200_090, "examples/satisfiable/uniform-random-3sat/uf200-090.cnf");
-sat_test!(uf200_091, "examples/satisfiable/uniform-random-3sat/uf200-091.cnf");
-sat_test!(uf200_092, "examples/satisfiable/uniform-random-3sat/uf200-092.cnf");
-sat_test!(uf200_093, "examples/satisfiable/uniform-random-3sat/uf200-093.cnf");
-sat_test!(uf200_094, "examples/satisfiable/uniform-random-3sat/uf200-094.cnf");
-sat_test!(uf200_095, "examples/satisfiable/uniform-random-3sat/uf200-095.cnf");
-sat_test!(uf200_096, "examples/satisfiable/uniform-random-3sat/uf200-096.cnf");
-sat_test!(uf200_097, "examples/satisfiable/uniform-random-3sat/uf200-097.cnf");
-sat_test!(uf200_098, "examples/satisfiable/uniform-random-3sat/uf200-098.cnf");
-sat_test!(uf200_099, "examples/satisfiable/uniform-random-3sat/uf200-099.cnf");
-sat_test!(uf200_0100, "examples/satisfiable/uniform-random-3sat/uf200-0100.cnf");
-sat_test!(uf225_01, "examples/satisfiable/uniform-random-3sat/uf225-01.cnf");
-sat_test!(uf225_02, "examples/satisfiable/uniform-random-3sat/uf225-02.cnf");
-sat_test!(uf225_03, "examples/satisfiable/uniform-random-3sat/uf225-03.cnf");
-sat_test!(uf225_04, "examples/satisfiable/uniform-random-3sat/uf225-04.cnf");
-sat_test!(uf225_05, "examples/satisfiable/uniform-random-3sat/uf225-05.cnf");
-sat_test!(uf225_06, "examples/satisfiable/uniform-random-3sat/uf225-06.cnf");
-sat_test!(uf225_07, "examples/satisfiable/uniform-random-3sat/uf225-07.cnf");
-sat_test!(uf225_08, "examples/satisfiable/uniform-random-3sat/uf225-08.cnf");
-sat_test!(uf225_09, "examples/satisfiable/uniform-random-3sat/uf225-09.cnf");
-sat_test!(uf225_010, "examples/satisfiable/uniform-random-3sat/uf225-010.cnf");
-sat_test!(uf225_011, "examples/satisfiable/uniform-random-3sat/uf225-011.cnf");
-sat_test!(uf225_012, "examples/satisfiable/uniform-random-3sat/uf225-012.cnf");
-sat_test!(uf225_013, "examples/satisfiable/uniform-random-3sat/uf225-013.cnf");
-sat_test!(uf225_014, "examples/satisfiable/uniform-random-3sat/uf225-014.cnf");
-sat_test!(uf225_015, "examples/satisfiable/uniform-random-3sat/uf225-015.cnf");
-sat_test!(uf225_016, "examples/satisfiable/uniform-random-3sat/uf225-016.cnf");
-sat_test!(uf225_017, "examples/satisfiable/uniform-random-3sat/uf225-017.cnf");
-sat_test!(uf225_018, "examples/satisfiable/uniform-random-3sat/uf225-018.cnf");
-sat_test!(uf225_019, "examples/satisfiable/uniform-random-3sat/uf225-019.cnf");
-sat_test!(uf225_020, "examples/satisfiable/uniform-random-3sat/uf225-020.cnf");
-sat_test!(uf225_021, "examples/satisfiable/uniform-random-3sat/uf225-021.cnf");
-sat_test!(uf225_022, "examples/satisfiable/uniform-random-3sat/uf225-022.cnf");
-sat_test!(uf225_023, "examples/satisfiable/uniform-random-3sat/uf225-023.cnf");
-sat_test!(uf225_024, "examples/satisfiable/uniform-random-3sat/uf225-024.cnf");
-sat_test!(uf225_025, "examples/satisfiable/uniform-random-3sat/uf225-025.cnf");
-sat_test!(uf225_026, "examples/satisfiable/uniform-random-3sat/uf225-026.cnf");
-sat_test!(uf225_027, "examples/satisfiable/uniform-random-3sat/uf225-027.cnf");
-sat_test!(uf225_028, "examples/satisfiable/uniform-random-3sat/uf225-028.cnf");
-sat_test!(uf225_029, "examples/satisfiable/uniform-random-3sat/uf225-029.cnf");
-sat_test!(uf225_030, "examples/satisfiable/uniform-random-3sat/uf225-030.cnf");
-sat_test!(uf225_031, "examples/satisfiable/uniform-random-3sat/uf225-031.cnf");
-sat_test!(uf225_032, "examples/satisfiable/uniform-random-3sat/uf225-032.cnf");
-sat_test!(uf225_033, "examples/satisfiable/uniform-random-3sat/uf225-033.cnf");
-sat_test!(uf225_034, "examples/satisfiable/uniform-random-3sat/uf225-034.cnf");
-sat_test!(uf225_035, "examples/satisfiable/uniform-random-3sat/uf225-035.cnf");
-sat_test!(uf225_036, "examples/satisfiable/uniform-random-3sat/uf225-036.cnf");
-sat_test!(uf225_037, "examples/satisfiable/uniform-random-3sat/uf225-037.cnf");
-sat_test!(uf225_038, "examples/satisfiable/uniform-random-3sat/uf225-038.cnf");
-sat_test!(uf225_039, "examples/satisfiable/uniform-random-3sat/uf225-039.cnf");
-sat_test!(uf225_040, "examples/satisfiable/uniform-random-3sat/uf225-040.cnf");
-sat_test!(uf225_041, "examples/satisfiable/uniform-random-3sat/uf225-041.cnf");
-sat_test!(uf225_042, "examples/satisfiable/uniform-random-3sat/uf225-042.cnf");
-sat_test!(uf225_043, "examples/satisfiable/uniform-random-3sat/uf225-043.cnf");
-sat_test!(uf225_044, "examples/satisfiable/uniform-random-3sat/uf225-044.cnf");
-sat_test!(uf225_045, "examples/satisfiable/uniform-random-3sat/uf225-045.cnf");
-sat_test!(uf225_046, "examples/satisfiable/uniform-random-3sat/uf225-046.cnf");
-sat_test!(uf225_047, "examples/satisfiable/uniform-random-3sat/uf225-047.cnf");
-sat_test!(uf225_048, "examples/satisfiable/uniform-random-3sat/uf225-048.cnf");
-sat_test!(uf225_049, "examples/satisfiable/uniform-random-3sat/uf225-049.cnf");
-sat_test!(uf225_050, "examples/satisfiable/uniform-random-3sat/uf225-050.cnf");
-sat_test!(uf225_051, "examples/satisfiable/uniform-random-3sat/uf225-051.cnf");
-sat_test!(uf225_052, "examples/satisfiable/uniform-random-3sat/uf225-052.cnf");
-sat_test!(uf225_053, "examples/satisfiable/uniform-random-3sat/uf225-053.cnf");
-sat_test!(uf225_054, "examples/satisfiable/uniform-random-3sat/uf225-054.cnf");
-sat_test!(uf225_055, "examples/satisfiable/uniform-random-3sat/uf225-055.cnf");
-sat_test!(uf225_056, "examples/satisfiable/uniform-random-3sat/uf225-056.cnf");
-sat_test!(uf225_057, "examples/satisfiable/uniform-random-3sat/uf225-057.cnf");
-sat_test!(uf225_058, "examples/satisfiable/uniform-random-3sat/uf225-058.cnf");
-sat_test!(uf225_059, "examples/satisfiable/uniform-random-3sat/uf225-059.cnf");
-sat_test!(uf225_060, "examples/satisfiable/uniform-random-3sat/uf225-060.cnf");
-sat_test!(uf225_061, "examples/satisfiable/uniform-random-3sat/uf225-061.cnf");
-sat_test!(uf225_062, "examples/satisfiable/uniform-random-3sat/uf225-062.cnf");
-sat_test!(uf225_063, "examples/satisfiable/uniform-random-3sat/uf225-063.cnf");
-sat_test!(uf225_064, "examples/satisfiable/uniform-random-3sat/uf225-064.cnf");
-sat_test!(uf225_065, "examples/satisfiable/uniform-random-3sat/uf225-065.cnf");
-sat_test!(uf225_066, "examples/satisfiable/uniform-random-3sat/uf225-066.cnf");
-sat_test!(uf225_067, "examples/satisfiable/uniform-random-3sat/uf225-067.cnf");
-sat_test!(uf225_068, "examples/satisfiable/uniform-random-3sat/uf225-068.cnf");
-sat_test!(uf225_069, "examples/satisfiable/uniform-random-3sat/uf225-069.cnf");
-sat_test!(uf225_070, "examples/satisfiable/uniform-random-3sat/uf225-070.cnf");
-sat_test!(uf225_071, "examples/satisfiable/uniform-random-3sat/uf225-071.cnf");
-sat_test!(uf225_072, "examples/satisfiable/uniform-random-3sat/uf225-072.cnf");
-sat_test!(uf225_073, "examples/satisfiable/uniform-random-3sat/uf225-073.cnf");
-sat_test!(uf225_074, "examples/satisfiable/uniform-random-3sat/uf225-074.cnf");
-sat_test!(uf225_075, "examples/satisfiable/uniform-random-3sat/uf225-075.cnf");
-sat_test!(uf225_076, "examples/satisfiable/uniform-random-3sat/uf225-076.cnf");
-sat_test!(uf225_077, "examples/satisfiable/uniform-random-3sat/uf225-077.cnf");
-sat_test!(uf225_078, "examples/satisfiable/uniform-random-3sat/uf225-078.cnf");
-sat_test!(uf225_079, "examples/satisfiable/uniform-random-3sat/uf225-079.cnf");
-sat_test!(uf225_080, "examples/satisfiable/uniform-random-3sat/uf225-080.cnf");
-sat_test!(uf225_081, "examples/satisfiable/uniform-random-3sat/uf225-081.cnf");
-sat_test!(uf225_082, "examples/satisfiable/uniform-random-3sat/uf225-082.cnf");
-sat_test!(uf225_083, "examples/satisfiable/uniform-random-3sat/uf225-083.cnf");
-sat_test!(uf225_084, "examples/satisfiable/uniform-random-3sat/uf225-084.cnf");
-sat_test!(uf225_085, "examples/satisfiable/uniform-random-3sat/uf225-085.cnf");
-sat_test!(uf225_086, "examples/satisfiable/uniform-random-3sat/uf225-086.cnf");
-sat_test!(uf225_087, "examples/satisfiable/uniform-random-3sat/uf225-087.cnf");
-sat_test!(uf225_088, "examples/satisfiable/uniform-random-3sat/uf225-088.cnf");
-sat_test!(uf225_089, "examples/satisfiable/uniform-random-3sat/uf225-089.cnf");
-sat_test!(uf225_090, "examples/satisfiable/uniform-random-3sat/uf225-090.cnf");
-sat_test!(uf225_091, "examples/satisfiable/uniform-random-3sat/uf225-091.cnf");
-sat_test!(uf225_092, "examples/satisfiable/uniform-random-3sat/uf225-092.cnf");
-sat_test!(uf225_093, "examples/satisfiable/uniform-random-3sat/uf225-093.cnf");
-sat_test!(uf225_094, "examples/satisfiable/uniform-random-3sat/uf225-094.cnf");
-sat_test!(uf225_095, "examples/satisfiable/uniform-random-3sat/uf225-095.cnf");
-sat_test!(uf225_096, "examples/satisfiable/uniform-random-3sat/uf225-096.cnf");
-sat_test!(uf225_097, "examples/satisfiable/uniform-random-3sat/uf225-097.cnf");
-sat_test!(uf225_098, "examples/satisfiable/uniform-random-3sat/uf225-098.cnf");
-sat_test!(uf225_099, "examples/satisfiable/uniform-random-3sat/uf225-099.cnf");
-sat_test!(uf225_0100, "examples/satisfiable/uniform-random-3sat/uf225-0100.cnf");
-sat_test!(uf250_01, "examples/satisfiable/uniform-random-3sat/uf250-01.cnf");
-sat_test!(uf250_02, "examples/satisfiable/uniform-random-3sat/uf250-02.cnf");
-sat_test!(uf250_03, "examples/satisfiable/uniform-random-3sat/uf250-03.cnf");
-sat_test!(uf250_04, "examples/satisfiable/uniform-random-3sat/uf250-04.cnf");
-sat_test!(uf250_05, "examples/satisfiable/uniform-random-3sat/uf250-05.cnf");
-sat_test!(uf250_06, "examples/satisfiable/uniform-random-3sat/uf250-06.cnf");
-sat_test!(uf250_07, "examples/satisfiable/uniform-random-3sat/uf250-07.cnf");
-sat_test!(uf250_08, "examples/satisfiable/uniform-random-3sat/uf250-08.cnf");
-sat_test!(uf250_09, "examples/satisfiable/uniform-random-3sat/uf250-09.cnf");
-sat_test!(uf250_010, "examples/satisfiable/uniform-random-3sat/uf250-010.cnf");
-sat_test!(uf250_011, "examples/satisfiable/uniform-random-3sat/uf250-011.cnf");
-sat_test!(uf250_012, "examples/satisfiable/uniform-random-3sat/uf250-012.cnf");
-sat_test!(uf250_013, "examples/satisfiable/uniform-random-3sat/uf250-013.cnf");
-sat_test!(uf250_014, "examples/satisfiable/uniform-random-3sat/uf250-014.cnf");
-sat_test!(uf250_015, "examples/satisfiable/uniform-random-3sat/uf250-015.cnf");
-sat_test!(uf250_016, "examples/satisfiable/uniform-random-3sat/uf250-016.cnf");
-sat_test!(uf250_017, "examples/satisfiable/uniform-random-3sat/uf250-017.cnf");
-sat_test!(uf250_018, "examples/satisfiable/uniform-random-3sat/uf250-018.cnf");
-sat_test!(uf250_019, "examples/satisfiable/uniform-random-3sat/uf250-019.cnf");
-sat_test!(uf250_020, "examples/satisfiable/uniform-random-3sat/uf250-020.cnf");
-sat_test!(uf250_021, "examples/satisfiable/uniform-random-3sat/uf250-021.cnf");
-sat_test!(uf250_022, "examples/satisfiable/uniform-random-3sat/uf250-022.cnf");
-sat_test!(uf250_023, "examples/satisfiable/uniform-random-3sat/uf250-023.cnf");
-sat_test!(uf250_024, "examples/satisfiable/uniform-random-3sat/uf250-024.cnf");
-sat_test!(uf250_025, "examples/satisfiable/uniform-random-3sat/uf250-025.cnf");
-sat_test!(uf250_026, "examples/satisfiable/uniform-random-3sat/uf250-026.cnf");
-sat_test!(uf250_027, "examples/satisfiable/uniform-random-3sat/uf250-027.cnf");
-sat_test!(uf250_028, "examples/satisfiable/uniform-random-3sat/uf250-028.cnf");
-sat_test!(uf250_029, "examples/satisfiable/uniform-random-3sat/uf250-029.cnf");
-sat_test!(uf250_030, "examples/satisfiable/uniform-random-3sat/uf250-030.cnf");
-sat_test!(uf250_031, "examples/satisfiable/uniform-random-3sat/uf250-031.cnf");
-sat_test!(uf250_032, "examples/satisfiable/uniform-random-3sat/uf250-032.cnf");
-sat_test!(uf250_033, "examples/satisfiable/uniform-random-3sat/uf250-033.cnf");
-sat_test!(uf250_034, "examples/satisfiable/uniform-random-3sat/uf250-034.cnf");
-sat_test!(uf250_035, "examples/satisfiable/uniform-random-3sat/uf250-035.cnf");
-sat_test!(uf250_036, "examples/satisfiable/uniform-random-3sat/uf250-036.cnf");
-sat_test!(uf250_037, "examples/satisfiable/uniform-random-3sat/uf250-037.cnf");
-sat_test!(uf250_038, "examples/satisfiable/uniform-random-3sat/uf250-038.cnf");
-sat_test!(uf250_039, "examples/satisfiable/uniform-random-3sat/uf250-039.cnf");
-sat_test!(uf250_040, "examples/satisfiable/uniform-random-3sat/uf250-040.cnf");
-sat_test!(uf250_041, "examples/satisfiable/uniform-random-3sat/uf250-041.cnf");
-sat_test!(uf250_042, "examples/satisfiable/uniform-random-3sat/uf250-042.cnf");
-sat_test!(uf250_043, "examples/satisfiable/uniform-random-3sat/uf250-043.cnf");
-sat_test!(uf250_044, "examples/satisfiable/uniform-random-3sat/uf250-044.cnf");
-sat_test!(uf250_045, "examples/satisfiable/uniform-random-3sat/uf250-045.cnf");
-sat_test!(uf250_046, "examples/satisfiable/uniform-random-3sat/uf250-046.cnf");
-sat_test!(uf250_047, "examples/satisfiable/uniform-random-3sat/uf250-047.cnf");
-sat_test!(uf250_048, "examples/satisfiable/uniform-random-3sat/uf250-048.cnf");
-sat_test!(uf250_049, "examples/satisfiable/uniform-random-3sat/uf250-049.cnf");
-sat_test!(uf250_050, "examples/satisfiable/uniform-random-3sat/uf250-050.cnf");
-sat_test!(uf250_051, "examples/satisfiable/uniform-random-3sat/uf250-051.cnf");
-sat_test!(uf250_052, "examples/satisfiable/uniform-random-3sat/uf250-052.cnf");
-sat_test!(uf250_053, "examples/satisfiable/uniform-random-3sat/uf250-053.cnf");
-sat_test!(uf250_054, "examples/satisfiable/uniform-random-3sat/uf250-054.cnf");
-sat_test!(uf250_055, "examples/satisfiable/uniform-random-3sat/uf250-055.cnf");
-sat_test!(uf250_056, "examples/satisfiable/uniform-random-3sat/uf250-056.cnf");
-sat_test!(uf250_057, "examples/satisfiable/uniform-random-3sat/uf250-057.cnf");
-sat_test!(uf250_058, "examples/satisfiable/uniform-random-3sat/uf250-058.cnf");
-sat_test!(uf250_059, "examples/satisfiable/uniform-random-3sat/uf250-059.cnf");
-sat_test!(uf250_060, "examples/satisfiable/uniform-random-3sat/uf250-060.cnf");
-sat_test!(uf250_061, "examples/satisfiable/uniform-random-3sat/uf250-061.cnf");
-sat_test!(uf250_062, "examples/satisfiable/uniform-random-3sat/uf250-062.cnf");
-sat_test!(uf250_063, "examples/satisfiable/uniform-random-3sat/uf250-063.cnf");
-sat_test!(uf250_064, "examples/satisfiable/uniform-random-3sat/uf250-064.cnf");
-sat_test!(uf250_065, "examples/satisfiable/uniform-random-3sat/uf250-065.cnf");
-sat_test!(uf250_066, "examples/satisfiable/uniform-random-3sat/uf250-066.cnf");
-sat_test!(uf250_067, "examples/satisfiable/uniform-random-3sat/uf250-067.cnf");
-sat_test!(uf250_068, "examples/satisfiable/uniform-random-3sat/uf250-068.cnf");
-sat_test!(uf250_069, "examples/satisfiable/uniform-random-3sat/uf250-069.cnf");
-sat_test!(uf250_070, "examples/satisfiable/uniform-random-3sat/uf250-070.cnf");
-sat_test!(uf250_071, "examples/satisfiable/uniform-random-3sat/uf250-071.cnf");
-sat_test!(uf250_072, "examples/satisfiable/uniform-random-3sat/uf250-072.cnf");
-sat_test!(uf250_073, "examples/satisfiable/uniform-random-3sat/uf250-073.cnf");
-sat_test!(uf250_074, "examples/satisfiable/uniform-random-3sat/uf250-074.cnf");
-sat_test!(uf250_075, "examples/satisfiable/uniform-random-3sat/uf250-075.cnf");
-sat_test!(uf250_076, "examples/satisfiable/uniform-random-3sat/uf250-076.cnf");
-sat_test!(uf250_077, "examples/satisfiable/uniform-random-3sat/uf250-077.cnf");
-sat_test!(uf250_078, "examples/satisfiable/uniform-random-3sat/uf250-078.cnf");
-sat_test!(uf250_079, "examples/satisfiable/uniform-random-3sat/uf250-079.cnf");
-sat_test!(uf250_080, "examples/satisfiable/uniform-random-3sat/uf250-080.cnf");
-sat_test!(uf250_081, "examples/satisfiable/uniform-random-3sat/uf250-081.cnf");
-sat_test!(uf250_082, "examples/satisfiable/uniform-random-3sat/uf250-082.cnf");
-sat_test!(uf250_083, "examples/satisfiable/uniform-random-3sat/uf250-083.cnf");
-sat_test!(uf250_084, "examples/satisfiable/uniform-random-3sat/uf250-084.cnf");
-sat_test!(uf250_085, "examples/satisfiable/uniform-random-3sat/uf250-085.cnf");
-sat_test!(uf250_086, "examples/satisfiable/uniform-random-3sat/uf250-086.cnf");
-sat_test!(uf250_087, "examples/satisfiable/uniform-random-3sat/uf250-087.cnf");
-sat_test!(uf250_088, "examples/satisfiable/uniform-random-3sat/uf250-088.cnf");
-sat_test!(uf250_089, "examples/satisfiable/uniform-random-3sat/uf250-089.cnf");
-sat_test!(uf250_090, "examples/satisfiable/uniform-random-3sat/uf250-090.cnf");
-sat_test!(uf250_091, "examples/satisfiable/uniform-random-3sat/uf250-091.cnf");
-sat_test!(uf250_092, "examples/satisfiable/uniform-random-3sat/uf250-092.cnf");
-sat_test!(uf250_093, "examples/satisfiable/uniform-random-3sat/uf250-093.cnf");
-sat_test!(uf250_094, "examples/satisfiable/uniform-random-3sat/uf250-094.cnf");
-sat_test!(uf250_095, "examples/satisfiable/uniform-random-3sat/uf250-095.cnf");
-sat_test!(uf250_096, "examples/satisfiable/uniform-random-3sat/uf250-096.cnf");
-sat_test!(uf250_097, "examples/satisfiable/uniform-random-3sat/uf250-097.cnf");
-sat_test!(uf250_098, "examples/satisfiable/uniform-random-3sat/uf250-098.cnf");
-sat_test!(uf250_099, "examples/satisfiable/uniform-random-3sat/uf250-099.cnf");
-sat_test!(uf250_0100, "examples/satisfiable/uniform-random-3sat/uf250-0100.cnf");
+sat_test_active!(
+    uf20_01,
+    "examples/satisfiable/uniform-random-3sat/uf20-01.cnf"
+);
+sat_test_active!(
+    uf20_02,
+    "examples/satisfiable/uniform-random-3sat/uf20-02.cnf"
+);
+sat_test_active!(
+    uf20_03,
+    "examples/satisfiable/uniform-random-3sat/uf20-03.cnf"
+);
+sat_test_active!(
+    uf20_04,
+    "examples/satisfiable/uniform-random-3sat/uf20-04.cnf"
+);
+sat_test_active!(
+    uf20_05,
+    "examples/satisfiable/uniform-random-3sat/uf20-05.cnf"
+);
+sat_test!(
+    uf20_06,
+    "examples/satisfiable/uniform-random-3sat/uf20-06.cnf"
+);
+sat_test!(
+    uf20_07,
+    "examples/satisfiable/uniform-random-3sat/uf20-07.cnf"
+);
+sat_test!(
+    uf20_08,
+    "examples/satisfiable/uniform-random-3sat/uf20-08.cnf"
+);
+sat_test!(
+    uf20_09,
+    "examples/satisfiable/uniform-random-3sat/uf20-09.cnf"
+);
+sat_test!(
+    uf20_010,
+    "examples/satisfiable/uniform-random-3sat/uf20-010.cnf"
+);
+sat_test!(
+    uf20_011,
+    "examples/satisfiable/uniform-random-3sat/uf20-011.cnf"
+);
+sat_test!(
+    uf20_012,
+    "examples/satisfiable/uniform-random-3sat/uf20-012.cnf"
+);
+sat_test!(
+    uf20_013,
+    "examples/satisfiable/uniform-random-3sat/uf20-013.cnf"
+);
+sat_test!(
+    uf20_014,
+    "examples/satisfiable/uniform-random-3sat/uf20-014.cnf"
+);
+sat_test!(
+    uf20_015,
+    "examples/satisfiable/uniform-random-3sat/uf20-015.cnf"
+);
+sat_test!(
+    uf20_016,
+    "examples/satisfiable/uniform-random-3sat/uf20-016.cnf"
+);
+sat_test!(
+    uf20_017,
+    "examples/satisfiable/uniform-random-3sat/uf20-017.cnf"
+);
+sat_test!(
+    uf20_018,
+    "examples/satisfiable/uniform-random-3sat/uf20-018.cnf"
+);
+sat_test!(
+    uf20_019,
+    "examples/satisfiable/uniform-random-3sat/uf20-019.cnf"
+);
+sat_test!(
+    uf20_020,
+    "examples/satisfiable/uniform-random-3sat/uf20-020.cnf"
+);
+sat_test!(
+    uf20_021,
+    "examples/satisfiable/uniform-random-3sat/uf20-021.cnf"
+);
+sat_test!(
+    uf20_022,
+    "examples/satisfiable/uniform-random-3sat/uf20-022.cnf"
+);
+sat_test!(
+    uf20_023,
+    "examples/satisfiable/uniform-random-3sat/uf20-023.cnf"
+);
+sat_test!(
+    uf20_024,
+    "examples/satisfiable/uniform-random-3sat/uf20-024.cnf"
+);
+sat_test!(
+    uf20_025,
+    "examples/satisfiable/uniform-random-3sat/uf20-025.cnf"
+);
+sat_test!(
+    uf20_026,
+    "examples/satisfiable/uniform-random-3sat/uf20-026.cnf"
+);
+sat_test!(
+    uf20_027,
+    "examples/satisfiable/uniform-random-3sat/uf20-027.cnf"
+);
+sat_test!(
+    uf20_028,
+    "examples/satisfiable/uniform-random-3sat/uf20-028.cnf"
+);
+sat_test!(
+    uf20_029,
+    "examples/satisfiable/uniform-random-3sat/uf20-029.cnf"
+);
+sat_test!(
+    uf20_030,
+    "examples/satisfiable/uniform-random-3sat/uf20-030.cnf"
+);
+sat_test!(
+    uf20_031,
+    "examples/satisfiable/uniform-random-3sat/uf20-031.cnf"
+);
+sat_test!(
+    uf20_032,
+    "examples/satisfiable/uniform-random-3sat/uf20-032.cnf"
+);
+sat_test!(
+    uf20_033,
+    "examples/satisfiable/uniform-random-3sat/uf20-033.cnf"
+);
+sat_test!(
+    uf20_034,
+    "examples/satisfiable/uniform-random-3sat/uf20-034.cnf"
+);
+sat_test!(
+    uf20_035,
+    "examples/satisfiable/uniform-random-3sat/uf20-035.cnf"
+);
+sat_test!(
+    uf20_036,
+    "examples/satisfiable/uniform-random-3sat/uf20-036.cnf"
+);
+sat_test!(
+    uf20_037,
+    "examples/satisfiable/uniform-random-3sat/uf20-037.cnf"
+);
+sat_test!(
+    uf20_038,
+    "examples/satisfiable/uniform-random-3sat/uf20-038.cnf"
+);
+sat_test!(
+    uf20_039,
+    "examples/satisfiable/uniform-random-3sat/uf20-039.cnf"
+);
+sat_test!(
+    uf20_040,
+    "examples/satisfiable/uniform-random-3sat/uf20-040.cnf"
+);
+sat_test!(
+    uf20_041,
+    "examples/satisfiable/uniform-random-3sat/uf20-041.cnf"
+);
+sat_test!(
+    uf20_042,
+    "examples/satisfiable/uniform-random-3sat/uf20-042.cnf"
+);
+sat_test!(
+    uf20_043,
+    "examples/satisfiable/uniform-random-3sat/uf20-043.cnf"
+);
+sat_test!(
+    uf20_044,
+    "examples/satisfiable/uniform-random-3sat/uf20-044.cnf"
+);
+sat_test!(
+    uf20_045,
+    "examples/satisfiable/uniform-random-3sat/uf20-045.cnf"
+);
+sat_test!(
+    uf20_046,
+    "examples/satisfiable/uniform-random-3sat/uf20-046.cnf"
+);
+sat_test!(
+    uf20_047,
+    "examples/satisfiable/uniform-random-3sat/uf20-047.cnf"
+);
+sat_test!(
+    uf20_048,
+    "examples/satisfiable/uniform-random-3sat/uf20-048.cnf"
+);
+sat_test!(
+    uf20_049,
+    "examples/satisfiable/uniform-random-3sat/uf20-049.cnf"
+);
+sat_test!(
+    uf20_050,
+    "examples/satisfiable/uniform-random-3sat/uf20-050.cnf"
+);
+sat_test!(
+    uf20_051,
+    "examples/satisfiable/uniform-random-3sat/uf20-051.cnf"
+);
+sat_test!(
+    uf20_052,
+    "examples/satisfiable/uniform-random-3sat/uf20-052.cnf"
+);
+sat_test!(
+    uf20_053,
+    "examples/satisfiable/uniform-random-3sat/uf20-053.cnf"
+);
+sat_test!(
+    uf20_054,
+    "examples/satisfiable/uniform-random-3sat/uf20-054.cnf"
+);
+sat_test!(
+    uf20_055,
+    "examples/satisfiable/uniform-random-3sat/uf20-055.cnf"
+);
+sat_test!(
+    uf20_056,
+    "examples/satisfiable/uniform-random-3sat/uf20-056.cnf"
+);
+sat_test!(
+    uf20_057,
+    "examples/satisfiable/uniform-random-3sat/uf20-057.cnf"
+);
+sat_test!(
+    uf20_058,
+    "examples/satisfiable/uniform-random-3sat/uf20-058.cnf"
+);
+sat_test!(
+    uf20_059,
+    "examples/satisfiable/uniform-random-3sat/uf20-059.cnf"
+);
+sat_test!(
+    uf20_060,
+    "examples/satisfiable/uniform-random-3sat/uf20-060.cnf"
+);
+sat_test!(
+    uf20_061,
+    "examples/satisfiable/uniform-random-3sat/uf20-061.cnf"
+);
+sat_test!(
+    uf20_062,
+    "examples/satisfiable/uniform-random-3sat/uf20-062.cnf"
+);
+sat_test!(
+    uf20_063,
+    "examples/satisfiable/uniform-random-3sat/uf20-063.cnf"
+);
+sat_test!(
+    uf20_064,
+    "examples/satisfiable/uniform-random-3sat/uf20-064.cnf"
+);
+sat_test!(
+    uf20_065,
+    "examples/satisfiable/uniform-random-3sat/uf20-065.cnf"
+);
+sat_test!(
+    uf20_066,
+    "examples/satisfiable/uniform-random-3sat/uf20-066.cnf"
+);
+sat_test!(
+    uf20_067,
+    "examples/satisfiable/uniform-random-3sat/uf20-067.cnf"
+);
+sat_test!(
+    uf20_068,
+    "examples/satisfiable/uniform-random-3sat/uf20-068.cnf"
+);
+sat_test!(
+    uf20_069,
+    "examples/satisfiable/uniform-random-3sat/uf20-069.cnf"
+);
+sat_test!(
+    uf20_070,
+    "examples/satisfiable/uniform-random-3sat/uf20-070.cnf"
+);
+sat_test!(
+    uf20_071,
+    "examples/satisfiable/uniform-random-3sat/uf20-071.cnf"
+);
+sat_test!(
+    uf20_072,
+    "examples/satisfiable/uniform-random-3sat/uf20-072.cnf"
+);
+sat_test!(
+    uf20_073,
+    "examples/satisfiable/uniform-random-3sat/uf20-073.cnf"
+);
+sat_test!(
+    uf20_074,
+    "examples/satisfiable/uniform-random-3sat/uf20-074.cnf"
+);
+sat_test!(
+    uf20_075,
+    "examples/satisfiable/uniform-random-3sat/uf20-075.cnf"
+);
+sat_test!(
+    uf20_076,
+    "examples/satisfiable/uniform-random-3sat/uf20-076.cnf"
+);
+sat_test!(
+    uf20_077,
+    "examples/satisfiable/uniform-random-3sat/uf20-077.cnf"
+);
+sat_test!(
+    uf20_078,
+    "examples/satisfiable/uniform-random-3sat/uf20-078.cnf"
+);
+sat_test!(
+    uf20_079,
+    "examples/satisfiable/uniform-random-3sat/uf20-079.cnf"
+);
+sat_test!(
+    uf20_080,
+    "examples/satisfiable/uniform-random-3sat/uf20-080.cnf"
+);
+sat_test!(
+    uf20_081,
+    "examples/satisfiable/uniform-random-3sat/uf20-081.cnf"
+);
+sat_test!(
+    uf20_082,
+    "examples/satisfiable/uniform-random-3sat/uf20-082.cnf"
+);
+sat_test!(
+    uf20_083,
+    "examples/satisfiable/uniform-random-3sat/uf20-083.cnf"
+);
+sat_test!(
+    uf20_084,
+    "examples/satisfiable/uniform-random-3sat/uf20-084.cnf"
+);
+sat_test!(
+    uf20_085,
+    "examples/satisfiable/uniform-random-3sat/uf20-085.cnf"
+);
+sat_test!(
+    uf20_086,
+    "examples/satisfiable/uniform-random-3sat/uf20-086.cnf"
+);
+sat_test!(
+    uf20_087,
+    "examples/satisfiable/uniform-random-3sat/uf20-087.cnf"
+);
+sat_test!(
+    uf20_088,
+    "examples/satisfiable/uniform-random-3sat/uf20-088.cnf"
+);
+sat_test!(
+    uf20_089,
+    "examples/satisfiable/uniform-random-3sat/uf20-089.cnf"
+);
+sat_test!(
+    uf20_090,
+    "examples/satisfiable/uniform-random-3sat/uf20-090.cnf"
+);
+sat_test!(
+    uf20_091,
+    "examples/satisfiable/uniform-random-3sat/uf20-091.cnf"
+);
+sat_test!(
+    uf20_092,
+    "examples/satisfiable/uniform-random-3sat/uf20-092.cnf"
+);
+sat_test!(
+    uf20_093,
+    "examples/satisfiable/uniform-random-3sat/uf20-093.cnf"
+);
+sat_test!(
+    uf20_094,
+    "examples/satisfiable/uniform-random-3sat/uf20-094.cnf"
+);
+sat_test!(
+    uf20_095,
+    "examples/satisfiable/uniform-random-3sat/uf20-095.cnf"
+);
+sat_test!(
+    uf20_096,
+    "examples/satisfiable/uniform-random-3sat/uf20-096.cnf"
+);
+sat_test!(
+    uf20_097,
+    "examples/satisfiable/uniform-random-3sat/uf20-097.cnf"
+);
+sat_test!(
+    uf20_098,
+    "examples/satisfiable/uniform-random-3sat/uf20-098.cnf"
+);
+sat_test!(
+    uf20_099,
+    "examples/satisfiable/uniform-random-3sat/uf20-099.cnf"
+);
+sat_test!(
+    uf20_0100,
+    "examples/satisfiable/uniform-random-3sat/uf20-0100.cnf"
+);
+sat_test!(
+    uf20_0101,
+    "examples/satisfiable/uniform-random-3sat/uf20-0101.cnf"
+);
+sat_test!(
+    uf20_0102,
+    "examples/satisfiable/uniform-random-3sat/uf20-0102.cnf"
+);
+sat_test!(
+    uf20_0103,
+    "examples/satisfiable/uniform-random-3sat/uf20-0103.cnf"
+);
+sat_test!(
+    uf20_0104,
+    "examples/satisfiable/uniform-random-3sat/uf20-0104.cnf"
+);
+sat_test!(
+    uf20_0105,
+    "examples/satisfiable/uniform-random-3sat/uf20-0105.cnf"
+);
+sat_test!(
+    uf20_0106,
+    "examples/satisfiable/uniform-random-3sat/uf20-0106.cnf"
+);
+sat_test!(
+    uf20_0107,
+    "examples/satisfiable/uniform-random-3sat/uf20-0107.cnf"
+);
+sat_test!(
+    uf20_0108,
+    "examples/satisfiable/uniform-random-3sat/uf20-0108.cnf"
+);
+sat_test!(
+    uf20_0109,
+    "examples/satisfiable/uniform-random-3sat/uf20-0109.cnf"
+);
+sat_test!(
+    uf20_0110,
+    "examples/satisfiable/uniform-random-3sat/uf20-0110.cnf"
+);
+sat_test!(
+    uf20_0111,
+    "examples/satisfiable/uniform-random-3sat/uf20-0111.cnf"
+);
+sat_test!(
+    uf20_0112,
+    "examples/satisfiable/uniform-random-3sat/uf20-0112.cnf"
+);
+sat_test!(
+    uf20_0113,
+    "examples/satisfiable/uniform-random-3sat/uf20-0113.cnf"
+);
+sat_test!(
+    uf20_0114,
+    "examples/satisfiable/uniform-random-3sat/uf20-0114.cnf"
+);
+sat_test!(
+    uf20_0115,
+    "examples/satisfiable/uniform-random-3sat/uf20-0115.cnf"
+);
+sat_test!(
+    uf20_0116,
+    "examples/satisfiable/uniform-random-3sat/uf20-0116.cnf"
+);
+sat_test!(
+    uf20_0117,
+    "examples/satisfiable/uniform-random-3sat/uf20-0117.cnf"
+);
+sat_test!(
+    uf20_0118,
+    "examples/satisfiable/uniform-random-3sat/uf20-0118.cnf"
+);
+sat_test!(
+    uf20_0119,
+    "examples/satisfiable/uniform-random-3sat/uf20-0119.cnf"
+);
+sat_test!(
+    uf20_0120,
+    "examples/satisfiable/uniform-random-3sat/uf20-0120.cnf"
+);
+sat_test!(
+    uf20_0121,
+    "examples/satisfiable/uniform-random-3sat/uf20-0121.cnf"
+);
+sat_test!(
+    uf20_0122,
+    "examples/satisfiable/uniform-random-3sat/uf20-0122.cnf"
+);
+sat_test!(
+    uf20_0123,
+    "examples/satisfiable/uniform-random-3sat/uf20-0123.cnf"
+);
+sat_test!(
+    uf20_0124,
+    "examples/satisfiable/uniform-random-3sat/uf20-0124.cnf"
+);
+sat_test!(
+    uf20_0125,
+    "examples/satisfiable/uniform-random-3sat/uf20-0125.cnf"
+);
+sat_test!(
+    uf20_0126,
+    "examples/satisfiable/uniform-random-3sat/uf20-0126.cnf"
+);
+sat_test!(
+    uf20_0127,
+    "examples/satisfiable/uniform-random-3sat/uf20-0127.cnf"
+);
+sat_test!(
+    uf20_0128,
+    "examples/satisfiable/uniform-random-3sat/uf20-0128.cnf"
+);
+sat_test!(
+    uf20_0129,
+    "examples/satisfiable/uniform-random-3sat/uf20-0129.cnf"
+);
+sat_test!(
+    uf20_0130,
+    "examples/satisfiable/uniform-random-3sat/uf20-0130.cnf"
+);
+sat_test!(
+    uf20_0131,
+    "examples/satisfiable/uniform-random-3sat/uf20-0131.cnf"
+);
+sat_test!(
+    uf20_0132,
+    "examples/satisfiable/uniform-random-3sat/uf20-0132.cnf"
+);
+sat_test!(
+    uf20_0133,
+    "examples/satisfiable/uniform-random-3sat/uf20-0133.cnf"
+);
+sat_test!(
+    uf20_0134,
+    "examples/satisfiable/uniform-random-3sat/uf20-0134.cnf"
+);
+sat_test!(
+    uf20_0135,
+    "examples/satisfiable/uniform-random-3sat/uf20-0135.cnf"
+);
+sat_test!(
+    uf20_0136,
+    "examples/satisfiable/uniform-random-3sat/uf20-0136.cnf"
+);
+sat_test!(
+    uf20_0137,
+    "examples/satisfiable/uniform-random-3sat/uf20-0137.cnf"
+);
+sat_test!(
+    uf20_0138,
+    "examples/satisfiable/uniform-random-3sat/uf20-0138.cnf"
+);
+sat_test!(
+    uf20_0139,
+    "examples/satisfiable/uniform-random-3sat/uf20-0139.cnf"
+);
+sat_test!(
+    uf20_0140,
+    "examples/satisfiable/uniform-random-3sat/uf20-0140.cnf"
+);
+sat_test!(
+    uf20_0141,
+    "examples/satisfiable/uniform-random-3sat/uf20-0141.cnf"
+);
+sat_test!(
+    uf20_0142,
+    "examples/satisfiable/uniform-random-3sat/uf20-0142.cnf"
+);
+sat_test!(
+    uf20_0143,
+    "examples/satisfiable/uniform-random-3sat/uf20-0143.cnf"
+);
+sat_test!(
+    uf20_0144,
+    "examples/satisfiable/uniform-random-3sat/uf20-0144.cnf"
+);
+sat_test!(
+    uf20_0145,
+    "examples/satisfiable/uniform-random-3sat/uf20-0145.cnf"
+);
+sat_test!(
+    uf20_0146,
+    "examples/satisfiable/uniform-random-3sat/uf20-0146.cnf"
+);
+sat_test!(
+    uf20_0147,
+    "examples/satisfiable/uniform-random-3sat/uf20-0147.cnf"
+);
+sat_test!(
+    uf20_0148,
+    "examples/satisfiable/uniform-random-3sat/uf20-0148.cnf"
+);
+sat_test!(
+    uf20_0149,
+    "examples/satisfiable/uniform-random-3sat/uf20-0149.cnf"
+);
+sat_test!(
+    uf20_0150,
+    "examples/satisfiable/uniform-random-3sat/uf20-0150.cnf"
+);
+sat_test!(
+    uf20_0151,
+    "examples/satisfiable/uniform-random-3sat/uf20-0151.cnf"
+);
+sat_test!(
+    uf20_0152,
+    "examples/satisfiable/uniform-random-3sat/uf20-0152.cnf"
+);
+sat_test!(
+    uf20_0153,
+    "examples/satisfiable/uniform-random-3sat/uf20-0153.cnf"
+);
+sat_test!(
+    uf20_0154,
+    "examples/satisfiable/uniform-random-3sat/uf20-0154.cnf"
+);
+sat_test!(
+    uf20_0155,
+    "examples/satisfiable/uniform-random-3sat/uf20-0155.cnf"
+);
+sat_test!(
+    uf20_0156,
+    "examples/satisfiable/uniform-random-3sat/uf20-0156.cnf"
+);
+sat_test!(
+    uf20_0157,
+    "examples/satisfiable/uniform-random-3sat/uf20-0157.cnf"
+);
+sat_test!(
+    uf20_0158,
+    "examples/satisfiable/uniform-random-3sat/uf20-0158.cnf"
+);
+sat_test!(
+    uf20_0159,
+    "examples/satisfiable/uniform-random-3sat/uf20-0159.cnf"
+);
+sat_test!(
+    uf20_0160,
+    "examples/satisfiable/uniform-random-3sat/uf20-0160.cnf"
+);
+sat_test!(
+    uf20_0161,
+    "examples/satisfiable/uniform-random-3sat/uf20-0161.cnf"
+);
+sat_test!(
+    uf20_0162,
+    "examples/satisfiable/uniform-random-3sat/uf20-0162.cnf"
+);
+sat_test!(
+    uf20_0163,
+    "examples/satisfiable/uniform-random-3sat/uf20-0163.cnf"
+);
+sat_test!(
+    uf20_0164,
+    "examples/satisfiable/uniform-random-3sat/uf20-0164.cnf"
+);
+sat_test!(
+    uf20_0165,
+    "examples/satisfiable/uniform-random-3sat/uf20-0165.cnf"
+);
+sat_test!(
+    uf20_0166,
+    "examples/satisfiable/uniform-random-3sat/uf20-0166.cnf"
+);
+sat_test!(
+    uf20_0167,
+    "examples/satisfiable/uniform-random-3sat/uf20-0167.cnf"
+);
+sat_test!(
+    uf20_0168,
+    "examples/satisfiable/uniform-random-3sat/uf20-0168.cnf"
+);
+sat_test!(
+    uf20_0169,
+    "examples/satisfiable/uniform-random-3sat/uf20-0169.cnf"
+);
+sat_test!(
+    uf20_0170,
+    "examples/satisfiable/uniform-random-3sat/uf20-0170.cnf"
+);
+sat_test!(
+    uf20_0171,
+    "examples/satisfiable/uniform-random-3sat/uf20-0171.cnf"
+);
+sat_test!(
+    uf20_0172,
+    "examples/satisfiable/uniform-random-3sat/uf20-0172.cnf"
+);
+sat_test!(
+    uf20_0173,
+    "examples/satisfiable/uniform-random-3sat/uf20-0173.cnf"
+);
+sat_test!(
+    uf20_0174,
+    "examples/satisfiable/uniform-random-3sat/uf20-0174.cnf"
+);
+sat_test!(
+    uf20_0175,
+    "examples/satisfiable/uniform-random-3sat/uf20-0175.cnf"
+);
+sat_test!(
+    uf20_0176,
+    "examples/satisfiable/uniform-random-3sat/uf20-0176.cnf"
+);
+sat_test!(
+    uf20_0177,
+    "examples/satisfiable/uniform-random-3sat/uf20-0177.cnf"
+);
+sat_test!(
+    uf20_0178,
+    "examples/satisfiable/uniform-random-3sat/uf20-0178.cnf"
+);
+sat_test!(
+    uf20_0179,
+    "examples/satisfiable/uniform-random-3sat/uf20-0179.cnf"
+);
+sat_test!(
+    uf20_0180,
+    "examples/satisfiable/uniform-random-3sat/uf20-0180.cnf"
+);
+sat_test!(
+    uf20_0181,
+    "examples/satisfiable/uniform-random-3sat/uf20-0181.cnf"
+);
+sat_test!(
+    uf20_0182,
+    "examples/satisfiable/uniform-random-3sat/uf20-0182.cnf"
+);
+sat_test!(
+    uf20_0183,
+    "examples/satisfiable/uniform-random-3sat/uf20-0183.cnf"
+);
+sat_test!(
+    uf20_0184,
+    "examples/satisfiable/uniform-random-3sat/uf20-0184.cnf"
+);
+sat_test!(
+    uf20_0185,
+    "examples/satisfiable/uniform-random-3sat/uf20-0185.cnf"
+);
+sat_test!(
+    uf20_0186,
+    "examples/satisfiable/uniform-random-3sat/uf20-0186.cnf"
+);
+sat_test!(
+    uf20_0187,
+    "examples/satisfiable/uniform-random-3sat/uf20-0187.cnf"
+);
+sat_test!(
+    uf20_0188,
+    "examples/satisfiable/uniform-random-3sat/uf20-0188.cnf"
+);
+sat_test!(
+    uf20_0189,
+    "examples/satisfiable/uniform-random-3sat/uf20-0189.cnf"
+);
+sat_test!(
+    uf20_0190,
+    "examples/satisfiable/uniform-random-3sat/uf20-0190.cnf"
+);
+sat_test!(
+    uf20_0191,
+    "examples/satisfiable/uniform-random-3sat/uf20-0191.cnf"
+);
+sat_test!(
+    uf20_0192,
+    "examples/satisfiable/uniform-random-3sat/uf20-0192.cnf"
+);
+sat_test!(
+    uf20_0193,
+    "examples/satisfiable/uniform-random-3sat/uf20-0193.cnf"
+);
+sat_test!(
+    uf20_0194,
+    "examples/satisfiable/uniform-random-3sat/uf20-0194.cnf"
+);
+sat_test!(
+    uf20_0195,
+    "examples/satisfiable/uniform-random-3sat/uf20-0195.cnf"
+);
+sat_test!(
+    uf20_0196,
+    "examples/satisfiable/uniform-random-3sat/uf20-0196.cnf"
+);
+sat_test!(
+    uf20_0197,
+    "examples/satisfiable/uniform-random-3sat/uf20-0197.cnf"
+);
+sat_test!(
+    uf20_0198,
+    "examples/satisfiable/uniform-random-3sat/uf20-0198.cnf"
+);
+sat_test!(
+    uf20_0199,
+    "examples/satisfiable/uniform-random-3sat/uf20-0199.cnf"
+);
+sat_test!(
+    uf20_0200,
+    "examples/satisfiable/uniform-random-3sat/uf20-0200.cnf"
+);
+sat_test!(
+    uf20_0201,
+    "examples/satisfiable/uniform-random-3sat/uf20-0201.cnf"
+);
+sat_test!(
+    uf20_0202,
+    "examples/satisfiable/uniform-random-3sat/uf20-0202.cnf"
+);
+sat_test!(
+    uf20_0203,
+    "examples/satisfiable/uniform-random-3sat/uf20-0203.cnf"
+);
+sat_test!(
+    uf20_0204,
+    "examples/satisfiable/uniform-random-3sat/uf20-0204.cnf"
+);
+sat_test!(
+    uf20_0205,
+    "examples/satisfiable/uniform-random-3sat/uf20-0205.cnf"
+);
+sat_test!(
+    uf20_0206,
+    "examples/satisfiable/uniform-random-3sat/uf20-0206.cnf"
+);
+sat_test!(
+    uf20_0207,
+    "examples/satisfiable/uniform-random-3sat/uf20-0207.cnf"
+);
+sat_test!(
+    uf20_0208,
+    "examples/satisfiable/uniform-random-3sat/uf20-0208.cnf"
+);
+sat_test!(
+    uf20_0209,
+    "examples/satisfiable/uniform-random-3sat/uf20-0209.cnf"
+);
+sat_test!(
+    uf20_0210,
+    "examples/satisfiable/uniform-random-3sat/uf20-0210.cnf"
+);
+sat_test!(
+    uf20_0211,
+    "examples/satisfiable/uniform-random-3sat/uf20-0211.cnf"
+);
+sat_test!(
+    uf20_0212,
+    "examples/satisfiable/uniform-random-3sat/uf20-0212.cnf"
+);
+sat_test!(
+    uf20_0213,
+    "examples/satisfiable/uniform-random-3sat/uf20-0213.cnf"
+);
+sat_test!(
+    uf20_0214,
+    "examples/satisfiable/uniform-random-3sat/uf20-0214.cnf"
+);
+sat_test!(
+    uf20_0215,
+    "examples/satisfiable/uniform-random-3sat/uf20-0215.cnf"
+);
+sat_test!(
+    uf20_0216,
+    "examples/satisfiable/uniform-random-3sat/uf20-0216.cnf"
+);
+sat_test!(
+    uf20_0217,
+    "examples/satisfiable/uniform-random-3sat/uf20-0217.cnf"
+);
+sat_test!(
+    uf20_0218,
+    "examples/satisfiable/uniform-random-3sat/uf20-0218.cnf"
+);
+sat_test!(
+    uf20_0219,
+    "examples/satisfiable/uniform-random-3sat/uf20-0219.cnf"
+);
+sat_test!(
+    uf20_0220,
+    "examples/satisfiable/uniform-random-3sat/uf20-0220.cnf"
+);
+sat_test!(
+    uf20_0221,
+    "examples/satisfiable/uniform-random-3sat/uf20-0221.cnf"
+);
+sat_test!(
+    uf20_0222,
+    "examples/satisfiable/uniform-random-3sat/uf20-0222.cnf"
+);
+sat_test!(
+    uf20_0223,
+    "examples/satisfiable/uniform-random-3sat/uf20-0223.cnf"
+);
+sat_test!(
+    uf20_0224,
+    "examples/satisfiable/uniform-random-3sat/uf20-0224.cnf"
+);
+sat_test!(
+    uf20_0225,
+    "examples/satisfiable/uniform-random-3sat/uf20-0225.cnf"
+);
+sat_test!(
+    uf20_0226,
+    "examples/satisfiable/uniform-random-3sat/uf20-0226.cnf"
+);
+sat_test!(
+    uf20_0227,
+    "examples/satisfiable/uniform-random-3sat/uf20-0227.cnf"
+);
+sat_test!(
+    uf20_0228,
+    "examples/satisfiable/uniform-random-3sat/uf20-0228.cnf"
+);
+sat_test!(
+    uf20_0229,
+    "examples/satisfiable/uniform-random-3sat/uf20-0229.cnf"
+);
+sat_test!(
+    uf20_0230,
+    "examples/satisfiable/uniform-random-3sat/uf20-0230.cnf"
+);
+sat_test!(
+    uf20_0231,
+    "examples/satisfiable/uniform-random-3sat/uf20-0231.cnf"
+);
+sat_test!(
+    uf20_0232,
+    "examples/satisfiable/uniform-random-3sat/uf20-0232.cnf"
+);
+sat_test!(
+    uf20_0233,
+    "examples/satisfiable/uniform-random-3sat/uf20-0233.cnf"
+);
+sat_test!(
+    uf20_0234,
+    "examples/satisfiable/uniform-random-3sat/uf20-0234.cnf"
+);
+sat_test!(
+    uf20_0235,
+    "examples/satisfiable/uniform-random-3sat/uf20-0235.cnf"
+);
+sat_test!(
+    uf20_0236,
+    "examples/satisfiable/uniform-random-3sat/uf20-0236.cnf"
+);
+sat_test!(
+    uf20_0237,
+    "examples/satisfiable/uniform-random-3sat/uf20-0237.cnf"
+);
+sat_test!(
+    uf20_0238,
+    "examples/satisfiable/uniform-random-3sat/uf20-0238.cnf"
+);
+sat_test!(
+    uf20_0239,
+    "examples/satisfiable/uniform-random-3sat/uf20-0239.cnf"
+);
+sat_test!(
+    uf20_0240,
+    "examples/satisfiable/uniform-random-3sat/uf20-0240.cnf"
+);
+sat_test!(
+    uf20_0241,
+    "examples/satisfiable/uniform-random-3sat/uf20-0241.cnf"
+);
+sat_test!(
+    uf20_0242,
+    "examples/satisfiable/uniform-random-3sat/uf20-0242.cnf"
+);
+sat_test!(
+    uf20_0243,
+    "examples/satisfiable/uniform-random-3sat/uf20-0243.cnf"
+);
+sat_test!(
+    uf20_0244,
+    "examples/satisfiable/uniform-random-3sat/uf20-0244.cnf"
+);
+sat_test!(
+    uf20_0245,
+    "examples/satisfiable/uniform-random-3sat/uf20-0245.cnf"
+);
+sat_test!(
+    uf20_0246,
+    "examples/satisfiable/uniform-random-3sat/uf20-0246.cnf"
+);
+sat_test!(
+    uf20_0247,
+    "examples/satisfiable/uniform-random-3sat/uf20-0247.cnf"
+);
+sat_test!(
+    uf20_0248,
+    "examples/satisfiable/uniform-random-3sat/uf20-0248.cnf"
+);
+sat_test!(
+    uf20_0249,
+    "examples/satisfiable/uniform-random-3sat/uf20-0249.cnf"
+);
+sat_test!(
+    uf20_0250,
+    "examples/satisfiable/uniform-random-3sat/uf20-0250.cnf"
+);
+sat_test!(
+    uf20_0251,
+    "examples/satisfiable/uniform-random-3sat/uf20-0251.cnf"
+);
+sat_test!(
+    uf20_0252,
+    "examples/satisfiable/uniform-random-3sat/uf20-0252.cnf"
+);
+sat_test!(
+    uf20_0253,
+    "examples/satisfiable/uniform-random-3sat/uf20-0253.cnf"
+);
+sat_test!(
+    uf20_0254,
+    "examples/satisfiable/uniform-random-3sat/uf20-0254.cnf"
+);
+sat_test!(
+    uf20_0255,
+    "examples/satisfiable/uniform-random-3sat/uf20-0255.cnf"
+);
+sat_test!(
+    uf20_0256,
+    "examples/satisfiable/uniform-random-3sat/uf20-0256.cnf"
+);
+sat_test!(
+    uf20_0257,
+    "examples/satisfiable/uniform-random-3sat/uf20-0257.cnf"
+);
+sat_test!(
+    uf20_0258,
+    "examples/satisfiable/uniform-random-3sat/uf20-0258.cnf"
+);
+sat_test!(
+    uf20_0259,
+    "examples/satisfiable/uniform-random-3sat/uf20-0259.cnf"
+);
+sat_test!(
+    uf20_0260,
+    "examples/satisfiable/uniform-random-3sat/uf20-0260.cnf"
+);
+sat_test!(
+    uf20_0261,
+    "examples/satisfiable/uniform-random-3sat/uf20-0261.cnf"
+);
+sat_test!(
+    uf20_0262,
+    "examples/satisfiable/uniform-random-3sat/uf20-0262.cnf"
+);
+sat_test!(
+    uf20_0263,
+    "examples/satisfiable/uniform-random-3sat/uf20-0263.cnf"
+);
+sat_test!(
+    uf20_0264,
+    "examples/satisfiable/uniform-random-3sat/uf20-0264.cnf"
+);
+sat_test!(
+    uf20_0265,
+    "examples/satisfiable/uniform-random-3sat/uf20-0265.cnf"
+);
+sat_test!(
+    uf20_0266,
+    "examples/satisfiable/uniform-random-3sat/uf20-0266.cnf"
+);
+sat_test!(
+    uf20_0267,
+    "examples/satisfiable/uniform-random-3sat/uf20-0267.cnf"
+);
+sat_test!(
+    uf20_0268,
+    "examples/satisfiable/uniform-random-3sat/uf20-0268.cnf"
+);
+sat_test!(
+    uf20_0269,
+    "examples/satisfiable/uniform-random-3sat/uf20-0269.cnf"
+);
+sat_test!(
+    uf20_0270,
+    "examples/satisfiable/uniform-random-3sat/uf20-0270.cnf"
+);
+sat_test!(
+    uf20_0271,
+    "examples/satisfiable/uniform-random-3sat/uf20-0271.cnf"
+);
+sat_test!(
+    uf20_0272,
+    "examples/satisfiable/uniform-random-3sat/uf20-0272.cnf"
+);
+sat_test!(
+    uf20_0273,
+    "examples/satisfiable/uniform-random-3sat/uf20-0273.cnf"
+);
+sat_test!(
+    uf20_0274,
+    "examples/satisfiable/uniform-random-3sat/uf20-0274.cnf"
+);
+sat_test!(
+    uf20_0275,
+    "examples/satisfiable/uniform-random-3sat/uf20-0275.cnf"
+);
+sat_test!(
+    uf20_0276,
+    "examples/satisfiable/uniform-random-3sat/uf20-0276.cnf"
+);
+sat_test!(
+    uf20_0277,
+    "examples/satisfiable/uniform-random-3sat/uf20-0277.cnf"
+);
+sat_test!(
+    uf20_0278,
+    "examples/satisfiable/uniform-random-3sat/uf20-0278.cnf"
+);
+sat_test!(
+    uf20_0279,
+    "examples/satisfiable/uniform-random-3sat/uf20-0279.cnf"
+);
+sat_test!(
+    uf20_0280,
+    "examples/satisfiable/uniform-random-3sat/uf20-0280.cnf"
+);
+sat_test!(
+    uf20_0281,
+    "examples/satisfiable/uniform-random-3sat/uf20-0281.cnf"
+);
+sat_test!(
+    uf20_0282,
+    "examples/satisfiable/uniform-random-3sat/uf20-0282.cnf"
+);
+sat_test!(
+    uf20_0283,
+    "examples/satisfiable/uniform-random-3sat/uf20-0283.cnf"
+);
+sat_test!(
+    uf20_0284,
+    "examples/satisfiable/uniform-random-3sat/uf20-0284.cnf"
+);
+sat_test!(
+    uf20_0285,
+    "examples/satisfiable/uniform-random-3sat/uf20-0285.cnf"
+);
+sat_test!(
+    uf20_0286,
+    "examples/satisfiable/uniform-random-3sat/uf20-0286.cnf"
+);
+sat_test!(
+    uf20_0287,
+    "examples/satisfiable/uniform-random-3sat/uf20-0287.cnf"
+);
+sat_test!(
+    uf20_0288,
+    "examples/satisfiable/uniform-random-3sat/uf20-0288.cnf"
+);
+sat_test!(
+    uf20_0289,
+    "examples/satisfiable/uniform-random-3sat/uf20-0289.cnf"
+);
+sat_test!(
+    uf20_0290,
+    "examples/satisfiable/uniform-random-3sat/uf20-0290.cnf"
+);
+sat_test!(
+    uf20_0291,
+    "examples/satisfiable/uniform-random-3sat/uf20-0291.cnf"
+);
+sat_test!(
+    uf20_0292,
+    "examples/satisfiable/uniform-random-3sat/uf20-0292.cnf"
+);
+sat_test!(
+    uf20_0293,
+    "examples/satisfiable/uniform-random-3sat/uf20-0293.cnf"
+);
+sat_test!(
+    uf20_0294,
+    "examples/satisfiable/uniform-random-3sat/uf20-0294.cnf"
+);
+sat_test!(
+    uf20_0295,
+    "examples/satisfiable/uniform-random-3sat/uf20-0295.cnf"
+);
+sat_test!(
+    uf20_0296,
+    "examples/satisfiable/uniform-random-3sat/uf20-0296.cnf"
+);
+sat_test!(
+    uf20_0297,
+    "examples/satisfiable/uniform-random-3sat/uf20-0297.cnf"
+);
+sat_test!(
+    uf20_0298,
+    "examples/satisfiable/uniform-random-3sat/uf20-0298.cnf"
+);
+sat_test!(
+    uf20_0299,
+    "examples/satisfiable/uniform-random-3sat/uf20-0299.cnf"
+);
+sat_test!(
+    uf20_0300,
+    "examples/satisfiable/uniform-random-3sat/uf20-0300.cnf"
+);
+sat_test!(
+    uf20_0301,
+    "examples/satisfiable/uniform-random-3sat/uf20-0301.cnf"
+);
+sat_test!(
+    uf20_0302,
+    "examples/satisfiable/uniform-random-3sat/uf20-0302.cnf"
+);
+sat_test!(
+    uf20_0303,
+    "examples/satisfiable/uniform-random-3sat/uf20-0303.cnf"
+);
+sat_test!(
+    uf20_0304,
+    "examples/satisfiable/uniform-random-3sat/uf20-0304.cnf"
+);
+sat_test!(
+    uf20_0305,
+    "examples/satisfiable/uniform-random-3sat/uf20-0305.cnf"
+);
+sat_test!(
+    uf20_0306,
+    "examples/satisfiable/uniform-random-3sat/uf20-0306.cnf"
+);
+sat_test!(
+    uf20_0307,
+    "examples/satisfiable/uniform-random-3sat/uf20-0307.cnf"
+);
+sat_test!(
+    uf20_0308,
+    "examples/satisfiable/uniform-random-3sat/uf20-0308.cnf"
+);
+sat_test!(
+    uf20_0309,
+    "examples/satisfiable/uniform-random-3sat/uf20-0309.cnf"
+);
+sat_test!(
+    uf20_0310,
+    "examples/satisfiable/uniform-random-3sat/uf20-0310.cnf"
+);
+sat_test!(
+    uf20_0311,
+    "examples/satisfiable/uniform-random-3sat/uf20-0311.cnf"
+);
+sat_test!(
+    uf20_0312,
+    "examples/satisfiable/uniform-random-3sat/uf20-0312.cnf"
+);
+sat_test!(
+    uf20_0313,
+    "examples/satisfiable/uniform-random-3sat/uf20-0313.cnf"
+);
+sat_test!(
+    uf20_0314,
+    "examples/satisfiable/uniform-random-3sat/uf20-0314.cnf"
+);
+sat_test!(
+    uf20_0315,
+    "examples/satisfiable/uniform-random-3sat/uf20-0315.cnf"
+);
+sat_test!(
+    uf20_0316,
+    "examples/satisfiable/uniform-random-3sat/uf20-0316.cnf"
+);
+sat_test!(
+    uf20_0317,
+    "examples/satisfiable/uniform-random-3sat/uf20-0317.cnf"
+);
+sat_test!(
+    uf20_0318,
+    "examples/satisfiable/uniform-random-3sat/uf20-0318.cnf"
+);
+sat_test!(
+    uf20_0319,
+    "examples/satisfiable/uniform-random-3sat/uf20-0319.cnf"
+);
+sat_test!(
+    uf20_0320,
+    "examples/satisfiable/uniform-random-3sat/uf20-0320.cnf"
+);
+sat_test!(
+    uf20_0321,
+    "examples/satisfiable/uniform-random-3sat/uf20-0321.cnf"
+);
+sat_test!(
+    uf20_0322,
+    "examples/satisfiable/uniform-random-3sat/uf20-0322.cnf"
+);
+sat_test!(
+    uf20_0323,
+    "examples/satisfiable/uniform-random-3sat/uf20-0323.cnf"
+);
+sat_test!(
+    uf20_0324,
+    "examples/satisfiable/uniform-random-3sat/uf20-0324.cnf"
+);
+sat_test!(
+    uf20_0325,
+    "examples/satisfiable/uniform-random-3sat/uf20-0325.cnf"
+);
+sat_test!(
+    uf20_0326,
+    "examples/satisfiable/uniform-random-3sat/uf20-0326.cnf"
+);
+sat_test!(
+    uf20_0327,
+    "examples/satisfiable/uniform-random-3sat/uf20-0327.cnf"
+);
+sat_test!(
+    uf20_0328,
+    "examples/satisfiable/uniform-random-3sat/uf20-0328.cnf"
+);
+sat_test!(
+    uf20_0329,
+    "examples/satisfiable/uniform-random-3sat/uf20-0329.cnf"
+);
+sat_test!(
+    uf20_0330,
+    "examples/satisfiable/uniform-random-3sat/uf20-0330.cnf"
+);
+sat_test!(
+    uf20_0331,
+    "examples/satisfiable/uniform-random-3sat/uf20-0331.cnf"
+);
+sat_test!(
+    uf20_0332,
+    "examples/satisfiable/uniform-random-3sat/uf20-0332.cnf"
+);
+sat_test!(
+    uf20_0333,
+    "examples/satisfiable/uniform-random-3sat/uf20-0333.cnf"
+);
+sat_test!(
+    uf20_0334,
+    "examples/satisfiable/uniform-random-3sat/uf20-0334.cnf"
+);
+sat_test!(
+    uf20_0335,
+    "examples/satisfiable/uniform-random-3sat/uf20-0335.cnf"
+);
+sat_test!(
+    uf20_0336,
+    "examples/satisfiable/uniform-random-3sat/uf20-0336.cnf"
+);
+sat_test!(
+    uf20_0337,
+    "examples/satisfiable/uniform-random-3sat/uf20-0337.cnf"
+);
+sat_test!(
+    uf20_0338,
+    "examples/satisfiable/uniform-random-3sat/uf20-0338.cnf"
+);
+sat_test!(
+    uf20_0339,
+    "examples/satisfiable/uniform-random-3sat/uf20-0339.cnf"
+);
+sat_test!(
+    uf20_0340,
+    "examples/satisfiable/uniform-random-3sat/uf20-0340.cnf"
+);
+sat_test!(
+    uf20_0341,
+    "examples/satisfiable/uniform-random-3sat/uf20-0341.cnf"
+);
+sat_test!(
+    uf20_0342,
+    "examples/satisfiable/uniform-random-3sat/uf20-0342.cnf"
+);
+sat_test!(
+    uf20_0343,
+    "examples/satisfiable/uniform-random-3sat/uf20-0343.cnf"
+);
+sat_test!(
+    uf20_0344,
+    "examples/satisfiable/uniform-random-3sat/uf20-0344.cnf"
+);
+sat_test!(
+    uf20_0345,
+    "examples/satisfiable/uniform-random-3sat/uf20-0345.cnf"
+);
+sat_test!(
+    uf20_0346,
+    "examples/satisfiable/uniform-random-3sat/uf20-0346.cnf"
+);
+sat_test!(
+    uf20_0347,
+    "examples/satisfiable/uniform-random-3sat/uf20-0347.cnf"
+);
+sat_test!(
+    uf20_0348,
+    "examples/satisfiable/uniform-random-3sat/uf20-0348.cnf"
+);
+sat_test!(
+    uf20_0349,
+    "examples/satisfiable/uniform-random-3sat/uf20-0349.cnf"
+);
+sat_test!(
+    uf20_0350,
+    "examples/satisfiable/uniform-random-3sat/uf20-0350.cnf"
+);
+sat_test!(
+    uf20_0351,
+    "examples/satisfiable/uniform-random-3sat/uf20-0351.cnf"
+);
+sat_test!(
+    uf20_0352,
+    "examples/satisfiable/uniform-random-3sat/uf20-0352.cnf"
+);
+sat_test!(
+    uf20_0353,
+    "examples/satisfiable/uniform-random-3sat/uf20-0353.cnf"
+);
+sat_test!(
+    uf20_0354,
+    "examples/satisfiable/uniform-random-3sat/uf20-0354.cnf"
+);
+sat_test!(
+    uf20_0355,
+    "examples/satisfiable/uniform-random-3sat/uf20-0355.cnf"
+);
+sat_test!(
+    uf20_0356,
+    "examples/satisfiable/uniform-random-3sat/uf20-0356.cnf"
+);
+sat_test!(
+    uf20_0357,
+    "examples/satisfiable/uniform-random-3sat/uf20-0357.cnf"
+);
+sat_test!(
+    uf20_0358,
+    "examples/satisfiable/uniform-random-3sat/uf20-0358.cnf"
+);
+sat_test!(
+    uf20_0359,
+    "examples/satisfiable/uniform-random-3sat/uf20-0359.cnf"
+);
+sat_test!(
+    uf20_0360,
+    "examples/satisfiable/uniform-random-3sat/uf20-0360.cnf"
+);
+sat_test!(
+    uf20_0361,
+    "examples/satisfiable/uniform-random-3sat/uf20-0361.cnf"
+);
+sat_test!(
+    uf20_0362,
+    "examples/satisfiable/uniform-random-3sat/uf20-0362.cnf"
+);
+sat_test!(
+    uf20_0363,
+    "examples/satisfiable/uniform-random-3sat/uf20-0363.cnf"
+);
+sat_test!(
+    uf20_0364,
+    "examples/satisfiable/uniform-random-3sat/uf20-0364.cnf"
+);
+sat_test!(
+    uf20_0365,
+    "examples/satisfiable/uniform-random-3sat/uf20-0365.cnf"
+);
+sat_test!(
+    uf20_0366,
+    "examples/satisfiable/uniform-random-3sat/uf20-0366.cnf"
+);
+sat_test!(
+    uf20_0367,
+    "examples/satisfiable/uniform-random-3sat/uf20-0367.cnf"
+);
+sat_test!(
+    uf20_0368,
+    "examples/satisfiable/uniform-random-3sat/uf20-0368.cnf"
+);
+sat_test!(
+    uf20_0369,
+    "examples/satisfiable/uniform-random-3sat/uf20-0369.cnf"
+);
+sat_test!(
+    uf20_0370,
+    "examples/satisfiable/uniform-random-3sat/uf20-0370.cnf"
+);
+sat_test!(
+    uf20_0371,
+    "examples/satisfiable/uniform-random-3sat/uf20-0371.cnf"
+);
+sat_test!(
+    uf20_0372,
+    "examples/satisfiable/uniform-random-3sat/uf20-0372.cnf"
+);
+sat_test!(
+    uf20_0373,
+    "examples/satisfiable/uniform-random-3sat/uf20-0373.cnf"
+);
+sat_test!(
+    uf20_0374,
+    "examples/satisfiable/uniform-random-3sat/uf20-0374.cnf"
+);
+sat_test!(
+    uf20_0375,
+    "examples/satisfiable/uniform-random-3sat/uf20-0375.cnf"
+);
+sat_test!(
+    uf20_0376,
+    "examples/satisfiable/uniform-random-3sat/uf20-0376.cnf"
+);
+sat_test!(
+    uf20_0377,
+    "examples/satisfiable/uniform-random-3sat/uf20-0377.cnf"
+);
+sat_test!(
+    uf20_0378,
+    "examples/satisfiable/uniform-random-3sat/uf20-0378.cnf"
+);
+sat_test!(
+    uf20_0379,
+    "examples/satisfiable/uniform-random-3sat/uf20-0379.cnf"
+);
+sat_test!(
+    uf20_0380,
+    "examples/satisfiable/uniform-random-3sat/uf20-0380.cnf"
+);
+sat_test!(
+    uf20_0381,
+    "examples/satisfiable/uniform-random-3sat/uf20-0381.cnf"
+);
+sat_test!(
+    uf20_0382,
+    "examples/satisfiable/uniform-random-3sat/uf20-0382.cnf"
+);
+sat_test!(
+    uf20_0383,
+    "examples/satisfiable/uniform-random-3sat/uf20-0383.cnf"
+);
+sat_test!(
+    uf20_0384,
+    "examples/satisfiable/uniform-random-3sat/uf20-0384.cnf"
+);
+sat_test!(
+    uf20_0385,
+    "examples/satisfiable/uniform-random-3sat/uf20-0385.cnf"
+);
+sat_test!(
+    uf20_0386,
+    "examples/satisfiable/uniform-random-3sat/uf20-0386.cnf"
+);
+sat_test!(
+    uf20_0387,
+    "examples/satisfiable/uniform-random-3sat/uf20-0387.cnf"
+);
+sat_test!(
+    uf20_0388,
+    "examples/satisfiable/uniform-random-3sat/uf20-0388.cnf"
+);
+sat_test!(
+    uf20_0389,
+    "examples/satisfiable/uniform-random-3sat/uf20-0389.cnf"
+);
+sat_test!(
+    uf20_0390,
+    "examples/satisfiable/uniform-random-3sat/uf20-0390.cnf"
+);
+sat_test!(
+    uf20_0391,
+    "examples/satisfiable/uniform-random-3sat/uf20-0391.cnf"
+);
+sat_test!(
+    uf20_0392,
+    "examples/satisfiable/uniform-random-3sat/uf20-0392.cnf"
+);
+sat_test!(
+    uf20_0393,
+    "examples/satisfiable/uniform-random-3sat/uf20-0393.cnf"
+);
+sat_test!(
+    uf20_0394,
+    "examples/satisfiable/uniform-random-3sat/uf20-0394.cnf"
+);
+sat_test!(
+    uf20_0395,
+    "examples/satisfiable/uniform-random-3sat/uf20-0395.cnf"
+);
+sat_test!(
+    uf20_0396,
+    "examples/satisfiable/uniform-random-3sat/uf20-0396.cnf"
+);
+sat_test!(
+    uf20_0397,
+    "examples/satisfiable/uniform-random-3sat/uf20-0397.cnf"
+);
+sat_test!(
+    uf20_0398,
+    "examples/satisfiable/uniform-random-3sat/uf20-0398.cnf"
+);
+sat_test!(
+    uf20_0399,
+    "examples/satisfiable/uniform-random-3sat/uf20-0399.cnf"
+);
+sat_test!(
+    uf20_0400,
+    "examples/satisfiable/uniform-random-3sat/uf20-0400.cnf"
+);
+sat_test!(
+    uf20_0401,
+    "examples/satisfiable/uniform-random-3sat/uf20-0401.cnf"
+);
+sat_test!(
+    uf20_0402,
+    "examples/satisfiable/uniform-random-3sat/uf20-0402.cnf"
+);
+sat_test!(
+    uf20_0403,
+    "examples/satisfiable/uniform-random-3sat/uf20-0403.cnf"
+);
+sat_test!(
+    uf20_0404,
+    "examples/satisfiable/uniform-random-3sat/uf20-0404.cnf"
+);
+sat_test!(
+    uf20_0405,
+    "examples/satisfiable/uniform-random-3sat/uf20-0405.cnf"
+);
+sat_test!(
+    uf20_0406,
+    "examples/satisfiable/uniform-random-3sat/uf20-0406.cnf"
+);
+sat_test!(
+    uf20_0407,
+    "examples/satisfiable/uniform-random-3sat/uf20-0407.cnf"
+);
+sat_test!(
+    uf20_0408,
+    "examples/satisfiable/uniform-random-3sat/uf20-0408.cnf"
+);
+sat_test!(
+    uf20_0409,
+    "examples/satisfiable/uniform-random-3sat/uf20-0409.cnf"
+);
+sat_test!(
+    uf20_0410,
+    "examples/satisfiable/uniform-random-3sat/uf20-0410.cnf"
+);
+sat_test!(
+    uf20_0411,
+    "examples/satisfiable/uniform-random-3sat/uf20-0411.cnf"
+);
+sat_test!(
+    uf20_0412,
+    "examples/satisfiable/uniform-random-3sat/uf20-0412.cnf"
+);
+sat_test!(
+    uf20_0413,
+    "examples/satisfiable/uniform-random-3sat/uf20-0413.cnf"
+);
+sat_test!(
+    uf20_0414,
+    "examples/satisfiable/uniform-random-3sat/uf20-0414.cnf"
+);
+sat_test!(
+    uf20_0415,
+    "examples/satisfiable/uniform-random-3sat/uf20-0415.cnf"
+);
+sat_test!(
+    uf20_0416,
+    "examples/satisfiable/uniform-random-3sat/uf20-0416.cnf"
+);
+sat_test!(
+    uf20_0417,
+    "examples/satisfiable/uniform-random-3sat/uf20-0417.cnf"
+);
+sat_test!(
+    uf20_0418,
+    "examples/satisfiable/uniform-random-3sat/uf20-0418.cnf"
+);
+sat_test!(
+    uf20_0419,
+    "examples/satisfiable/uniform-random-3sat/uf20-0419.cnf"
+);
+sat_test!(
+    uf20_0420,
+    "examples/satisfiable/uniform-random-3sat/uf20-0420.cnf"
+);
+sat_test!(
+    uf20_0421,
+    "examples/satisfiable/uniform-random-3sat/uf20-0421.cnf"
+);
+sat_test!(
+    uf20_0422,
+    "examples/satisfiable/uniform-random-3sat/uf20-0422.cnf"
+);
+sat_test!(
+    uf20_0423,
+    "examples/satisfiable/uniform-random-3sat/uf20-0423.cnf"
+);
+sat_test!(
+    uf20_0424,
+    "examples/satisfiable/uniform-random-3sat/uf20-0424.cnf"
+);
+sat_test!(
+    uf20_0425,
+    "examples/satisfiable/uniform-random-3sat/uf20-0425.cnf"
+);
+sat_test!(
+    uf20_0426,
+    "examples/satisfiable/uniform-random-3sat/uf20-0426.cnf"
+);
+sat_test!(
+    uf20_0427,
+    "examples/satisfiable/uniform-random-3sat/uf20-0427.cnf"
+);
+sat_test!(
+    uf20_0428,
+    "examples/satisfiable/uniform-random-3sat/uf20-0428.cnf"
+);
+sat_test!(
+    uf20_0429,
+    "examples/satisfiable/uniform-random-3sat/uf20-0429.cnf"
+);
+sat_test!(
+    uf20_0430,
+    "examples/satisfiable/uniform-random-3sat/uf20-0430.cnf"
+);
+sat_test!(
+    uf20_0431,
+    "examples/satisfiable/uniform-random-3sat/uf20-0431.cnf"
+);
+sat_test!(
+    uf20_0432,
+    "examples/satisfiable/uniform-random-3sat/uf20-0432.cnf"
+);
+sat_test!(
+    uf20_0433,
+    "examples/satisfiable/uniform-random-3sat/uf20-0433.cnf"
+);
+sat_test!(
+    uf20_0434,
+    "examples/satisfiable/uniform-random-3sat/uf20-0434.cnf"
+);
+sat_test!(
+    uf20_0435,
+    "examples/satisfiable/uniform-random-3sat/uf20-0435.cnf"
+);
+sat_test!(
+    uf20_0436,
+    "examples/satisfiable/uniform-random-3sat/uf20-0436.cnf"
+);
+sat_test!(
+    uf20_0437,
+    "examples/satisfiable/uniform-random-3sat/uf20-0437.cnf"
+);
+sat_test!(
+    uf20_0438,
+    "examples/satisfiable/uniform-random-3sat/uf20-0438.cnf"
+);
+sat_test!(
+    uf20_0439,
+    "examples/satisfiable/uniform-random-3sat/uf20-0439.cnf"
+);
+sat_test!(
+    uf20_0440,
+    "examples/satisfiable/uniform-random-3sat/uf20-0440.cnf"
+);
+sat_test!(
+    uf20_0441,
+    "examples/satisfiable/uniform-random-3sat/uf20-0441.cnf"
+);
+sat_test!(
+    uf20_0442,
+    "examples/satisfiable/uniform-random-3sat/uf20-0442.cnf"
+);
+sat_test!(
+    uf20_0443,
+    "examples/satisfiable/uniform-random-3sat/uf20-0443.cnf"
+);
+sat_test!(
+    uf20_0444,
+    "examples/satisfiable/uniform-random-3sat/uf20-0444.cnf"
+);
+sat_test!(
+    uf20_0445,
+    "examples/satisfiable/uniform-random-3sat/uf20-0445.cnf"
+);
+sat_test!(
+    uf20_0446,
+    "examples/satisfiable/uniform-random-3sat/uf20-0446.cnf"
+);
+sat_test!(
+    uf20_0447,
+    "examples/satisfiable/uniform-random-3sat/uf20-0447.cnf"
+);
+sat_test!(
+    uf20_0448,
+    "examples/satisfiable/uniform-random-3sat/uf20-0448.cnf"
+);
+sat_test!(
+    uf20_0449,
+    "examples/satisfiable/uniform-random-3sat/uf20-0449.cnf"
+);
+sat_test!(
+    uf20_0450,
+    "examples/satisfiable/uniform-random-3sat/uf20-0450.cnf"
+);
+sat_test!(
+    uf20_0451,
+    "examples/satisfiable/uniform-random-3sat/uf20-0451.cnf"
+);
+sat_test!(
+    uf20_0452,
+    "examples/satisfiable/uniform-random-3sat/uf20-0452.cnf"
+);
+sat_test!(
+    uf20_0453,
+    "examples/satisfiable/uniform-random-3sat/uf20-0453.cnf"
+);
+sat_test!(
+    uf20_0454,
+    "examples/satisfiable/uniform-random-3sat/uf20-0454.cnf"
+);
+sat_test!(
+    uf20_0455,
+    "examples/satisfiable/uniform-random-3sat/uf20-0455.cnf"
+);
+sat_test!(
+    uf20_0456,
+    "examples/satisfiable/uniform-random-3sat/uf20-0456.cnf"
+);
+sat_test!(
+    uf20_0457,
+    "examples/satisfiable/uniform-random-3sat/uf20-0457.cnf"
+);
+sat_test!(
+    uf20_0458,
+    "examples/satisfiable/uniform-random-3sat/uf20-0458.cnf"
+);
+sat_test!(
+    uf20_0459,
+    "examples/satisfiable/uniform-random-3sat/uf20-0459.cnf"
+);
+sat_test!(
+    uf20_0460,
+    "examples/satisfiable/uniform-random-3sat/uf20-0460.cnf"
+);
+sat_test!(
+    uf20_0461,
+    "examples/satisfiable/uniform-random-3sat/uf20-0461.cnf"
+);
+sat_test!(
+    uf20_0462,
+    "examples/satisfiable/uniform-random-3sat/uf20-0462.cnf"
+);
+sat_test!(
+    uf20_0463,
+    "examples/satisfiable/uniform-random-3sat/uf20-0463.cnf"
+);
+sat_test!(
+    uf20_0464,
+    "examples/satisfiable/uniform-random-3sat/uf20-0464.cnf"
+);
+sat_test!(
+    uf20_0465,
+    "examples/satisfiable/uniform-random-3sat/uf20-0465.cnf"
+);
+sat_test!(
+    uf20_0466,
+    "examples/satisfiable/uniform-random-3sat/uf20-0466.cnf"
+);
+sat_test!(
+    uf20_0467,
+    "examples/satisfiable/uniform-random-3sat/uf20-0467.cnf"
+);
+sat_test!(
+    uf20_0468,
+    "examples/satisfiable/uniform-random-3sat/uf20-0468.cnf"
+);
+sat_test!(
+    uf20_0469,
+    "examples/satisfiable/uniform-random-3sat/uf20-0469.cnf"
+);
+sat_test!(
+    uf20_0470,
+    "examples/satisfiable/uniform-random-3sat/uf20-0470.cnf"
+);
+sat_test!(
+    uf20_0471,
+    "examples/satisfiable/uniform-random-3sat/uf20-0471.cnf"
+);
+sat_test!(
+    uf20_0472,
+    "examples/satisfiable/uniform-random-3sat/uf20-0472.cnf"
+);
+sat_test!(
+    uf20_0473,
+    "examples/satisfiable/uniform-random-3sat/uf20-0473.cnf"
+);
+sat_test!(
+    uf20_0474,
+    "examples/satisfiable/uniform-random-3sat/uf20-0474.cnf"
+);
+sat_test!(
+    uf20_0475,
+    "examples/satisfiable/uniform-random-3sat/uf20-0475.cnf"
+);
+sat_test!(
+    uf20_0476,
+    "examples/satisfiable/uniform-random-3sat/uf20-0476.cnf"
+);
+sat_test!(
+    uf20_0477,
+    "examples/satisfiable/uniform-random-3sat/uf20-0477.cnf"
+);
+sat_test!(
+    uf20_0478,
+    "examples/satisfiable/uniform-random-3sat/uf20-0478.cnf"
+);
+sat_test!(
+    uf20_0479,
+    "examples/satisfiable/uniform-random-3sat/uf20-0479.cnf"
+);
+sat_test!(
+    uf20_0480,
+    "examples/satisfiable/uniform-random-3sat/uf20-0480.cnf"
+);
+sat_test!(
+    uf20_0481,
+    "examples/satisfiable/uniform-random-3sat/uf20-0481.cnf"
+);
+sat_test!(
+    uf20_0482,
+    "examples/satisfiable/uniform-random-3sat/uf20-0482.cnf"
+);
+sat_test!(
+    uf20_0483,
+    "examples/satisfiable/uniform-random-3sat/uf20-0483.cnf"
+);
+sat_test!(
+    uf20_0484,
+    "examples/satisfiable/uniform-random-3sat/uf20-0484.cnf"
+);
+sat_test!(
+    uf20_0485,
+    "examples/satisfiable/uniform-random-3sat/uf20-0485.cnf"
+);
+sat_test!(
+    uf20_0486,
+    "examples/satisfiable/uniform-random-3sat/uf20-0486.cnf"
+);
+sat_test!(
+    uf20_0487,
+    "examples/satisfiable/uniform-random-3sat/uf20-0487.cnf"
+);
+sat_test!(
+    uf20_0488,
+    "examples/satisfiable/uniform-random-3sat/uf20-0488.cnf"
+);
+sat_test!(
+    uf20_0489,
+    "examples/satisfiable/uniform-random-3sat/uf20-0489.cnf"
+);
+sat_test!(
+    uf20_0490,
+    "examples/satisfiable/uniform-random-3sat/uf20-0490.cnf"
+);
+sat_test!(
+    uf20_0491,
+    "examples/satisfiable/uniform-random-3sat/uf20-0491.cnf"
+);
+sat_test!(
+    uf20_0492,
+    "examples/satisfiable/uniform-random-3sat/uf20-0492.cnf"
+);
+sat_test!(
+    uf20_0493,
+    "examples/satisfiable/uniform-random-3sat/uf20-0493.cnf"
+);
+sat_test!(
+    uf20_0494,
+    "examples/satisfiable/uniform-random-3sat/uf20-0494.cnf"
+);
+sat_test!(
+    uf20_0495,
+    "examples/satisfiable/uniform-random-3sat/uf20-0495.cnf"
+);
+sat_test!(
+    uf20_0496,
+    "examples/satisfiable/uniform-random-3sat/uf20-0496.cnf"
+);
+sat_test!(
+    uf20_0497,
+    "examples/satisfiable/uniform-random-3sat/uf20-0497.cnf"
+);
+sat_test!(
+    uf20_0498,
+    "examples/satisfiable/uniform-random-3sat/uf20-0498.cnf"
+);
+sat_test!(
+    uf20_0499,
+    "examples/satisfiable/uniform-random-3sat/uf20-0499.cnf"
+);
+sat_test!(
+    uf20_0500,
+    "examples/satisfiable/uniform-random-3sat/uf20-0500.cnf"
+);
+sat_test!(
+    uf20_0501,
+    "examples/satisfiable/uniform-random-3sat/uf20-0501.cnf"
+);
+sat_test!(
+    uf20_0502,
+    "examples/satisfiable/uniform-random-3sat/uf20-0502.cnf"
+);
+sat_test!(
+    uf20_0503,
+    "examples/satisfiable/uniform-random-3sat/uf20-0503.cnf"
+);
+sat_test!(
+    uf20_0504,
+    "examples/satisfiable/uniform-random-3sat/uf20-0504.cnf"
+);
+sat_test!(
+    uf20_0505,
+    "examples/satisfiable/uniform-random-3sat/uf20-0505.cnf"
+);
+sat_test!(
+    uf20_0506,
+    "examples/satisfiable/uniform-random-3sat/uf20-0506.cnf"
+);
+sat_test!(
+    uf20_0507,
+    "examples/satisfiable/uniform-random-3sat/uf20-0507.cnf"
+);
+sat_test!(
+    uf20_0508,
+    "examples/satisfiable/uniform-random-3sat/uf20-0508.cnf"
+);
+sat_test!(
+    uf20_0509,
+    "examples/satisfiable/uniform-random-3sat/uf20-0509.cnf"
+);
+sat_test!(
+    uf20_0510,
+    "examples/satisfiable/uniform-random-3sat/uf20-0510.cnf"
+);
+sat_test!(
+    uf20_0511,
+    "examples/satisfiable/uniform-random-3sat/uf20-0511.cnf"
+);
+sat_test!(
+    uf20_0512,
+    "examples/satisfiable/uniform-random-3sat/uf20-0512.cnf"
+);
+sat_test!(
+    uf20_0513,
+    "examples/satisfiable/uniform-random-3sat/uf20-0513.cnf"
+);
+sat_test!(
+    uf20_0514,
+    "examples/satisfiable/uniform-random-3sat/uf20-0514.cnf"
+);
+sat_test!(
+    uf20_0515,
+    "examples/satisfiable/uniform-random-3sat/uf20-0515.cnf"
+);
+sat_test!(
+    uf20_0516,
+    "examples/satisfiable/uniform-random-3sat/uf20-0516.cnf"
+);
+sat_test!(
+    uf20_0517,
+    "examples/satisfiable/uniform-random-3sat/uf20-0517.cnf"
+);
+sat_test!(
+    uf20_0518,
+    "examples/satisfiable/uniform-random-3sat/uf20-0518.cnf"
+);
+sat_test!(
+    uf20_0519,
+    "examples/satisfiable/uniform-random-3sat/uf20-0519.cnf"
+);
+sat_test!(
+    uf20_0520,
+    "examples/satisfiable/uniform-random-3sat/uf20-0520.cnf"
+);
+sat_test!(
+    uf20_0521,
+    "examples/satisfiable/uniform-random-3sat/uf20-0521.cnf"
+);
+sat_test!(
+    uf20_0522,
+    "examples/satisfiable/uniform-random-3sat/uf20-0522.cnf"
+);
+sat_test!(
+    uf20_0523,
+    "examples/satisfiable/uniform-random-3sat/uf20-0523.cnf"
+);
+sat_test!(
+    uf20_0524,
+    "examples/satisfiable/uniform-random-3sat/uf20-0524.cnf"
+);
+sat_test!(
+    uf20_0525,
+    "examples/satisfiable/uniform-random-3sat/uf20-0525.cnf"
+);
+sat_test!(
+    uf20_0526,
+    "examples/satisfiable/uniform-random-3sat/uf20-0526.cnf"
+);
+sat_test!(
+    uf20_0527,
+    "examples/satisfiable/uniform-random-3sat/uf20-0527.cnf"
+);
+sat_test!(
+    uf20_0528,
+    "examples/satisfiable/uniform-random-3sat/uf20-0528.cnf"
+);
+sat_test!(
+    uf20_0529,
+    "examples/satisfiable/uniform-random-3sat/uf20-0529.cnf"
+);
+sat_test!(
+    uf20_0530,
+    "examples/satisfiable/uniform-random-3sat/uf20-0530.cnf"
+);
+sat_test!(
+    uf20_0531,
+    "examples/satisfiable/uniform-random-3sat/uf20-0531.cnf"
+);
+sat_test!(
+    uf20_0532,
+    "examples/satisfiable/uniform-random-3sat/uf20-0532.cnf"
+);
+sat_test!(
+    uf20_0533,
+    "examples/satisfiable/uniform-random-3sat/uf20-0533.cnf"
+);
+sat_test!(
+    uf20_0534,
+    "examples/satisfiable/uniform-random-3sat/uf20-0534.cnf"
+);
+sat_test!(
+    uf20_0535,
+    "examples/satisfiable/uniform-random-3sat/uf20-0535.cnf"
+);
+sat_test!(
+    uf20_0536,
+    "examples/satisfiable/uniform-random-3sat/uf20-0536.cnf"
+);
+sat_test!(
+    uf20_0537,
+    "examples/satisfiable/uniform-random-3sat/uf20-0537.cnf"
+);
+sat_test!(
+    uf20_0538,
+    "examples/satisfiable/uniform-random-3sat/uf20-0538.cnf"
+);
+sat_test!(
+    uf20_0539,
+    "examples/satisfiable/uniform-random-3sat/uf20-0539.cnf"
+);
+sat_test!(
+    uf20_0540,
+    "examples/satisfiable/uniform-random-3sat/uf20-0540.cnf"
+);
+sat_test!(
+    uf20_0541,
+    "examples/satisfiable/uniform-random-3sat/uf20-0541.cnf"
+);
+sat_test!(
+    uf20_0542,
+    "examples/satisfiable/uniform-random-3sat/uf20-0542.cnf"
+);
+sat_test!(
+    uf20_0543,
+    "examples/satisfiable/uniform-random-3sat/uf20-0543.cnf"
+);
+sat_test!(
+    uf20_0544,
+    "examples/satisfiable/uniform-random-3sat/uf20-0544.cnf"
+);
+sat_test!(
+    uf20_0545,
+    "examples/satisfiable/uniform-random-3sat/uf20-0545.cnf"
+);
+sat_test!(
+    uf20_0546,
+    "examples/satisfiable/uniform-random-3sat/uf20-0546.cnf"
+);
+sat_test!(
+    uf20_0547,
+    "examples/satisfiable/uniform-random-3sat/uf20-0547.cnf"
+);
+sat_test!(
+    uf20_0548,
+    "examples/satisfiable/uniform-random-3sat/uf20-0548.cnf"
+);
+sat_test!(
+    uf20_0549,
+    "examples/satisfiable/uniform-random-3sat/uf20-0549.cnf"
+);
+sat_test!(
+    uf20_0550,
+    "examples/satisfiable/uniform-random-3sat/uf20-0550.cnf"
+);
+sat_test!(
+    uf20_0551,
+    "examples/satisfiable/uniform-random-3sat/uf20-0551.cnf"
+);
+sat_test!(
+    uf20_0552,
+    "examples/satisfiable/uniform-random-3sat/uf20-0552.cnf"
+);
+sat_test!(
+    uf20_0553,
+    "examples/satisfiable/uniform-random-3sat/uf20-0553.cnf"
+);
+sat_test!(
+    uf20_0554,
+    "examples/satisfiable/uniform-random-3sat/uf20-0554.cnf"
+);
+sat_test!(
+    uf20_0555,
+    "examples/satisfiable/uniform-random-3sat/uf20-0555.cnf"
+);
+sat_test!(
+    uf20_0556,
+    "examples/satisfiable/uniform-random-3sat/uf20-0556.cnf"
+);
+sat_test!(
+    uf20_0557,
+    "examples/satisfiable/uniform-random-3sat/uf20-0557.cnf"
+);
+sat_test!(
+    uf20_0558,
+    "examples/satisfiable/uniform-random-3sat/uf20-0558.cnf"
+);
+sat_test!(
+    uf20_0559,
+    "examples/satisfiable/uniform-random-3sat/uf20-0559.cnf"
+);
+sat_test!(
+    uf20_0560,
+    "examples/satisfiable/uniform-random-3sat/uf20-0560.cnf"
+);
+sat_test!(
+    uf20_0561,
+    "examples/satisfiable/uniform-random-3sat/uf20-0561.cnf"
+);
+sat_test!(
+    uf20_0562,
+    "examples/satisfiable/uniform-random-3sat/uf20-0562.cnf"
+);
+sat_test!(
+    uf20_0563,
+    "examples/satisfiable/uniform-random-3sat/uf20-0563.cnf"
+);
+sat_test!(
+    uf20_0564,
+    "examples/satisfiable/uniform-random-3sat/uf20-0564.cnf"
+);
+sat_test!(
+    uf20_0565,
+    "examples/satisfiable/uniform-random-3sat/uf20-0565.cnf"
+);
+sat_test!(
+    uf20_0566,
+    "examples/satisfiable/uniform-random-3sat/uf20-0566.cnf"
+);
+sat_test!(
+    uf20_0567,
+    "examples/satisfiable/uniform-random-3sat/uf20-0567.cnf"
+);
+sat_test!(
+    uf20_0568,
+    "examples/satisfiable/uniform-random-3sat/uf20-0568.cnf"
+);
+sat_test!(
+    uf20_0569,
+    "examples/satisfiable/uniform-random-3sat/uf20-0569.cnf"
+);
+sat_test!(
+    uf20_0570,
+    "examples/satisfiable/uniform-random-3sat/uf20-0570.cnf"
+);
+sat_test!(
+    uf20_0571,
+    "examples/satisfiable/uniform-random-3sat/uf20-0571.cnf"
+);
+sat_test!(
+    uf20_0572,
+    "examples/satisfiable/uniform-random-3sat/uf20-0572.cnf"
+);
+sat_test!(
+    uf20_0573,
+    "examples/satisfiable/uniform-random-3sat/uf20-0573.cnf"
+);
+sat_test!(
+    uf20_0574,
+    "examples/satisfiable/uniform-random-3sat/uf20-0574.cnf"
+);
+sat_test!(
+    uf20_0575,
+    "examples/satisfiable/uniform-random-3sat/uf20-0575.cnf"
+);
+sat_test!(
+    uf20_0576,
+    "examples/satisfiable/uniform-random-3sat/uf20-0576.cnf"
+);
+sat_test!(
+    uf20_0577,
+    "examples/satisfiable/uniform-random-3sat/uf20-0577.cnf"
+);
+sat_test!(
+    uf20_0578,
+    "examples/satisfiable/uniform-random-3sat/uf20-0578.cnf"
+);
+sat_test!(
+    uf20_0579,
+    "examples/satisfiable/uniform-random-3sat/uf20-0579.cnf"
+);
+sat_test!(
+    uf20_0580,
+    "examples/satisfiable/uniform-random-3sat/uf20-0580.cnf"
+);
+sat_test!(
+    uf20_0581,
+    "examples/satisfiable/uniform-random-3sat/uf20-0581.cnf"
+);
+sat_test!(
+    uf20_0582,
+    "examples/satisfiable/uniform-random-3sat/uf20-0582.cnf"
+);
+sat_test!(
+    uf20_0583,
+    "examples/satisfiable/uniform-random-3sat/uf20-0583.cnf"
+);
+sat_test!(
+    uf20_0584,
+    "examples/satisfiable/uniform-random-3sat/uf20-0584.cnf"
+);
+sat_test!(
+    uf20_0585,
+    "examples/satisfiable/uniform-random-3sat/uf20-0585.cnf"
+);
+sat_test!(
+    uf20_0586,
+    "examples/satisfiable/uniform-random-3sat/uf20-0586.cnf"
+);
+sat_test!(
+    uf20_0587,
+    "examples/satisfiable/uniform-random-3sat/uf20-0587.cnf"
+);
+sat_test!(
+    uf20_0588,
+    "examples/satisfiable/uniform-random-3sat/uf20-0588.cnf"
+);
+sat_test!(
+    uf20_0589,
+    "examples/satisfiable/uniform-random-3sat/uf20-0589.cnf"
+);
+sat_test!(
+    uf20_0590,
+    "examples/satisfiable/uniform-random-3sat/uf20-0590.cnf"
+);
+sat_test!(
+    uf20_0591,
+    "examples/satisfiable/uniform-random-3sat/uf20-0591.cnf"
+);
+sat_test!(
+    uf20_0592,
+    "examples/satisfiable/uniform-random-3sat/uf20-0592.cnf"
+);
+sat_test!(
+    uf20_0593,
+    "examples/satisfiable/uniform-random-3sat/uf20-0593.cnf"
+);
+sat_test!(
+    uf20_0594,
+    "examples/satisfiable/uniform-random-3sat/uf20-0594.cnf"
+);
+sat_test!(
+    uf20_0595,
+    "examples/satisfiable/uniform-random-3sat/uf20-0595.cnf"
+);
+sat_test!(
+    uf20_0596,
+    "examples/satisfiable/uniform-random-3sat/uf20-0596.cnf"
+);
+sat_test!(
+    uf20_0597,
+    "examples/satisfiable/uniform-random-3sat/uf20-0597.cnf"
+);
+sat_test!(
+    uf20_0598,
+    "examples/satisfiable/uniform-random-3sat/uf20-0598.cnf"
+);
+sat_test!(
+    uf20_0599,
+    "examples/satisfiable/uniform-random-3sat/uf20-0599.cnf"
+);
+sat_test!(
+    uf20_0600,
+    "examples/satisfiable/uniform-random-3sat/uf20-0600.cnf"
+);
+sat_test!(
+    uf20_0601,
+    "examples/satisfiable/uniform-random-3sat/uf20-0601.cnf"
+);
+sat_test!(
+    uf20_0602,
+    "examples/satisfiable/uniform-random-3sat/uf20-0602.cnf"
+);
+sat_test!(
+    uf20_0603,
+    "examples/satisfiable/uniform-random-3sat/uf20-0603.cnf"
+);
+sat_test!(
+    uf20_0604,
+    "examples/satisfiable/uniform-random-3sat/uf20-0604.cnf"
+);
+sat_test!(
+    uf20_0605,
+    "examples/satisfiable/uniform-random-3sat/uf20-0605.cnf"
+);
+sat_test!(
+    uf20_0606,
+    "examples/satisfiable/uniform-random-3sat/uf20-0606.cnf"
+);
+sat_test!(
+    uf20_0607,
+    "examples/satisfiable/uniform-random-3sat/uf20-0607.cnf"
+);
+sat_test!(
+    uf20_0608,
+    "examples/satisfiable/uniform-random-3sat/uf20-0608.cnf"
+);
+sat_test!(
+    uf20_0609,
+    "examples/satisfiable/uniform-random-3sat/uf20-0609.cnf"
+);
+sat_test!(
+    uf20_0610,
+    "examples/satisfiable/uniform-random-3sat/uf20-0610.cnf"
+);
+sat_test!(
+    uf20_0611,
+    "examples/satisfiable/uniform-random-3sat/uf20-0611.cnf"
+);
+sat_test!(
+    uf20_0612,
+    "examples/satisfiable/uniform-random-3sat/uf20-0612.cnf"
+);
+sat_test!(
+    uf20_0613,
+    "examples/satisfiable/uniform-random-3sat/uf20-0613.cnf"
+);
+sat_test!(
+    uf20_0614,
+    "examples/satisfiable/uniform-random-3sat/uf20-0614.cnf"
+);
+sat_test!(
+    uf20_0615,
+    "examples/satisfiable/uniform-random-3sat/uf20-0615.cnf"
+);
+sat_test!(
+    uf20_0616,
+    "examples/satisfiable/uniform-random-3sat/uf20-0616.cnf"
+);
+sat_test!(
+    uf20_0617,
+    "examples/satisfiable/uniform-random-3sat/uf20-0617.cnf"
+);
+sat_test!(
+    uf20_0618,
+    "examples/satisfiable/uniform-random-3sat/uf20-0618.cnf"
+);
+sat_test!(
+    uf20_0619,
+    "examples/satisfiable/uniform-random-3sat/uf20-0619.cnf"
+);
+sat_test!(
+    uf20_0620,
+    "examples/satisfiable/uniform-random-3sat/uf20-0620.cnf"
+);
+sat_test!(
+    uf20_0621,
+    "examples/satisfiable/uniform-random-3sat/uf20-0621.cnf"
+);
+sat_test!(
+    uf20_0622,
+    "examples/satisfiable/uniform-random-3sat/uf20-0622.cnf"
+);
+sat_test!(
+    uf20_0623,
+    "examples/satisfiable/uniform-random-3sat/uf20-0623.cnf"
+);
+sat_test!(
+    uf20_0624,
+    "examples/satisfiable/uniform-random-3sat/uf20-0624.cnf"
+);
+sat_test!(
+    uf20_0625,
+    "examples/satisfiable/uniform-random-3sat/uf20-0625.cnf"
+);
+sat_test!(
+    uf20_0626,
+    "examples/satisfiable/uniform-random-3sat/uf20-0626.cnf"
+);
+sat_test!(
+    uf20_0627,
+    "examples/satisfiable/uniform-random-3sat/uf20-0627.cnf"
+);
+sat_test!(
+    uf20_0628,
+    "examples/satisfiable/uniform-random-3sat/uf20-0628.cnf"
+);
+sat_test!(
+    uf20_0629,
+    "examples/satisfiable/uniform-random-3sat/uf20-0629.cnf"
+);
+sat_test!(
+    uf20_0630,
+    "examples/satisfiable/uniform-random-3sat/uf20-0630.cnf"
+);
+sat_test!(
+    uf20_0631,
+    "examples/satisfiable/uniform-random-3sat/uf20-0631.cnf"
+);
+sat_test!(
+    uf20_0632,
+    "examples/satisfiable/uniform-random-3sat/uf20-0632.cnf"
+);
+sat_test!(
+    uf20_0633,
+    "examples/satisfiable/uniform-random-3sat/uf20-0633.cnf"
+);
+sat_test!(
+    uf20_0634,
+    "examples/satisfiable/uniform-random-3sat/uf20-0634.cnf"
+);
+sat_test!(
+    uf20_0635,
+    "examples/satisfiable/uniform-random-3sat/uf20-0635.cnf"
+);
+sat_test!(
+    uf20_0636,
+    "examples/satisfiable/uniform-random-3sat/uf20-0636.cnf"
+);
+sat_test!(
+    uf20_0637,
+    "examples/satisfiable/uniform-random-3sat/uf20-0637.cnf"
+);
+sat_test!(
+    uf20_0638,
+    "examples/satisfiable/uniform-random-3sat/uf20-0638.cnf"
+);
+sat_test!(
+    uf20_0639,
+    "examples/satisfiable/uniform-random-3sat/uf20-0639.cnf"
+);
+sat_test!(
+    uf20_0640,
+    "examples/satisfiable/uniform-random-3sat/uf20-0640.cnf"
+);
+sat_test!(
+    uf20_0641,
+    "examples/satisfiable/uniform-random-3sat/uf20-0641.cnf"
+);
+sat_test!(
+    uf20_0642,
+    "examples/satisfiable/uniform-random-3sat/uf20-0642.cnf"
+);
+sat_test!(
+    uf20_0643,
+    "examples/satisfiable/uniform-random-3sat/uf20-0643.cnf"
+);
+sat_test!(
+    uf20_0644,
+    "examples/satisfiable/uniform-random-3sat/uf20-0644.cnf"
+);
+sat_test!(
+    uf20_0645,
+    "examples/satisfiable/uniform-random-3sat/uf20-0645.cnf"
+);
+sat_test!(
+    uf20_0646,
+    "examples/satisfiable/uniform-random-3sat/uf20-0646.cnf"
+);
+sat_test!(
+    uf20_0647,
+    "examples/satisfiable/uniform-random-3sat/uf20-0647.cnf"
+);
+sat_test!(
+    uf20_0648,
+    "examples/satisfiable/uniform-random-3sat/uf20-0648.cnf"
+);
+sat_test!(
+    uf20_0649,
+    "examples/satisfiable/uniform-random-3sat/uf20-0649.cnf"
+);
+sat_test!(
+    uf20_0650,
+    "examples/satisfiable/uniform-random-3sat/uf20-0650.cnf"
+);
+sat_test!(
+    uf20_0651,
+    "examples/satisfiable/uniform-random-3sat/uf20-0651.cnf"
+);
+sat_test!(
+    uf20_0652,
+    "examples/satisfiable/uniform-random-3sat/uf20-0652.cnf"
+);
+sat_test!(
+    uf20_0653,
+    "examples/satisfiable/uniform-random-3sat/uf20-0653.cnf"
+);
+sat_test!(
+    uf20_0654,
+    "examples/satisfiable/uniform-random-3sat/uf20-0654.cnf"
+);
+sat_test!(
+    uf20_0655,
+    "examples/satisfiable/uniform-random-3sat/uf20-0655.cnf"
+);
+sat_test!(
+    uf20_0656,
+    "examples/satisfiable/uniform-random-3sat/uf20-0656.cnf"
+);
+sat_test!(
+    uf20_0657,
+    "examples/satisfiable/uniform-random-3sat/uf20-0657.cnf"
+);
+sat_test!(
+    uf20_0658,
+    "examples/satisfiable/uniform-random-3sat/uf20-0658.cnf"
+);
+sat_test!(
+    uf20_0659,
+    "examples/satisfiable/uniform-random-3sat/uf20-0659.cnf"
+);
+sat_test!(
+    uf20_0660,
+    "examples/satisfiable/uniform-random-3sat/uf20-0660.cnf"
+);
+sat_test!(
+    uf20_0661,
+    "examples/satisfiable/uniform-random-3sat/uf20-0661.cnf"
+);
+sat_test!(
+    uf20_0662,
+    "examples/satisfiable/uniform-random-3sat/uf20-0662.cnf"
+);
+sat_test!(
+    uf20_0663,
+    "examples/satisfiable/uniform-random-3sat/uf20-0663.cnf"
+);
+sat_test!(
+    uf20_0664,
+    "examples/satisfiable/uniform-random-3sat/uf20-0664.cnf"
+);
+sat_test!(
+    uf20_0665,
+    "examples/satisfiable/uniform-random-3sat/uf20-0665.cnf"
+);
+sat_test!(
+    uf20_0666,
+    "examples/satisfiable/uniform-random-3sat/uf20-0666.cnf"
+);
+sat_test!(
+    uf20_0667,
+    "examples/satisfiable/uniform-random-3sat/uf20-0667.cnf"
+);
+sat_test!(
+    uf20_0668,
+    "examples/satisfiable/uniform-random-3sat/uf20-0668.cnf"
+);
+sat_test!(
+    uf20_0669,
+    "examples/satisfiable/uniform-random-3sat/uf20-0669.cnf"
+);
+sat_test!(
+    uf20_0670,
+    "examples/satisfiable/uniform-random-3sat/uf20-0670.cnf"
+);
+sat_test!(
+    uf20_0671,
+    "examples/satisfiable/uniform-random-3sat/uf20-0671.cnf"
+);
+sat_test!(
+    uf20_0672,
+    "examples/satisfiable/uniform-random-3sat/uf20-0672.cnf"
+);
+sat_test!(
+    uf20_0673,
+    "examples/satisfiable/uniform-random-3sat/uf20-0673.cnf"
+);
+sat_test!(
+    uf20_0674,
+    "examples/satisfiable/uniform-random-3sat/uf20-0674.cnf"
+);
+sat_test!(
+    uf20_0675,
+    "examples/satisfiable/uniform-random-3sat/uf20-0675.cnf"
+);
+sat_test!(
+    uf20_0676,
+    "examples/satisfiable/uniform-random-3sat/uf20-0676.cnf"
+);
+sat_test!(
+    uf20_0677,
+    "examples/satisfiable/uniform-random-3sat/uf20-0677.cnf"
+);
+sat_test!(
+    uf20_0678,
+    "examples/satisfiable/uniform-random-3sat/uf20-0678.cnf"
+);
+sat_test!(
+    uf20_0679,
+    "examples/satisfiable/uniform-random-3sat/uf20-0679.cnf"
+);
+sat_test!(
+    uf20_0680,
+    "examples/satisfiable/uniform-random-3sat/uf20-0680.cnf"
+);
+sat_test!(
+    uf20_0681,
+    "examples/satisfiable/uniform-random-3sat/uf20-0681.cnf"
+);
+sat_test!(
+    uf20_0682,
+    "examples/satisfiable/uniform-random-3sat/uf20-0682.cnf"
+);
+sat_test!(
+    uf20_0683,
+    "examples/satisfiable/uniform-random-3sat/uf20-0683.cnf"
+);
+sat_test!(
+    uf20_0684,
+    "examples/satisfiable/uniform-random-3sat/uf20-0684.cnf"
+);
+sat_test!(
+    uf20_0685,
+    "examples/satisfiable/uniform-random-3sat/uf20-0685.cnf"
+);
+sat_test!(
+    uf20_0686,
+    "examples/satisfiable/uniform-random-3sat/uf20-0686.cnf"
+);
+sat_test!(
+    uf20_0687,
+    "examples/satisfiable/uniform-random-3sat/uf20-0687.cnf"
+);
+sat_test!(
+    uf20_0688,
+    "examples/satisfiable/uniform-random-3sat/uf20-0688.cnf"
+);
+sat_test!(
+    uf20_0689,
+    "examples/satisfiable/uniform-random-3sat/uf20-0689.cnf"
+);
+sat_test!(
+    uf20_0690,
+    "examples/satisfiable/uniform-random-3sat/uf20-0690.cnf"
+);
+sat_test!(
+    uf20_0691,
+    "examples/satisfiable/uniform-random-3sat/uf20-0691.cnf"
+);
+sat_test!(
+    uf20_0692,
+    "examples/satisfiable/uniform-random-3sat/uf20-0692.cnf"
+);
+sat_test!(
+    uf20_0693,
+    "examples/satisfiable/uniform-random-3sat/uf20-0693.cnf"
+);
+sat_test!(
+    uf20_0694,
+    "examples/satisfiable/uniform-random-3sat/uf20-0694.cnf"
+);
+sat_test!(
+    uf20_0695,
+    "examples/satisfiable/uniform-random-3sat/uf20-0695.cnf"
+);
+sat_test!(
+    uf20_0696,
+    "examples/satisfiable/uniform-random-3sat/uf20-0696.cnf"
+);
+sat_test!(
+    uf20_0697,
+    "examples/satisfiable/uniform-random-3sat/uf20-0697.cnf"
+);
+sat_test!(
+    uf20_0698,
+    "examples/satisfiable/uniform-random-3sat/uf20-0698.cnf"
+);
+sat_test!(
+    uf20_0699,
+    "examples/satisfiable/uniform-random-3sat/uf20-0699.cnf"
+);
+sat_test!(
+    uf20_0700,
+    "examples/satisfiable/uniform-random-3sat/uf20-0700.cnf"
+);
+sat_test!(
+    uf20_0701,
+    "examples/satisfiable/uniform-random-3sat/uf20-0701.cnf"
+);
+sat_test!(
+    uf20_0702,
+    "examples/satisfiable/uniform-random-3sat/uf20-0702.cnf"
+);
+sat_test!(
+    uf20_0703,
+    "examples/satisfiable/uniform-random-3sat/uf20-0703.cnf"
+);
+sat_test!(
+    uf20_0704,
+    "examples/satisfiable/uniform-random-3sat/uf20-0704.cnf"
+);
+sat_test!(
+    uf20_0705,
+    "examples/satisfiable/uniform-random-3sat/uf20-0705.cnf"
+);
+sat_test!(
+    uf20_0706,
+    "examples/satisfiable/uniform-random-3sat/uf20-0706.cnf"
+);
+sat_test!(
+    uf20_0707,
+    "examples/satisfiable/uniform-random-3sat/uf20-0707.cnf"
+);
+sat_test!(
+    uf20_0708,
+    "examples/satisfiable/uniform-random-3sat/uf20-0708.cnf"
+);
+sat_test!(
+    uf20_0709,
+    "examples/satisfiable/uniform-random-3sat/uf20-0709.cnf"
+);
+sat_test!(
+    uf20_0710,
+    "examples/satisfiable/uniform-random-3sat/uf20-0710.cnf"
+);
+sat_test!(
+    uf20_0711,
+    "examples/satisfiable/uniform-random-3sat/uf20-0711.cnf"
+);
+sat_test!(
+    uf20_0712,
+    "examples/satisfiable/uniform-random-3sat/uf20-0712.cnf"
+);
+sat_test!(
+    uf20_0713,
+    "examples/satisfiable/uniform-random-3sat/uf20-0713.cnf"
+);
+sat_test!(
+    uf20_0714,
+    "examples/satisfiable/uniform-random-3sat/uf20-0714.cnf"
+);
+sat_test!(
+    uf20_0715,
+    "examples/satisfiable/uniform-random-3sat/uf20-0715.cnf"
+);
+sat_test!(
+    uf20_0716,
+    "examples/satisfiable/uniform-random-3sat/uf20-0716.cnf"
+);
+sat_test!(
+    uf20_0717,
+    "examples/satisfiable/uniform-random-3sat/uf20-0717.cnf"
+);
+sat_test!(
+    uf20_0718,
+    "examples/satisfiable/uniform-random-3sat/uf20-0718.cnf"
+);
+sat_test!(
+    uf20_0719,
+    "examples/satisfiable/uniform-random-3sat/uf20-0719.cnf"
+);
+sat_test!(
+    uf20_0720,
+    "examples/satisfiable/uniform-random-3sat/uf20-0720.cnf"
+);
+sat_test!(
+    uf20_0721,
+    "examples/satisfiable/uniform-random-3sat/uf20-0721.cnf"
+);
+sat_test!(
+    uf20_0722,
+    "examples/satisfiable/uniform-random-3sat/uf20-0722.cnf"
+);
+sat_test!(
+    uf20_0723,
+    "examples/satisfiable/uniform-random-3sat/uf20-0723.cnf"
+);
+sat_test!(
+    uf20_0724,
+    "examples/satisfiable/uniform-random-3sat/uf20-0724.cnf"
+);
+sat_test!(
+    uf20_0725,
+    "examples/satisfiable/uniform-random-3sat/uf20-0725.cnf"
+);
+sat_test!(
+    uf20_0726,
+    "examples/satisfiable/uniform-random-3sat/uf20-0726.cnf"
+);
+sat_test!(
+    uf20_0727,
+    "examples/satisfiable/uniform-random-3sat/uf20-0727.cnf"
+);
+sat_test!(
+    uf20_0728,
+    "examples/satisfiable/uniform-random-3sat/uf20-0728.cnf"
+);
+sat_test!(
+    uf20_0729,
+    "examples/satisfiable/uniform-random-3sat/uf20-0729.cnf"
+);
+sat_test!(
+    uf20_0730,
+    "examples/satisfiable/uniform-random-3sat/uf20-0730.cnf"
+);
+sat_test!(
+    uf20_0731,
+    "examples/satisfiable/uniform-random-3sat/uf20-0731.cnf"
+);
+sat_test!(
+    uf20_0732,
+    "examples/satisfiable/uniform-random-3sat/uf20-0732.cnf"
+);
+sat_test!(
+    uf20_0733,
+    "examples/satisfiable/uniform-random-3sat/uf20-0733.cnf"
+);
+sat_test!(
+    uf20_0734,
+    "examples/satisfiable/uniform-random-3sat/uf20-0734.cnf"
+);
+sat_test!(
+    uf20_0735,
+    "examples/satisfiable/uniform-random-3sat/uf20-0735.cnf"
+);
+sat_test!(
+    uf20_0736,
+    "examples/satisfiable/uniform-random-3sat/uf20-0736.cnf"
+);
+sat_test!(
+    uf20_0737,
+    "examples/satisfiable/uniform-random-3sat/uf20-0737.cnf"
+);
+sat_test!(
+    uf20_0738,
+    "examples/satisfiable/uniform-random-3sat/uf20-0738.cnf"
+);
+sat_test!(
+    uf20_0739,
+    "examples/satisfiable/uniform-random-3sat/uf20-0739.cnf"
+);
+sat_test!(
+    uf20_0740,
+    "examples/satisfiable/uniform-random-3sat/uf20-0740.cnf"
+);
+sat_test!(
+    uf20_0741,
+    "examples/satisfiable/uniform-random-3sat/uf20-0741.cnf"
+);
+sat_test!(
+    uf20_0742,
+    "examples/satisfiable/uniform-random-3sat/uf20-0742.cnf"
+);
+sat_test!(
+    uf20_0743,
+    "examples/satisfiable/uniform-random-3sat/uf20-0743.cnf"
+);
+sat_test!(
+    uf20_0744,
+    "examples/satisfiable/uniform-random-3sat/uf20-0744.cnf"
+);
+sat_test!(
+    uf20_0745,
+    "examples/satisfiable/uniform-random-3sat/uf20-0745.cnf"
+);
+sat_test!(
+    uf20_0746,
+    "examples/satisfiable/uniform-random-3sat/uf20-0746.cnf"
+);
+sat_test!(
+    uf20_0747,
+    "examples/satisfiable/uniform-random-3sat/uf20-0747.cnf"
+);
+sat_test!(
+    uf20_0748,
+    "examples/satisfiable/uniform-random-3sat/uf20-0748.cnf"
+);
+sat_test!(
+    uf20_0749,
+    "examples/satisfiable/uniform-random-3sat/uf20-0749.cnf"
+);
+sat_test!(
+    uf20_0750,
+    "examples/satisfiable/uniform-random-3sat/uf20-0750.cnf"
+);
+sat_test!(
+    uf20_0751,
+    "examples/satisfiable/uniform-random-3sat/uf20-0751.cnf"
+);
+sat_test!(
+    uf20_0752,
+    "examples/satisfiable/uniform-random-3sat/uf20-0752.cnf"
+);
+sat_test!(
+    uf20_0753,
+    "examples/satisfiable/uniform-random-3sat/uf20-0753.cnf"
+);
+sat_test!(
+    uf20_0754,
+    "examples/satisfiable/uniform-random-3sat/uf20-0754.cnf"
+);
+sat_test!(
+    uf20_0755,
+    "examples/satisfiable/uniform-random-3sat/uf20-0755.cnf"
+);
+sat_test!(
+    uf20_0756,
+    "examples/satisfiable/uniform-random-3sat/uf20-0756.cnf"
+);
+sat_test!(
+    uf20_0757,
+    "examples/satisfiable/uniform-random-3sat/uf20-0757.cnf"
+);
+sat_test!(
+    uf20_0758,
+    "examples/satisfiable/uniform-random-3sat/uf20-0758.cnf"
+);
+sat_test!(
+    uf20_0759,
+    "examples/satisfiable/uniform-random-3sat/uf20-0759.cnf"
+);
+sat_test!(
+    uf20_0760,
+    "examples/satisfiable/uniform-random-3sat/uf20-0760.cnf"
+);
+sat_test!(
+    uf20_0761,
+    "examples/satisfiable/uniform-random-3sat/uf20-0761.cnf"
+);
+sat_test!(
+    uf20_0762,
+    "examples/satisfiable/uniform-random-3sat/uf20-0762.cnf"
+);
+sat_test!(
+    uf20_0763,
+    "examples/satisfiable/uniform-random-3sat/uf20-0763.cnf"
+);
+sat_test!(
+    uf20_0764,
+    "examples/satisfiable/uniform-random-3sat/uf20-0764.cnf"
+);
+sat_test!(
+    uf20_0765,
+    "examples/satisfiable/uniform-random-3sat/uf20-0765.cnf"
+);
+sat_test!(
+    uf20_0766,
+    "examples/satisfiable/uniform-random-3sat/uf20-0766.cnf"
+);
+sat_test!(
+    uf20_0767,
+    "examples/satisfiable/uniform-random-3sat/uf20-0767.cnf"
+);
+sat_test!(
+    uf20_0768,
+    "examples/satisfiable/uniform-random-3sat/uf20-0768.cnf"
+);
+sat_test!(
+    uf20_0769,
+    "examples/satisfiable/uniform-random-3sat/uf20-0769.cnf"
+);
+sat_test!(
+    uf20_0770,
+    "examples/satisfiable/uniform-random-3sat/uf20-0770.cnf"
+);
+sat_test!(
+    uf20_0771,
+    "examples/satisfiable/uniform-random-3sat/uf20-0771.cnf"
+);
+sat_test!(
+    uf20_0772,
+    "examples/satisfiable/uniform-random-3sat/uf20-0772.cnf"
+);
+sat_test!(
+    uf20_0773,
+    "examples/satisfiable/uniform-random-3sat/uf20-0773.cnf"
+);
+sat_test!(
+    uf20_0774,
+    "examples/satisfiable/uniform-random-3sat/uf20-0774.cnf"
+);
+sat_test!(
+    uf20_0775,
+    "examples/satisfiable/uniform-random-3sat/uf20-0775.cnf"
+);
+sat_test!(
+    uf20_0776,
+    "examples/satisfiable/uniform-random-3sat/uf20-0776.cnf"
+);
+sat_test!(
+    uf20_0777,
+    "examples/satisfiable/uniform-random-3sat/uf20-0777.cnf"
+);
+sat_test!(
+    uf20_0778,
+    "examples/satisfiable/uniform-random-3sat/uf20-0778.cnf"
+);
+sat_test!(
+    uf20_0779,
+    "examples/satisfiable/uniform-random-3sat/uf20-0779.cnf"
+);
+sat_test!(
+    uf20_0780,
+    "examples/satisfiable/uniform-random-3sat/uf20-0780.cnf"
+);
+sat_test!(
+    uf20_0781,
+    "examples/satisfiable/uniform-random-3sat/uf20-0781.cnf"
+);
+sat_test!(
+    uf20_0782,
+    "examples/satisfiable/uniform-random-3sat/uf20-0782.cnf"
+);
+sat_test!(
+    uf20_0783,
+    "examples/satisfiable/uniform-random-3sat/uf20-0783.cnf"
+);
+sat_test!(
+    uf20_0784,
+    "examples/satisfiable/uniform-random-3sat/uf20-0784.cnf"
+);
+sat_test!(
+    uf20_0785,
+    "examples/satisfiable/uniform-random-3sat/uf20-0785.cnf"
+);
+sat_test!(
+    uf20_0786,
+    "examples/satisfiable/uniform-random-3sat/uf20-0786.cnf"
+);
+sat_test!(
+    uf20_0787,
+    "examples/satisfiable/uniform-random-3sat/uf20-0787.cnf"
+);
+sat_test!(
+    uf20_0788,
+    "examples/satisfiable/uniform-random-3sat/uf20-0788.cnf"
+);
+sat_test!(
+    uf20_0789,
+    "examples/satisfiable/uniform-random-3sat/uf20-0789.cnf"
+);
+sat_test!(
+    uf20_0790,
+    "examples/satisfiable/uniform-random-3sat/uf20-0790.cnf"
+);
+sat_test!(
+    uf20_0791,
+    "examples/satisfiable/uniform-random-3sat/uf20-0791.cnf"
+);
+sat_test!(
+    uf20_0792,
+    "examples/satisfiable/uniform-random-3sat/uf20-0792.cnf"
+);
+sat_test!(
+    uf20_0793,
+    "examples/satisfiable/uniform-random-3sat/uf20-0793.cnf"
+);
+sat_test!(
+    uf20_0794,
+    "examples/satisfiable/uniform-random-3sat/uf20-0794.cnf"
+);
+sat_test!(
+    uf20_0795,
+    "examples/satisfiable/uniform-random-3sat/uf20-0795.cnf"
+);
+sat_test!(
+    uf20_0796,
+    "examples/satisfiable/uniform-random-3sat/uf20-0796.cnf"
+);
+sat_test!(
+    uf20_0797,
+    "examples/satisfiable/uniform-random-3sat/uf20-0797.cnf"
+);
+sat_test!(
+    uf20_0798,
+    "examples/satisfiable/uniform-random-3sat/uf20-0798.cnf"
+);
+sat_test!(
+    uf20_0799,
+    "examples/satisfiable/uniform-random-3sat/uf20-0799.cnf"
+);
+sat_test!(
+    uf20_0800,
+    "examples/satisfiable/uniform-random-3sat/uf20-0800.cnf"
+);
+sat_test!(
+    uf20_0801,
+    "examples/satisfiable/uniform-random-3sat/uf20-0801.cnf"
+);
+sat_test!(
+    uf20_0802,
+    "examples/satisfiable/uniform-random-3sat/uf20-0802.cnf"
+);
+sat_test!(
+    uf20_0803,
+    "examples/satisfiable/uniform-random-3sat/uf20-0803.cnf"
+);
+sat_test!(
+    uf20_0804,
+    "examples/satisfiable/uniform-random-3sat/uf20-0804.cnf"
+);
+sat_test!(
+    uf20_0805,
+    "examples/satisfiable/uniform-random-3sat/uf20-0805.cnf"
+);
+sat_test!(
+    uf20_0806,
+    "examples/satisfiable/uniform-random-3sat/uf20-0806.cnf"
+);
+sat_test!(
+    uf20_0807,
+    "examples/satisfiable/uniform-random-3sat/uf20-0807.cnf"
+);
+sat_test!(
+    uf20_0808,
+    "examples/satisfiable/uniform-random-3sat/uf20-0808.cnf"
+);
+sat_test!(
+    uf20_0809,
+    "examples/satisfiable/uniform-random-3sat/uf20-0809.cnf"
+);
+sat_test!(
+    uf20_0810,
+    "examples/satisfiable/uniform-random-3sat/uf20-0810.cnf"
+);
+sat_test!(
+    uf20_0811,
+    "examples/satisfiable/uniform-random-3sat/uf20-0811.cnf"
+);
+sat_test!(
+    uf20_0812,
+    "examples/satisfiable/uniform-random-3sat/uf20-0812.cnf"
+);
+sat_test!(
+    uf20_0813,
+    "examples/satisfiable/uniform-random-3sat/uf20-0813.cnf"
+);
+sat_test!(
+    uf20_0814,
+    "examples/satisfiable/uniform-random-3sat/uf20-0814.cnf"
+);
+sat_test!(
+    uf20_0815,
+    "examples/satisfiable/uniform-random-3sat/uf20-0815.cnf"
+);
+sat_test!(
+    uf20_0816,
+    "examples/satisfiable/uniform-random-3sat/uf20-0816.cnf"
+);
+sat_test!(
+    uf20_0817,
+    "examples/satisfiable/uniform-random-3sat/uf20-0817.cnf"
+);
+sat_test!(
+    uf20_0818,
+    "examples/satisfiable/uniform-random-3sat/uf20-0818.cnf"
+);
+sat_test!(
+    uf20_0819,
+    "examples/satisfiable/uniform-random-3sat/uf20-0819.cnf"
+);
+sat_test!(
+    uf20_0820,
+    "examples/satisfiable/uniform-random-3sat/uf20-0820.cnf"
+);
+sat_test!(
+    uf20_0821,
+    "examples/satisfiable/uniform-random-3sat/uf20-0821.cnf"
+);
+sat_test!(
+    uf20_0822,
+    "examples/satisfiable/uniform-random-3sat/uf20-0822.cnf"
+);
+sat_test!(
+    uf20_0823,
+    "examples/satisfiable/uniform-random-3sat/uf20-0823.cnf"
+);
+sat_test!(
+    uf20_0824,
+    "examples/satisfiable/uniform-random-3sat/uf20-0824.cnf"
+);
+sat_test!(
+    uf20_0825,
+    "examples/satisfiable/uniform-random-3sat/uf20-0825.cnf"
+);
+sat_test!(
+    uf20_0826,
+    "examples/satisfiable/uniform-random-3sat/uf20-0826.cnf"
+);
+sat_test!(
+    uf20_0827,
+    "examples/satisfiable/uniform-random-3sat/uf20-0827.cnf"
+);
+sat_test!(
+    uf20_0828,
+    "examples/satisfiable/uniform-random-3sat/uf20-0828.cnf"
+);
+sat_test!(
+    uf20_0829,
+    "examples/satisfiable/uniform-random-3sat/uf20-0829.cnf"
+);
+sat_test!(
+    uf20_0830,
+    "examples/satisfiable/uniform-random-3sat/uf20-0830.cnf"
+);
+sat_test!(
+    uf20_0831,
+    "examples/satisfiable/uniform-random-3sat/uf20-0831.cnf"
+);
+sat_test!(
+    uf20_0832,
+    "examples/satisfiable/uniform-random-3sat/uf20-0832.cnf"
+);
+sat_test!(
+    uf20_0833,
+    "examples/satisfiable/uniform-random-3sat/uf20-0833.cnf"
+);
+sat_test!(
+    uf20_0834,
+    "examples/satisfiable/uniform-random-3sat/uf20-0834.cnf"
+);
+sat_test!(
+    uf20_0835,
+    "examples/satisfiable/uniform-random-3sat/uf20-0835.cnf"
+);
+sat_test!(
+    uf20_0836,
+    "examples/satisfiable/uniform-random-3sat/uf20-0836.cnf"
+);
+sat_test!(
+    uf20_0837,
+    "examples/satisfiable/uniform-random-3sat/uf20-0837.cnf"
+);
+sat_test!(
+    uf20_0838,
+    "examples/satisfiable/uniform-random-3sat/uf20-0838.cnf"
+);
+sat_test!(
+    uf20_0839,
+    "examples/satisfiable/uniform-random-3sat/uf20-0839.cnf"
+);
+sat_test!(
+    uf20_0840,
+    "examples/satisfiable/uniform-random-3sat/uf20-0840.cnf"
+);
+sat_test!(
+    uf20_0841,
+    "examples/satisfiable/uniform-random-3sat/uf20-0841.cnf"
+);
+sat_test!(
+    uf20_0842,
+    "examples/satisfiable/uniform-random-3sat/uf20-0842.cnf"
+);
+sat_test!(
+    uf20_0843,
+    "examples/satisfiable/uniform-random-3sat/uf20-0843.cnf"
+);
+sat_test!(
+    uf20_0844,
+    "examples/satisfiable/uniform-random-3sat/uf20-0844.cnf"
+);
+sat_test!(
+    uf20_0845,
+    "examples/satisfiable/uniform-random-3sat/uf20-0845.cnf"
+);
+sat_test!(
+    uf20_0846,
+    "examples/satisfiable/uniform-random-3sat/uf20-0846.cnf"
+);
+sat_test!(
+    uf20_0847,
+    "examples/satisfiable/uniform-random-3sat/uf20-0847.cnf"
+);
+sat_test!(
+    uf20_0848,
+    "examples/satisfiable/uniform-random-3sat/uf20-0848.cnf"
+);
+sat_test!(
+    uf20_0849,
+    "examples/satisfiable/uniform-random-3sat/uf20-0849.cnf"
+);
+sat_test!(
+    uf20_0850,
+    "examples/satisfiable/uniform-random-3sat/uf20-0850.cnf"
+);
+sat_test!(
+    uf20_0851,
+    "examples/satisfiable/uniform-random-3sat/uf20-0851.cnf"
+);
+sat_test!(
+    uf20_0852,
+    "examples/satisfiable/uniform-random-3sat/uf20-0852.cnf"
+);
+sat_test!(
+    uf20_0853,
+    "examples/satisfiable/uniform-random-3sat/uf20-0853.cnf"
+);
+sat_test!(
+    uf20_0854,
+    "examples/satisfiable/uniform-random-3sat/uf20-0854.cnf"
+);
+sat_test!(
+    uf20_0855,
+    "examples/satisfiable/uniform-random-3sat/uf20-0855.cnf"
+);
+sat_test!(
+    uf20_0856,
+    "examples/satisfiable/uniform-random-3sat/uf20-0856.cnf"
+);
+sat_test!(
+    uf20_0857,
+    "examples/satisfiable/uniform-random-3sat/uf20-0857.cnf"
+);
+sat_test!(
+    uf20_0858,
+    "examples/satisfiable/uniform-random-3sat/uf20-0858.cnf"
+);
+sat_test!(
+    uf20_0859,
+    "examples/satisfiable/uniform-random-3sat/uf20-0859.cnf"
+);
+sat_test!(
+    uf20_0860,
+    "examples/satisfiable/uniform-random-3sat/uf20-0860.cnf"
+);
+sat_test!(
+    uf20_0861,
+    "examples/satisfiable/uniform-random-3sat/uf20-0861.cnf"
+);
+sat_test!(
+    uf20_0862,
+    "examples/satisfiable/uniform-random-3sat/uf20-0862.cnf"
+);
+sat_test!(
+    uf20_0863,
+    "examples/satisfiable/uniform-random-3sat/uf20-0863.cnf"
+);
+sat_test!(
+    uf20_0864,
+    "examples/satisfiable/uniform-random-3sat/uf20-0864.cnf"
+);
+sat_test!(
+    uf20_0865,
+    "examples/satisfiable/uniform-random-3sat/uf20-0865.cnf"
+);
+sat_test!(
+    uf20_0866,
+    "examples/satisfiable/uniform-random-3sat/uf20-0866.cnf"
+);
+sat_test!(
+    uf20_0867,
+    "examples/satisfiable/uniform-random-3sat/uf20-0867.cnf"
+);
+sat_test!(
+    uf20_0868,
+    "examples/satisfiable/uniform-random-3sat/uf20-0868.cnf"
+);
+sat_test!(
+    uf20_0869,
+    "examples/satisfiable/uniform-random-3sat/uf20-0869.cnf"
+);
+sat_test!(
+    uf20_0870,
+    "examples/satisfiable/uniform-random-3sat/uf20-0870.cnf"
+);
+sat_test!(
+    uf20_0871,
+    "examples/satisfiable/uniform-random-3sat/uf20-0871.cnf"
+);
+sat_test!(
+    uf20_0872,
+    "examples/satisfiable/uniform-random-3sat/uf20-0872.cnf"
+);
+sat_test!(
+    uf20_0873,
+    "examples/satisfiable/uniform-random-3sat/uf20-0873.cnf"
+);
+sat_test!(
+    uf20_0874,
+    "examples/satisfiable/uniform-random-3sat/uf20-0874.cnf"
+);
+sat_test!(
+    uf20_0875,
+    "examples/satisfiable/uniform-random-3sat/uf20-0875.cnf"
+);
+sat_test!(
+    uf20_0876,
+    "examples/satisfiable/uniform-random-3sat/uf20-0876.cnf"
+);
+sat_test!(
+    uf20_0877,
+    "examples/satisfiable/uniform-random-3sat/uf20-0877.cnf"
+);
+sat_test!(
+    uf20_0878,
+    "examples/satisfiable/uniform-random-3sat/uf20-0878.cnf"
+);
+sat_test!(
+    uf20_0879,
+    "examples/satisfiable/uniform-random-3sat/uf20-0879.cnf"
+);
+sat_test!(
+    uf20_0880,
+    "examples/satisfiable/uniform-random-3sat/uf20-0880.cnf"
+);
+sat_test!(
+    uf20_0881,
+    "examples/satisfiable/uniform-random-3sat/uf20-0881.cnf"
+);
+sat_test!(
+    uf20_0882,
+    "examples/satisfiable/uniform-random-3sat/uf20-0882.cnf"
+);
+sat_test!(
+    uf20_0883,
+    "examples/satisfiable/uniform-random-3sat/uf20-0883.cnf"
+);
+sat_test!(
+    uf20_0884,
+    "examples/satisfiable/uniform-random-3sat/uf20-0884.cnf"
+);
+sat_test!(
+    uf20_0885,
+    "examples/satisfiable/uniform-random-3sat/uf20-0885.cnf"
+);
+sat_test!(
+    uf20_0886,
+    "examples/satisfiable/uniform-random-3sat/uf20-0886.cnf"
+);
+sat_test!(
+    uf20_0887,
+    "examples/satisfiable/uniform-random-3sat/uf20-0887.cnf"
+);
+sat_test!(
+    uf20_0888,
+    "examples/satisfiable/uniform-random-3sat/uf20-0888.cnf"
+);
+sat_test!(
+    uf20_0889,
+    "examples/satisfiable/uniform-random-3sat/uf20-0889.cnf"
+);
+sat_test!(
+    uf20_0890,
+    "examples/satisfiable/uniform-random-3sat/uf20-0890.cnf"
+);
+sat_test!(
+    uf20_0891,
+    "examples/satisfiable/uniform-random-3sat/uf20-0891.cnf"
+);
+sat_test!(
+    uf20_0892,
+    "examples/satisfiable/uniform-random-3sat/uf20-0892.cnf"
+);
+sat_test!(
+    uf20_0893,
+    "examples/satisfiable/uniform-random-3sat/uf20-0893.cnf"
+);
+sat_test!(
+    uf20_0894,
+    "examples/satisfiable/uniform-random-3sat/uf20-0894.cnf"
+);
+sat_test!(
+    uf20_0895,
+    "examples/satisfiable/uniform-random-3sat/uf20-0895.cnf"
+);
+sat_test!(
+    uf20_0896,
+    "examples/satisfiable/uniform-random-3sat/uf20-0896.cnf"
+);
+sat_test!(
+    uf20_0897,
+    "examples/satisfiable/uniform-random-3sat/uf20-0897.cnf"
+);
+sat_test!(
+    uf20_0898,
+    "examples/satisfiable/uniform-random-3sat/uf20-0898.cnf"
+);
+sat_test!(
+    uf20_0899,
+    "examples/satisfiable/uniform-random-3sat/uf20-0899.cnf"
+);
+sat_test!(
+    uf20_0900,
+    "examples/satisfiable/uniform-random-3sat/uf20-0900.cnf"
+);
+sat_test!(
+    uf20_0901,
+    "examples/satisfiable/uniform-random-3sat/uf20-0901.cnf"
+);
+sat_test!(
+    uf20_0902,
+    "examples/satisfiable/uniform-random-3sat/uf20-0902.cnf"
+);
+sat_test!(
+    uf20_0903,
+    "examples/satisfiable/uniform-random-3sat/uf20-0903.cnf"
+);
+sat_test!(
+    uf20_0904,
+    "examples/satisfiable/uniform-random-3sat/uf20-0904.cnf"
+);
+sat_test!(
+    uf20_0905,
+    "examples/satisfiable/uniform-random-3sat/uf20-0905.cnf"
+);
+sat_test!(
+    uf20_0906,
+    "examples/satisfiable/uniform-random-3sat/uf20-0906.cnf"
+);
+sat_test!(
+    uf20_0907,
+    "examples/satisfiable/uniform-random-3sat/uf20-0907.cnf"
+);
+sat_test!(
+    uf20_0908,
+    "examples/satisfiable/uniform-random-3sat/uf20-0908.cnf"
+);
+sat_test!(
+    uf20_0909,
+    "examples/satisfiable/uniform-random-3sat/uf20-0909.cnf"
+);
+sat_test!(
+    uf20_0910,
+    "examples/satisfiable/uniform-random-3sat/uf20-0910.cnf"
+);
+sat_test!(
+    uf20_0911,
+    "examples/satisfiable/uniform-random-3sat/uf20-0911.cnf"
+);
+sat_test!(
+    uf20_0912,
+    "examples/satisfiable/uniform-random-3sat/uf20-0912.cnf"
+);
+sat_test!(
+    uf20_0913,
+    "examples/satisfiable/uniform-random-3sat/uf20-0913.cnf"
+);
+sat_test!(
+    uf20_0914,
+    "examples/satisfiable/uniform-random-3sat/uf20-0914.cnf"
+);
+sat_test!(
+    uf20_0915,
+    "examples/satisfiable/uniform-random-3sat/uf20-0915.cnf"
+);
+sat_test!(
+    uf20_0916,
+    "examples/satisfiable/uniform-random-3sat/uf20-0916.cnf"
+);
+sat_test!(
+    uf20_0917,
+    "examples/satisfiable/uniform-random-3sat/uf20-0917.cnf"
+);
+sat_test!(
+    uf20_0918,
+    "examples/satisfiable/uniform-random-3sat/uf20-0918.cnf"
+);
+sat_test!(
+    uf20_0919,
+    "examples/satisfiable/uniform-random-3sat/uf20-0919.cnf"
+);
+sat_test!(
+    uf20_0920,
+    "examples/satisfiable/uniform-random-3sat/uf20-0920.cnf"
+);
+sat_test!(
+    uf20_0921,
+    "examples/satisfiable/uniform-random-3sat/uf20-0921.cnf"
+);
+sat_test!(
+    uf20_0922,
+    "examples/satisfiable/uniform-random-3sat/uf20-0922.cnf"
+);
+sat_test!(
+    uf20_0923,
+    "examples/satisfiable/uniform-random-3sat/uf20-0923.cnf"
+);
+sat_test!(
+    uf20_0924,
+    "examples/satisfiable/uniform-random-3sat/uf20-0924.cnf"
+);
+sat_test!(
+    uf20_0925,
+    "examples/satisfiable/uniform-random-3sat/uf20-0925.cnf"
+);
+sat_test!(
+    uf20_0926,
+    "examples/satisfiable/uniform-random-3sat/uf20-0926.cnf"
+);
+sat_test!(
+    uf20_0927,
+    "examples/satisfiable/uniform-random-3sat/uf20-0927.cnf"
+);
+sat_test!(
+    uf20_0928,
+    "examples/satisfiable/uniform-random-3sat/uf20-0928.cnf"
+);
+sat_test!(
+    uf20_0929,
+    "examples/satisfiable/uniform-random-3sat/uf20-0929.cnf"
+);
+sat_test!(
+    uf20_0930,
+    "examples/satisfiable/uniform-random-3sat/uf20-0930.cnf"
+);
+sat_test!(
+    uf20_0931,
+    "examples/satisfiable/uniform-random-3sat/uf20-0931.cnf"
+);
+sat_test!(
+    uf20_0932,
+    "examples/satisfiable/uniform-random-3sat/uf20-0932.cnf"
+);
+sat_test!(
+    uf20_0933,
+    "examples/satisfiable/uniform-random-3sat/uf20-0933.cnf"
+);
+sat_test!(
+    uf20_0934,
+    "examples/satisfiable/uniform-random-3sat/uf20-0934.cnf"
+);
+sat_test!(
+    uf20_0935,
+    "examples/satisfiable/uniform-random-3sat/uf20-0935.cnf"
+);
+sat_test!(
+    uf20_0936,
+    "examples/satisfiable/uniform-random-3sat/uf20-0936.cnf"
+);
+sat_test!(
+    uf20_0937,
+    "examples/satisfiable/uniform-random-3sat/uf20-0937.cnf"
+);
+sat_test!(
+    uf20_0938,
+    "examples/satisfiable/uniform-random-3sat/uf20-0938.cnf"
+);
+sat_test!(
+    uf20_0939,
+    "examples/satisfiable/uniform-random-3sat/uf20-0939.cnf"
+);
+sat_test!(
+    uf20_0940,
+    "examples/satisfiable/uniform-random-3sat/uf20-0940.cnf"
+);
+sat_test!(
+    uf20_0941,
+    "examples/satisfiable/uniform-random-3sat/uf20-0941.cnf"
+);
+sat_test!(
+    uf20_0942,
+    "examples/satisfiable/uniform-random-3sat/uf20-0942.cnf"
+);
+sat_test!(
+    uf20_0943,
+    "examples/satisfiable/uniform-random-3sat/uf20-0943.cnf"
+);
+sat_test!(
+    uf20_0944,
+    "examples/satisfiable/uniform-random-3sat/uf20-0944.cnf"
+);
+sat_test!(
+    uf20_0945,
+    "examples/satisfiable/uniform-random-3sat/uf20-0945.cnf"
+);
+sat_test!(
+    uf20_0946,
+    "examples/satisfiable/uniform-random-3sat/uf20-0946.cnf"
+);
+sat_test!(
+    uf20_0947,
+    "examples/satisfiable/uniform-random-3sat/uf20-0947.cnf"
+);
+sat_test!(
+    uf20_0948,
+    "examples/satisfiable/uniform-random-3sat/uf20-0948.cnf"
+);
+sat_test!(
+    uf20_0949,
+    "examples/satisfiable/uniform-random-3sat/uf20-0949.cnf"
+);
+sat_test!(
+    uf20_0950,
+    "examples/satisfiable/uniform-random-3sat/uf20-0950.cnf"
+);
+sat_test!(
+    uf20_0951,
+    "examples/satisfiable/uniform-random-3sat/uf20-0951.cnf"
+);
+sat_test!(
+    uf20_0952,
+    "examples/satisfiable/uniform-random-3sat/uf20-0952.cnf"
+);
+sat_test!(
+    uf20_0953,
+    "examples/satisfiable/uniform-random-3sat/uf20-0953.cnf"
+);
+sat_test!(
+    uf20_0954,
+    "examples/satisfiable/uniform-random-3sat/uf20-0954.cnf"
+);
+sat_test!(
+    uf20_0955,
+    "examples/satisfiable/uniform-random-3sat/uf20-0955.cnf"
+);
+sat_test!(
+    uf20_0956,
+    "examples/satisfiable/uniform-random-3sat/uf20-0956.cnf"
+);
+sat_test!(
+    uf20_0957,
+    "examples/satisfiable/uniform-random-3sat/uf20-0957.cnf"
+);
+sat_test!(
+    uf20_0958,
+    "examples/satisfiable/uniform-random-3sat/uf20-0958.cnf"
+);
+sat_test!(
+    uf20_0959,
+    "examples/satisfiable/uniform-random-3sat/uf20-0959.cnf"
+);
+sat_test!(
+    uf20_0960,
+    "examples/satisfiable/uniform-random-3sat/uf20-0960.cnf"
+);
+sat_test!(
+    uf20_0961,
+    "examples/satisfiable/uniform-random-3sat/uf20-0961.cnf"
+);
+sat_test!(
+    uf20_0962,
+    "examples/satisfiable/uniform-random-3sat/uf20-0962.cnf"
+);
+sat_test!(
+    uf20_0963,
+    "examples/satisfiable/uniform-random-3sat/uf20-0963.cnf"
+);
+sat_test!(
+    uf20_0964,
+    "examples/satisfiable/uniform-random-3sat/uf20-0964.cnf"
+);
+sat_test!(
+    uf20_0965,
+    "examples/satisfiable/uniform-random-3sat/uf20-0965.cnf"
+);
+sat_test!(
+    uf20_0966,
+    "examples/satisfiable/uniform-random-3sat/uf20-0966.cnf"
+);
+sat_test!(
+    uf20_0967,
+    "examples/satisfiable/uniform-random-3sat/uf20-0967.cnf"
+);
+sat_test!(
+    uf20_0968,
+    "examples/satisfiable/uniform-random-3sat/uf20-0968.cnf"
+);
+sat_test!(
+    uf20_0969,
+    "examples/satisfiable/uniform-random-3sat/uf20-0969.cnf"
+);
+sat_test!(
+    uf20_0970,
+    "examples/satisfiable/uniform-random-3sat/uf20-0970.cnf"
+);
+sat_test!(
+    uf20_0971,
+    "examples/satisfiable/uniform-random-3sat/uf20-0971.cnf"
+);
+sat_test!(
+    uf20_0972,
+    "examples/satisfiable/uniform-random-3sat/uf20-0972.cnf"
+);
+sat_test!(
+    uf20_0973,
+    "examples/satisfiable/uniform-random-3sat/uf20-0973.cnf"
+);
+sat_test!(
+    uf20_0974,
+    "examples/satisfiable/uniform-random-3sat/uf20-0974.cnf"
+);
+sat_test!(
+    uf20_0975,
+    "examples/satisfiable/uniform-random-3sat/uf20-0975.cnf"
+);
+sat_test!(
+    uf20_0976,
+    "examples/satisfiable/uniform-random-3sat/uf20-0976.cnf"
+);
+sat_test!(
+    uf20_0977,
+    "examples/satisfiable/uniform-random-3sat/uf20-0977.cnf"
+);
+sat_test!(
+    uf20_0978,
+    "examples/satisfiable/uniform-random-3sat/uf20-0978.cnf"
+);
+sat_test!(
+    uf20_0979,
+    "examples/satisfiable/uniform-random-3sat/uf20-0979.cnf"
+);
+sat_test!(
+    uf20_0980,
+    "examples/satisfiable/uniform-random-3sat/uf20-0980.cnf"
+);
+sat_test!(
+    uf20_0981,
+    "examples/satisfiable/uniform-random-3sat/uf20-0981.cnf"
+);
+sat_test!(
+    uf20_0982,
+    "examples/satisfiable/uniform-random-3sat/uf20-0982.cnf"
+);
+sat_test!(
+    uf20_0983,
+    "examples/satisfiable/uniform-random-3sat/uf20-0983.cnf"
+);
+sat_test!(
+    uf20_0984,
+    "examples/satisfiable/uniform-random-3sat/uf20-0984.cnf"
+);
+sat_test!(
+    uf20_0985,
+    "examples/satisfiable/uniform-random-3sat/uf20-0985.cnf"
+);
+sat_test!(
+    uf20_0986,
+    "examples/satisfiable/uniform-random-3sat/uf20-0986.cnf"
+);
+sat_test!(
+    uf20_0987,
+    "examples/satisfiable/uniform-random-3sat/uf20-0987.cnf"
+);
+sat_test!(
+    uf20_0988,
+    "examples/satisfiable/uniform-random-3sat/uf20-0988.cnf"
+);
+sat_test!(
+    uf20_0989,
+    "examples/satisfiable/uniform-random-3sat/uf20-0989.cnf"
+);
+sat_test!(
+    uf20_0990,
+    "examples/satisfiable/uniform-random-3sat/uf20-0990.cnf"
+);
+sat_test!(
+    uf20_0991,
+    "examples/satisfiable/uniform-random-3sat/uf20-0991.cnf"
+);
+sat_test!(
+    uf20_0992,
+    "examples/satisfiable/uniform-random-3sat/uf20-0992.cnf"
+);
+sat_test!(
+    uf20_0993,
+    "examples/satisfiable/uniform-random-3sat/uf20-0993.cnf"
+);
+sat_test!(
+    uf20_0994,
+    "examples/satisfiable/uniform-random-3sat/uf20-0994.cnf"
+);
+sat_test!(
+    uf20_0995,
+    "examples/satisfiable/uniform-random-3sat/uf20-0995.cnf"
+);
+sat_test!(
+    uf20_0996,
+    "examples/satisfiable/uniform-random-3sat/uf20-0996.cnf"
+);
+sat_test!(
+    uf20_0997,
+    "examples/satisfiable/uniform-random-3sat/uf20-0997.cnf"
+);
+sat_test!(
+    uf20_0998,
+    "examples/satisfiable/uniform-random-3sat/uf20-0998.cnf"
+);
+sat_test!(
+    uf20_0999,
+    "examples/satisfiable/uniform-random-3sat/uf20-0999.cnf"
+);
+sat_test!(
+    uf20_01000,
+    "examples/satisfiable/uniform-random-3sat/uf20-01000.cnf"
+);
+sat_test!(
+    uf75_01,
+    "examples/satisfiable/uniform-random-3sat/uf75-01.cnf"
+);
+sat_test!(
+    uf75_02,
+    "examples/satisfiable/uniform-random-3sat/uf75-02.cnf"
+);
+sat_test!(
+    uf75_03,
+    "examples/satisfiable/uniform-random-3sat/uf75-03.cnf"
+);
+sat_test!(
+    uf75_04,
+    "examples/satisfiable/uniform-random-3sat/uf75-04.cnf"
+);
+sat_test!(
+    uf75_05,
+    "examples/satisfiable/uniform-random-3sat/uf75-05.cnf"
+);
+sat_test!(
+    uf75_06,
+    "examples/satisfiable/uniform-random-3sat/uf75-06.cnf"
+);
+sat_test!(
+    uf75_07,
+    "examples/satisfiable/uniform-random-3sat/uf75-07.cnf"
+);
+sat_test!(
+    uf75_08,
+    "examples/satisfiable/uniform-random-3sat/uf75-08.cnf"
+);
+sat_test!(
+    uf75_09,
+    "examples/satisfiable/uniform-random-3sat/uf75-09.cnf"
+);
+sat_test!(
+    uf75_010,
+    "examples/satisfiable/uniform-random-3sat/uf75-010.cnf"
+);
+sat_test!(
+    uf75_011,
+    "examples/satisfiable/uniform-random-3sat/uf75-011.cnf"
+);
+sat_test!(
+    uf75_012,
+    "examples/satisfiable/uniform-random-3sat/uf75-012.cnf"
+);
+sat_test!(
+    uf75_013,
+    "examples/satisfiable/uniform-random-3sat/uf75-013.cnf"
+);
+sat_test!(
+    uf75_014,
+    "examples/satisfiable/uniform-random-3sat/uf75-014.cnf"
+);
+sat_test!(
+    uf75_015,
+    "examples/satisfiable/uniform-random-3sat/uf75-015.cnf"
+);
+sat_test!(
+    uf75_016,
+    "examples/satisfiable/uniform-random-3sat/uf75-016.cnf"
+);
+sat_test!(
+    uf75_017,
+    "examples/satisfiable/uniform-random-3sat/uf75-017.cnf"
+);
+sat_test!(
+    uf75_018,
+    "examples/satisfiable/uniform-random-3sat/uf75-018.cnf"
+);
+sat_test!(
+    uf75_019,
+    "examples/satisfiable/uniform-random-3sat/uf75-019.cnf"
+);
+sat_test!(
+    uf75_020,
+    "examples/satisfiable/uniform-random-3sat/uf75-020.cnf"
+);
+sat_test!(
+    uf75_021,
+    "examples/satisfiable/uniform-random-3sat/uf75-021.cnf"
+);
+sat_test!(
+    uf75_022,
+    "examples/satisfiable/uniform-random-3sat/uf75-022.cnf"
+);
+sat_test!(
+    uf75_023,
+    "examples/satisfiable/uniform-random-3sat/uf75-023.cnf"
+);
+sat_test!(
+    uf75_024,
+    "examples/satisfiable/uniform-random-3sat/uf75-024.cnf"
+);
+sat_test!(
+    uf75_025,
+    "examples/satisfiable/uniform-random-3sat/uf75-025.cnf"
+);
+sat_test!(
+    uf75_026,
+    "examples/satisfiable/uniform-random-3sat/uf75-026.cnf"
+);
+sat_test!(
+    uf75_027,
+    "examples/satisfiable/uniform-random-3sat/uf75-027.cnf"
+);
+sat_test!(
+    uf75_028,
+    "examples/satisfiable/uniform-random-3sat/uf75-028.cnf"
+);
+sat_test!(
+    uf75_029,
+    "examples/satisfiable/uniform-random-3sat/uf75-029.cnf"
+);
+sat_test!(
+    uf75_030,
+    "examples/satisfiable/uniform-random-3sat/uf75-030.cnf"
+);
+sat_test!(
+    uf75_031,
+    "examples/satisfiable/uniform-random-3sat/uf75-031.cnf"
+);
+sat_test!(
+    uf75_032,
+    "examples/satisfiable/uniform-random-3sat/uf75-032.cnf"
+);
+sat_test!(
+    uf75_033,
+    "examples/satisfiable/uniform-random-3sat/uf75-033.cnf"
+);
+sat_test!(
+    uf75_034,
+    "examples/satisfiable/uniform-random-3sat/uf75-034.cnf"
+);
+sat_test!(
+    uf75_035,
+    "examples/satisfiable/uniform-random-3sat/uf75-035.cnf"
+);
+sat_test!(
+    uf75_036,
+    "examples/satisfiable/uniform-random-3sat/uf75-036.cnf"
+);
+sat_test!(
+    uf75_037,
+    "examples/satisfiable/uniform-random-3sat/uf75-037.cnf"
+);
+sat_test!(
+    uf75_038,
+    "examples/satisfiable/uniform-random-3sat/uf75-038.cnf"
+);
+sat_test!(
+    uf75_039,
+    "examples/satisfiable/uniform-random-3sat/uf75-039.cnf"
+);
+sat_test!(
+    uf75_040,
+    "examples/satisfiable/uniform-random-3sat/uf75-040.cnf"
+);
+sat_test!(
+    uf75_041,
+    "examples/satisfiable/uniform-random-3sat/uf75-041.cnf"
+);
+sat_test!(
+    uf75_042,
+    "examples/satisfiable/uniform-random-3sat/uf75-042.cnf"
+);
+sat_test!(
+    uf75_043,
+    "examples/satisfiable/uniform-random-3sat/uf75-043.cnf"
+);
+sat_test!(
+    uf75_044,
+    "examples/satisfiable/uniform-random-3sat/uf75-044.cnf"
+);
+sat_test!(
+    uf75_045,
+    "examples/satisfiable/uniform-random-3sat/uf75-045.cnf"
+);
+sat_test!(
+    uf75_046,
+    "examples/satisfiable/uniform-random-3sat/uf75-046.cnf"
+);
+sat_test!(
+    uf75_047,
+    "examples/satisfiable/uniform-random-3sat/uf75-047.cnf"
+);
+sat_test!(
+    uf75_048,
+    "examples/satisfiable/uniform-random-3sat/uf75-048.cnf"
+);
+sat_test!(
+    uf75_049,
+    "examples/satisfiable/uniform-random-3sat/uf75-049.cnf"
+);
+sat_test!(
+    uf75_050,
+    "examples/satisfiable/uniform-random-3sat/uf75-050.cnf"
+);
+sat_test!(
+    uf75_051,
+    "examples/satisfiable/uniform-random-3sat/uf75-051.cnf"
+);
+sat_test!(
+    uf75_052,
+    "examples/satisfiable/uniform-random-3sat/uf75-052.cnf"
+);
+sat_test!(
+    uf75_053,
+    "examples/satisfiable/uniform-random-3sat/uf75-053.cnf"
+);
+sat_test!(
+    uf75_054,
+    "examples/satisfiable/uniform-random-3sat/uf75-054.cnf"
+);
+sat_test!(
+    uf75_055,
+    "examples/satisfiable/uniform-random-3sat/uf75-055.cnf"
+);
+sat_test!(
+    uf75_056,
+    "examples/satisfiable/uniform-random-3sat/uf75-056.cnf"
+);
+sat_test!(
+    uf75_057,
+    "examples/satisfiable/uniform-random-3sat/uf75-057.cnf"
+);
+sat_test!(
+    uf75_058,
+    "examples/satisfiable/uniform-random-3sat/uf75-058.cnf"
+);
+sat_test!(
+    uf75_059,
+    "examples/satisfiable/uniform-random-3sat/uf75-059.cnf"
+);
+sat_test!(
+    uf75_060,
+    "examples/satisfiable/uniform-random-3sat/uf75-060.cnf"
+);
+sat_test!(
+    uf75_061,
+    "examples/satisfiable/uniform-random-3sat/uf75-061.cnf"
+);
+sat_test!(
+    uf75_062,
+    "examples/satisfiable/uniform-random-3sat/uf75-062.cnf"
+);
+sat_test!(
+    uf75_063,
+    "examples/satisfiable/uniform-random-3sat/uf75-063.cnf"
+);
+sat_test!(
+    uf75_064,
+    "examples/satisfiable/uniform-random-3sat/uf75-064.cnf"
+);
+sat_test!(
+    uf75_065,
+    "examples/satisfiable/uniform-random-3sat/uf75-065.cnf"
+);
+sat_test!(
+    uf75_066,
+    "examples/satisfiable/uniform-random-3sat/uf75-066.cnf"
+);
+sat_test!(
+    uf75_067,
+    "examples/satisfiable/uniform-random-3sat/uf75-067.cnf"
+);
+sat_test!(
+    uf75_068,
+    "examples/satisfiable/uniform-random-3sat/uf75-068.cnf"
+);
+sat_test!(
+    uf75_069,
+    "examples/satisfiable/uniform-random-3sat/uf75-069.cnf"
+);
+sat_test!(
+    uf75_070,
+    "examples/satisfiable/uniform-random-3sat/uf75-070.cnf"
+);
+sat_test!(
+    uf75_071,
+    "examples/satisfiable/uniform-random-3sat/uf75-071.cnf"
+);
+sat_test!(
+    uf75_072,
+    "examples/satisfiable/uniform-random-3sat/uf75-072.cnf"
+);
+sat_test!(
+    uf75_073,
+    "examples/satisfiable/uniform-random-3sat/uf75-073.cnf"
+);
+sat_test!(
+    uf75_074,
+    "examples/satisfiable/uniform-random-3sat/uf75-074.cnf"
+);
+sat_test!(
+    uf75_075,
+    "examples/satisfiable/uniform-random-3sat/uf75-075.cnf"
+);
+sat_test!(
+    uf75_076,
+    "examples/satisfiable/uniform-random-3sat/uf75-076.cnf"
+);
+sat_test!(
+    uf75_077,
+    "examples/satisfiable/uniform-random-3sat/uf75-077.cnf"
+);
+sat_test!(
+    uf75_078,
+    "examples/satisfiable/uniform-random-3sat/uf75-078.cnf"
+);
+sat_test!(
+    uf75_079,
+    "examples/satisfiable/uniform-random-3sat/uf75-079.cnf"
+);
+sat_test!(
+    uf75_080,
+    "examples/satisfiable/uniform-random-3sat/uf75-080.cnf"
+);
+sat_test!(
+    uf75_081,
+    "examples/satisfiable/uniform-random-3sat/uf75-081.cnf"
+);
+sat_test!(
+    uf75_082,
+    "examples/satisfiable/uniform-random-3sat/uf75-082.cnf"
+);
+sat_test!(
+    uf75_083,
+    "examples/satisfiable/uniform-random-3sat/uf75-083.cnf"
+);
+sat_test!(
+    uf75_084,
+    "examples/satisfiable/uniform-random-3sat/uf75-084.cnf"
+);
+sat_test!(
+    uf75_085,
+    "examples/satisfiable/uniform-random-3sat/uf75-085.cnf"
+);
+sat_test!(
+    uf75_086,
+    "examples/satisfiable/uniform-random-3sat/uf75-086.cnf"
+);
+sat_test!(
+    uf75_087,
+    "examples/satisfiable/uniform-random-3sat/uf75-087.cnf"
+);
+sat_test!(
+    uf75_088,
+    "examples/satisfiable/uniform-random-3sat/uf75-088.cnf"
+);
+sat_test!(
+    uf75_089,
+    "examples/satisfiable/uniform-random-3sat/uf75-089.cnf"
+);
+sat_test!(
+    uf75_090,
+    "examples/satisfiable/uniform-random-3sat/uf75-090.cnf"
+);
+sat_test!(
+    uf75_091,
+    "examples/satisfiable/uniform-random-3sat/uf75-091.cnf"
+);
+sat_test!(
+    uf75_092,
+    "examples/satisfiable/uniform-random-3sat/uf75-092.cnf"
+);
+sat_test!(
+    uf75_093,
+    "examples/satisfiable/uniform-random-3sat/uf75-093.cnf"
+);
+sat_test!(
+    uf75_094,
+    "examples/satisfiable/uniform-random-3sat/uf75-094.cnf"
+);
+sat_test!(
+    uf75_095,
+    "examples/satisfiable/uniform-random-3sat/uf75-095.cnf"
+);
+sat_test!(
+    uf75_096,
+    "examples/satisfiable/uniform-random-3sat/uf75-096.cnf"
+);
+sat_test!(
+    uf75_097,
+    "examples/satisfiable/uniform-random-3sat/uf75-097.cnf"
+);
+sat_test!(
+    uf75_098,
+    "examples/satisfiable/uniform-random-3sat/uf75-098.cnf"
+);
+sat_test!(
+    uf75_099,
+    "examples/satisfiable/uniform-random-3sat/uf75-099.cnf"
+);
+sat_test!(
+    uf75_0100,
+    "examples/satisfiable/uniform-random-3sat/uf75-0100.cnf"
+);
+sat_test!(
+    uf125_01,
+    "examples/satisfiable/uniform-random-3sat/uf125-01.cnf"
+);
+sat_test!(
+    uf125_02,
+    "examples/satisfiable/uniform-random-3sat/uf125-02.cnf"
+);
+sat_test!(
+    uf125_03,
+    "examples/satisfiable/uniform-random-3sat/uf125-03.cnf"
+);
+sat_test!(
+    uf125_04,
+    "examples/satisfiable/uniform-random-3sat/uf125-04.cnf"
+);
+sat_test!(
+    uf125_05,
+    "examples/satisfiable/uniform-random-3sat/uf125-05.cnf"
+);
+sat_test!(
+    uf125_06,
+    "examples/satisfiable/uniform-random-3sat/uf125-06.cnf"
+);
+sat_test!(
+    uf125_07,
+    "examples/satisfiable/uniform-random-3sat/uf125-07.cnf"
+);
+sat_test!(
+    uf125_08,
+    "examples/satisfiable/uniform-random-3sat/uf125-08.cnf"
+);
+sat_test!(
+    uf125_09,
+    "examples/satisfiable/uniform-random-3sat/uf125-09.cnf"
+);
+sat_test!(
+    uf125_010,
+    "examples/satisfiable/uniform-random-3sat/uf125-010.cnf"
+);
+sat_test!(
+    uf125_011,
+    "examples/satisfiable/uniform-random-3sat/uf125-011.cnf"
+);
+sat_test!(
+    uf125_012,
+    "examples/satisfiable/uniform-random-3sat/uf125-012.cnf"
+);
+sat_test!(
+    uf125_013,
+    "examples/satisfiable/uniform-random-3sat/uf125-013.cnf"
+);
+sat_test!(
+    uf125_014,
+    "examples/satisfiable/uniform-random-3sat/uf125-014.cnf"
+);
+sat_test!(
+    uf125_015,
+    "examples/satisfiable/uniform-random-3sat/uf125-015.cnf"
+);
+sat_test!(
+    uf125_016,
+    "examples/satisfiable/uniform-random-3sat/uf125-016.cnf"
+);
+sat_test!(
+    uf125_017,
+    "examples/satisfiable/uniform-random-3sat/uf125-017.cnf"
+);
+sat_test!(
+    uf125_018,
+    "examples/satisfiable/uniform-random-3sat/uf125-018.cnf"
+);
+sat_test!(
+    uf125_019,
+    "examples/satisfiable/uniform-random-3sat/uf125-019.cnf"
+);
+sat_test!(
+    uf125_020,
+    "examples/satisfiable/uniform-random-3sat/uf125-020.cnf"
+);
+sat_test!(
+    uf125_021,
+    "examples/satisfiable/uniform-random-3sat/uf125-021.cnf"
+);
+sat_test!(
+    uf125_022,
+    "examples/satisfiable/uniform-random-3sat/uf125-022.cnf"
+);
+sat_test!(
+    uf125_023,
+    "examples/satisfiable/uniform-random-3sat/uf125-023.cnf"
+);
+sat_test!(
+    uf125_024,
+    "examples/satisfiable/uniform-random-3sat/uf125-024.cnf"
+);
+sat_test!(
+    uf125_025,
+    "examples/satisfiable/uniform-random-3sat/uf125-025.cnf"
+);
+sat_test!(
+    uf125_026,
+    "examples/satisfiable/uniform-random-3sat/uf125-026.cnf"
+);
+sat_test!(
+    uf125_027,
+    "examples/satisfiable/uniform-random-3sat/uf125-027.cnf"
+);
+sat_test!(
+    uf125_028,
+    "examples/satisfiable/uniform-random-3sat/uf125-028.cnf"
+);
+sat_test!(
+    uf125_029,
+    "examples/satisfiable/uniform-random-3sat/uf125-029.cnf"
+);
+sat_test!(
+    uf125_030,
+    "examples/satisfiable/uniform-random-3sat/uf125-030.cnf"
+);
+sat_test!(
+    uf125_031,
+    "examples/satisfiable/uniform-random-3sat/uf125-031.cnf"
+);
+sat_test!(
+    uf125_032,
+    "examples/satisfiable/uniform-random-3sat/uf125-032.cnf"
+);
+sat_test!(
+    uf125_033,
+    "examples/satisfiable/uniform-random-3sat/uf125-033.cnf"
+);
+sat_test!(
+    uf125_034,
+    "examples/satisfiable/uniform-random-3sat/uf125-034.cnf"
+);
+sat_test!(
+    uf125_035,
+    "examples/satisfiable/uniform-random-3sat/uf125-035.cnf"
+);
+sat_test!(
+    uf125_036,
+    "examples/satisfiable/uniform-random-3sat/uf125-036.cnf"
+);
+sat_test!(
+    uf125_037,
+    "examples/satisfiable/uniform-random-3sat/uf125-037.cnf"
+);
+sat_test!(
+    uf125_038,
+    "examples/satisfiable/uniform-random-3sat/uf125-038.cnf"
+);
+sat_test!(
+    uf125_039,
+    "examples/satisfiable/uniform-random-3sat/uf125-039.cnf"
+);
+sat_test!(
+    uf125_040,
+    "examples/satisfiable/uniform-random-3sat/uf125-040.cnf"
+);
+sat_test!(
+    uf125_041,
+    "examples/satisfiable/uniform-random-3sat/uf125-041.cnf"
+);
+sat_test!(
+    uf125_042,
+    "examples/satisfiable/uniform-random-3sat/uf125-042.cnf"
+);
+sat_test!(
+    uf125_043,
+    "examples/satisfiable/uniform-random-3sat/uf125-043.cnf"
+);
+sat_test!(
+    uf125_044,
+    "examples/satisfiable/uniform-random-3sat/uf125-044.cnf"
+);
+sat_test!(
+    uf125_045,
+    "examples/satisfiable/uniform-random-3sat/uf125-045.cnf"
+);
+sat_test!(
+    uf125_046,
+    "examples/satisfiable/uniform-random-3sat/uf125-046.cnf"
+);
+sat_test!(
+    uf125_047,
+    "examples/satisfiable/uniform-random-3sat/uf125-047.cnf"
+);
+sat_test!(
+    uf125_048,
+    "examples/satisfiable/uniform-random-3sat/uf125-048.cnf"
+);
+sat_test!(
+    uf125_049,
+    "examples/satisfiable/uniform-random-3sat/uf125-049.cnf"
+);
+sat_test!(
+    uf125_050,
+    "examples/satisfiable/uniform-random-3sat/uf125-050.cnf"
+);
+sat_test!(
+    uf125_051,
+    "examples/satisfiable/uniform-random-3sat/uf125-051.cnf"
+);
+sat_test!(
+    uf125_052,
+    "examples/satisfiable/uniform-random-3sat/uf125-052.cnf"
+);
+sat_test!(
+    uf125_053,
+    "examples/satisfiable/uniform-random-3sat/uf125-053.cnf"
+);
+sat_test!(
+    uf125_054,
+    "examples/satisfiable/uniform-random-3sat/uf125-054.cnf"
+);
+sat_test!(
+    uf125_055,
+    "examples/satisfiable/uniform-random-3sat/uf125-055.cnf"
+);
+sat_test!(
+    uf125_056,
+    "examples/satisfiable/uniform-random-3sat/uf125-056.cnf"
+);
+sat_test!(
+    uf125_057,
+    "examples/satisfiable/uniform-random-3sat/uf125-057.cnf"
+);
+sat_test!(
+    uf125_058,
+    "examples/satisfiable/uniform-random-3sat/uf125-058.cnf"
+);
+sat_test!(
+    uf125_059,
+    "examples/satisfiable/uniform-random-3sat/uf125-059.cnf"
+);
+sat_test!(
+    uf125_060,
+    "examples/satisfiable/uniform-random-3sat/uf125-060.cnf"
+);
+sat_test!(
+    uf125_061,
+    "examples/satisfiable/uniform-random-3sat/uf125-061.cnf"
+);
+sat_test!(
+    uf125_062,
+    "examples/satisfiable/uniform-random-3sat/uf125-062.cnf"
+);
+sat_test!(
+    uf125_063,
+    "examples/satisfiable/uniform-random-3sat/uf125-063.cnf"
+);
+sat_test!(
+    uf125_064,
+    "examples/satisfiable/uniform-random-3sat/uf125-064.cnf"
+);
+sat_test!(
+    uf125_065,
+    "examples/satisfiable/uniform-random-3sat/uf125-065.cnf"
+);
+sat_test!(
+    uf125_066,
+    "examples/satisfiable/uniform-random-3sat/uf125-066.cnf"
+);
+sat_test!(
+    uf125_067,
+    "examples/satisfiable/uniform-random-3sat/uf125-067.cnf"
+);
+sat_test!(
+    uf125_068,
+    "examples/satisfiable/uniform-random-3sat/uf125-068.cnf"
+);
+sat_test!(
+    uf125_069,
+    "examples/satisfiable/uniform-random-3sat/uf125-069.cnf"
+);
+sat_test!(
+    uf125_070,
+    "examples/satisfiable/uniform-random-3sat/uf125-070.cnf"
+);
+sat_test!(
+    uf125_071,
+    "examples/satisfiable/uniform-random-3sat/uf125-071.cnf"
+);
+sat_test!(
+    uf125_072,
+    "examples/satisfiable/uniform-random-3sat/uf125-072.cnf"
+);
+sat_test!(
+    uf125_073,
+    "examples/satisfiable/uniform-random-3sat/uf125-073.cnf"
+);
+sat_test!(
+    uf125_074,
+    "examples/satisfiable/uniform-random-3sat/uf125-074.cnf"
+);
+sat_test!(
+    uf125_075,
+    "examples/satisfiable/uniform-random-3sat/uf125-075.cnf"
+);
+sat_test!(
+    uf125_076,
+    "examples/satisfiable/uniform-random-3sat/uf125-076.cnf"
+);
+sat_test!(
+    uf125_077,
+    "examples/satisfiable/uniform-random-3sat/uf125-077.cnf"
+);
+sat_test!(
+    uf125_078,
+    "examples/satisfiable/uniform-random-3sat/uf125-078.cnf"
+);
+sat_test!(
+    uf125_079,
+    "examples/satisfiable/uniform-random-3sat/uf125-079.cnf"
+);
+sat_test!(
+    uf125_080,
+    "examples/satisfiable/uniform-random-3sat/uf125-080.cnf"
+);
+sat_test!(
+    uf125_081,
+    "examples/satisfiable/uniform-random-3sat/uf125-081.cnf"
+);
+sat_test!(
+    uf125_082,
+    "examples/satisfiable/uniform-random-3sat/uf125-082.cnf"
+);
+sat_test!(
+    uf125_083,
+    "examples/satisfiable/uniform-random-3sat/uf125-083.cnf"
+);
+sat_test!(
+    uf125_084,
+    "examples/satisfiable/uniform-random-3sat/uf125-084.cnf"
+);
+sat_test!(
+    uf125_085,
+    "examples/satisfiable/uniform-random-3sat/uf125-085.cnf"
+);
+sat_test!(
+    uf125_086,
+    "examples/satisfiable/uniform-random-3sat/uf125-086.cnf"
+);
+sat_test!(
+    uf125_087,
+    "examples/satisfiable/uniform-random-3sat/uf125-087.cnf"
+);
+sat_test!(
+    uf125_088,
+    "examples/satisfiable/uniform-random-3sat/uf125-088.cnf"
+);
+sat_test!(
+    uf125_089,
+    "examples/satisfiable/uniform-random-3sat/uf125-089.cnf"
+);
+sat_test!(
+    uf125_090,
+    "examples/satisfiable/uniform-random-3sat/uf125-090.cnf"
+);
+sat_test!(
+    uf125_091,
+    "examples/satisfiable/uniform-random-3sat/uf125-091.cnf"
+);
+sat_test!(
+    uf125_092,
+    "examples/satisfiable/uniform-random-3sat/uf125-092.cnf"
+);
+sat_test!(
+    uf125_093,
+    "examples/satisfiable/uniform-random-3sat/uf125-093.cnf"
+);
+sat_test!(
+    uf125_094,
+    "examples/satisfiable/uniform-random-3sat/uf125-094.cnf"
+);
+sat_test!(
+    uf125_095,
+    "examples/satisfiable/uniform-random-3sat/uf125-095.cnf"
+);
+sat_test!(
+    uf125_096,
+    "examples/satisfiable/uniform-random-3sat/uf125-096.cnf"
+);
+sat_test!(
+    uf125_097,
+    "examples/satisfiable/uniform-random-3sat/uf125-097.cnf"
+);
+sat_test!(
+    uf125_098,
+    "examples/satisfiable/uniform-random-3sat/uf125-098.cnf"
+);
+sat_test!(
+    uf125_099,
+    "examples/satisfiable/uniform-random-3sat/uf125-099.cnf"
+);
+sat_test!(
+    uf125_0100,
+    "examples/satisfiable/uniform-random-3sat/uf125-0100.cnf"
+);
+sat_test!(
+    uf150_01,
+    "examples/satisfiable/uniform-random-3sat/uf150-01.cnf"
+);
+sat_test!(
+    uf150_02,
+    "examples/satisfiable/uniform-random-3sat/uf150-02.cnf"
+);
+sat_test!(
+    uf150_03,
+    "examples/satisfiable/uniform-random-3sat/uf150-03.cnf"
+);
+sat_test!(
+    uf150_04,
+    "examples/satisfiable/uniform-random-3sat/uf150-04.cnf"
+);
+sat_test!(
+    uf150_05,
+    "examples/satisfiable/uniform-random-3sat/uf150-05.cnf"
+);
+sat_test!(
+    uf150_06,
+    "examples/satisfiable/uniform-random-3sat/uf150-06.cnf"
+);
+sat_test!(
+    uf150_07,
+    "examples/satisfiable/uniform-random-3sat/uf150-07.cnf"
+);
+sat_test!(
+    uf150_08,
+    "examples/satisfiable/uniform-random-3sat/uf150-08.cnf"
+);
+sat_test!(
+    uf150_09,
+    "examples/satisfiable/uniform-random-3sat/uf150-09.cnf"
+);
+sat_test!(
+    uf150_010,
+    "examples/satisfiable/uniform-random-3sat/uf150-010.cnf"
+);
+sat_test!(
+    uf150_011,
+    "examples/satisfiable/uniform-random-3sat/uf150-011.cnf"
+);
+sat_test!(
+    uf150_012,
+    "examples/satisfiable/uniform-random-3sat/uf150-012.cnf"
+);
+sat_test!(
+    uf150_013,
+    "examples/satisfiable/uniform-random-3sat/uf150-013.cnf"
+);
+sat_test!(
+    uf150_014,
+    "examples/satisfiable/uniform-random-3sat/uf150-014.cnf"
+);
+sat_test!(
+    uf150_015,
+    "examples/satisfiable/uniform-random-3sat/uf150-015.cnf"
+);
+sat_test!(
+    uf150_016,
+    "examples/satisfiable/uniform-random-3sat/uf150-016.cnf"
+);
+sat_test!(
+    uf150_017,
+    "examples/satisfiable/uniform-random-3sat/uf150-017.cnf"
+);
+sat_test!(
+    uf150_018,
+    "examples/satisfiable/uniform-random-3sat/uf150-018.cnf"
+);
+sat_test!(
+    uf150_019,
+    "examples/satisfiable/uniform-random-3sat/uf150-019.cnf"
+);
+sat_test!(
+    uf150_020,
+    "examples/satisfiable/uniform-random-3sat/uf150-020.cnf"
+);
+sat_test!(
+    uf150_021,
+    "examples/satisfiable/uniform-random-3sat/uf150-021.cnf"
+);
+sat_test!(
+    uf150_022,
+    "examples/satisfiable/uniform-random-3sat/uf150-022.cnf"
+);
+sat_test!(
+    uf150_023,
+    "examples/satisfiable/uniform-random-3sat/uf150-023.cnf"
+);
+sat_test!(
+    uf150_024,
+    "examples/satisfiable/uniform-random-3sat/uf150-024.cnf"
+);
+sat_test!(
+    uf150_025,
+    "examples/satisfiable/uniform-random-3sat/uf150-025.cnf"
+);
+sat_test!(
+    uf150_026,
+    "examples/satisfiable/uniform-random-3sat/uf150-026.cnf"
+);
+sat_test!(
+    uf150_027,
+    "examples/satisfiable/uniform-random-3sat/uf150-027.cnf"
+);
+sat_test!(
+    uf150_028,
+    "examples/satisfiable/uniform-random-3sat/uf150-028.cnf"
+);
+sat_test!(
+    uf150_029,
+    "examples/satisfiable/uniform-random-3sat/uf150-029.cnf"
+);
+sat_test!(
+    uf150_030,
+    "examples/satisfiable/uniform-random-3sat/uf150-030.cnf"
+);
+sat_test!(
+    uf150_031,
+    "examples/satisfiable/uniform-random-3sat/uf150-031.cnf"
+);
+sat_test!(
+    uf150_032,
+    "examples/satisfiable/uniform-random-3sat/uf150-032.cnf"
+);
+sat_test!(
+    uf150_033,
+    "examples/satisfiable/uniform-random-3sat/uf150-033.cnf"
+);
+sat_test!(
+    uf150_034,
+    "examples/satisfiable/uniform-random-3sat/uf150-034.cnf"
+);
+sat_test!(
+    uf150_035,
+    "examples/satisfiable/uniform-random-3sat/uf150-035.cnf"
+);
+sat_test!(
+    uf150_036,
+    "examples/satisfiable/uniform-random-3sat/uf150-036.cnf"
+);
+sat_test!(
+    uf150_037,
+    "examples/satisfiable/uniform-random-3sat/uf150-037.cnf"
+);
+sat_test!(
+    uf150_038,
+    "examples/satisfiable/uniform-random-3sat/uf150-038.cnf"
+);
+sat_test!(
+    uf150_039,
+    "examples/satisfiable/uniform-random-3sat/uf150-039.cnf"
+);
+sat_test!(
+    uf150_040,
+    "examples/satisfiable/uniform-random-3sat/uf150-040.cnf"
+);
+sat_test!(
+    uf150_041,
+    "examples/satisfiable/uniform-random-3sat/uf150-041.cnf"
+);
+sat_test!(
+    uf150_042,
+    "examples/satisfiable/uniform-random-3sat/uf150-042.cnf"
+);
+sat_test!(
+    uf150_043,
+    "examples/satisfiable/uniform-random-3sat/uf150-043.cnf"
+);
+sat_test!(
+    uf150_044,
+    "examples/satisfiable/uniform-random-3sat/uf150-044.cnf"
+);
+sat_test!(
+    uf150_045,
+    "examples/satisfiable/uniform-random-3sat/uf150-045.cnf"
+);
+sat_test!(
+    uf150_046,
+    "examples/satisfiable/uniform-random-3sat/uf150-046.cnf"
+);
+sat_test!(
+    uf150_047,
+    "examples/satisfiable/uniform-random-3sat/uf150-047.cnf"
+);
+sat_test!(
+    uf150_048,
+    "examples/satisfiable/uniform-random-3sat/uf150-048.cnf"
+);
+sat_test!(
+    uf150_049,
+    "examples/satisfiable/uniform-random-3sat/uf150-049.cnf"
+);
+sat_test!(
+    uf150_050,
+    "examples/satisfiable/uniform-random-3sat/uf150-050.cnf"
+);
+sat_test!(
+    uf150_051,
+    "examples/satisfiable/uniform-random-3sat/uf150-051.cnf"
+);
+sat_test!(
+    uf150_052,
+    "examples/satisfiable/uniform-random-3sat/uf150-052.cnf"
+);
+sat_test!(
+    uf150_053,
+    "examples/satisfiable/uniform-random-3sat/uf150-053.cnf"
+);
+sat_test!(
+    uf150_054,
+    "examples/satisfiable/uniform-random-3sat/uf150-054.cnf"
+);
+sat_test!(
+    uf150_055,
+    "examples/satisfiable/uniform-random-3sat/uf150-055.cnf"
+);
+sat_test!(
+    uf150_056,
+    "examples/satisfiable/uniform-random-3sat/uf150-056.cnf"
+);
+sat_test!(
+    uf150_057,
+    "examples/satisfiable/uniform-random-3sat/uf150-057.cnf"
+);
+sat_test!(
+    uf150_058,
+    "examples/satisfiable/uniform-random-3sat/uf150-058.cnf"
+);
+sat_test!(
+    uf150_059,
+    "examples/satisfiable/uniform-random-3sat/uf150-059.cnf"
+);
+sat_test!(
+    uf150_060,
+    "examples/satisfiable/uniform-random-3sat/uf150-060.cnf"
+);
+sat_test!(
+    uf150_061,
+    "examples/satisfiable/uniform-random-3sat/uf150-061.cnf"
+);
+sat_test!(
+    uf150_062,
+    "examples/satisfiable/uniform-random-3sat/uf150-062.cnf"
+);
+sat_test!(
+    uf150_063,
+    "examples/satisfiable/uniform-random-3sat/uf150-063.cnf"
+);
+sat_test!(
+    uf150_064,
+    "examples/satisfiable/uniform-random-3sat/uf150-064.cnf"
+);
+sat_test!(
+    uf150_065,
+    "examples/satisfiable/uniform-random-3sat/uf150-065.cnf"
+);
+sat_test!(
+    uf150_066,
+    "examples/satisfiable/uniform-random-3sat/uf150-066.cnf"
+);
+sat_test!(
+    uf150_067,
+    "examples/satisfiable/uniform-random-3sat/uf150-067.cnf"
+);
+sat_test!(
+    uf150_068,
+    "examples/satisfiable/uniform-random-3sat/uf150-068.cnf"
+);
+sat_test!(
+    uf150_069,
+    "examples/satisfiable/uniform-random-3sat/uf150-069.cnf"
+);
+sat_test!(
+    uf150_070,
+    "examples/satisfiable/uniform-random-3sat/uf150-070.cnf"
+);
+sat_test!(
+    uf150_071,
+    "examples/satisfiable/uniform-random-3sat/uf150-071.cnf"
+);
+sat_test!(
+    uf150_072,
+    "examples/satisfiable/uniform-random-3sat/uf150-072.cnf"
+);
+sat_test!(
+    uf150_073,
+    "examples/satisfiable/uniform-random-3sat/uf150-073.cnf"
+);
+sat_test!(
+    uf150_074,
+    "examples/satisfiable/uniform-random-3sat/uf150-074.cnf"
+);
+sat_test!(
+    uf150_075,
+    "examples/satisfiable/uniform-random-3sat/uf150-075.cnf"
+);
+sat_test!(
+    uf150_076,
+    "examples/satisfiable/uniform-random-3sat/uf150-076.cnf"
+);
+sat_test!(
+    uf150_077,
+    "examples/satisfiable/uniform-random-3sat/uf150-077.cnf"
+);
+sat_test!(
+    uf150_078,
+    "examples/satisfiable/uniform-random-3sat/uf150-078.cnf"
+);
+sat_test!(
+    uf150_079,
+    "examples/satisfiable/uniform-random-3sat/uf150-079.cnf"
+);
+sat_test!(
+    uf150_080,
+    "examples/satisfiable/uniform-random-3sat/uf150-080.cnf"
+);
+sat_test!(
+    uf150_081,
+    "examples/satisfiable/uniform-random-3sat/uf150-081.cnf"
+);
+sat_test!(
+    uf150_082,
+    "examples/satisfiable/uniform-random-3sat/uf150-082.cnf"
+);
+sat_test!(
+    uf150_083,
+    "examples/satisfiable/uniform-random-3sat/uf150-083.cnf"
+);
+sat_test!(
+    uf150_084,
+    "examples/satisfiable/uniform-random-3sat/uf150-084.cnf"
+);
+sat_test!(
+    uf150_085,
+    "examples/satisfiable/uniform-random-3sat/uf150-085.cnf"
+);
+sat_test!(
+    uf150_086,
+    "examples/satisfiable/uniform-random-3sat/uf150-086.cnf"
+);
+sat_test!(
+    uf150_087,
+    "examples/satisfiable/uniform-random-3sat/uf150-087.cnf"
+);
+sat_test!(
+    uf150_088,
+    "examples/satisfiable/uniform-random-3sat/uf150-088.cnf"
+);
+sat_test!(
+    uf150_089,
+    "examples/satisfiable/uniform-random-3sat/uf150-089.cnf"
+);
+sat_test!(
+    uf150_090,
+    "examples/satisfiable/uniform-random-3sat/uf150-090.cnf"
+);
+sat_test!(
+    uf150_091,
+    "examples/satisfiable/uniform-random-3sat/uf150-091.cnf"
+);
+sat_test!(
+    uf150_092,
+    "examples/satisfiable/uniform-random-3sat/uf150-092.cnf"
+);
+sat_test!(
+    uf150_093,
+    "examples/satisfiable/uniform-random-3sat/uf150-093.cnf"
+);
+sat_test!(
+    uf150_094,
+    "examples/satisfiable/uniform-random-3sat/uf150-094.cnf"
+);
+sat_test!(
+    uf150_095,
+    "examples/satisfiable/uniform-random-3sat/uf150-095.cnf"
+);
+sat_test!(
+    uf150_096,
+    "examples/satisfiable/uniform-random-3sat/uf150-096.cnf"
+);
+sat_test!(
+    uf150_097,
+    "examples/satisfiable/uniform-random-3sat/uf150-097.cnf"
+);
+sat_test!(
+    uf150_098,
+    "examples/satisfiable/uniform-random-3sat/uf150-098.cnf"
+);
+sat_test!(
+    uf150_099,
+    "examples/satisfiable/uniform-random-3sat/uf150-099.cnf"
+);
+sat_test!(
+    uf150_0100,
+    "examples/satisfiable/uniform-random-3sat/uf150-0100.cnf"
+);
+sat_test!(
+    uf175_01,
+    "examples/satisfiable/uniform-random-3sat/uf175-01.cnf"
+);
+sat_test!(
+    uf175_02,
+    "examples/satisfiable/uniform-random-3sat/uf175-02.cnf"
+);
+sat_test!(
+    uf175_03,
+    "examples/satisfiable/uniform-random-3sat/uf175-03.cnf"
+);
+sat_test!(
+    uf175_04,
+    "examples/satisfiable/uniform-random-3sat/uf175-04.cnf"
+);
+sat_test!(
+    uf175_05,
+    "examples/satisfiable/uniform-random-3sat/uf175-05.cnf"
+);
+sat_test!(
+    uf175_06,
+    "examples/satisfiable/uniform-random-3sat/uf175-06.cnf"
+);
+sat_test!(
+    uf175_07,
+    "examples/satisfiable/uniform-random-3sat/uf175-07.cnf"
+);
+sat_test!(
+    uf175_08,
+    "examples/satisfiable/uniform-random-3sat/uf175-08.cnf"
+);
+sat_test!(
+    uf175_09,
+    "examples/satisfiable/uniform-random-3sat/uf175-09.cnf"
+);
+sat_test!(
+    uf175_010,
+    "examples/satisfiable/uniform-random-3sat/uf175-010.cnf"
+);
+sat_test!(
+    uf175_011,
+    "examples/satisfiable/uniform-random-3sat/uf175-011.cnf"
+);
+sat_test!(
+    uf175_012,
+    "examples/satisfiable/uniform-random-3sat/uf175-012.cnf"
+);
+sat_test!(
+    uf175_013,
+    "examples/satisfiable/uniform-random-3sat/uf175-013.cnf"
+);
+sat_test!(
+    uf175_014,
+    "examples/satisfiable/uniform-random-3sat/uf175-014.cnf"
+);
+sat_test!(
+    uf175_015,
+    "examples/satisfiable/uniform-random-3sat/uf175-015.cnf"
+);
+sat_test!(
+    uf175_016,
+    "examples/satisfiable/uniform-random-3sat/uf175-016.cnf"
+);
+sat_test!(
+    uf175_017,
+    "examples/satisfiable/uniform-random-3sat/uf175-017.cnf"
+);
+sat_test!(
+    uf175_018,
+    "examples/satisfiable/uniform-random-3sat/uf175-018.cnf"
+);
+sat_test!(
+    uf175_019,
+    "examples/satisfiable/uniform-random-3sat/uf175-019.cnf"
+);
+sat_test!(
+    uf175_020,
+    "examples/satisfiable/uniform-random-3sat/uf175-020.cnf"
+);
+sat_test!(
+    uf175_021,
+    "examples/satisfiable/uniform-random-3sat/uf175-021.cnf"
+);
+sat_test!(
+    uf175_022,
+    "examples/satisfiable/uniform-random-3sat/uf175-022.cnf"
+);
+sat_test!(
+    uf175_023,
+    "examples/satisfiable/uniform-random-3sat/uf175-023.cnf"
+);
+sat_test!(
+    uf175_024,
+    "examples/satisfiable/uniform-random-3sat/uf175-024.cnf"
+);
+sat_test!(
+    uf175_025,
+    "examples/satisfiable/uniform-random-3sat/uf175-025.cnf"
+);
+sat_test!(
+    uf175_026,
+    "examples/satisfiable/uniform-random-3sat/uf175-026.cnf"
+);
+sat_test!(
+    uf175_027,
+    "examples/satisfiable/uniform-random-3sat/uf175-027.cnf"
+);
+sat_test!(
+    uf175_028,
+    "examples/satisfiable/uniform-random-3sat/uf175-028.cnf"
+);
+sat_test!(
+    uf175_029,
+    "examples/satisfiable/uniform-random-3sat/uf175-029.cnf"
+);
+sat_test!(
+    uf175_030,
+    "examples/satisfiable/uniform-random-3sat/uf175-030.cnf"
+);
+sat_test!(
+    uf175_031,
+    "examples/satisfiable/uniform-random-3sat/uf175-031.cnf"
+);
+sat_test!(
+    uf175_032,
+    "examples/satisfiable/uniform-random-3sat/uf175-032.cnf"
+);
+sat_test!(
+    uf175_033,
+    "examples/satisfiable/uniform-random-3sat/uf175-033.cnf"
+);
+sat_test!(
+    uf175_034,
+    "examples/satisfiable/uniform-random-3sat/uf175-034.cnf"
+);
+sat_test!(
+    uf175_035,
+    "examples/satisfiable/uniform-random-3sat/uf175-035.cnf"
+);
+sat_test!(
+    uf175_036,
+    "examples/satisfiable/uniform-random-3sat/uf175-036.cnf"
+);
+sat_test!(
+    uf175_037,
+    "examples/satisfiable/uniform-random-3sat/uf175-037.cnf"
+);
+sat_test!(
+    uf175_038,
+    "examples/satisfiable/uniform-random-3sat/uf175-038.cnf"
+);
+sat_test!(
+    uf175_039,
+    "examples/satisfiable/uniform-random-3sat/uf175-039.cnf"
+);
+sat_test!(
+    uf175_040,
+    "examples/satisfiable/uniform-random-3sat/uf175-040.cnf"
+);
+sat_test!(
+    uf175_041,
+    "examples/satisfiable/uniform-random-3sat/uf175-041.cnf"
+);
+sat_test!(
+    uf175_042,
+    "examples/satisfiable/uniform-random-3sat/uf175-042.cnf"
+);
+sat_test!(
+    uf175_043,
+    "examples/satisfiable/uniform-random-3sat/uf175-043.cnf"
+);
+sat_test!(
+    uf175_044,
+    "examples/satisfiable/uniform-random-3sat/uf175-044.cnf"
+);
+sat_test!(
+    uf175_045,
+    "examples/satisfiable/uniform-random-3sat/uf175-045.cnf"
+);
+sat_test!(
+    uf175_046,
+    "examples/satisfiable/uniform-random-3sat/uf175-046.cnf"
+);
+sat_test!(
+    uf175_047,
+    "examples/satisfiable/uniform-random-3sat/uf175-047.cnf"
+);
+sat_test!(
+    uf175_048,
+    "examples/satisfiable/uniform-random-3sat/uf175-048.cnf"
+);
+sat_test!(
+    uf175_049,
+    "examples/satisfiable/uniform-random-3sat/uf175-049.cnf"
+);
+sat_test!(
+    uf175_050,
+    "examples/satisfiable/uniform-random-3sat/uf175-050.cnf"
+);
+sat_test!(
+    uf175_051,
+    "examples/satisfiable/uniform-random-3sat/uf175-051.cnf"
+);
+sat_test!(
+    uf175_052,
+    "examples/satisfiable/uniform-random-3sat/uf175-052.cnf"
+);
+sat_test!(
+    uf175_053,
+    "examples/satisfiable/uniform-random-3sat/uf175-053.cnf"
+);
+sat_test!(
+    uf175_054,
+    "examples/satisfiable/uniform-random-3sat/uf175-054.cnf"
+);
+sat_test!(
+    uf175_055,
+    "examples/satisfiable/uniform-random-3sat/uf175-055.cnf"
+);
+sat_test!(
+    uf175_056,
+    "examples/satisfiable/uniform-random-3sat/uf175-056.cnf"
+);
+sat_test!(
+    uf175_057,
+    "examples/satisfiable/uniform-random-3sat/uf175-057.cnf"
+);
+sat_test!(
+    uf175_058,
+    "examples/satisfiable/uniform-random-3sat/uf175-058.cnf"
+);
+sat_test!(
+    uf175_059,
+    "examples/satisfiable/uniform-random-3sat/uf175-059.cnf"
+);
+sat_test!(
+    uf175_060,
+    "examples/satisfiable/uniform-random-3sat/uf175-060.cnf"
+);
+sat_test!(
+    uf175_061,
+    "examples/satisfiable/uniform-random-3sat/uf175-061.cnf"
+);
+sat_test!(
+    uf175_062,
+    "examples/satisfiable/uniform-random-3sat/uf175-062.cnf"
+);
+sat_test!(
+    uf175_063,
+    "examples/satisfiable/uniform-random-3sat/uf175-063.cnf"
+);
+sat_test!(
+    uf175_064,
+    "examples/satisfiable/uniform-random-3sat/uf175-064.cnf"
+);
+sat_test!(
+    uf175_065,
+    "examples/satisfiable/uniform-random-3sat/uf175-065.cnf"
+);
+sat_test!(
+    uf175_066,
+    "examples/satisfiable/uniform-random-3sat/uf175-066.cnf"
+);
+sat_test!(
+    uf175_067,
+    "examples/satisfiable/uniform-random-3sat/uf175-067.cnf"
+);
+sat_test!(
+    uf175_068,
+    "examples/satisfiable/uniform-random-3sat/uf175-068.cnf"
+);
+sat_test!(
+    uf175_069,
+    "examples/satisfiable/uniform-random-3sat/uf175-069.cnf"
+);
+sat_test!(
+    uf175_070,
+    "examples/satisfiable/uniform-random-3sat/uf175-070.cnf"
+);
+sat_test!(
+    uf175_071,
+    "examples/satisfiable/uniform-random-3sat/uf175-071.cnf"
+);
+sat_test!(
+    uf175_072,
+    "examples/satisfiable/uniform-random-3sat/uf175-072.cnf"
+);
+sat_test!(
+    uf175_073,
+    "examples/satisfiable/uniform-random-3sat/uf175-073.cnf"
+);
+sat_test!(
+    uf175_074,
+    "examples/satisfiable/uniform-random-3sat/uf175-074.cnf"
+);
+sat_test!(
+    uf175_075,
+    "examples/satisfiable/uniform-random-3sat/uf175-075.cnf"
+);
+sat_test!(
+    uf175_076,
+    "examples/satisfiable/uniform-random-3sat/uf175-076.cnf"
+);
+sat_test!(
+    uf175_077,
+    "examples/satisfiable/uniform-random-3sat/uf175-077.cnf"
+);
+sat_test!(
+    uf175_078,
+    "examples/satisfiable/uniform-random-3sat/uf175-078.cnf"
+);
+sat_test!(
+    uf175_079,
+    "examples/satisfiable/uniform-random-3sat/uf175-079.cnf"
+);
+sat_test!(
+    uf175_080,
+    "examples/satisfiable/uniform-random-3sat/uf175-080.cnf"
+);
+sat_test!(
+    uf175_081,
+    "examples/satisfiable/uniform-random-3sat/uf175-081.cnf"
+);
+sat_test!(
+    uf175_082,
+    "examples/satisfiable/uniform-random-3sat/uf175-082.cnf"
+);
+sat_test!(
+    uf175_083,
+    "examples/satisfiable/uniform-random-3sat/uf175-083.cnf"
+);
+sat_test!(
+    uf175_084,
+    "examples/satisfiable/uniform-random-3sat/uf175-084.cnf"
+);
+sat_test!(
+    uf175_085,
+    "examples/satisfiable/uniform-random-3sat/uf175-085.cnf"
+);
+sat_test!(
+    uf175_086,
+    "examples/satisfiable/uniform-random-3sat/uf175-086.cnf"
+);
+sat_test!(
+    uf175_087,
+    "examples/satisfiable/uniform-random-3sat/uf175-087.cnf"
+);
+sat_test!(
+    uf175_088,
+    "examples/satisfiable/uniform-random-3sat/uf175-088.cnf"
+);
+sat_test!(
+    uf175_089,
+    "examples/satisfiable/uniform-random-3sat/uf175-089.cnf"
+);
+sat_test!(
+    uf175_090,
+    "examples/satisfiable/uniform-random-3sat/uf175-090.cnf"
+);
+sat_test!(
+    uf175_091,
+    "examples/satisfiable/uniform-random-3sat/uf175-091.cnf"
+);
+sat_test!(
+    uf175_092,
+    "examples/satisfiable/uniform-random-3sat/uf175-092.cnf"
+);
+sat_test!(
+    uf175_093,
+    "examples/satisfiable/uniform-random-3sat/uf175-093.cnf"
+);
+sat_test!(
+    uf175_094,
+    "examples/satisfiable/uniform-random-3sat/uf175-094.cnf"
+);
+sat_test!(
+    uf175_095,
+    "examples/satisfiable/uniform-random-3sat/uf175-095.cnf"
+);
+sat_test!(
+    uf175_096,
+    "examples/satisfiable/uniform-random-3sat/uf175-096.cnf"
+);
+sat_test!(
+    uf175_097,
+    "examples/satisfiable/uniform-random-3sat/uf175-097.cnf"
+);
+sat_test!(
+    uf175_098,
+    "examples/satisfiable/uniform-random-3sat/uf175-098.cnf"
+);
+sat_test!(
+    uf175_099,
+    "examples/satisfiable/uniform-random-3sat/uf175-099.cnf"
+);
+sat_test!(
+    uf175_0100,
+    "examples/satisfiable/uniform-random-3sat/uf175-0100.cnf"
+);
+sat_test!(
+    uf200_01,
+    "examples/satisfiable/uniform-random-3sat/uf200-01.cnf"
+);
+sat_test!(
+    uf200_02,
+    "examples/satisfiable/uniform-random-3sat/uf200-02.cnf"
+);
+sat_test!(
+    uf200_03,
+    "examples/satisfiable/uniform-random-3sat/uf200-03.cnf"
+);
+sat_test!(
+    uf200_04,
+    "examples/satisfiable/uniform-random-3sat/uf200-04.cnf"
+);
+sat_test!(
+    uf200_05,
+    "examples/satisfiable/uniform-random-3sat/uf200-05.cnf"
+);
+sat_test!(
+    uf200_06,
+    "examples/satisfiable/uniform-random-3sat/uf200-06.cnf"
+);
+sat_test!(
+    uf200_07,
+    "examples/satisfiable/uniform-random-3sat/uf200-07.cnf"
+);
+sat_test!(
+    uf200_08,
+    "examples/satisfiable/uniform-random-3sat/uf200-08.cnf"
+);
+sat_test!(
+    uf200_09,
+    "examples/satisfiable/uniform-random-3sat/uf200-09.cnf"
+);
+sat_test!(
+    uf200_010,
+    "examples/satisfiable/uniform-random-3sat/uf200-010.cnf"
+);
+sat_test!(
+    uf200_011,
+    "examples/satisfiable/uniform-random-3sat/uf200-011.cnf"
+);
+sat_test!(
+    uf200_012,
+    "examples/satisfiable/uniform-random-3sat/uf200-012.cnf"
+);
+sat_test!(
+    uf200_013,
+    "examples/satisfiable/uniform-random-3sat/uf200-013.cnf"
+);
+sat_test!(
+    uf200_014,
+    "examples/satisfiable/uniform-random-3sat/uf200-014.cnf"
+);
+sat_test!(
+    uf200_015,
+    "examples/satisfiable/uniform-random-3sat/uf200-015.cnf"
+);
+sat_test!(
+    uf200_016,
+    "examples/satisfiable/uniform-random-3sat/uf200-016.cnf"
+);
+sat_test!(
+    uf200_017,
+    "examples/satisfiable/uniform-random-3sat/uf200-017.cnf"
+);
+sat_test!(
+    uf200_018,
+    "examples/satisfiable/uniform-random-3sat/uf200-018.cnf"
+);
+sat_test!(
+    uf200_019,
+    "examples/satisfiable/uniform-random-3sat/uf200-019.cnf"
+);
+sat_test!(
+    uf200_020,
+    "examples/satisfiable/uniform-random-3sat/uf200-020.cnf"
+);
+sat_test!(
+    uf200_021,
+    "examples/satisfiable/uniform-random-3sat/uf200-021.cnf"
+);
+sat_test!(
+    uf200_022,
+    "examples/satisfiable/uniform-random-3sat/uf200-022.cnf"
+);
+sat_test!(
+    uf200_023,
+    "examples/satisfiable/uniform-random-3sat/uf200-023.cnf"
+);
+sat_test!(
+    uf200_024,
+    "examples/satisfiable/uniform-random-3sat/uf200-024.cnf"
+);
+sat_test!(
+    uf200_025,
+    "examples/satisfiable/uniform-random-3sat/uf200-025.cnf"
+);
+sat_test!(
+    uf200_026,
+    "examples/satisfiable/uniform-random-3sat/uf200-026.cnf"
+);
+sat_test!(
+    uf200_027,
+    "examples/satisfiable/uniform-random-3sat/uf200-027.cnf"
+);
+sat_test!(
+    uf200_028,
+    "examples/satisfiable/uniform-random-3sat/uf200-028.cnf"
+);
+sat_test!(
+    uf200_029,
+    "examples/satisfiable/uniform-random-3sat/uf200-029.cnf"
+);
+sat_test!(
+    uf200_030,
+    "examples/satisfiable/uniform-random-3sat/uf200-030.cnf"
+);
+sat_test!(
+    uf200_031,
+    "examples/satisfiable/uniform-random-3sat/uf200-031.cnf"
+);
+sat_test!(
+    uf200_032,
+    "examples/satisfiable/uniform-random-3sat/uf200-032.cnf"
+);
+sat_test!(
+    uf200_033,
+    "examples/satisfiable/uniform-random-3sat/uf200-033.cnf"
+);
+sat_test!(
+    uf200_034,
+    "examples/satisfiable/uniform-random-3sat/uf200-034.cnf"
+);
+sat_test!(
+    uf200_035,
+    "examples/satisfiable/uniform-random-3sat/uf200-035.cnf"
+);
+sat_test!(
+    uf200_036,
+    "examples/satisfiable/uniform-random-3sat/uf200-036.cnf"
+);
+sat_test!(
+    uf200_037,
+    "examples/satisfiable/uniform-random-3sat/uf200-037.cnf"
+);
+sat_test!(
+    uf200_038,
+    "examples/satisfiable/uniform-random-3sat/uf200-038.cnf"
+);
+sat_test!(
+    uf200_039,
+    "examples/satisfiable/uniform-random-3sat/uf200-039.cnf"
+);
+sat_test!(
+    uf200_040,
+    "examples/satisfiable/uniform-random-3sat/uf200-040.cnf"
+);
+sat_test!(
+    uf200_041,
+    "examples/satisfiable/uniform-random-3sat/uf200-041.cnf"
+);
+sat_test!(
+    uf200_042,
+    "examples/satisfiable/uniform-random-3sat/uf200-042.cnf"
+);
+sat_test!(
+    uf200_043,
+    "examples/satisfiable/uniform-random-3sat/uf200-043.cnf"
+);
+sat_test!(
+    uf200_044,
+    "examples/satisfiable/uniform-random-3sat/uf200-044.cnf"
+);
+sat_test!(
+    uf200_045,
+    "examples/satisfiable/uniform-random-3sat/uf200-045.cnf"
+);
+sat_test!(
+    uf200_046,
+    "examples/satisfiable/uniform-random-3sat/uf200-046.cnf"
+);
+sat_test!(
+    uf200_047,
+    "examples/satisfiable/uniform-random-3sat/uf200-047.cnf"
+);
+sat_test!(
+    uf200_048,
+    "examples/satisfiable/uniform-random-3sat/uf200-048.cnf"
+);
+sat_test!(
+    uf200_049,
+    "examples/satisfiable/uniform-random-3sat/uf200-049.cnf"
+);
+sat_test!(
+    uf200_050,
+    "examples/satisfiable/uniform-random-3sat/uf200-050.cnf"
+);
+sat_test!(
+    uf200_051,
+    "examples/satisfiable/uniform-random-3sat/uf200-051.cnf"
+);
+sat_test!(
+    uf200_052,
+    "examples/satisfiable/uniform-random-3sat/uf200-052.cnf"
+);
+sat_test!(
+    uf200_053,
+    "examples/satisfiable/uniform-random-3sat/uf200-053.cnf"
+);
+sat_test!(
+    uf200_054,
+    "examples/satisfiable/uniform-random-3sat/uf200-054.cnf"
+);
+sat_test!(
+    uf200_055,
+    "examples/satisfiable/uniform-random-3sat/uf200-055.cnf"
+);
+sat_test!(
+    uf200_056,
+    "examples/satisfiable/uniform-random-3sat/uf200-056.cnf"
+);
+sat_test!(
+    uf200_057,
+    "examples/satisfiable/uniform-random-3sat/uf200-057.cnf"
+);
+sat_test!(
+    uf200_058,
+    "examples/satisfiable/uniform-random-3sat/uf200-058.cnf"
+);
+sat_test!(
+    uf200_059,
+    "examples/satisfiable/uniform-random-3sat/uf200-059.cnf"
+);
+sat_test!(
+    uf200_060,
+    "examples/satisfiable/uniform-random-3sat/uf200-060.cnf"
+);
+sat_test!(
+    uf200_061,
+    "examples/satisfiable/uniform-random-3sat/uf200-061.cnf"
+);
+sat_test!(
+    uf200_062,
+    "examples/satisfiable/uniform-random-3sat/uf200-062.cnf"
+);
+sat_test!(
+    uf200_063,
+    "examples/satisfiable/uniform-random-3sat/uf200-063.cnf"
+);
+sat_test!(
+    uf200_064,
+    "examples/satisfiable/uniform-random-3sat/uf200-064.cnf"
+);
+sat_test!(
+    uf200_065,
+    "examples/satisfiable/uniform-random-3sat/uf200-065.cnf"
+);
+sat_test!(
+    uf200_066,
+    "examples/satisfiable/uniform-random-3sat/uf200-066.cnf"
+);
+sat_test!(
+    uf200_067,
+    "examples/satisfiable/uniform-random-3sat/uf200-067.cnf"
+);
+sat_test!(
+    uf200_068,
+    "examples/satisfiable/uniform-random-3sat/uf200-068.cnf"
+);
+sat_test!(
+    uf200_069,
+    "examples/satisfiable/uniform-random-3sat/uf200-069.cnf"
+);
+sat_test!(
+    uf200_070,
+    "examples/satisfiable/uniform-random-3sat/uf200-070.cnf"
+);
+sat_test!(
+    uf200_071,
+    "examples/satisfiable/uniform-random-3sat/uf200-071.cnf"
+);
+sat_test!(
+    uf200_072,
+    "examples/satisfiable/uniform-random-3sat/uf200-072.cnf"
+);
+sat_test!(
+    uf200_073,
+    "examples/satisfiable/uniform-random-3sat/uf200-073.cnf"
+);
+sat_test!(
+    uf200_074,
+    "examples/satisfiable/uniform-random-3sat/uf200-074.cnf"
+);
+sat_test!(
+    uf200_075,
+    "examples/satisfiable/uniform-random-3sat/uf200-075.cnf"
+);
+sat_test!(
+    uf200_076,
+    "examples/satisfiable/uniform-random-3sat/uf200-076.cnf"
+);
+sat_test!(
+    uf200_077,
+    "examples/satisfiable/uniform-random-3sat/uf200-077.cnf"
+);
+sat_test!(
+    uf200_078,
+    "examples/satisfiable/uniform-random-3sat/uf200-078.cnf"
+);
+sat_test!(
+    uf200_079,
+    "examples/satisfiable/uniform-random-3sat/uf200-079.cnf"
+);
+sat_test!(
+    uf200_080,
+    "examples/satisfiable/uniform-random-3sat/uf200-080.cnf"
+);
+sat_test!(
+    uf200_081,
+    "examples/satisfiable/uniform-random-3sat/uf200-081.cnf"
+);
+sat_test!(
+    uf200_082,
+    "examples/satisfiable/uniform-random-3sat/uf200-082.cnf"
+);
+sat_test!(
+    uf200_083,
+    "examples/satisfiable/uniform-random-3sat/uf200-083.cnf"
+);
+sat_test!(
+    uf200_084,
+    "examples/satisfiable/uniform-random-3sat/uf200-084.cnf"
+);
+sat_test!(
+    uf200_085,
+    "examples/satisfiable/uniform-random-3sat/uf200-085.cnf"
+);
+sat_test!(
+    uf200_086,
+    "examples/satisfiable/uniform-random-3sat/uf200-086.cnf"
+);
+sat_test!(
+    uf200_087,
+    "examples/satisfiable/uniform-random-3sat/uf200-087.cnf"
+);
+sat_test!(
+    uf200_088,
+    "examples/satisfiable/uniform-random-3sat/uf200-088.cnf"
+);
+sat_test!(
+    uf200_089,
+    "examples/satisfiable/uniform-random-3sat/uf200-089.cnf"
+);
+sat_test!(
+    uf200_090,
+    "examples/satisfiable/uniform-random-3sat/uf200-090.cnf"
+);
+sat_test!(
+    uf200_091,
+    "examples/satisfiable/uniform-random-3sat/uf200-091.cnf"
+);
+sat_test!(
+    uf200_092,
+    "examples/satisfiable/uniform-random-3sat/uf200-092.cnf"
+);
+sat_test!(
+    uf200_093,
+    "examples/satisfiable/uniform-random-3sat/uf200-093.cnf"
+);
+sat_test!(
+    uf200_094,
+    "examples/satisfiable/uniform-random-3sat/uf200-094.cnf"
+);
+sat_test!(
+    uf200_095,
+    "examples/satisfiable/uniform-random-3sat/uf200-095.cnf"
+);
+sat_test!(
+    uf200_096,
+    "examples/satisfiable/uniform-random-3sat/uf200-096.cnf"
+);
+sat_test!(
+    uf200_097,
+    "examples/satisfiable/uniform-random-3sat/uf200-097.cnf"
+);
+sat_test!(
+    uf200_098,
+    "examples/satisfiable/uniform-random-3sat/uf200-098.cnf"
+);
+sat_test!(
+    uf200_099,
+    "examples/satisfiable/uniform-random-3sat/uf200-099.cnf"
+);
+sat_test!(
+    uf200_0100,
+    "examples/satisfiable/uniform-random-3sat/uf200-0100.cnf"
+);
+sat_test!(
+    uf225_01,
+    "examples/satisfiable/uniform-random-3sat/uf225-01.cnf"
+);
+sat_test!(
+    uf225_02,
+    "examples/satisfiable/uniform-random-3sat/uf225-02.cnf"
+);
+sat_test!(
+    uf225_03,
+    "examples/satisfiable/uniform-random-3sat/uf225-03.cnf"
+);
+sat_test!(
+    uf225_04,
+    "examples/satisfiable/uniform-random-3sat/uf225-04.cnf"
+);
+sat_test!(
+    uf225_05,
+    "examples/satisfiable/uniform-random-3sat/uf225-05.cnf"
+);
+sat_test!(
+    uf225_06,
+    "examples/satisfiable/uniform-random-3sat/uf225-06.cnf"
+);
+sat_test!(
+    uf225_07,
+    "examples/satisfiable/uniform-random-3sat/uf225-07.cnf"
+);
+sat_test!(
+    uf225_08,
+    "examples/satisfiable/uniform-random-3sat/uf225-08.cnf"
+);
+sat_test!(
+    uf225_09,
+    "examples/satisfiable/uniform-random-3sat/uf225-09.cnf"
+);
+sat_test!(
+    uf225_010,
+    "examples/satisfiable/uniform-random-3sat/uf225-010.cnf"
+);
+sat_test!(
+    uf225_011,
+    "examples/satisfiable/uniform-random-3sat/uf225-011.cnf"
+);
+sat_test!(
+    uf225_012,
+    "examples/satisfiable/uniform-random-3sat/uf225-012.cnf"
+);
+sat_test!(
+    uf225_013,
+    "examples/satisfiable/uniform-random-3sat/uf225-013.cnf"
+);
+sat_test!(
+    uf225_014,
+    "examples/satisfiable/uniform-random-3sat/uf225-014.cnf"
+);
+sat_test!(
+    uf225_015,
+    "examples/satisfiable/uniform-random-3sat/uf225-015.cnf"
+);
+sat_test!(
+    uf225_016,
+    "examples/satisfiable/uniform-random-3sat/uf225-016.cnf"
+);
+sat_test!(
+    uf225_017,
+    "examples/satisfiable/uniform-random-3sat/uf225-017.cnf"
+);
+sat_test!(
+    uf225_018,
+    "examples/satisfiable/uniform-random-3sat/uf225-018.cnf"
+);
+sat_test!(
+    uf225_019,
+    "examples/satisfiable/uniform-random-3sat/uf225-019.cnf"
+);
+sat_test!(
+    uf225_020,
+    "examples/satisfiable/uniform-random-3sat/uf225-020.cnf"
+);
+sat_test!(
+    uf225_021,
+    "examples/satisfiable/uniform-random-3sat/uf225-021.cnf"
+);
+sat_test!(
+    uf225_022,
+    "examples/satisfiable/uniform-random-3sat/uf225-022.cnf"
+);
+sat_test!(
+    uf225_023,
+    "examples/satisfiable/uniform-random-3sat/uf225-023.cnf"
+);
+sat_test!(
+    uf225_024,
+    "examples/satisfiable/uniform-random-3sat/uf225-024.cnf"
+);
+sat_test!(
+    uf225_025,
+    "examples/satisfiable/uniform-random-3sat/uf225-025.cnf"
+);
+sat_test!(
+    uf225_026,
+    "examples/satisfiable/uniform-random-3sat/uf225-026.cnf"
+);
+sat_test!(
+    uf225_027,
+    "examples/satisfiable/uniform-random-3sat/uf225-027.cnf"
+);
+sat_test!(
+    uf225_028,
+    "examples/satisfiable/uniform-random-3sat/uf225-028.cnf"
+);
+sat_test!(
+    uf225_029,
+    "examples/satisfiable/uniform-random-3sat/uf225-029.cnf"
+);
+sat_test!(
+    uf225_030,
+    "examples/satisfiable/uniform-random-3sat/uf225-030.cnf"
+);
+sat_test!(
+    uf225_031,
+    "examples/satisfiable/uniform-random-3sat/uf225-031.cnf"
+);
+sat_test!(
+    uf225_032,
+    "examples/satisfiable/uniform-random-3sat/uf225-032.cnf"
+);
+sat_test!(
+    uf225_033,
+    "examples/satisfiable/uniform-random-3sat/uf225-033.cnf"
+);
+sat_test!(
+    uf225_034,
+    "examples/satisfiable/uniform-random-3sat/uf225-034.cnf"
+);
+sat_test!(
+    uf225_035,
+    "examples/satisfiable/uniform-random-3sat/uf225-035.cnf"
+);
+sat_test!(
+    uf225_036,
+    "examples/satisfiable/uniform-random-3sat/uf225-036.cnf"
+);
+sat_test!(
+    uf225_037,
+    "examples/satisfiable/uniform-random-3sat/uf225-037.cnf"
+);
+sat_test!(
+    uf225_038,
+    "examples/satisfiable/uniform-random-3sat/uf225-038.cnf"
+);
+sat_test!(
+    uf225_039,
+    "examples/satisfiable/uniform-random-3sat/uf225-039.cnf"
+);
+sat_test!(
+    uf225_040,
+    "examples/satisfiable/uniform-random-3sat/uf225-040.cnf"
+);
+sat_test!(
+    uf225_041,
+    "examples/satisfiable/uniform-random-3sat/uf225-041.cnf"
+);
+sat_test!(
+    uf225_042,
+    "examples/satisfiable/uniform-random-3sat/uf225-042.cnf"
+);
+sat_test!(
+    uf225_043,
+    "examples/satisfiable/uniform-random-3sat/uf225-043.cnf"
+);
+sat_test!(
+    uf225_044,
+    "examples/satisfiable/uniform-random-3sat/uf225-044.cnf"
+);
+sat_test!(
+    uf225_045,
+    "examples/satisfiable/uniform-random-3sat/uf225-045.cnf"
+);
+sat_test!(
+    uf225_046,
+    "examples/satisfiable/uniform-random-3sat/uf225-046.cnf"
+);
+sat_test!(
+    uf225_047,
+    "examples/satisfiable/uniform-random-3sat/uf225-047.cnf"
+);
+sat_test!(
+    uf225_048,
+    "examples/satisfiable/uniform-random-3sat/uf225-048.cnf"
+);
+sat_test!(
+    uf225_049,
+    "examples/satisfiable/uniform-random-3sat/uf225-049.cnf"
+);
+sat_test!(
+    uf225_050,
+    "examples/satisfiable/uniform-random-3sat/uf225-050.cnf"
+);
+sat_test!(
+    uf225_051,
+    "examples/satisfiable/uniform-random-3sat/uf225-051.cnf"
+);
+sat_test!(
+    uf225_052,
+    "examples/satisfiable/uniform-random-3sat/uf225-052.cnf"
+);
+sat_test!(
+    uf225_053,
+    "examples/satisfiable/uniform-random-3sat/uf225-053.cnf"
+);
+sat_test!(
+    uf225_054,
+    "examples/satisfiable/uniform-random-3sat/uf225-054.cnf"
+);
+sat_test!(
+    uf225_055,
+    "examples/satisfiable/uniform-random-3sat/uf225-055.cnf"
+);
+sat_test!(
+    uf225_056,
+    "examples/satisfiable/uniform-random-3sat/uf225-056.cnf"
+);
+sat_test!(
+    uf225_057,
+    "examples/satisfiable/uniform-random-3sat/uf225-057.cnf"
+);
+sat_test!(
+    uf225_058,
+    "examples/satisfiable/uniform-random-3sat/uf225-058.cnf"
+);
+sat_test!(
+    uf225_059,
+    "examples/satisfiable/uniform-random-3sat/uf225-059.cnf"
+);
+sat_test!(
+    uf225_060,
+    "examples/satisfiable/uniform-random-3sat/uf225-060.cnf"
+);
+sat_test!(
+    uf225_061,
+    "examples/satisfiable/uniform-random-3sat/uf225-061.cnf"
+);
+sat_test!(
+    uf225_062,
+    "examples/satisfiable/uniform-random-3sat/uf225-062.cnf"
+);
+sat_test!(
+    uf225_063,
+    "examples/satisfiable/uniform-random-3sat/uf225-063.cnf"
+);
+sat_test!(
+    uf225_064,
+    "examples/satisfiable/uniform-random-3sat/uf225-064.cnf"
+);
+sat_test!(
+    uf225_065,
+    "examples/satisfiable/uniform-random-3sat/uf225-065.cnf"
+);
+sat_test!(
+    uf225_066,
+    "examples/satisfiable/uniform-random-3sat/uf225-066.cnf"
+);
+sat_test!(
+    uf225_067,
+    "examples/satisfiable/uniform-random-3sat/uf225-067.cnf"
+);
+sat_test!(
+    uf225_068,
+    "examples/satisfiable/uniform-random-3sat/uf225-068.cnf"
+);
+sat_test!(
+    uf225_069,
+    "examples/satisfiable/uniform-random-3sat/uf225-069.cnf"
+);
+sat_test!(
+    uf225_070,
+    "examples/satisfiable/uniform-random-3sat/uf225-070.cnf"
+);
+sat_test!(
+    uf225_071,
+    "examples/satisfiable/uniform-random-3sat/uf225-071.cnf"
+);
+sat_test!(
+    uf225_072,
+    "examples/satisfiable/uniform-random-3sat/uf225-072.cnf"
+);
+sat_test!(
+    uf225_073,
+    "examples/satisfiable/uniform-random-3sat/uf225-073.cnf"
+);
+sat_test!(
+    uf225_074,
+    "examples/satisfiable/uniform-random-3sat/uf225-074.cnf"
+);
+sat_test!(
+    uf225_075,
+    "examples/satisfiable/uniform-random-3sat/uf225-075.cnf"
+);
+sat_test!(
+    uf225_076,
+    "examples/satisfiable/uniform-random-3sat/uf225-076.cnf"
+);
+sat_test!(
+    uf225_077,
+    "examples/satisfiable/uniform-random-3sat/uf225-077.cnf"
+);
+sat_test!(
+    uf225_078,
+    "examples/satisfiable/uniform-random-3sat/uf225-078.cnf"
+);
+sat_test!(
+    uf225_079,
+    "examples/satisfiable/uniform-random-3sat/uf225-079.cnf"
+);
+sat_test!(
+    uf225_080,
+    "examples/satisfiable/uniform-random-3sat/uf225-080.cnf"
+);
+sat_test!(
+    uf225_081,
+    "examples/satisfiable/uniform-random-3sat/uf225-081.cnf"
+);
+sat_test!(
+    uf225_082,
+    "examples/satisfiable/uniform-random-3sat/uf225-082.cnf"
+);
+sat_test!(
+    uf225_083,
+    "examples/satisfiable/uniform-random-3sat/uf225-083.cnf"
+);
+sat_test!(
+    uf225_084,
+    "examples/satisfiable/uniform-random-3sat/uf225-084.cnf"
+);
+sat_test!(
+    uf225_085,
+    "examples/satisfiable/uniform-random-3sat/uf225-085.cnf"
+);
+sat_test!(
+    uf225_086,
+    "examples/satisfiable/uniform-random-3sat/uf225-086.cnf"
+);
+sat_test!(
+    uf225_087,
+    "examples/satisfiable/uniform-random-3sat/uf225-087.cnf"
+);
+sat_test!(
+    uf225_088,
+    "examples/satisfiable/uniform-random-3sat/uf225-088.cnf"
+);
+sat_test!(
+    uf225_089,
+    "examples/satisfiable/uniform-random-3sat/uf225-089.cnf"
+);
+sat_test!(
+    uf225_090,
+    "examples/satisfiable/uniform-random-3sat/uf225-090.cnf"
+);
+sat_test!(
+    uf225_091,
+    "examples/satisfiable/uniform-random-3sat/uf225-091.cnf"
+);
+sat_test!(
+    uf225_092,
+    "examples/satisfiable/uniform-random-3sat/uf225-092.cnf"
+);
+sat_test!(
+    uf225_093,
+    "examples/satisfiable/uniform-random-3sat/uf225-093.cnf"
+);
+sat_test!(
+    uf225_094,
+    "examples/satisfiable/uniform-random-3sat/uf225-094.cnf"
+);
+sat_test!(
+    uf225_095,
+    "examples/satisfiable/uniform-random-3sat/uf225-095.cnf"
+);
+sat_test!(
+    uf225_096,
+    "examples/satisfiable/uniform-random-3sat/uf225-096.cnf"
+);
+sat_test!(
+    uf225_097,
+    "examples/satisfiable/uniform-random-3sat/uf225-097.cnf"
+);
+sat_test!(
+    uf225_098,
+    "examples/satisfiable/uniform-random-3sat/uf225-098.cnf"
+);
+sat_test!(
+    uf225_099,
+    "examples/satisfiable/uniform-random-3sat/uf225-099.cnf"
+);
+sat_test!(
+    uf225_0100,
+    "examples/satisfiable/uniform-random-3sat/uf225-0100.cnf"
+);
+sat_test!(
+    uf250_01,
+    "examples/satisfiable/uniform-random-3sat/uf250-01.cnf"
+);
+sat_test!(
+    uf250_02,
+    "examples/satisfiable/uniform-random-3sat/uf250-02.cnf"
+);
+sat_test!(
+    uf250_03,
+    "examples/satisfiable/uniform-random-3sat/uf250-03.cnf"
+);
+sat_test!(
+    uf250_04,
+    "examples/satisfiable/uniform-random-3sat/uf250-04.cnf"
+);
+sat_test!(
+    uf250_05,
+    "examples/satisfiable/uniform-random-3sat/uf250-05.cnf"
+);
+sat_test!(
+    uf250_06,
+    "examples/satisfiable/uniform-random-3sat/uf250-06.cnf"
+);
+sat_test!(
+    uf250_07,
+    "examples/satisfiable/uniform-random-3sat/uf250-07.cnf"
+);
+sat_test!(
+    uf250_08,
+    "examples/satisfiable/uniform-random-3sat/uf250-08.cnf"
+);
+sat_test!(
+    uf250_09,
+    "examples/satisfiable/uniform-random-3sat/uf250-09.cnf"
+);
+sat_test!(
+    uf250_010,
+    "examples/satisfiable/uniform-random-3sat/uf250-010.cnf"
+);
+sat_test!(
+    uf250_011,
+    "examples/satisfiable/uniform-random-3sat/uf250-011.cnf"
+);
+sat_test!(
+    uf250_012,
+    "examples/satisfiable/uniform-random-3sat/uf250-012.cnf"
+);
+sat_test!(
+    uf250_013,
+    "examples/satisfiable/uniform-random-3sat/uf250-013.cnf"
+);
+sat_test!(
+    uf250_014,
+    "examples/satisfiable/uniform-random-3sat/uf250-014.cnf"
+);
+sat_test!(
+    uf250_015,
+    "examples/satisfiable/uniform-random-3sat/uf250-015.cnf"
+);
+sat_test!(
+    uf250_016,
+    "examples/satisfiable/uniform-random-3sat/uf250-016.cnf"
+);
+sat_test!(
+    uf250_017,
+    "examples/satisfiable/uniform-random-3sat/uf250-017.cnf"
+);
+sat_test!(
+    uf250_018,
+    "examples/satisfiable/uniform-random-3sat/uf250-018.cnf"
+);
+sat_test!(
+    uf250_019,
+    "examples/satisfiable/uniform-random-3sat/uf250-019.cnf"
+);
+sat_test!(
+    uf250_020,
+    "examples/satisfiable/uniform-random-3sat/uf250-020.cnf"
+);
+sat_test!(
+    uf250_021,
+    "examples/satisfiable/uniform-random-3sat/uf250-021.cnf"
+);
+sat_test!(
+    uf250_022,
+    "examples/satisfiable/uniform-random-3sat/uf250-022.cnf"
+);
+sat_test!(
+    uf250_023,
+    "examples/satisfiable/uniform-random-3sat/uf250-023.cnf"
+);
+sat_test!(
+    uf250_024,
+    "examples/satisfiable/uniform-random-3sat/uf250-024.cnf"
+);
+sat_test!(
+    uf250_025,
+    "examples/satisfiable/uniform-random-3sat/uf250-025.cnf"
+);
+sat_test!(
+    uf250_026,
+    "examples/satisfiable/uniform-random-3sat/uf250-026.cnf"
+);
+sat_test!(
+    uf250_027,
+    "examples/satisfiable/uniform-random-3sat/uf250-027.cnf"
+);
+sat_test!(
+    uf250_028,
+    "examples/satisfiable/uniform-random-3sat/uf250-028.cnf"
+);
+sat_test!(
+    uf250_029,
+    "examples/satisfiable/uniform-random-3sat/uf250-029.cnf"
+);
+sat_test!(
+    uf250_030,
+    "examples/satisfiable/uniform-random-3sat/uf250-030.cnf"
+);
+sat_test!(
+    uf250_031,
+    "examples/satisfiable/uniform-random-3sat/uf250-031.cnf"
+);
+sat_test!(
+    uf250_032,
+    "examples/satisfiable/uniform-random-3sat/uf250-032.cnf"
+);
+sat_test!(
+    uf250_033,
+    "examples/satisfiable/uniform-random-3sat/uf250-033.cnf"
+);
+sat_test!(
+    uf250_034,
+    "examples/satisfiable/uniform-random-3sat/uf250-034.cnf"
+);
+sat_test!(
+    uf250_035,
+    "examples/satisfiable/uniform-random-3sat/uf250-035.cnf"
+);
+sat_test!(
+    uf250_036,
+    "examples/satisfiable/uniform-random-3sat/uf250-036.cnf"
+);
+sat_test!(
+    uf250_037,
+    "examples/satisfiable/uniform-random-3sat/uf250-037.cnf"
+);
+sat_test!(
+    uf250_038,
+    "examples/satisfiable/uniform-random-3sat/uf250-038.cnf"
+);
+sat_test!(
+    uf250_039,
+    "examples/satisfiable/uniform-random-3sat/uf250-039.cnf"
+);
+sat_test!(
+    uf250_040,
+    "examples/satisfiable/uniform-random-3sat/uf250-040.cnf"
+);
+sat_test!(
+    uf250_041,
+    "examples/satisfiable/uniform-random-3sat/uf250-041.cnf"
+);
+sat_test!(
+    uf250_042,
+    "examples/satisfiable/uniform-random-3sat/uf250-042.cnf"
+);
+sat_test!(
+    uf250_043,
+    "examples/satisfiable/uniform-random-3sat/uf250-043.cnf"
+);
+sat_test!(
+    uf250_044,
+    "examples/satisfiable/uniform-random-3sat/uf250-044.cnf"
+);
+sat_test!(
+    uf250_045,
+    "examples/satisfiable/uniform-random-3sat/uf250-045.cnf"
+);
+sat_test!(
+    uf250_046,
+    "examples/satisfiable/uniform-random-3sat/uf250-046.cnf"
+);
+sat_test!(
+    uf250_047,
+    "examples/satisfiable/uniform-random-3sat/uf250-047.cnf"
+);
+sat_test!(
+    uf250_048,
+    "examples/satisfiable/uniform-random-3sat/uf250-048.cnf"
+);
+sat_test!(
+    uf250_049,
+    "examples/satisfiable/uniform-random-3sat/uf250-049.cnf"
+);
+sat_test!(
+    uf250_050,
+    "examples/satisfiable/uniform-random-3sat/uf250-050.cnf"
+);
+sat_test!(
+    uf250_051,
+    "examples/satisfiable/uniform-random-3sat/uf250-051.cnf"
+);
+sat_test!(
+    uf250_052,
+    "examples/satisfiable/uniform-random-3sat/uf250-052.cnf"
+);
+sat_test!(
+    uf250_053,
+    "examples/satisfiable/uniform-random-3sat/uf250-053.cnf"
+);
+sat_test!(
+    uf250_054,
+    "examples/satisfiable/uniform-random-3sat/uf250-054.cnf"
+);
+sat_test!(
+    uf250_055,
+    "examples/satisfiable/uniform-random-3sat/uf250-055.cnf"
+);
+sat_test!(
+    uf250_056,
+    "examples/satisfiable/uniform-random-3sat/uf250-056.cnf"
+);
+sat_test!(
+    uf250_057,
+    "examples/satisfiable/uniform-random-3sat/uf250-057.cnf"
+);
+sat_test!(
+    uf250_058,
+    "examples/satisfiable/uniform-random-3sat/uf250-058.cnf"
+);
+sat_test!(
+    uf250_059,
+    "examples/satisfiable/uniform-random-3sat/uf250-059.cnf"
+);
+sat_test!(
+    uf250_060,
+    "examples/satisfiable/uniform-random-3sat/uf250-060.cnf"
+);
+sat_test!(
+    uf250_061,
+    "examples/satisfiable/uniform-random-3sat/uf250-061.cnf"
+);
+sat_test!(
+    uf250_062,
+    "examples/satisfiable/uniform-random-3sat/uf250-062.cnf"
+);
+sat_test!(
+    uf250_063,
+    "examples/satisfiable/uniform-random-3sat/uf250-063.cnf"
+);
+sat_test!(
+    uf250_064,
+    "examples/satisfiable/uniform-random-3sat/uf250-064.cnf"
+);
+sat_test!(
+    uf250_065,
+    "examples/satisfiable/uniform-random-3sat/uf250-065.cnf"
+);
+sat_test!(
+    uf250_066,
+    "examples/satisfiable/uniform-random-3sat/uf250-066.cnf"
+);
+sat_test!(
+    uf250_067,
+    "examples/satisfiable/uniform-random-3sat/uf250-067.cnf"
+);
+sat_test!(
+    uf250_068,
+    "examples/satisfiable/uniform-random-3sat/uf250-068.cnf"
+);
+sat_test!(
+    uf250_069,
+    "examples/satisfiable/uniform-random-3sat/uf250-069.cnf"
+);
+sat_test!(
+    uf250_070,
+    "examples/satisfiable/uniform-random-3sat/uf250-070.cnf"
+);
+sat_test!(
+    uf250_071,
+    "examples/satisfiable/uniform-random-3sat/uf250-071.cnf"
+);
+sat_test!(
+    uf250_072,
+    "examples/satisfiable/uniform-random-3sat/uf250-072.cnf"
+);
+sat_test!(
+    uf250_073,
+    "examples/satisfiable/uniform-random-3sat/uf250-073.cnf"
+);
+sat_test!(
+    uf250_074,
+    "examples/satisfiable/uniform-random-3sat/uf250-074.cnf"
+);
+sat_test!(
+    uf250_075,
+    "examples/satisfiable/uniform-random-3sat/uf250-075.cnf"
+);
+sat_test!(
+    uf250_076,
+    "examples/satisfiable/uniform-random-3sat/uf250-076.cnf"
+);
+sat_test!(
+    uf250_077,
+    "examples/satisfiable/uniform-random-3sat/uf250-077.cnf"
+);
+sat_test!(
+    uf250_078,
+    "examples/satisfiable/uniform-random-3sat/uf250-078.cnf"
+);
+sat_test!(
+    uf250_079,
+    "examples/satisfiable/uniform-random-3sat/uf250-079.cnf"
+);
+sat_test!(
+    uf250_080,
+    "examples/satisfiable/uniform-random-3sat/uf250-080.cnf"
+);
+sat_test!(
+    uf250_081,
+    "examples/satisfiable/uniform-random-3sat/uf250-081.cnf"
+);
+sat_test!(
+    uf250_082,
+    "examples/satisfiable/uniform-random-3sat/uf250-082.cnf"
+);
+sat_test!(
+    uf250_083,
+    "examples/satisfiable/uniform-random-3sat/uf250-083.cnf"
+);
+sat_test!(
+    uf250_084,
+    "examples/satisfiable/uniform-random-3sat/uf250-084.cnf"
+);
+sat_test!(
+    uf250_085,
+    "examples/satisfiable/uniform-random-3sat/uf250-085.cnf"
+);
+sat_test!(
+    uf250_086,
+    "examples/satisfiable/uniform-random-3sat/uf250-086.cnf"
+);
+sat_test!(
+    uf250_087,
+    "examples/satisfiable/uniform-random-3sat/uf250-087.cnf"
+);
+sat_test!(
+    uf250_088,
+    "examples/satisfiable/uniform-random-3sat/uf250-088.cnf"
+);
+sat_test!(
+    uf250_089,
+    "examples/satisfiable/uniform-random-3sat/uf250-089.cnf"
+);
+sat_test!(
+    uf250_090,
+    "examples/satisfiable/uniform-random-3sat/uf250-090.cnf"
+);
+sat_test!(
+    uf250_091,
+    "examples/satisfiable/uniform-random-3sat/uf250-091.cnf"
+);
+sat_test!(
+    uf250_092,
+    "examples/satisfiable/uniform-random-3sat/uf250-092.cnf"
+);
+sat_test!(
+    uf250_093,
+    "examples/satisfiable/uniform-random-3sat/uf250-093.cnf"
+);
+sat_test!(
+    uf250_094,
+    "examples/satisfiable/uniform-random-3sat/uf250-094.cnf"
+);
+sat_test!(
+    uf250_095,
+    "examples/satisfiable/uniform-random-3sat/uf250-095.cnf"
+);
+sat_test!(
+    uf250_096,
+    "examples/satisfiable/uniform-random-3sat/uf250-096.cnf"
+);
+sat_test!(
+    uf250_097,
+    "examples/satisfiable/uniform-random-3sat/uf250-097.cnf"
+);
+sat_test!(
+    uf250_098,
+    "examples/satisfiable/uniform-random-3sat/uf250-098.cnf"
+);
+sat_test!(
+    uf250_099,
+    "examples/satisfiable/uniform-random-3sat/uf250-099.cnf"
+);
+sat_test!(
+    uf250_0100,
+    "examples/satisfiable/uniform-random-3sat/uf250-0100.cnf"
+);
